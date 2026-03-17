@@ -705,6 +705,11 @@ hr {
   word-break: break-word;
 }
 
+.flow-diagram p {
+  margin: 0;
+  padding: 0;
+}
+
 /* ========== Comparison Table ========== */
 
 .comparison-table {
@@ -886,14 +891,13 @@ hr {
 
 .verify-steps li > span {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
 }
 
 .verify-steps li > span strong {
+  display: block;
   font-weight: 600;
   color: var(--color-text);
+  margin-bottom: 2px;
 }
 
 .verify-steps li::before {

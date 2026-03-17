@@ -135,7 +135,7 @@ Users are presented with a granular consent screen before first use, consisting 
   </div>
 </div>
 
-- Accept and Reject buttons have equal visual prominence (<a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052020-consent-under-regulation-2016679_en">CNIL guidance</a> on dark patterns)
+- Accept and Reject buttons have equal visual prominence (<a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052020-consent-under-regulation-2016679_en">EDPB consent guidelines</a> on dark patterns)
 - Users can withdraw consent and delete their account at any time from Privacy Settings
 - This DPIA is reviewed annually or upon significant processing changes
 - Published at this URL for public transparency

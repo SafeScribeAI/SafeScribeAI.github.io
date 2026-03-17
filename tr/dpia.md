@@ -135,7 +135,7 @@ Kullanıcılara ilk kullanımdan önce dört bağımsız karttan oluşan ayrınt
   </div>
 </div>
 
-- Kabul ve Reddet düğmeleri görsel olarak eşit ağırlık taşır (<a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052020-consent-under-regulation-2016679_en">CNIL rehberi</a> karanlık örüntüler hakkında)
+- Kabul ve Reddet düğmeleri görsel olarak eşit ağırlık taşır (<a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052020-consent-under-regulation-2016679_en">EDPB rıza kılavuzu</a> karanlık örüntüler hakkında)
 - Kullanıcılar istedikleri zaman Gizlilik Ayarları'ndan onaylarını geri çekebilir ve hesaplarını silebilir
 - Bu değerlendirme yıllık olarak veya önemli işleme değişikliklerinde gözden geçirilir
 - Şeffaflık amacıyla bu URL'de kamuoyuyla paylaşılmıştır

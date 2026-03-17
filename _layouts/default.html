@@ -3,8 +3,6 @@
 {% assign i18n = site.data.i18n[lang] %}
 {% assign page_slug = page.path | split: '/' | last | remove: '.md' | remove: '.html' %}
 {% if page_slug == 'index' or page_slug == '' %}{% assign page_slug = 'index' %}{% endif %}
-{% assign is_limited = false %}
-{% if page_slug == 'security' or page_slug == 'terms' or page_slug == 'dpia' %}{% assign is_limited = true %}{% endif %}
 {% assign all_langs = 'en,tr,de,fr,es,pt,ar,zh,ja,ko' | split: ',' %}
 <html lang="{{ lang }}">
 <head>
@@ -43,22 +41,15 @@
         <a href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ i18n.nav_home }}</a>
         <a href="{{ '/' | append: lang | append: '/#pricing' | relative_url }}">{{ i18n.nav_pricing }}</a>
         <a href="{{ '/' | append: lang | append: '/privacy' | relative_url }}">{{ i18n.nav_privacy }}</a>
-        {% if lang == 'en' or lang == 'tr' %}
         <a href="{{ '/' | append: lang | append: '/security' | relative_url }}">{{ i18n.nav_security }}</a>
         <a href="{{ '/' | append: lang | append: '/terms' | relative_url }}">{{ i18n.nav_terms }}</a>
-        {% else %}
-        <a href="{{ '/en/security' | relative_url }}">{{ site.data.i18n.en.nav_security }}</a>
-        <a href="{{ '/en/terms' | relative_url }}">{{ site.data.i18n.en.nav_terms }}</a>
-        {% endif %}
       </nav>
       <details class="lang-switcher">
         <summary>&#127760; {{ i18n.lang_name }}</summary>
         <div class="lang-dropdown">
           {% for switch_lang in all_langs %}
           {% assign switch_i18n = site.data.i18n[switch_lang] %}
-          {% if is_limited and switch_lang != 'en' and switch_lang != 'tr' %}
-            {% assign switch_url = '/' | append: switch_lang | append: '/' %}
-          {% elsif page_slug == 'index' %}
+          {% if page_slug == 'index' %}
             {% assign switch_url = '/' | append: switch_lang | append: '/' %}
           {% else %}
             {% assign switch_url = '/' | append: switch_lang | append: '/' | append: page_slug %}
@@ -75,21 +66,14 @@
       <a href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ i18n.nav_home }}</a>
       <a href="{{ '/' | append: lang | append: '/#pricing' | relative_url }}">{{ i18n.nav_pricing }}</a>
       <a href="{{ '/' | append: lang | append: '/privacy' | relative_url }}">{{ i18n.nav_privacy }}</a>
-      {% if lang == 'en' or lang == 'tr' %}
       <a href="{{ '/' | append: lang | append: '/security' | relative_url }}">{{ i18n.nav_security }}</a>
       <a href="{{ '/' | append: lang | append: '/terms' | relative_url }}">{{ i18n.nav_terms }}</a>
-      {% else %}
-      <a href="{{ '/en/security' | relative_url }}">{{ site.data.i18n.en.nav_security }}</a>
-      <a href="{{ '/en/terms' | relative_url }}">{{ site.data.i18n.en.nav_terms }}</a>
-      {% endif %}
       <div class="mobile-lang-section">
         <span class="mobile-lang-header">{{ i18n.footer_languages }}</span>
         <div class="mobile-lang-grid">
           {% for switch_lang in all_langs %}
           {% assign switch_i18n = site.data.i18n[switch_lang] %}
-          {% if is_limited and switch_lang != 'en' and switch_lang != 'tr' %}
-            {% assign switch_url = '/' | append: switch_lang | append: '/' %}
-          {% elsif page_slug == 'index' %}
+          {% if page_slug == 'index' %}
             {% assign switch_url = '/' | append: switch_lang | append: '/' %}
           {% else %}
             {% assign switch_url = '/' | append: switch_lang | append: '/' | append: page_slug %}
@@ -118,15 +102,9 @@
         <div class="footer-col">
           <strong>{{ i18n.footer_legal }}</strong>
           <a href="{{ '/' | append: lang | append: '/privacy' | relative_url }}">{{ i18n.link_privacy }}</a>
-          {% if lang == 'en' or lang == 'tr' %}
           <a href="{{ '/' | append: lang | append: '/security' | relative_url }}">{{ i18n.link_security }}</a>
           <a href="{{ '/' | append: lang | append: '/dpia' | relative_url }}">{{ i18n.link_dpia }}</a>
           <a href="{{ '/' | append: lang | append: '/terms' | relative_url }}">{{ i18n.link_terms }}</a>
-          {% else %}
-          <a href="{{ '/en/security' | relative_url }}">{{ site.data.i18n.en.link_security }}</a>
-          <a href="{{ '/en/dpia' | relative_url }}">{{ site.data.i18n.en.link_dpia }}</a>
-          <a href="{{ '/en/terms' | relative_url }}">{{ site.data.i18n.en.link_terms }}</a>
-          {% endif %}
         </div>
         <div class="footer-col">
           <strong>{{ i18n.footer_contact }}</strong>

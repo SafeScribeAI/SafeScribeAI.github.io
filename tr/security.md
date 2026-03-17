@@ -232,6 +232,4 @@ Güvenlik araştırmacılarını ve gizlilik savunucularını iddialarımızı d
   <li><span><strong>Sorumlu açıklama</strong> Bir güvenlik açığı mı buldunuz? <a href="mailto:security@safescribe.dev">security@safescribe.dev</a> adresine yazın.</span></li>
 </ul>
 
----
-
 </div>

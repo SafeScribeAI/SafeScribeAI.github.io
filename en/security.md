@@ -232,6 +232,4 @@ We encourage security researchers and privacy advocates to verify our claims:
   <li><span><strong>Responsible disclosure</strong> Found a vulnerability? Contact <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</span></li>
 </ul>
 
----
-
 </div>

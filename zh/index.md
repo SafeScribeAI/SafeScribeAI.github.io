@@ -232,29 +232,6 @@ lang: zh
   </div>
 </div>
 
-<script>
-(function () {
-  var cards = document.querySelectorAll('.pricing-card');
-  if (cards.length < 2) return;
-  function parseRate(card) {
-    var el = card.querySelector('.pricing-rate');
-    return el ? parseFloat(el.textContent.replace(/[^0-9.]/g, '')) : NaN;
-  }
-  var base = parseRate(cards[0]);
-  if (!base) return;
-  for (var i = 1; i < cards.length; i++) {
-    var rate = parseRate(cards[i]);
-    if (isNaN(rate) || rate >= base) continue;
-    var pct = Math.round((1 - rate / base) * 100);
-    if (pct > 0) {
-      var badge = document.createElement('div');
-      badge.className = 'pricing-save';
-      badge.textContent = '省 ' + pct + '%';
-      cards[i].appendChild(badge);
-    }
-  }
-})();
-</script>
 
 <div class="callout callout-info">
   <strong>失败的转录绝不收费。</strong>您只需为成功的结果付费。支付完全通过Apple App Store或Google Play处理——我们永远看不到您的支付详情。

@@ -232,29 +232,6 @@ lang: ko
   </div>
 </div>
 
-<script>
-(function () {
-  var cards = document.querySelectorAll('.pricing-card');
-  if (cards.length < 2) return;
-  function parseRate(card) {
-    var el = card.querySelector('.pricing-rate');
-    return el ? parseFloat(el.textContent.replace(/[^0-9.]/g, '')) : NaN;
-  }
-  var base = parseRate(cards[0]);
-  if (!base) return;
-  for (var i = 1; i < cards.length; i++) {
-    var rate = parseRate(cards[i]);
-    if (isNaN(rate) || rate >= base) continue;
-    var pct = Math.round((1 - rate / base) * 100);
-    if (pct > 0) {
-      var badge = document.createElement('div');
-      badge.className = 'pricing-save';
-      badge.textContent = '' + pct + '% 절약';
-      cards[i].appendChild(badge);
-    }
-  }
-})();
-</script>
 
 <div class="callout callout-info">
   <strong>실패한 전사에는 요금이 부과되지 않습니다.</strong> 성공한 결과에 대해서만 비용을 지불합니다. 결제는 전적으로 Apple App Store 또는 Google Play를 통해 처리됩니다 — 저희는 결제 정보를 절대 볼 수 없습니다.

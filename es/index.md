@@ -232,29 +232,6 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
   </div>
 </div>
 
-<script>
-(function () {
-  var cards = document.querySelectorAll('.pricing-card');
-  if (cards.length < 2) return;
-  function parseRate(card) {
-    var el = card.querySelector('.pricing-rate');
-    return el ? parseFloat(el.textContent.replace(/[^0-9.]/g, '')) : NaN;
-  }
-  var base = parseRate(cards[0]);
-  if (!base) return;
-  for (var i = 1; i < cards.length; i++) {
-    var rate = parseRate(cards[i]);
-    if (isNaN(rate) || rate >= base) continue;
-    var pct = Math.round((1 - rate / base) * 100);
-    if (pct > 0) {
-      var badge = document.createElement('div');
-      badge.className = 'pricing-save';
-      badge.textContent = 'Ahorra ' + pct + '%';
-      cards[i].appendChild(badge);
-    }
-  }
-})();
-</script>
 
 <div class="callout callout-info">
   <strong>Las transcripciones fallidas nunca se cobran.</strong> Solo paga por los resultados exitosos. Los pagos son gestionados íntegramente por Apple App Store o Google Play — nunca vemos sus datos de pago.

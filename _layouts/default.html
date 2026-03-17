@@ -27,6 +27,7 @@
   <!-- Canonical -->
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self';">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
@@ -58,7 +59,7 @@
           {% endfor %}
         </div>
       </details>
-      <button class="nav-mobile-toggle" aria-label="Toggle menu" onclick="this.closest('.site-header').classList.toggle('nav-open')">
+      <button id="nav-mobile-toggle" class="nav-mobile-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -119,13 +120,7 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener('click', function(e) {
-      document.querySelectorAll('.lang-switcher[open]').forEach(function(d) {
-        if (!d.contains(e.target)) d.removeAttribute('open');
-      });
-    });
-  </script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 </body>
 </html>

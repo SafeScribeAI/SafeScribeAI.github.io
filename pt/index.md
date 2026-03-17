@@ -234,7 +234,7 @@ Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao con
 
 
 <div class="callout callout-info">
-  <strong>Transcrições com falha nunca são cobradas.</strong> Você paga apenas por resultados bem-sucedidos. Os pagamentos são processados inteiramente pela Apple App Store ou Google Play — nunca vemos seus dados de pagamento.
+  <strong>Se uma transcrição falhar por um erro técnico do nosso lado, você nunca será cobrado.</strong> Você paga apenas quando uma transcrição é concluída com sucesso em nosso servidor. Os pagamentos são processados inteiramente pela Apple App Store ou Google Play — nunca vemos seus dados de pagamento.
 </div>
 
 ---

@@ -234,7 +234,7 @@ lang: zh
 
 
 <div class="callout callout-info">
-  <strong>失败的转录绝不收费。</strong>您只需为成功的结果付费。支付完全通过Apple App Store或Google Play处理——我们永远看不到您的支付详情。
+  <strong>因我方服务器技术故障导致未能完成的转录，绝不收费。</strong>仅当转录在我方成功完成后才收费。支付完全通过Apple App Store或Google Play处理——我们永远看不到您的支付详情。
 </div>
 
 ---

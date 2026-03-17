@@ -234,7 +234,7 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
 
 
 <div class="callout callout-info">
-  <strong>Las transcripciones fallidas nunca se cobran.</strong> Solo paga por los resultados exitosos. Los pagos son gestionados íntegramente por Apple App Store o Google Play — nunca vemos sus datos de pago.
+  <strong>Si una transcripción falla por un error técnico de nuestra parte, nunca se le cobrará.</strong> Solo paga cuando una transcripción se completa con éxito en nuestro servidor. Los pagos son gestionados íntegramente por Apple App Store o Google Play — nunca vemos sus datos de pago.
 </div>
 
 ---

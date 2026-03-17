@@ -234,7 +234,7 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
 
 
 <div class="callout callout-info">
-  <strong>Les transcriptions échouées ne sont jamais facturées.</strong> Vous ne payez que pour les résultats réussis. Les paiements sont entièrement gérés par l'Apple App Store ou Google Play — nous ne voyons jamais vos informations de paiement.
+  <strong>Si une transcription échoue en raison d'une erreur technique de notre côté, elle ne vous est jamais facturée.</strong> Vous ne payez que lorsqu'une transcription est complétée avec succès de notre côté. Les paiements sont entièrement gérés par l'Apple App Store ou Google Play — nous ne voyons jamais vos informations de paiement.
 </div>
 
 ---

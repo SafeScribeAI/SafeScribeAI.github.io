@@ -234,7 +234,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 
 <div class="callout callout-info">
-  <strong>Başarısız transkripsiyon için ücret alınmaz.</strong> Yalnızca başarılı sonuçlar için ödeme yaparsınız. Ödemeler tamamen Apple App Store veya Google Play tarafından işlenir — ödeme bilgilerinizi biz asla görmeyiz.
+  <strong>Sunucumuzdan kaynaklanan teknik bir hata nedeniyle tamamlanamayan transkripsiyon için ücret alınmaz.</strong> Yalnızca transkripsiyon bizim tarafımızda başarıyla tamamlandığında ödeme yaparsınız. Ödemeler tamamen Apple App Store veya Google Play tarafından işlenir — ödeme bilgilerinizi biz asla görmeyiz.
 </div>
 
 ---

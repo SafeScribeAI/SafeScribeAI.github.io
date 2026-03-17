@@ -234,7 +234,7 @@ lang: ko
 
 
 <div class="callout callout-info">
-  <strong>실패한 전사에는 요금이 부과되지 않습니다.</strong> 성공한 결과에 대해서만 비용을 지불합니다. 결제는 전적으로 Apple App Store 또는 Google Play를 통해 처리됩니다 — 저희는 결제 정보를 절대 볼 수 없습니다.
+  <strong>저희 서버의 기술적 오류로 전사가 완료되지 못한 경우, 요금은 절대 부과되지 않습니다.</strong> 전사가 저희 측에서 성공적으로 완료된 경우에만 비용이 청구됩니다. 결제는 전적으로 Apple App Store 또는 Google Play를 통해 처리됩니다 — 저희는 결제 정보를 절대 볼 수 없습니다.
 </div>
 
 ---

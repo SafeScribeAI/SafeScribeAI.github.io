@@ -234,7 +234,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 
 <div class="callout callout-info">
-  <strong>Failed transcriptions are never billed.</strong> You only pay for successful results. Payments are handled entirely by Apple App Store or Google Play — we never see your payment details.
+  <strong>If our server fails to complete a transcription, you are never charged.</strong> You only pay when a transcription completes successfully on our end. Payments are handled entirely by Apple App Store or Google Play — we never see your payment details.
 </div>
 
 ---

@@ -234,7 +234,7 @@ Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen S
 
 
 <div class="callout callout-info">
-  <strong>Fehlgeschlagene Transkriptionen werden nie berechnet.</strong> Sie zahlen nur für erfolgreiche Ergebnisse. Zahlungen werden vollständig über den Apple App Store oder Google Play abgewickelt — wir sehen Ihre Zahlungsdaten niemals.
+  <strong>Schlägt eine Transkription aufgrund eines technischen Fehlers auf unserer Seite fehl, wird sie Ihnen nicht in Rechnung gestellt.</strong> Sie zahlen nur, wenn die Transkription bei uns erfolgreich abgeschlossen wird. Zahlungen werden vollständig über den Apple App Store oder Google Play abgewickelt — wir sehen Ihre Zahlungsdaten niemals.
 </div>
 
 ---

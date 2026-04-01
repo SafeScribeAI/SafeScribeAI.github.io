@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — نسخ صوتي بالذكاء الاصطناعي مع الخصوصية أولاً
-description: تطبيقات النسخ الأخرى تحتفظ بتسجيلاتك لأيام. نحن؟ صفر ثوانٍ. معالجة في ذاكرة الوصول العشوائي فقط، دقة مدعومة بـ Demucs، يُحذف فور استلامك للنص.
+description: تطبيقات النسخ الأخرى تحتفظ بتسجيلاتك لأيام. نحن؟ صفر ثوانٍ. معالجة في ذاكرة الوصول العشوائي فقط، دقة بعزل صوتي بالذكاء الاصطناعي، يُحذف فور استلامك للنص.
 lang: ar
 ---
 
@@ -9,18 +9,19 @@ lang: ar
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">تطبيقات النسخ الأخرى تحتفظ بتسجيلاتك لأيام.<br>نحن؟ صفر ثوانٍ.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">المعالجة في RAM فقط. دقة مدعومة بـ Demucs. يُحذف فور استلامك للنص.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">المعالجة في RAM فقط. دقة بعزل صوتي بالذكاء الاصطناعي. يُحذف فور استلامك للنص.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">الخصوصية ليست سياسة نتبعها — إنها بنية بنيناها. لا يمكن استدعاء بيانات لم تُخزَّن قط.</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; كيف نحمي بياناتك</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; سياسة الخصوصية</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; عرض الأسعار</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; كيف نحمي بياناتك</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">قريبًا على App Store وGoogle Play.</p>
 </div>
 
 ---
 
 <span class="section-label">الفرق</span>
-## كيف يتفوق SafeScribe
+## SafeScribe مقارنةً بالخدمات الأخرى
 
 <div class="comparison-table" markdown="0">
 <table>
@@ -63,7 +64,7 @@ lang: ar
       <td class="no">نعم</td>
     </tr>
     <tr>
-      <td>فصل الضوضاء بالذكاء الاصطناعي (Demucs)</td>
+      <td>عزل صوتي بالذكاء الاصطناعي</td>
       <td class="yes">نعم</td>
       <td class="no">لا</td>
       <td class="no">لا</td>
@@ -134,7 +135,7 @@ lang: ar
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>المعالجة في RAM فقط</strong><span class="item-desc">يوجد الصوت في الذاكرة المتطايرة فقط أثناء النسخ</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>الحذف الفوري</strong><span class="item-desc">تُمحى البيانات لحظة استلامك للنص المُحوَّل</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>تشفير شامل</strong><span class="item-desc">TLS أثناء النقل، AES-256 في حالة السكون على جهازك</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>بدون ملفات تعريف للمستخدمين</strong><span class="item-desc">فوترة بأسماء مستعارة فقط، بدون بيانات شخصية مخزنة على الخادم</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>بدون ملفات تعريف للمستخدمين</strong><span class="item-desc">الفوترة بأسماء مستعارة فقط، بدون بيانات شخصية مخزنة على الخادم</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>ذكاء اصطناعي ذاتي الاستضافة</strong><span class="item-desc">صوتك لا يصل إلى أي خدمة طرف ثالث</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>أنت تتحكم ببياناتك</strong><span class="item-desc">تصدير أو حذف أو مسح كل شيء من التطبيق</span></span></li>
 </ul>
@@ -178,12 +179,12 @@ lang: ar
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>التحسين على الجهاز</h4>
-    <p>تصفية الترددات العالية، وإزالة الصمت الأولي، وتطبيع مستوى الصوت وفق معايير EBU R128 (مسار ديناميكي أحادي محسّن لـ ASR)، وتحديد مستوى الذروة، وإعادة الترميز بتردد 16 kHz — مع ترميز بتنسيق FLAC بدون فقدان قبل الرفع.</p>
+    <p>تصفية الترددات العالية، وإزالة الصمت الأولي، وتطبيع مستوى الصوت LUFS (-16 LUFS، محسّن لـ ASR)، وتحديد مستوى الذروة، وإعادة أخذ العينات بتردد 16 kHz — مع ترميز بتنسيق FLAC بدون فقدان قبل الرفع.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>فصل المصادر الصوتية بالذكاء الاصطناعي Demucs</h4>
-    <p>يُطبَّق تلقائياً عند اكتشاف تحليل الصوت لضوضاء أو طاقة مستمرة. يعزل الكلام عن الأصوات الخلفية — يُتخطى في التسجيلات الواضحة. تُظهر <a href="https://arxiv.org/abs/2111.03600">الأبحاث على Demucs</a> انخفاضاً ملحوظاً في معدل خطأ الكلمات في البيئات الصاخبة.</p>
+    <h4>عزل صوتي بالذكاء الاصطناعي</h4>
+    <p>يُطبَّق تلقائياً عند اكتشاف تحليل الصوت لضوضاء أو طاقة مستمرة. يعزل الكلام عن الأصوات الخلفية — يُتخطى في التسجيلات الواضحة. يُظهر فصل المصادر الصوتية بالذكاء الاصطناعي انخفاضاً ملحوظاً في معدل خطأ الكلمات في البيئات الصاخبة.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ lang: ar
 </div>
 
 <div class="callout callout-green">
-  <strong>مبني على معايير راسخة.</strong> مسار معالجتنا مبني على معايير هندسة صوتية راسخة وأبحاث محكّمة — لا قيم افتراضية عشوائية. النتيجة: دقة نسخ يمكنك الاعتماد عليها، حتى في البيئات الصعبة.
+  <strong>مبني على معايير راسخة.</strong> مسار معالجتنا مبني على أسس هندسة صوتية متينة وأبحاث محكّمة — لا قيم افتراضية عشوائية. النتيجة: دقة نسخ يمكنك الاعتماد عليها، حتى في البيئات الصعبة.
 </div>
 
 ---
@@ -240,7 +241,7 @@ lang: ar
 ---
 
 <span class="section-label">الأسئلة الشائعة</span>
-## الأسئلة المتكررة
+## الأسئلة الشائعة
 
 <details class="faq-item">
   <summary>ماذا يحدث لصوتي بعد النسخ؟</summary>
@@ -293,8 +294,8 @@ lang: ar
 </details>
 
 <details class="faq-item">
-  <summary>كيف يحسّن Demucs الدقة؟</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a> هو نموذج فصل مصادر الصوت مدعوم بالذكاء الاصطناعي يعزل الكلام عن ضوضاء الخلفية. يحلل SafeScribe صوتك أولاً — إذا اكتشف ضوضاء مستمرة (موسيقى، حشود، أصوات خلفية)، يعمل Demucs تلقائياً. في التسجيلات الصوتية الواضحة، يُتخطى. تُظهر الأبحاث أن Demucs يخفّض معدل خطأ الكلمات بشكل ملحوظ في البيئات الصاخبة. بالاقتران مع كشف النشاط الصوتي، يضمن حصولك على نص نظيف ودقيق حتى من التسجيلات الصعبة.</div>
+  <summary>كيف يحسّن العزل الصوتي الدقة؟</summary>
+  <div class="faq-answer">يستخدم SafeScribe نموذج فصل مصادر الصوت مدعوم بالذكاء الاصطناعي لعزل الكلام عن ضوضاء الخلفية. يحلل صوتك أولاً — إذا اكتشف ضوضاء مستمرة (موسيقى، حشود، أصوات خلفية)، يعمل العزل الصوتي تلقائياً. في التسجيلات الصوتية الواضحة، يُتخطى. تُظهر هذه التقنية انخفاضاً ملحوظاً في معدل خطأ الكلمات في البيئات الصاخبة. بالاقتران مع كشف النشاط الصوتي، يضمن حصولك على نص نظيف ودقيق حتى من التسجيلات الصعبة.</div>
 </details>
 
 ---

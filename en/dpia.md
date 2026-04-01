@@ -57,7 +57,7 @@ lang: en
 
 <div class="flow-diagram">
 1. User records or selects audio on device
-2. Audio preprocessed on-device (80 Hz high-pass filter, leading-silence trimming, single-pass loudness normalization targeting <a href="https://tech.ebu.ch/publications/r128">EBU R128</a> levels — dynamic mode, not broadcast-compliant, optimized for ASR — peak limiting, 16 kHz resampling, FLAC encoding)
+2. Audio preprocessed on-device (80 Hz high-pass filter, leading-silence trimming, single-pass loudness normalization to -16 LUFS (speech-optimized, not broadcast-compliant) — peak limiting, 16 kHz resampling, FLAC encoding)
 3. Encrypted upload to SafeScribe servers (TLS + certificate pinning)
 4. Server processes audio in RAM — self-hosted Whisper model weights via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, no third-party API calls
 5. Transcript returned with SHA-256 integrity checksum

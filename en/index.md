@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Privacy-First AI Transcription
-description: Your transcription app keeps your recordings for days. Ours? Zero seconds. RAM-only processing, Demucs-powered accuracy, deleted the moment you receive your text.
+description: Your transcription app keeps your recordings for days. Ours? Zero seconds. RAM-only processing, AI vocal isolation for accuracy, deleted the moment you receive your text.
 lang: en
 ---
 
@@ -9,12 +9,13 @@ lang: en
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Your transcription app keeps your recordings for days.<br>Ours? Zero seconds.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM-only processing. Demucs-powered accuracy. Deleted the moment you receive your text.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM-only processing. AI vocal isolation for accuracy. Deleted the moment you receive your text.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacy isn't a policy we follow — it's a structure we built. You can't subpoena data that was never stored.</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; How We Protect Your Data</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; Privacy Policy</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Get Started — See Pricing</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; How We Protect Your Data</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Coming soon to App Store and Google Play.</p>
 </div>
 
 ---
@@ -63,7 +64,7 @@ lang: en
       <td class="no">Yes</td>
     </tr>
     <tr>
-      <td>AI noise separation (Demucs)</td>
+      <td>AI vocal isolation</td>
       <td class="yes">Yes</td>
       <td class="no">No</td>
       <td class="no">No</td>
@@ -178,12 +179,12 @@ Every audio file passes through an optimized pipeline — on your device and on 
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>On-Device Optimization</h4>
-    <p>High-pass filtering, leading-silence trimming, loudness normalization to EBU R128 targets (dynamic single-pass, optimized for ASR), peak limiting, and 16 kHz resampling — encoded as lossless FLAC before upload.</p>
+    <p>High-pass filtering, leading-silence trimming, LUFS loudness normalization (-16 LUFS, optimized for ASR), peak limiting, and 16 kHz resampling — encoded as lossless FLAC before upload.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Demucs AI Source Separation</h4>
-    <p>Automatically applied when audio analysis detects noise or continuous energy. Isolates speech from background sounds — skipped for clean recordings. <a href="https://arxiv.org/abs/2111.03600">Research on Demucs</a> demonstrates significant word error rate reduction in noisy environments.</p>
+    <h4>AI Vocal Isolation</h4>
+    <p>Automatically applied when audio analysis detects noise or continuous energy. Isolates speech from background sounds — skipped for clean recordings. AI-powered source separation demonstrates significant word error rate reduction in noisy environments.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ Every audio file passes through an optimized pipeline — on your device and on 
 </div>
 
 <div class="callout callout-green">
-  <strong>Built on established standards.</strong> Our pipeline is built on established audio engineering standards and peer-reviewed research — not arbitrary defaults. The result: transcription accuracy you can rely on, even in challenging environments.
+  <strong>Built on established standards.</strong> Our pipeline relies on proven audio engineering standards and peer-reviewed research — not arbitrary defaults. The result: transcription accuracy you can rely on, even in challenging environments.
 </div>
 
 ---
@@ -238,6 +239,22 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 </div>
 
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What happens to my audio after transcription?", "acceptedAnswer": {"@type": "Answer", "text": "It's gone permanently. Your audio is processed entirely in server RAM and deleted the instant your transcript is delivered. No disk copy, no backup, no recovery."}},
+    {"@type": "Question", "name": "Do you use my recordings to train AI?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your audio is used only for generating your transcript. Never stored, analyzed, or used for model training. We run our own AI infrastructure."}},
+    {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "The open-source Whisper model supports 100 languages with automatic detection. You can also manually select the language for improved accuracy."}},
+    {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4, and MOV. Files up to 50 MB and 2 hours."}},
+    {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS with certificate pinning in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
+    {"@type": "Question", "name": "Do you log my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "No. IP addresses are never stored. The logging system drops IPs before any output. We use a one-way SHA-256 hash for internal operations."}},
+    {"@type": "Question", "name": "What does memory-locked processing mean?", "acceptedAnswer": {"@type": "Answer", "text": "Memory locking (mlockall) keeps audio in RAM permanently during processing — no swap to disk. Your audio stays in volatile memory only, invisible to disk forensics."}}
+  ]
+}
+</script>
 
 <span class="section-label">FAQ</span>
 ## Frequently Asked Questions
@@ -293,8 +310,8 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 </details>
 
 <details class="faq-item">
-  <summary>How does Demucs improve accuracy?</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a> is an AI-powered audio source separation model that isolates speech from background noise. SafeScribe analyses your audio first — if it detects continuous noise (music, crowd, background sound), Demucs runs automatically. For clean speech recordings, it is skipped. Research shows Demucs significantly reduces word error rate in noisy environments. Combined with Voice Activity Detection, it ensures you get clean, accurate text even from challenging recordings.</div>
+  <summary>How does vocal isolation improve accuracy?</summary>
+  <div class="faq-answer">SafeScribe uses AI-powered audio source separation to isolate speech from background noise. Your audio is analysed first — if continuous noise (music, crowd, background sound) is detected, vocal isolation runs automatically. For clean speech recordings, it is skipped. This technique significantly reduces word error rate in noisy environments. Combined with Voice Activity Detection, it ensures you get clean, accurate text even from challenging recordings.</div>
 </details>
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Gizlilik Öncelikli Yapay Zeka Transkripsiyon
-description: Transkripsiyon uygulamanız kayıtlarınızı günlerce saklıyor. Bizimki? Sıfır saniye. Yalnızca RAM'de işleme, Demucs destekli doğruluk, metninizi aldığınız anda siliniyor.
+description: Transkripsiyon uygulamanız kayıtlarınızı günlerce saklıyor. Bizimki? Sıfır saniye. Yalnızca RAM'de işleme, YZ ses izolasyonu ile doğruluk, metninizi aldığınız anda siliniyor.
 lang: tr
 ---
 
@@ -9,12 +9,13 @@ lang: tr
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Transkripsiyon uygulamanız kayıtlarınızı günlerce saklıyor.<br>Bizimki? Sıfır saniye.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Yalnızca RAM'de işleme. Demucs destekli doğruluk. Metninizi aldığınız anda siliniyor.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Gizlilik, uyduğumuz bir politika değil — inşa ettiğimiz bir yapıdır. Hiç saklanmamış veriler mahkeme celbiyle alınamaz.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Yalnızca RAM'de işleme. YZ ses izolasyonu ile doğruluk. Metninizi aldığınız anda siliniyor.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Gizlilik, uyduğumuz bir politika değil — inşa ettiğimiz bir yapıdır. Hiç saklanmamış verilere mahkeme celbi gönderilemez.</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; Verilerinizi Nasıl Koruyoruz</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; Gizlilik Politikası</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Fiyatları Görün</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Verilerinizi Nasıl Koruyoruz</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">App Store ve Google Play'de yakında.</p>
 </div>
 
 ---
@@ -63,7 +64,7 @@ lang: tr
       <td class="no">Evet</td>
     </tr>
     <tr>
-      <td>YZ gürültü ayırma (Demucs)</td>
+      <td>YZ ses izolasyonu</td>
       <td class="yes">Evet</td>
       <td class="no">Hayır</td>
       <td class="no">Hayır</td>
@@ -102,7 +103,7 @@ lang: tr
   <div class="step">
     <div class="step-number">2</div>
     <div class="step-icon">&#x1f9e0;</div>
-    <h3>Yapay Zeka Metni RAM'de Oluşturuyor</h3>
+    <h3>Yapay Zeka RAM'de Yazıya Dönüştürüyor</h3>
     <p>Sesiniz sunucularımızda en gelişmiş konuşma tanıma yapay zekası tarafından işlenir — tamamen RAM'de. Hiçbir veri diske yazılmaz.</p>
   </div>
   <div class="step">
@@ -134,7 +135,7 @@ lang: tr
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yalnızca RAM'de işleme</strong><span class="item-desc">ses yalnızca transkripsiyon sırasında uçucu bellekte bulunur</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Anında silme</strong><span class="item-desc">transkriptinizi aldığınız anda veriler silinir</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Uçtan uca şifreleme</strong><span class="item-desc">iletimde TLS, cihazınızda AES-256</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kullanıcı profili yok</strong><span class="item-desc">takma adlı faturalandırma, sunucuda kişisel veri saklanmaz</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kullanıcı profili yok</strong><span class="item-desc">takma kimlikli faturalandırma, sunucuda kişisel veri saklanmaz</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırdığımız YZ</strong><span class="item-desc">sesiniz hiçbir üçüncü taraf hizmete ulaşmaz</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Verileriniz sizin kontrolünüzde</strong><span class="item-desc">uygulamadan dışa aktarın, silin veya her şeyi temizleyin</span></span></li>
 </ul>
@@ -158,12 +159,12 @@ lang: tr
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>Aktivistler</h4>
-    <p>Gözetim geçirmez transkripsiyon. Log yok, profil yok, iz yok. Sesiniz metne dönüşür, gerisi kaybolur.</p>
+    <p>Gözetimden korunan transkripsiyon. Log yok, profil yok, iz yok. Sesiniz metne dönüşür, gerisi kaybolur.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>Profesyoneller</h4>
-    <p>Hızlı, doğru transkripsiyon — her şeyi unutur. Toplantı notları, röportajlar, dikte — tam bir huzurla.</p>
+    <p>Hızlı, doğru transkripsiyon — her şeyi unutur. Toplantı notları, röportajlar, dikte — tam bir gönül rahatlığıyla.</p>
   </div>
 </div>
 
@@ -178,12 +179,12 @@ Her ses dosyası, mümkün olan en yüksek doğruluğu sağlamak için optimize 
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>Cihazda Optimizasyon</h4>
-    <p>Yüksek geçişli filtreleme, baştaki sessizliğin kırpılması, EBU R128 hedeflerine ses normalizasyonu (ASR için optimize edilmiş dinamik tek geçişli), tepe sınırlama ve 16 kHz yeniden örnekleme — yüklemeden önce kayıpsız FLAC olarak kodlanır.</p>
+    <p>Yüksek geçişli filtreleme, baştaki sessizliğin kırpılması, LUFS ses normalizasyonu (-16 LUFS, ASR için optimize edilmiş), tepe sınırlama ve 16 kHz yeniden örnekleme — yüklemeden önce kayıpsız FLAC olarak kodlanır.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Demucs YZ Kaynak Ayırma</h4>
-    <p>Ses analizi gürültü veya sürekli enerji tespit ettiğinde otomatik olarak devreye girer. Konuşmayı arka plan seslerinden izole eder — temiz kayıtlarda atlanır. <a href="https://arxiv.org/abs/2111.03600">Demucs araştırması</a>, gürültülü ortamlarda kelime hata oranında önemli düşüşler sağlandığını göstermektedir.</p>
+    <h4>YZ Ses İzolasyonu</h4>
+    <p>Ses analizi gürültü veya sürekli enerji tespit ettiğinde otomatik olarak devreye girer. Konuşmayı arka plan seslerinden izole eder — temiz kayıtlarda atlanır. YZ destekli kaynak ayırma, gürültülü ortamlarda kelime hata oranında önemli düşüşler sağlamaktadır.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ Her ses dosyası, mümkün olan en yüksek doğruluğu sağlamak için optimize 
 </div>
 
 <div class="callout callout-green">
-  <strong>Köklü standartlar üzerine inşa edildi.</strong> İşlem hattımız keyfi varsayılanlar değil, köklü ses mühendisliği standartları ve hakemli araştırmalar üzerine kurulmuştur. Sonuç: zorlu ortamlarda bile güvenebileceğiniz transkripsiyon doğruluğu.
+  <strong>Köklü standartlar üzerine inşa edildi.</strong> İşlem hattımız kanıtlanmış ses mühendisliği standartları ve hakemli araştırmalar üzerine kurulmuştur — keyfi varsayılanlar değil. Sonuç: zorlu ortamlarda bile güvenebileceğiniz transkripsiyon doğruluğu.
 </div>
 
 ---
@@ -239,12 +240,28 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Transkripsiyon sonrası sesime ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur."}},
+    {"@type": "Question", "name": "Kayıtlarımı YZ eğitmek için kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitimi için kullanılmaz. Kendi YZ altyapımızı işletiyoruz."}},
+    {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 100 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
+    {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4 ve MOV. 50 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
+    {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde sertifika sabitleme ile TLS. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
+    {"@type": "Question", "name": "IP adresimi kaydediyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. IP adresleri hiçbir zaman saklanmaz. Günlük sistemi IP'leri herhangi bir çıktıya ulaşmadan düşürür. Dahili işlemler için tek yönlü SHA-256 karması kullanılır."}},
+    {"@type": "Question", "name": "Bellek kilitli işleme ne anlama geliyor?", "acceptedAnswer": {"@type": "Answer", "text": "Bellek kilitleme (mlockall) sesi işleme sırasında kalıcı olarak RAM'de tutar — diske takas yok. Sesiniz yalnızca uçucu bellekte kalır, disk adli incelemesinde görünmez."}}
+  ]
+}
+</script>
+
 <span class="section-label">SSS</span>
 ## Sıkça Sorulan Sorular
 
 <details class="faq-item">
   <summary>Transkripsiyon sonrası sesime ne olur?</summary>
-  <div class="faq-answer">Kalıcı olarak silindi. Sesiniz tamamen sunucu RAM'inde (uçucu bellek) işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur. Sunucu fiziksel olarak ele geçirilse bile sıfır ses verisi bulunur.</div>
+  <div class="faq-answer">Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde (uçucu bellek) işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur. Sunucu fiziksel olarak ele geçirilse bile sıfır ses verisi bulunur.</div>
 </details>
 
 <details class="faq-item">
@@ -293,8 +310,8 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 </details>
 
 <details class="faq-item">
-  <summary>Demucs doğruluğu nasıl artırıyor?</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a>, konuşmayı arka plan gürültüsünden izole eden YZ destekli bir ses kaynak ayırma modelidir. SafeScribe önce sesinizi analiz eder — sürekli gürültü (müzik, kalabalık sesi, arka plan gürültüsü) tespit ederse Demucs otomatik olarak çalışır. Temiz konuşma kayıtlarında atlanır. Araştırmalar, Demucs'un gürültülü ortamlarda kelime hata oranını önemli ölçüde düşürdüğünü göstermektedir. Ses Aktivite Algılama ile birlikte, zorlu kayıtlardan bile temiz ve doğru metin elde etmenizi sağlar.</div>
+  <summary>Ses izolasyonu doğruluğu nasıl artırıyor?</summary>
+  <div class="faq-answer">SafeScribe, konuşmayı arka plan gürültüsünden izole eden YZ destekli bir ses kaynak ayırma modeli kullanır. Sesiniz önce analiz edilir — sürekli gürültü (müzik, kalabalık sesi, arka plan gürültüsü) tespit edilirse ses izolasyonu otomatik olarak çalışır. Temiz konuşma kayıtlarında atlanır. Bu teknik, gürültülü ortamlarda kelime hata oranını önemli ölçüde düşürmektedir. Ses Aktivite Algılama ile birlikte, zorlu kayıtlardan bile temiz ve doğru metin elde etmenizi sağlar.</div>
 </details>
 
 ---

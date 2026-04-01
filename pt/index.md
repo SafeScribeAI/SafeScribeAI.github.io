@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Transcrição de IA com privacidade em primeiro lugar
-description: Seu app de transcrição guarda suas gravações por dias. O nosso? Zero segundos. Processamento somente em RAM, precisão com Demucs, excluído no momento em que você recebe seu texto.
+description: Seu app de transcrição guarda suas gravações por dias. O nosso? Zero segundos. Processamento somente em RAM, precisão com isolamento vocal por IA, excluído no momento em que você recebe seu texto.
 lang: pt
 ---
 
@@ -9,12 +9,13 @@ lang: pt
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Seu app de transcrição guarda suas gravações por dias.<br>O nosso? Zero segundos.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Processamento somente em RAM. Precisão com Demucs. Excluído no momento em que você recebe seu texto.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacidade não é uma política que seguimos — é uma estrutura que construímos. Não é possível intimar dados que nunca foram armazenados.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Processamento somente em RAM. Precisão com isolamento vocal por IA. Excluído no momento em que você recebe seu texto.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacidade não é uma política que seguimos — é uma estrutura que construímos. Não é possível requisitar dados que nunca foram armazenados.</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; Como protegemos seus dados</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; Política de privacidade</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Ver preços</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Como protegemos seus dados</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Em breve na App Store e Google Play.</p>
 </div>
 
 ---
@@ -63,7 +64,7 @@ lang: pt
       <td class="no">Sim</td>
     </tr>
     <tr>
-      <td>Separação de ruído por IA (Demucs)</td>
+      <td>Isolamento vocal por IA</td>
       <td class="yes">Sim</td>
       <td class="no">Não</td>
       <td class="no">Não</td>
@@ -178,12 +179,12 @@ Cada arquivo de áudio passa por um pipeline otimizado — no seu dispositivo e 
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>Otimização no dispositivo</h4>
-    <p>Filtragem passa-alta, remoção de silêncio inicial, normalização de loudness para metas EBU R128 (passo único dinâmico, otimizado para ASR), limitação de pico e reamostrado a 16 kHz — codificado como FLAC sem perdas antes do envio.</p>
+    <p>Filtragem passa-alta, remoção de silêncio inicial, normalização de loudness LUFS (-16 LUFS, otimizado para ASR), limitação de pico e reamostrado a 16 kHz — codificado como FLAC sem perdas antes do envio.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Separação de fontes de áudio com IA Demucs</h4>
-    <p>Aplicado automaticamente quando a análise de áudio detecta ruído ou energia contínua. Isola a fala dos sons de fundo — ignorado em gravações limpas. A <a href="https://arxiv.org/abs/2111.03600">pesquisa sobre Demucs</a> demonstra redução significativa da taxa de erro de palavras em ambientes ruidosos.</p>
+    <h4>Isolamento vocal por IA</h4>
+    <p>Aplicado automaticamente quando a análise de áudio detecta ruído ou energia contínua. Isola a fala dos sons de fundo — ignorado em gravações limpas. A separação de fontes por IA demonstra redução significativa da taxa de erro de palavras em ambientes ruidosos.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ Cada arquivo de áudio passa por um pipeline otimizado — no seu dispositivo e 
 </div>
 
 <div class="callout callout-green">
-  <strong>Baseado em padrões estabelecidos.</strong> Nosso pipeline é construído sobre padrões estabelecidos de engenharia de áudio e pesquisa revisada por pares — não em padrões arbitrários. O resultado: precisão de transcrição em que você pode confiar, mesmo em ambientes desafiadores.
+  <strong>Baseado em padrões estabelecidos.</strong> Nosso pipeline é construído sobre normas consagradas de engenharia de áudio e pesquisa revisada por pares — não em padrões arbitrários. O resultado: precisão de transcrição em que você pode confiar, mesmo em ambientes desafiadores.
 </div>
 
 ---
@@ -293,8 +294,8 @@ Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao con
 </details>
 
 <details class="faq-item">
-  <summary>Como o Demucs melhora a precisão?</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a> é um modelo de separação de fontes de áudio com IA que isola a fala do ruído de fundo. O SafeScribe analisa seu áudio primeiro — se detectar ruído contínuo (música, multidão, som de fundo), o Demucs é executado automaticamente. Para gravações de fala limpa, ele é ignorado. A pesquisa mostra que o Demucs reduz significativamente a taxa de erro de palavras em ambientes ruidosos. Combinado com a Detecção de atividade de voz, garante que você obtenha texto limpo e preciso mesmo de gravações desafiadoras.</div>
+  <summary>Como o isolamento vocal melhora a precisão?</summary>
+  <div class="faq-answer">O SafeScribe utiliza um modelo de separação de fontes de áudio com IA que isola a fala do ruído de fundo. Seu áudio é analisado primeiro — se ruído contínuo (música, multidão, som de fundo) for detectado, o isolamento vocal é executado automaticamente. Para gravações de fala limpa, ele é ignorado. Esta técnica reduz significativamente a taxa de erro de palavras em ambientes ruidosos. Combinado com a Detecção de atividade de voz, garante que você obtenha texto limpo e preciso mesmo de gravações desafiadoras.</div>
 </details>
 
 ---

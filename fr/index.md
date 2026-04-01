@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Transcription IA respectueuse de la vie privée
-description: Votre application de transcription conserve vos enregistrements pendant des jours. La nôtre ? Zéro seconde. Traitement en RAM uniquement, précision alimentée par Demucs, supprimé dès que vous recevez votre texte.
+description: Votre application de transcription conserve vos enregistrements pendant des jours. La nôtre ? Zéro seconde. Traitement en RAM uniquement, précision par isolation vocale IA, supprimé dès que vous recevez votre texte.
 lang: fr
 ---
 
@@ -9,18 +9,19 @@ lang: fr
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Votre application de transcription conserve vos enregistrements pendant des jours.<br>La nôtre ? Zéro seconde.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Traitement en RAM uniquement. Précision alimentée par Demucs. Supprimé dès que vous recevez votre texte.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Traitement en RAM uniquement. Précision par isolation vocale IA. Supprimé dès que vous recevez votre texte.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">La confidentialité n'est pas une politique que nous suivons — c'est une structure que nous avons construite. On ne peut pas saisir des données qui n'ont jamais été stockées.</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; Comment nous protégeons vos données</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; Politique de confidentialité</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Voir les tarifs</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Comment nous protégeons vos données</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Bientôt sur l'App Store et Google Play.</p>
 </div>
 
 ---
 
 <span class="section-label">La différence</span>
-## SafeScribe face à la concurrence
+## SafeScribe en comparaison
 
 <div class="comparison-table" markdown="0">
 <table>
@@ -63,7 +64,7 @@ lang: fr
       <td class="no">Oui</td>
     </tr>
     <tr>
-      <td>Séparation du bruit par IA (Demucs)</td>
+      <td>Isolation vocale par IA</td>
       <td class="yes">Oui</td>
       <td class="no">Non</td>
       <td class="no">Non</td>
@@ -178,12 +179,12 @@ Chaque fichier audio passe par un pipeline optimisé — sur votre appareil et s
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>Optimisation sur l'appareil</h4>
-    <p>Filtrage passe-haut, suppression des silences initiaux, normalisation de la sonie EBU R128 (passage unique dynamique, optimisé pour l'ASR), limitation des crêtes et rééchantillonnage à 16 kHz — encodé en FLAC sans perte avant l'envoi.</p>
+    <p>Filtrage passe-haut, suppression des silences initiaux, normalisation de loudness LUFS (-16 LUFS, optimisé pour l'ASR), limitation des crêtes et rééchantillonnage à 16 kHz — encodé en FLAC sans perte avant l'envoi.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Séparation de sources IA Demucs</h4>
-    <p>Appliqué automatiquement lorsque l'analyse audio détecte du bruit ou une énergie continue. Isole la parole des sons ambiants — ignoré pour les enregistrements clairs. La <a href="https://arxiv.org/abs/2111.03600">recherche sur Demucs</a> démontre une réduction significative du taux d'erreur sur les mots dans les environnements bruyants.</p>
+    <h4>Isolation vocale par IA</h4>
+    <p>Appliqué automatiquement lorsque l'analyse audio détecte du bruit ou une énergie continue. Isole la parole des sons ambiants — ignoré pour les enregistrements clairs. La séparation de sources par IA démontre une réduction significative du taux d'erreur sur les mots dans les environnements bruyants.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ Chaque fichier audio passe par un pipeline optimisé — sur votre appareil et s
 </div>
 
 <div class="callout callout-green">
-  <strong>Fondé sur des standards établis.</strong> Notre pipeline repose sur des standards d'ingénierie audio établis et des recherches évaluées par les pairs — pas des valeurs par défaut arbitraires. Le résultat : une précision de transcription fiable, même dans des environnements difficiles.
+  <strong>Fondé sur des standards établis.</strong> Notre pipeline repose sur des normes reconnues d'ingénierie audio et des recherches évaluées par les pairs — pas des valeurs par défaut arbitraires. Le résultat : une précision de transcription fiable, même dans des environnements difficiles.
 </div>
 
 ---
@@ -293,8 +294,8 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
 </details>
 
 <details class="faq-item">
-  <summary>Comment Demucs améliore-t-il la précision ?</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a> est un modèle de séparation de sources audio alimenté par l'IA qui isole la parole du bruit de fond. SafeScribe analyse d'abord votre audio — si un bruit continu (musique, foule, bruit de fond) est détecté, Demucs s'exécute automatiquement. Pour les enregistrements vocaux clairs, il est ignoré. La recherche montre que Demucs réduit significativement le taux d'erreur sur les mots dans les environnements bruyants. Combiné avec la détection d'activité vocale, il garantit un texte propre et précis même à partir d'enregistrements difficiles.</div>
+  <summary>Comment l'isolation vocale améliore-t-elle la précision ?</summary>
+  <div class="faq-answer">SafeScribe utilise un modèle de séparation de sources audio alimenté par l'IA qui isole la parole du bruit de fond. Votre audio est d'abord analysé — si un bruit continu (musique, foule, bruit de fond) est détecté, l'isolation vocale s'exécute automatiquement. Pour les enregistrements vocaux clairs, elle est ignorée. Cette technique réduit significativement le taux d'erreur sur les mots dans les environnements bruyants. Combinée avec la détection d'activité vocale, elle garantit un texte propre et précis même à partir d'enregistrements difficiles.</div>
 </details>
 
 ---

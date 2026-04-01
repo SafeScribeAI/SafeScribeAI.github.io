@@ -27,7 +27,47 @@
   <!-- Canonical -->
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self';">
+  <!-- Hreflang (SEO: 10 languages) -->
+  {% for switch_lang in all_langs %}
+  {% if page_slug == 'index' %}
+    {% assign switch_path = '/' | append: switch_lang | append: '/' %}
+  {% else %}
+    {% assign switch_path = '/' | append: switch_lang | append: '/' | append: page_slug %}
+  {% endif %}
+  <link rel="alternate" hreflang="{{ switch_lang }}" href="{{ switch_path | absolute_url }}">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
+
+  <!-- JSON-LD: SoftwareApplication (AEO) -->
+  {% if page_slug == 'index' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SafeScribe",
+    "description": "Privacy-first AI-powered audio transcription. RAM-only processing, immediate deletion, zero disk storage.",
+    "url": "{{ site.url }}",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free to download, pay-as-you-go credits starting at $0.99/hour"
+    },
+    "featureList": [
+      "RAM-only audio processing",
+      "Immediate data deletion after transcription",
+      "End-to-end encryption (TLS + AES-256)",
+      "AI vocal isolation",
+      "100 language support via Whisper",
+      "No user profiles or personal data stored server-side"
+    ]
+  }
+  </script>
+  {% endif %}
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self';">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>

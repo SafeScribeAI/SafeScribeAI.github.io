@@ -57,7 +57,7 @@ lang: ja
 
 <div class="flow-diagram">
 1. ユーザーがデバイスで音声を録音または選択する
-2. デバイスで音声を前処理（80 Hz ハイパスフィルター、冒頭無音のトリミング、<a href="https://tech.ebu.ch/publications/r128">EBU R128</a> ラウドネス正規化、ピークリミッティング、16 kHz リサンプリング、FLAC エンコード）
+2. デバイスで音声を前処理（80 Hz ハイパスフィルター、冒頭無音のトリミング、-16 LUFS へのラウドネス正規化、ピークリミッティング、16 kHz リサンプリング、FLAC エンコード）
 3. SafeScribe サーバーへ暗号化してアップロード（TLS + 証明書ピン留め）
 4. サーバーが RAM で音声を処理 — <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2 経由の自己ホスト型 Whisper モデルウェイト、サードパーティ API 呼び出しなし
 5. SHA-256 整合性チェックサム付きで文字起こしを返送

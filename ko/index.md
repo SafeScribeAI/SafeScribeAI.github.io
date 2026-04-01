@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — 개인정보 보호 우선 AI 음성 전사
-description: 다른 전사 앱은 녹음을 며칠간 보관합니다. 저희는요? 0초. RAM 전용 처리, Demucs 기반 정확도, 텍스트 수신 즉시 삭제.
+description: 다른 전사 앱은 녹음을 며칠간 보관합니다. 저희는요? 0초. RAM 전용 처리, AI 음성 분리 기반 정확도, 텍스트 수신 즉시 삭제.
 lang: ko
 ---
 
@@ -9,18 +9,19 @@ lang: ko
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">다른 전사 앱은 녹음을 며칠간 보관합니다.<br>저희는요? 0초.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM 전용 처리. Demucs 기반 정확도. 텍스트 수신 즉시 삭제.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">개인정보 보호는 저희가 따르는 정책이 아니라 저희가 구축한 구조입니다. 저장된 적 없는 데이터에는 소환장이 닿지 않습니다.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM 전용 처리. AI 음성 분리 기반 정확도. 텍스트 수신 즉시 삭제.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">개인정보 보호는 저희가 따르는 정책이 아니라 저희가 구축한 구조입니다. 저장된 적 없는 데이터는 소환할 수 없습니다.</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; 데이터 보호 방법</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; 개인정보 처리방침</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 요금 보기</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; 데이터 보호 방법</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">App Store 및 Google Play 출시 예정.</p>
 </div>
 
 ---
 
 <span class="section-label">차이점</span>
-## SafeScribe 비교
+## SafeScribe 서비스 비교
 
 <div class="comparison-table" markdown="0">
 <table>
@@ -63,7 +64,7 @@ lang: ko
       <td class="no">예</td>
     </tr>
     <tr>
-      <td>AI 소음 분리 (Demucs)</td>
+      <td>AI 음성 분리</td>
       <td class="yes">예</td>
       <td class="no">아니오</td>
       <td class="no">아니오</td>
@@ -178,12 +179,12 @@ lang: ko
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>기기 내 최적화</h4>
-    <p>하이패스 필터링, 앞부분 무음 제거, EBU R128 목표치로의 라우드니스 정규화(ASR에 최적화된 동적 단일 패스), 피크 리미팅, 16 kHz 리샘플링 — 업로드 전 무손실 FLAC으로 인코딩.</p>
+    <p>하이패스 필터링, 앞부분 무음 제거, LUFS 라우드니스 정규화(-16 LUFS, ASR에 최적화), 피크 리미팅, 16 kHz 리샘플링 — 업로드 전 무손실 FLAC으로 인코딩.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Demucs AI 음원 분리</h4>
-    <p>오디오 분석이 소음이나 지속적인 에너지를 감지할 때 자동으로 적용됩니다. 배경 소리에서 음성을 분리 — 깨끗한 녹음에서는 건너뜁니다. <a href="https://arxiv.org/abs/2111.03600">Demucs 연구</a>에 따르면 소음 환경에서 단어 오류율이 크게 감소합니다.</p>
+    <h4>AI 음성 분리</h4>
+    <p>오디오 분석이 소음이나 지속적인 에너지를 감지할 때 자동으로 적용됩니다. 배경 소리에서 음성을 분리 — 깨끗한 녹음에서는 건너뜁니다. AI 기반 음원 분리는 소음 환경에서 단어 오류율을 크게 감소시킵니다.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ lang: ko
 </div>
 
 <div class="callout callout-green">
-  <strong>확립된 표준에 기반합니다.</strong> 저희 파이프라인은 확립된 오디오 엔지니어링 표준과 동료 심사 연구를 기반으로 구축되었습니다 — 임의의 기본값이 아닙니다. 그 결과: 까다로운 환경에서도 신뢰할 수 있는 전사 정확도를 제공합니다.
+  <strong>확립된 표준에 기반합니다.</strong> 저희 파이프라인은 검증된 오디오 엔지니어링 표준과 동료 심사 연구를 기반으로 구축되었습니다 — 임의의 기본값이 아닙니다. 그 결과: 까다로운 환경에서도 신뢰할 수 있는 전사 정확도를 제공합니다.
 </div>
 
 ---
@@ -274,12 +275,12 @@ lang: ko
 
 <details class="faq-item">
   <summary>모든 데이터를 삭제할 수 있나요?</summary>
-  <div class="faq-answer">예. 앱 내에서 개별 전사 텍스트 또는 계정 전체를 삭제할 수 있습니다. 계정 삭제 시 로그인 신원, 모든 로컬 데이터, 남은 크레딧 잔액이 영구적으로 제거됩니다. 서버는 처리 후 개인 데이터를 보유하지 않으므로 서버 측에서 삭제할 것이 없습니다.</div>
+  <div class="faq-answer">예. 앱 내에서 개별 전사 텍스트 또는 계정 전체를 삭제할 수 있습니다. 계정 삭제 시 로그인 정보, 모든 로컬 데이터, 남은 크레딧 잔액이 영구적으로 제거됩니다. 서버는 처리 후 개인 데이터를 보유하지 않으므로 서버 측에서 삭제할 것이 없습니다.</div>
 </details>
 
 <details class="faq-item">
   <summary>IP 주소를 기록하나요?</summary>
-  <div class="faq-answer">아니오. IP 주소는 저장되거나 기록되지 않습니다. 저희 아키텍처는 코드 수준에서 이를 강제합니다 — 로깅 시스템은 IP가 로그 출력에 도달하기 전에 삭제하도록 명시적으로 구성되어 있습니다. 모든 내부 작업에는 가명 식별자(로그인 신원의 단방향 SHA-256 해시)를 사용합니다. 이 해시는 역산하여 신원을 확인할 수 없습니다.</div>
+  <div class="faq-answer">아니오. IP 주소는 저장되거나 기록되지 않습니다. 저희 아키텍처는 코드 수준에서 이를 강제합니다 — 로깅 시스템은 IP가 로그 출력에 도달하기 전에 삭제하도록 명시적으로 구성되어 있습니다. 모든 내부 작업에는 가명 식별자(로그인 정보의 단방향 SHA-256 해시)를 사용합니다. 이 해시는 역산하여 신원을 확인할 수 없습니다.</div>
 </details>
 
 <details class="faq-item">
@@ -293,8 +294,8 @@ lang: ko
 </details>
 
 <details class="faq-item">
-  <summary>Demucs는 어떻게 정확도를 향상시키나요?</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a>는 배경 소음에서 음성을 분리하는 AI 기반 오디오 음원 분리 모델입니다. SafeScribe는 먼저 오디오를 분석하여 지속적인 소음(음악, 군중 소리, 배경 소음)이 감지되면 Demucs를 자동으로 실행합니다. 깨끗한 음성 녹음에서는 건너뜁니다. 연구에 따르면 Demucs는 소음 환경에서 단어 오류율(WER)을 크게 줄입니다. 음성 활동 감지와 결합하여 어려운 녹음에서도 깨끗하고 정확한 텍스트를 얻을 수 있습니다.</div>
+  <summary>음성 분리는 어떻게 정확도를 향상시키나요?</summary>
+  <div class="faq-answer">SafeScribe는 배경 소음에서 음성을 분리하는 AI 기반 오디오 음원 분리 모델을 사용합니다. 먼저 오디오를 분석하여 지속적인 소음(음악, 군중 소리, 배경 소음)이 감지되면 음성 분리를 자동으로 실행합니다. 깨끗한 음성 녹음에서는 건너뜁니다. 이 기술은 소음 환경에서 단어 오류율(WER)을 크게 줄입니다. 음성 활동 감지와 결합하여 어려운 녹음에서도 깨끗하고 정확한 텍스트를 얻을 수 있습니다.</div>
 </details>
 
 ---

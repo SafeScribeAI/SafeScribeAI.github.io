@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — 隐私优先的AI语音转录
-description: 其他转录应用会保留您的录音数天。我们呢？零秒。纯内存处理，Demucs驱动的精准度，文本交付后立即删除。
+description: 其他转录应用会保留您的录音数天。我们呢？零秒。纯内存处理，AI人声分离驱动的精准度，文本交付后立即删除。
 lang: zh
 ---
 
@@ -9,17 +9,18 @@ lang: zh
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">其他转录应用会保留您的录音数天。<br>我们呢？零秒。</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">纯RAM处理。Demucs驱动的精准度。文本交付后立即删除。</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">纯内存处理。AI人声分离驱动的精准度。文本交付后立即删除。</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">隐私不是我们遵守的政策——而是我们构建的架构。无法传唤从未存储过的数据。</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; 我们如何保护您的数据</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; 隐私政策</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 查看价格</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; 我们如何保护您的数据</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">即将登陆 App Store 和 Google Play。</p>
 </div>
 
 ---
 
-<span class="section-label">差异所在</span>
+<span class="section-label">核心差异</span>
 ## SafeScribe对比其他服务
 
 <div class="comparison-table" markdown="0">
@@ -63,7 +64,7 @@ lang: zh
       <td class="no">是</td>
     </tr>
     <tr>
-      <td>AI噪声分离（Demucs）</td>
+      <td>AI人声分离</td>
       <td class="yes">是</td>
       <td class="no">否</td>
       <td class="no">否</td>
@@ -153,7 +154,7 @@ lang: zh
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>律师</h4>
-    <p>律师-客户特权级别的转录。我们的服务器上没有可被发现的数据——永远没有。没有可传唤的内容，没有可泄露的信息。</p>
+    <p>律师-客户特权级别的转录。我们的服务器上没有可供调取的数据——永远没有。没有可传唤的内容，没有可泄露的信息。</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
@@ -178,12 +179,12 @@ lang: zh
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>设备端优化</h4>
-    <p>高通滤波、前置静音裁剪、响度归一化至EBU R128目标值（针对ASR优化的动态单次处理）、峰值限幅及16kHz重采样——以无损FLAC格式编码后上传。</p>
+    <p>高通滤波、前置静音裁剪、LUFS响度归一化（-16 LUFS，针对ASR优化）、峰值限幅及16kHz重采样——以无损FLAC格式编码后上传。</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Demucs AI声源分离</h4>
-    <p>当音频分析检测到噪声或持续能量时自动启用。将语音从背景声中隔离——对清晰录音跳过此步骤。<a href="https://arxiv.org/abs/2111.03600">Demucs研究</a>表明在嘈杂环境中词错误率显著降低。</p>
+    <h4>AI人声分离</h4>
+    <p>当音频分析检测到噪声或持续能量时自动启用。将语音从背景声中隔离——对清晰录音跳过此步骤。AI驱动的音源分离技术在嘈杂环境中可显著降低词错误率。</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ lang: zh
 </div>
 
 <div class="callout callout-green">
-  <strong>基于成熟标准构建。</strong>我们的处理流程基于成熟的音频工程标准和经同行评审的研究——而非任意默认值。结果：即使在高难度环境中，您也可以依赖的转录精度。
+  <strong>基于成熟标准构建。</strong>我们的处理流程基于经过验证的音频工程标准和经同行评审的研究——而非任意默认值。结果：即使在高难度环境中，您也可以依赖的转录精度。
 </div>
 
 ---
@@ -293,8 +294,8 @@ lang: zh
 </details>
 
 <details class="faq-item">
-  <summary>Demucs如何提高准确度？</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a>是一个AI驱动的音频源分离模型，可将语音从背景噪声中分离出来。SafeScribe首先分析您的音频——如果检测到持续噪声（音乐、人群、背景声），Demucs自动运行。对于清晰的语音录音，则跳过此步骤。研究表明Demucs在嘈杂环境中能显著降低词错误率（WER）。结合语音活动检测，即使是高难度录音也能获得清晰、准确的文本。</div>
+  <summary>人声分离如何提高准确度？</summary>
+  <div class="faq-answer">SafeScribe使用AI驱动的音频源分离模型，可将语音从背景噪声中分离出来。首先分析您的音频——如果检测到持续噪声（音乐、人群、背景声），人声分离自动运行。对于清晰的语音录音，则跳过此步骤。该技术在嘈杂环境中能显著降低词错误率（WER）。结合语音活动检测，即使是高难度录音也能获得清晰、准确的文本。</div>
 </details>
 
 ---

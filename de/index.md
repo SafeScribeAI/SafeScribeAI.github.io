@@ -1,7 +1,7 @@
 ---
 layout: default
-title: SafeScribe — Datenschutz-First KI-Transkription
-description: Ihre Transkriptions-App speichert Ihre Aufnahmen tagelang. Unsere? Null Sekunden. Nur-RAM-Verarbeitung, Demucs-gestützte Genauigkeit, gelöscht in dem Moment, in dem Sie Ihren Text erhalten.
+title: SafeScribe — KI-Transkription mit Datenschutz an erster Stelle
+description: Ihre Transkriptions-App speichert Ihre Aufnahmen tagelang. Unsere? Null Sekunden. Nur-RAM-Verarbeitung, KI-Stimmisolierung für Genauigkeit, gelöscht sobald Sie Ihren Text erhalten.
 lang: de
 ---
 
@@ -9,12 +9,13 @@ lang: de
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Ihre Transkriptions-App speichert Ihre Aufnahmen tagelang.<br>Unsere? Null Sekunden.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Nur-RAM-Verarbeitung. Demucs-gestützte Genauigkeit. Gelöscht in dem Moment, in dem Sie Ihren Text erhalten.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Nur-RAM-Verarbeitung. KI-Stimmisolierung für Genauigkeit. Gelöscht sobald Sie Ihren Text erhalten.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Datenschutz ist keine Richtlinie, die wir befolgen — es ist eine Struktur, die wir gebaut haben. Daten, die nie gespeichert wurden, können nicht beschlagnahmt werden.</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; So schützen wir Ihre Daten</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; Datenschutzerklärung</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Preise ansehen</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; So schützen wir Ihre Daten</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Bald im App Store und bei Google Play.</p>
 </div>
 
 ---
@@ -63,7 +64,7 @@ lang: de
       <td class="no">Ja</td>
     </tr>
     <tr>
-      <td>KI-Geräuschtrennung (Demucs)</td>
+      <td>KI-Stimmisolierung</td>
       <td class="yes">Ja</td>
       <td class="no">Nein</td>
       <td class="no">Nein</td>
@@ -163,7 +164,7 @@ lang: de
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>Berufstätige</h4>
-    <p>Schnelle, präzise Transkription, die alles vergisst. Besprechungsnotizen, Interviews, Diktate — mit absolutem Seelenfrieden.</p>
+    <p>Schnelle, präzise Transkription, die alles vergisst. Besprechungsnotizen, Interviews, Diktate — mit vollem Vertrauen.</p>
   </div>
 </div>
 
@@ -178,12 +179,12 @@ Jede Audiodatei durchläuft eine optimierte Verarbeitungspipeline — auf Ihrem 
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>Optimierung auf dem Gerät</h4>
-    <p>Hochpassfilterung, Stille-Entfernung am Anfang, EBU R128-Lautheitsnormalisierung (dynamischer Einzeldurchlauf, optimiert für ASR), Peakbegrenzung und 16 kHz-Resampling — verlustfrei als FLAC kodiert vor dem Upload.</p>
+    <p>Hochpassfilterung, Stille-Entfernung am Anfang, LUFS-Lautheitsnormalisierung (-16 LUFS, optimiert für ASR), Peakbegrenzung und 16 kHz-Resampling — verlustfrei als FLAC kodiert vor dem Upload.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Demucs KI-Quellentrennung</h4>
-    <p>Wird automatisch angewendet, wenn die Audioanalyse Rauschen oder kontinuierliche Energie erkennt. Isoliert Sprache von Hintergrundgeräuschen — bei sauberen Aufnahmen übersprungen. <a href="https://arxiv.org/abs/2111.03600">Forschung zu Demucs</a> zeigt eine signifikante Reduktion der Wortfehlerrate in lauten Umgebungen.</p>
+    <h4>KI-Stimmisolierung</h4>
+    <p>Wird automatisch angewendet, wenn die Audioanalyse Rauschen oder kontinuierliche Energie erkennt. Isoliert Sprache von Hintergrundgeräuschen — bei sauberen Aufnahmen übersprungen. KI-gestützte Quellentrennung zeigt eine signifikante Reduktion der Wortfehlerrate in lauten Umgebungen.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ Jede Audiodatei durchläuft eine optimierte Verarbeitungspipeline — auf Ihrem 
 </div>
 
 <div class="callout callout-green">
-  <strong>Auf etablierten Standards aufgebaut.</strong> Unsere Pipeline basiert auf etablierten Audio-Engineering-Standards und begutachteter Forschung — keine willkürlichen Standardwerte. Das Ergebnis: Transkriptionsgenauigkeit, auf die Sie sich verlassen können, selbst unter schwierigen Bedingungen.
+  <strong>Auf etablierten Standards aufgebaut.</strong> Unsere Pipeline basiert auf bewährten Audio-Engineering-Standards und begutachteter Forschung — keine willkürlichen Standardwerte. Das Ergebnis: Transkriptionsgenauigkeit, auf die Sie sich verlassen können, selbst unter schwierigen Bedingungen.
 </div>
 
 ---
@@ -288,13 +289,13 @@ Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen S
 </details>
 
 <details class="faq-item">
-  <summary>Was bedeutet „speichergesichertes Processing"?</summary>
+  <summary>Was bedeutet „speichergesperrte Verarbeitung"?</summary>
   <div class="faq-answer">Betriebssysteme können RAM-Inhalte unter Speicherdruck vorübergehend auf die Festplatte verlagern (Swap). Speichersperrung (<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>) weist das Betriebssystem an, bestimmte Speicherseiten dauerhaft im RAM zu halten — kein Swap, kein Festplattenkontakt. SafeScribes Transkriptionsprozess nutzt diese Betriebssystemgarantie, sodass Ihr Audio ausschließlich im flüchtigen Speicher verbleibt und selbst bei physischer Beschlagnahmung des Servers für forensische Festplattenanalysen unsichtbar ist.</div>
 </details>
 
 <details class="faq-item">
-  <summary>Wie verbessert Demucs die Genauigkeit?</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a> ist ein KI-gestütztes Audio-Quellentrennungsmodell, das Sprache von Hintergrundgeräuschen isoliert. SafeScribe analysiert Ihr Audio zuerst — werden kontinuierliche Geräusche (Musik, Lärm, Hintergrundgeräusche) erkannt, wird Demucs automatisch ausgeführt. Bei klaren Sprachaufnahmen wird es übersprungen. Studien zeigen, dass Demucs die Wortfehlerrate in lauten Umgebungen erheblich reduziert. Kombiniert mit der Sprachaktivitätserkennung sorgt es für sauberen, präzisen Text selbst bei schwierigen Aufnahmen.</div>
+  <summary>Wie verbessert die Stimmisolierung die Genauigkeit?</summary>
+  <div class="faq-answer">SafeScribe nutzt ein KI-gestütztes Audio-Quellentrennungsmodell, das Sprache von Hintergrundgeräuschen isoliert. Ihr Audio wird zuerst analysiert — werden kontinuierliche Geräusche (Musik, Lärm, Hintergrundgeräusche) erkannt, wird die Stimmisolierung automatisch ausgeführt. Bei klaren Sprachaufnahmen wird sie übersprungen. Diese Technik reduziert die Wortfehlerrate in lauten Umgebungen erheblich. Kombiniert mit der Sprachaktivitätserkennung sorgt sie für sauberen, präzisen Text selbst bei schwierigen Aufnahmen.</div>
 </details>
 
 ---

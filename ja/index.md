@@ -1,20 +1,21 @@
 ---
 layout: default
 title: SafeScribe — プライバシー最優先のAI音声文字起こし
-description: 他の文字起こしアプリはあなたの録音を何日も保持します。わたしたちは？ゼロ秒。RAM専用処理、Demucsによる高精度、テキスト受信と同時に削除。
+description: 他の文字起こしアプリはあなたの録音を何日も保持します。私たちは？ゼロ秒。RAM専用処理、AIボーカル分離による高精度、テキスト受信と同時に削除。
 lang: ja
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">他の文字起こしアプリはあなたの録音を何日も保持します。<br>わたしたちは？ゼロ秒。</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM専用処理。Demucsによる高精度。テキスト受信と同時に削除。</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">プライバシーとは私たちが従うポリシーではなく、私たちが構築した構造です。保存されなかったデータには召喚令状は届きません。</p>
+  <p class="hero-tagline">他の文字起こしアプリはあなたの録音を何日も保持します。<br>私たちは？ゼロ秒。</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM専用処理。AIボーカル分離による高精度。テキスト受信と同時に削除。</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">プライバシーとは私たちが従うポリシーではなく、私たちが構築した構造です。保存されなかったデータを召喚令状で取得することはできません。</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; データ保護の仕組み</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; プライバシーポリシー</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 料金を見る</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; データ保護の仕組み</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">App Store・Google Playで近日公開。</p>
 </div>
 
 ---
@@ -63,7 +64,7 @@ lang: ja
       <td class="no">はい</td>
     </tr>
     <tr>
-      <td>AIノイズ分離（Demucs）</td>
+      <td>AIボーカル分離</td>
       <td class="yes">はい</td>
       <td class="no">いいえ</td>
       <td class="no">いいえ</td>
@@ -158,7 +159,7 @@ lang: ja
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>活動家</h4>
-    <p>監視に耐える文字起こし。ログなし、プロファイルなし、痕跡なし。音声がテキストになり、あとは消えます。</p>
+    <p>監視を寄せ付けない文字起こし。ログなし、プロファイルなし、痕跡なし。音声がテキストになり、あとは消えます。</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
@@ -172,18 +173,18 @@ lang: ja
 <span class="section-label">信頼できる精度</span>
 ## 騒がしくても、正確に
 
-すべての音声ファイルは最適化された処理パイプラインを通過します — デバイス上とサーバー上の両方で — 最高の精度を保証するために。
+すべての音声ファイルは最適化された処理パイプラインを通過します — デバイス上とサーバー上の両方で — — 最高の精度を実現します。
 
 <div class="pipeline-steps">
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>デバイス上での最適化</h4>
-    <p>ハイパスフィルタリング、先頭無音除去、EBU R128ターゲットへのラウドネス正規化（ASR向けに最適化された動的シングルパス）、ピークリミッティング、16 kHzリサンプリング — ロスレスFLACとしてエンコードしてからアップロード。</p>
+    <p>ハイパスフィルタリング、先頭無音除去、LUFSラウドネス正規化（-16 LUFS、ASR向けに最適化）、ピークリミッティング、16 kHzリサンプリング — ロスレスFLACとしてエンコードしてからアップロード。</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Demucs AI音源分離</h4>
-    <p>音声分析がノイズや継続的なエネルギーを検出した場合に自動適用。背景音から音声を分離 — クリアな録音ではスキップされます。<a href="https://arxiv.org/abs/2111.03600">Demucsの研究</a>では、騒がしい環境での単語誤り率の大幅な削減が実証されています。</p>
+    <h4>AIボーカル分離</h4>
+    <p>音声分析がノイズや継続的なエネルギーを検出した場合に自動適用。背景音から音声を分離 — クリアな録音ではスキップされます。AI駆動の音源分離により、騒がしい環境での単語誤り率の大幅な削減が実証されています。</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ lang: ja
 </div>
 
 <div class="callout callout-green">
-  <strong>確立された標準に基づいています。</strong>当社のパイプラインは確立された音声工学標準と査読済みの研究に基づいて構築されています — 任意のデフォルト値ではありません。その結果：困難な環境でも信頼できる文字起こし精度を実現します。
+  <strong>確立された標準に基づいています。</strong>当社のパイプラインは実績ある音声工学標準と査読済みの研究に基づいて構築されています — 任意のデフォルト値ではありません。その結果：困難な環境でも信頼できる文字起こし精度を実現します。
 </div>
 
 ---
@@ -293,8 +294,8 @@ lang: ja
 </details>
 
 <details class="faq-item">
-  <summary>Demucsはどのように精度を向上させますか？</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a>は、背景ノイズから音声を分離するAI駆動の音源分離モデルです。SafeScribeはまず音声を分析し、継続的なノイズ（音楽、群衆音、背景音）を検出した場合にDemucsを自動実行します。クリアな音声録音の場合はスキップされます。Demucsは騒がしい環境で単語誤り率を大幅に削減することが研究で示されています。音声活動検出と組み合わせることで、難しい録音からもクリーンで正確なテキストが得られます。</div>
+  <summary>ボーカル分離はどのように精度を向上させますか？</summary>
+  <div class="faq-answer">SafeScribeは、背景ノイズから音声を分離するAI駆動の音源分離モデルを使用しています。まず音声を分析し、継続的なノイズ（音楽、群衆音、背景音）を検出した場合にボーカル分離を自動実行します。クリアな音声録音の場合はスキップされます。この技術は騒がしい環境で単語誤り率を大幅に削減します。音声活動検出と組み合わせることで、難しい録音からもクリーンで正確なテキストが得られます。</div>
 </details>
 
 ---

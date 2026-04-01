@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Transcripción IA con privacidad prioritaria
-description: Tu app de transcripción guarda tus grabaciones por días. ¿La nuestra? Cero segundos. Procesamiento solo en RAM, precisión potenciada por Demucs, eliminado en el momento en que recibes tu texto.
+description: Tu app de transcripción guarda tus grabaciones por días. ¿La nuestra? Cero segundos. Procesamiento solo en RAM, precisión con aislamiento vocal por IA, eliminado en el momento en que recibes tu texto.
 lang: es
 ---
 
@@ -9,12 +9,13 @@ lang: es
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Tu app de transcripción guarda tus grabaciones por días.<br>¿La nuestra? Cero segundos.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Procesamiento solo en RAM. Precisión potenciada por Demucs. Eliminado en el momento en que recibes tu texto.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">La privacidad no es una política que seguimos — es una estructura que construimos. No se puede ordenar judicialmente datos que nunca se almacenaron.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Procesamiento solo en RAM. Precisión con aislamiento vocal por IA. Eliminado en el momento en que recibes tu texto.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">La privacidad no es una política que seguimos — es una estructura que construimos. No se pueden reclamar judicialmente datos que nunca se almacenaron.</p>
   <div class="cta-group">
-    <a class="cta-btn cta-btn-primary" href="security">&#x1f6e1; Cómo protegemos sus datos</a>
-    <a class="cta-btn cta-btn-secondary" href="privacy">&#x1f4dc; Política de privacidad</a>
+    <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Ver precios</a>
+    <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Cómo protegemos tus datos</a>
   </div>
+  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Próximamente en App Store y Google Play.</p>
 </div>
 
 ---
@@ -63,7 +64,7 @@ lang: es
       <td class="no">Sí</td>
     </tr>
     <tr>
-      <td>Separación de ruido por IA (Demucs)</td>
+      <td>Aislamiento vocal por IA</td>
       <td class="yes">Sí</td>
       <td class="no">No</td>
       <td class="no">No</td>
@@ -96,20 +97,20 @@ lang: es
   <div class="step">
     <div class="step-number">1</div>
     <div class="step-icon">&#x1f3a4;</div>
-    <h3>Grabe o elija un archivo</h3>
-    <p>Grabe directamente en la app o elija un archivo de audio/video desde su dispositivo. Compatible con MP3, WAV, M4A, MP4 y más.</p>
+    <h3>Graba o elige un archivo</h3>
+    <p>Graba directamente en la app o elige un archivo de audio/video desde tu dispositivo. Compatible con MP3, WAV, M4A, MP4 y más.</p>
   </div>
   <div class="step">
     <div class="step-number">2</div>
     <div class="step-icon">&#x1f9e0;</div>
     <h3>La IA transcribe en memoria</h3>
-    <p>Su audio es procesado por una IA de reconocimiento de voz de última generación en nuestros servidores — completamente en RAM. Nada se escribe nunca en disco.</p>
+    <p>Tu audio es procesado por una IA de reconocimiento de voz de última generación en nuestros servidores — completamente en RAM. Nada se escribe nunca en disco.</p>
   </div>
   <div class="step">
     <div class="step-number">3</div>
     <div class="step-icon">&#x1f4c4;</div>
-    <h3>Reciba su texto, datos eliminados</h3>
-    <p>La transcripción se entrega a su dispositivo con verificación de integridad. Todos los datos del servidor se borran de forma inmediata y permanente.</p>
+    <h3>Recibe tu texto, datos eliminados</h3>
+    <p>La transcripción se entrega a tu dispositivo con verificación de integridad. Todos los datos del servidor se borran de forma inmediata y permanente.</p>
   </div>
 </div>
 
@@ -119,10 +120,10 @@ lang: es
 ## Lo que nunca hacemos
 
 <ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Almacenar su audio en disco — jamás</li>
-  <li><span class="x-mark">&#x2717;</span> Usar sus grabaciones para entrenar modelos de IA</li>
-  <li><span class="x-mark">&#x2717;</span> Compartir o vender sus datos a anunciantes</li>
-  <li><span class="x-mark">&#x2717;</span> Almacenar su correo electrónico, nombre o dirección IP</li>
+  <li><span class="x-mark">&#x2717;</span> Almacenar tu audio en disco — jamás</li>
+  <li><span class="x-mark">&#x2717;</span> Usar tus grabaciones para entrenar modelos de IA</li>
+  <li><span class="x-mark">&#x2717;</span> Compartir o vender tus datos a anunciantes</li>
+  <li><span class="x-mark">&#x2717;</span> Almacenar tu correo electrónico, nombre o dirección IP</li>
 </ul>
 
 <p>Para la lista completa, consulte nuestra <a href="privacy#data-we-dont-collect-or-store">Política de privacidad</a>.</p>
@@ -132,11 +133,11 @@ lang: es
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Procesamiento solo en RAM</strong><span class="item-desc">el audio existe en memoria volátil solo durante la transcripción</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Eliminación inmediata</strong><span class="item-desc">datos borrados en el momento en que recibe su transcripción</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Cifrado de extremo a extremo</strong><span class="item-desc">TLS en tránsito, AES-256 en reposo en su dispositivo</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Eliminación inmediata</strong><span class="item-desc">datos borrados en el momento en que recibes tu transcripción</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Cifrado de extremo a extremo</strong><span class="item-desc">TLS en tránsito, AES-256 en reposo en tu dispositivo</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sin perfiles de usuario</strong><span class="item-desc">facturación seudónima únicamente, sin datos personales almacenados en el servidor</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IA propia</strong><span class="item-desc">su audio nunca llega a ningún servicio de terceros</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Usted controla sus datos</strong><span class="item-desc">exporte, elimine o borre todo desde la app</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IA propia</strong><span class="item-desc">tu audio nunca llega a ningún servicio de terceros</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tú controlas tus datos</strong><span class="item-desc">exporte, elimine o borre todo desde la app</span></span></li>
 </ul>
 
 ---
@@ -148,7 +149,7 @@ lang: es
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>Periodistas</h4>
-    <p>Sus fuentes están seguras — no porque lo prometemos, sino porque no podemos acceder a ellas. La retención cero significa riesgo cero de divulgación forzada.</p>
+    <p>Tus fuentes están seguras — no porque lo prometemos, sino porque no podemos acceder a ellas. La retención cero significa riesgo cero de divulgación forzada.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
@@ -158,7 +159,7 @@ lang: es
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>Activistas</h4>
-    <p>Transcripción a prueba de vigilancia. Sin registros, sin perfiles, sin rastros. Su voz se convierte en texto y el resto desaparece.</p>
+    <p>Transcripción a prueba de vigilancia. Sin registros, sin perfiles, sin rastros. Tu voz se convierte en texto y el resto desaparece.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
@@ -169,21 +170,21 @@ lang: es
 
 ---
 
-<span class="section-label">Precisión en la que puede confiar</span>
+<span class="section-label">Precisión en la que puedes confiar</span>
 ## Preciso, incluso con ruido
 
-Cada archivo de audio pasa por una canalización optimizada — en su dispositivo y en nuestros servidores — para garantizar la mayor precisión posible.
+Cada archivo de audio pasa por una pipeline optimizada — en tu dispositivo y en nuestros servidores — para garantizar la mayor precisión posible.
 
 <div class="pipeline-steps">
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>Optimización en el dispositivo</h4>
-    <p>Filtrado de paso alto, recorte de silencio inicial, normalización de volumen a objetivos EBU R128 (paso único dinámico, optimizado para ASR), limitación de picos y remuestreo a 16 kHz — codificado como FLAC sin pérdida antes de la carga.</p>
+    <p>Filtrado de paso alto, recorte de silencio inicial, normalización de loudness LUFS (-16 LUFS, optimizado para ASR), limitación de picos y remuestreo a 16 kHz — codificado como FLAC sin pérdida antes de la carga.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Separación de fuentes de audio con IA Demucs</h4>
-    <p>Se aplica automáticamente cuando el análisis de audio detecta ruido o energía continua. Aísla el habla de los sonidos de fondo — se omite en grabaciones limpias. La <a href="https://arxiv.org/abs/2111.03600">investigación sobre Demucs</a> demuestra una reducción significativa de la tasa de error de palabras en entornos ruidosos.</p>
+    <h4>Aislamiento vocal por IA</h4>
+    <p>Se aplica automáticamente cuando el análisis de audio detecta ruido o energía continua. Aísla el habla de los sonidos de fondo — se omite en grabaciones limpias. La separación de fuentes por IA demuestra una reducción significativa de la tasa de error de palabras en entornos ruidosos.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -193,7 +194,7 @@ Cada archivo de audio pasa por una canalización optimizada — en su dispositiv
 </div>
 
 <div class="callout callout-green">
-  <strong>Basado en estándares establecidos.</strong> Nuestra canalización está construida sobre estándares de ingeniería de audio establecidos e investigación revisada por pares — no en valores predeterminados arbitrarios. El resultado: una precisión de transcripción en la que puede confiar, incluso en entornos desafiantes.
+  <strong>Basado en estándares establecidos.</strong> Nuestra pipeline está construida sobre normas consolidadas de ingeniería de audio e investigación revisada por pares — no en valores predeterminados arbitrarios. El resultado: una precisión de transcripción en la que puedes confiar, incluso en entornos desafiantes.
 </div>
 
 ---
@@ -234,7 +235,7 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
 
 
 <div class="callout callout-info">
-  <strong>Si una transcripción falla por un error técnico de nuestra parte, nunca se le cobrará.</strong> Solo paga cuando una transcripción se completa con éxito en nuestro servidor. Los pagos son gestionados íntegramente por Apple App Store o Google Play — nunca vemos sus datos de pago.
+  <strong>Si una transcripción falla por un error técnico de nuestra parte, nunca se te cobrará.</strong> Solo pagas cuando una transcripción se completa con éxito en nuestro servidor. Los pagos son gestionados íntegramente por Apple App Store o Google Play — nunca vemos tus datos de pago.
 </div>
 
 ---
@@ -244,22 +245,22 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
 
 <details class="faq-item">
   <summary>¿Qué pasa con mi audio después de la transcripción?</summary>
-  <div class="faq-answer">Desaparece — permanentemente. Su audio se procesa completamente en la RAM del servidor (memoria volátil) y se elimina en el instante en que se entrega su transcripción. No existe copia en disco, ni copia de seguridad, ni forma de recuperarlo. Incluso una incautación física del servidor no arrojaría ningún dato de audio.</div>
+  <div class="faq-answer">Desaparece — permanentemente. Tu audio se procesa completamente en la RAM del servidor (memoria volátil) y se elimina en el instante en que se entrega tu transcripción. No existe copia en disco, ni copia de seguridad, ni forma de recuperarlo. Incluso una incautación física del servidor no arrojaría ningún dato de audio.</div>
 </details>
 
 <details class="faq-item">
   <summary>¿Usan mis grabaciones para entrenar IA?</summary>
-  <div class="faq-answer">En absoluto. Su audio se usa con un único propósito: generar su transcripción. Nunca se almacena, analiza ni se usa para el entrenamiento o mejora de modelos. Operamos nuestra propia infraestructura de IA — sus datos no van a ningún servicio de IA de terceros.</div>
+  <div class="faq-answer">En absoluto. Tu audio se usa con un único propósito: generar tu transcripción. Nunca se almacena, analiza ni se usa para el entrenamiento o mejora de modelos. Operamos nuestra propia infraestructura de IA — tus datos no van a ningún servicio de IA de terceros.</div>
 </details>
 
 <details class="faq-item">
   <summary>¿Ven mis datos de pago o tarjeta?</summary>
-  <div class="faq-answer">No. Todos los pagos son procesados íntegramente por Apple App Store o Google Play. Recibimos únicamente un recibo de compra para la verificación del saldo — nunca vemos, recibimos ni almacenamos su número de tarjeta ni ningún dato de pago.</div>
+  <div class="faq-answer">No. Todos los pagos son procesados íntegramente por Apple App Store o Google Play. Recibimos únicamente un recibo de compra para la verificación del saldo — nunca vemos, recibimos ni almacenamos tu número de tarjeta ni ningún dato de pago.</div>
 </details>
 
 <details class="faq-item">
   <summary>¿Qué idiomas son compatibles?</summary>
-  <div class="faq-answer">El <a href="https://github.com/openai/whisper#available-models-and-languages">modelo de reconocimiento de voz Whisper</a> de código abierto admite 100 idiomas con detección automática del idioma. También puede seleccionar el idioma manualmente antes de la transcripción para mejorar la precisión.</div>
+  <div class="faq-answer">El <a href="https://github.com/openai/whisper#available-models-and-languages">modelo de reconocimiento de voz Whisper</a> de código abierto admite 100 idiomas con detección automática del idioma. También puedes seleccionar el idioma manualmente antes de la transcripción para mejorar la precisión.</div>
 </details>
 
 <details class="faq-item">
@@ -269,32 +270,32 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
 
 <details class="faq-item">
   <summary>¿Cómo se cifran mis datos?</summary>
-  <div class="faq-answer">En tránsito: el cifrado TLS con fijación de certificado garantiza que sus datos lleguen únicamente a los servidores de SafeScribe. En su dispositivo: las transcripciones se almacenan en contenedores cifrados con AES-256 con claves protegidas por el hardware seguro de su teléfono (iOS Keychain / Android Keystore).</div>
+  <div class="faq-answer">En tránsito: el cifrado TLS con fijación de certificado garantiza que tus datos lleguen únicamente a los servidores de SafeScribe. En tu dispositivo: las transcripciones se almacenan en contenedores cifrados con AES-256 con claves protegidas por el hardware seguro de tu teléfono (iOS Keychain / Android Keystore).</div>
 </details>
 
 <details class="faq-item">
   <summary>¿Puedo eliminar todos mis datos?</summary>
-  <div class="faq-answer">Sí. Puede eliminar transcripciones individuales o su cuenta completa desde la app. La eliminación de la cuenta borra permanentemente su identidad de inicio de sesión, todos los datos locales y el saldo de créditos restante. Dado que el servidor no retiene datos personales después del procesamiento, no hay nada que eliminar en el lado del servidor.</div>
+  <div class="faq-answer">Sí. Puedes eliminar transcripciones individuales o tu cuenta completa desde la app. La eliminación de la cuenta borra permanentemente tu identidad de inicio de sesión, todos los datos locales y el saldo de créditos restante. Dado que el servidor no retiene datos personales después del procesamiento, no hay nada que eliminar en el lado del servidor.</div>
 </details>
 
 <details class="faq-item">
   <summary>¿Guardan mi dirección IP?</summary>
-  <div class="faq-answer">No. Las direcciones IP nunca se almacenan ni registran. Nuestra arquitectura lo hace cumplir a nivel de código — el sistema de registro está configurado explícitamente para descartar las IPs antes de que lleguen a cualquier salida de registro. Usamos un identificador seudónimo (un hash SHA-256 unidireccional de su identidad de inicio de sesión) para todas las operaciones internas. Este hash no puede revertirse para revelar su identidad.</div>
+  <div class="faq-answer">No. Las direcciones IP nunca se almacenan ni registran. Nuestra arquitectura lo hace cumplir a nivel de código — el sistema de registro está configurado explícitamente para descartar las IPs antes de que lleguen a cualquier salida de registro. Usamos un identificador seudónimo (un hash SHA-256 unidireccional de tu identidad de inicio de sesión) para todas las operaciones internas. Este hash no puede revertirse para revelar tu identidad.</div>
 </details>
 
 <details class="faq-item">
-  <summary>¿Cómo puedo verificar sus afirmaciones de privacidad?</summary>
-  <div class="faq-answer">Publicamos nuestra <a href="security">Arquitectura de seguridad</a> completa y la <a href="dpia">Evaluación de Impacto en la Protección de Datos</a> para transparencia técnica. También puede usar una herramienta de análisis de red (p. ej. Wireshark) para confirmar que todo el tráfico está cifrado con TLS — ningún correo electrónico, nombre ni identificador personal aparece en ninguna solicitud.</div>
+  <summary>¿Cómo puedo verificar tus afirmaciones de privacidad?</summary>
+  <div class="faq-answer">Publicamos nuestra <a href="security">Arquitectura de seguridad</a> completa y la <a href="dpia">Evaluación de Impacto en la Protección de Datos</a> para transparencia técnica. También puedes usar una herramienta de análisis de red (p. ej. Wireshark) para confirmar que todo el tráfico está cifrado con TLS — ningún correo electrónico, nombre ni identificador personal aparece en ninguna solicitud.</div>
 </details>
 
 <details class="faq-item">
   <summary>¿Qué significa "procesamiento con memoria bloqueada"?</summary>
-  <div class="faq-answer">Los sistemas operativos pueden mover temporalmente el contenido de la RAM al disco (llamado "swap") cuando la memoria está bajo presión. El bloqueo de memoria (<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>) indica al sistema operativo que mantenga páginas de memoria específicas en RAM de forma permanente — sin swap, sin contacto con el disco. El proceso de transcripción de SafeScribe usa esta garantía a nivel del sistema operativo para que su audio permanezca únicamente en memoria volátil, invisible para cualquier análisis forense de disco incluso si el servidor es incautado físicamente.</div>
+  <div class="faq-answer">Los sistemas operativos pueden mover temporalmente el contenido de la RAM al disco (llamado "swap") cuando la memoria está bajo presión. El bloqueo de memoria (<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>) indica al sistema operativo que mantenga páginas de memoria específicas en RAM de forma permanente — sin swap, sin contacto con el disco. El proceso de transcripción de SafeScribe usa esta garantía a nivel del sistema operativo para que tu audio permanezca únicamente en memoria volátil, invisible para cualquier análisis forense de disco incluso si el servidor es incautado físicamente.</div>
 </details>
 
 <details class="faq-item">
-  <summary>¿Cómo mejora Demucs la precisión?</summary>
-  <div class="faq-answer"><a href="https://arxiv.org/abs/2111.03600">Demucs</a> es un modelo de separación de fuentes de audio potenciado por IA que aísla el habla del ruido de fondo. SafeScribe analiza su audio primero — si detecta ruido continuo (música, multitud, sonido de fondo), Demucs se ejecuta automáticamente. Para grabaciones de habla limpia, se omite. La investigación muestra que Demucs reduce significativamente la tasa de error de palabras en entornos ruidosos. Combinado con la Detección de actividad de voz, garantiza que obtenga un texto limpio y preciso incluso de grabaciones desafiantes.</div>
+  <summary>¿Cómo mejora el aislamiento vocal la precisión?</summary>
+  <div class="faq-answer">SafeScribe utiliza un modelo de separación de fuentes de audio potenciado por IA que aísla el habla del ruido de fondo. Tu audio se analiza primero — si se detecta ruido continuo (música, multitud, sonido de fondo), el aislamiento vocal se ejecuta automáticamente. Para grabaciones de habla limpia, se omite. Esta técnica reduce significativamente la tasa de error de palabras en entornos ruidosos. Combinado con la Detección de actividad de voz, garantiza que obtengas un texto limpio y preciso incluso de grabaciones desafiantes.</div>
 </details>
 
 ---

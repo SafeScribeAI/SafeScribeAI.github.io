@@ -57,7 +57,7 @@ lang: zh
 
 <div class="flow-diagram">
 1. 用户在设备上录制或选择音频
-2. 设备端音频预处理（80 Hz 高通滤波器、前置静音修剪、<a href="https://tech.ebu.ch/publications/r128">EBU R128</a> 响度归一化、峰值限制、16 kHz 重采样、FLAC 编码）
+2. 设备端音频预处理（80 Hz 高通滤波器、前置静音修剪、-16 LUFS 响度归一化、峰值限制、16 kHz 重采样、FLAC 编码）
 3. 加密上传至 SafeScribe 服务器（TLS + 证书锁定）
 4. 服务器在 RAM 中处理音频——通过 <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2 运行自托管 Whisper 模型权重，不调用第三方 API
 5. 返回转录文本及 SHA-256 完整性校验和

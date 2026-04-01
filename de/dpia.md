@@ -57,7 +57,7 @@ lang: de
 
 <div class="flow-diagram">
 1. Benutzer nimmt Audio auf dem Gerät auf oder wählt es aus
-2. Audio wird geräteseitig vorverarbeitet (80-Hz-Hochpassfilter, Stille-Trimmen, Lautstärkenormalisierung nach <a href="https://tech.ebu.ch/publications/r128">EBU R128</a>, Peak-Limiting, 16-kHz-Resampling, FLAC-Kodierung)
+2. Audio wird geräteseitig vorverarbeitet (80-Hz-Hochpassfilter, Stille-Trimmen, Lautstärkenormalisierung auf -16 LUFS, Peak-Limiting, 16-kHz-Resampling, FLAC-Kodierung)
 3. Verschlüsselter Upload zu SafeScribe-Servern (TLS + Certificate Pinning)
 4. Server verarbeitet Audio im RAM — selbst gehostete Whisper-Modellgewichte via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, keine Drittanbieter-API-Aufrufe
 5. Transkript wird mit SHA-256-Integritätsprüfsumme zurückgegeben

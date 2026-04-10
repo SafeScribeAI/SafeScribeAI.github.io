@@ -24,7 +24,7 @@ lang: ko
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>레이어 1 — 전송</h4>
-    <p>모든 연결에 TLS 1.2+ 암호화 및 인증서 고정(Certificate Pinning) 적용. 어떤 프록시도 데이터를 가로챌 수 없습니다.</p>
+    <p>모든 연결에 TLS 1.2+ 암호화 적용. 트래픽은 예외 없이 종단간 암호화됩니다.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -70,13 +70,10 @@ lang: ko
 | 보호 수단 | 방지 대상 |
 |---------|---------|
 | TLS 1.2+ 암호화 | 네트워크 트래픽 도청 |
-| 인증서 고정 | 중간자 공격, 위조 서버 |
 | SHA-256 무결성 체크섬 | 전송 중 전사본 변조 |
 
-앱에는 SafeScribe 서버 인증서의 암호화 지문이 내장되어 있습니다. 인증 기관이 침해되더라도 앱은 실제 SafeScribe 서버로 이어지지 않는 모든 연결을 거부합니다.
-
 <div class="callout callout-green">
-  <strong>검증 가능:</strong> Wireshark를 사용해 모든 SafeScribe 트래픽이 TLS 암호화되어 있음을 확인할 수 있습니다. 프록시를 통한 가로채기 시도는 실패합니다 — 인증서 고정이 프록시 인증서를 거부하기 때문입니다.
+  <strong>검증 가능:</strong> Wireshark를 사용해 모든 SafeScribe 트래픽이 TLS 암호화되어 있음을 확인할 수 있습니다.
 </div>
 
 ---
@@ -224,7 +221,7 @@ SafeScribe는 Google 로그인과 Sign in with Apple을 사용합니다. 개인 
 보안 연구자와 개인정보 옹호자들이 저희의 주장을 검증해 주시기 바랍니다:
 
 <ul class="verify-steps">
-  <li><span><strong>네트워크 분석</strong> Wireshark 또는 Charles Proxy를 통해 모든 SafeScribe 트래픽이 TLS 암호화되어 있음을 확인할 수 있습니다. 가로채기 시도는 인증서 고정에 의해 차단됩니다.</span></li>
+  <li><span><strong>네트워크 분석</strong> Wireshark 또는 Charles Proxy를 통해 모든 SafeScribe 트래픽이 TLS 암호화되어 있음을 확인할 수 있습니다.</span></li>
   <li><span><strong>공개된 평가서</strong> 저희의 <a href="dpia">데이터 보호 영향 평가</a>에는 완전한 위험 분석과 결정 기록이 포함되어 있습니다.</span></li>
   <li><span><strong>책임감 있는 공개</strong> 취약점을 발견하셨나요? <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>로 연락해 주세요.</span></li>
 </ul>

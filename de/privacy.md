@@ -81,7 +81,7 @@ lang: de
 
 | Daten | Zweck |
 |-------|-------|
-| Absturzberichte | App-Stabilität über Sentry — alle personenbezogenen Daten vor der Übertragung entfernt |
+| Absturzberichte | App-Stabilität über SafeScribes eigenen Absturzbericht-Endpunkt — alle personenbezogenen Daten vor der Übertragung entfernt |
 
 <div class="callout callout-green">
   <strong>Der Server speichert niemals Ihren Namen, Ihre E-Mail-Adresse, Ihre IP-Adresse, Audioinhalte oder Transkripttexte.</strong> Die einzigen dauerhaften Datensätze, die mit Ihrem Konto verknüpft sind, bestehen aus einem nicht umkehrbaren Benutzer-Hash, einem pseudonymen Gerätebezeichner, einem Guthaben und Nutzungsstatistiken (nur Zahlen — keine Inhalte, keine Identität).
@@ -138,7 +138,6 @@ Unsere Festplatte:  Nur Guthabenaufzeichnungen — kein Audio, kein Transkript, 
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kein KI-Training</strong><span class="item-desc">Ihr Audio wird niemals zur Modellverbesserung verwendet</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Selbst gehostete KI</strong><span class="item-desc">kein Drittanbieter-KI-Dienst erhält Ihr Audio</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTL-Sicherung</strong><span class="item-desc">Daten löschen sich selbst, auch wenn der Löschcode fehlschlägt</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Speichersperre</strong><span class="item-desc">Sperre auf Betriebssystemebene verhindert, dass Audio auf die Festplatte ausgelagert wird</span></span></li>
 </ul>
 
 ---
@@ -172,7 +171,7 @@ Zahlungen werden vollständig von Apple App Store oder Google Play Store verarbe
 <span class="section-label">Fehlerverfolgung</span>
 ## Absturzberichte (Optional)
 
-Wir verwenden Sentry für optionale Absturzberichte. Es ist **standardmäßig deaktiviert** und kann jederzeit in den Datenschutzeinstellungen umgeschaltet werden.
+Wir senden optionale Absturzberichte an SafeScribes eigenen Absturzbericht-Endpunkt. Dies ist **standardmäßig deaktiviert** und kann jederzeit in den Datenschutzeinstellungen umgeschaltet werden.
 
 Bevor ein Bericht übertragen wird, werden folgende Daten automatisch entfernt:
 
@@ -193,7 +192,7 @@ Wir verwenden folgende Dienste. Über das Angegebene hinaus werden keine Audio-,
 | Apple Sign-In | Authentifizierung | Nur OIDC-Token | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | In-App-Käufe | Nur Kaufbeleg | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Google Play Store | In-App-Käufe | Nur Kaufbeleg | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Sentry | Absturzberichte (opt-in) | Anonymer Fehlerbericht — personenbezogene Daten entfernt | [sentry.io/privacy](https://sentry.io/privacy/) |
+| SafeScribe-Absturzbericht-Endpunkt | Absturzberichte (opt-in) | Anonymer Fehlerbericht — personenbezogene Daten entfernt | Von SafeScribe betrieben, kein Drittanbieter |
 
 ---
 

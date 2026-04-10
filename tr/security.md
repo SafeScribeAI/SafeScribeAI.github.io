@@ -24,7 +24,7 @@ lang: tr
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Katman 1 — Aktarım</h4>
-    <p>Her bağlantıda TLS 1.2+ şifreleme ve sertifika sabitleme. Hiçbir proxy araya giremez.</p>
+    <p>Her bağlantıda TLS 1.2+ şifreleme. Trafik uçtan uca şifrelidir, istisna yoktur.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -72,13 +72,10 @@ Fark: Bir sunucu fiziksel olarak ele geçirilse bile, kurtarılacak ses veya tra
 | Koruma | Önlediği Şey |
 |--------|-------------|
 | TLS 1.2+ şifreleme | Ağ trafiğinin dinlenmesi |
-| Sertifika sabitleme | Ortadaki adam saldırıları, sahte sunucular |
 | Bütünlük doğrulaması | Transkript bozulması veya kurcalanması |
 
-Uygulama, SafeScribe sunucu sertifikasının kriptografik parmak izini içerir. Bir sertifika otoritesi ele geçirilse bile, uygulama gerçek SafeScribe sunucusu dışında herhangi bir şeye bağlanmayı reddeder.
-
 <div class="callout callout-green">
-  <strong>Doğrulayabilirsiniz:</strong> Herhangi bir ağ inceleme aracı (örneğin Wireshark) kullanarak tüm SafeScribe trafiğinin TLS şifreli olduğunu onaylayabilirsiniz. Bir proxy ile trafiği kesmeye çalışmak başarısız olur — sertifika sabitleme proxy'nin sertifikasını reddeder.
+  <strong>Doğrulayabilirsiniz:</strong> Herhangi bir ağ inceleme aracı (örneğin Wireshark) kullanarak tüm SafeScribe trafiğinin TLS şifreli olduğunu onaylayabilirsiniz.
 </div>
 
 ---
@@ -227,7 +224,7 @@ Tamamlandı                     SIFIR veri kalır
 Güvenlik araştırmacılarını ve gizlilik savunucularını iddialarımızı doğrulamaya teşvik ediyoruz:
 
 <ul class="verify-steps">
-  <li><span><strong>Ağ analizi</strong> Wireshark veya Charles Proxy kullanarak trafiği inceleyin. Tüm SafeScribe bağlantıları TLS şifrelidir; proxy ile müdahale girişimi sertifika sabitleme tarafından engellenir.</span></li>
+  <li><span><strong>Ağ analizi</strong> Wireshark veya Charles Proxy kullanarak trafiği inceleyin. Tüm SafeScribe bağlantıları TLS şifrelidir.</span></li>
   <li><span><strong>Yayınlanan değerlendirmeler</strong> Tam risk analizi ve karar kaydı için <a href="dpia">Veri Koruma Etki Değerlendirmemizi</a> okuyun.</span></li>
   <li><span><strong>Sorumlu açıklama</strong> Bir güvenlik açığı mı buldunuz? <a href="mailto:security@safescribe.dev">security@safescribe.dev</a> adresine yazın.</span></li>
 </ul>

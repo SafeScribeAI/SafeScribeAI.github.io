@@ -116,28 +116,39 @@ lang: ar
 
 ---
 
-<span class="section-label">ضمانات الخصوصية</span>
-## ما لا نفعله أبداً
+<span class="section-label">التزاماتنا</span>
+## 14 وعداً بالخصوصية
+{: #privacy-promises}
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> تخزين صوتك على القرص — أبداً</li>
-  <li><span class="x-mark">&#x2717;</span> استخدام تسجيلاتك لتدريب نماذج الذكاء الاصطناعي</li>
-  <li><span class="x-mark">&#x2717;</span> مشاركة أو بيع البيانات للمعلنين</li>
-  <li><span class="x-mark">&#x2717;</span> تخزين بريدك الإلكتروني أو اسمك أو عنوان IP</li>
-</ul>
+كل ادعاء أدناه مفروض بالكود — وليس مجرد سياسة. كل منها يرتبط بالدليل التقني.
 
-<p>للقائمة الكاملة، راجع <a href="privacy#data-we-dont-collect-or-store">سياسة الخصوصية</a>.</p>
-
-<span class="section-label">ما نفعله</span>
-## مبني للخصوصية منذ اليوم الأول
+<span class="section-label">البنية الأساسية</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>المعالجة في RAM فقط</strong><span class="item-desc">يوجد الصوت في الذاكرة المتطايرة فقط أثناء النسخ</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>الحذف الفوري</strong><span class="item-desc">تُمحى البيانات لحظة استلامك للنص المُحوَّل</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>تشفير شامل</strong><span class="item-desc">TLS أثناء النقل، AES-256 في حالة السكون على جهازك</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>بدون ملفات تعريف للمستخدمين</strong><span class="item-desc">الفوترة بأسماء مستعارة فقط، بدون بيانات شخصية مخزنة على الخادم</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>ذكاء اصطناعي ذاتي الاستضافة</strong><span class="item-desc">صوتك لا يصل إلى أي خدمة طرف ثالث</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>أنت تتحكم ببياناتك</strong><span class="item-desc">تصدير أو حذف أو مسح كل شيء من التطبيق</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>المعالجة في RAM فقط</strong><span class="item-desc">يوجد صوتك في الذاكرة المتطايرة فقط أثناء النسخ — لا يُكتب على القرص أبداً. <a href="security#layer-2">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>الحذف التتالي + الضمان الاحتياطي</strong><span class="item-desc">كل خطوة تحذف بيانات الخطوة السابقة. إذا فشل كودنا، تدمر البيانات نفسها عبر TTL. <a href="security#layer-6">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>ذكاء اصطناعي ذاتي الاستضافة</strong><span class="item-desc">لا يصل صوتك إلى OpenAI أو Google أو أي خدمة طرف ثالث. نشغّل بنيتنا التحتية الخاصة. <a href="security#layer-2">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>التحقق من السلامة</strong><span class="item-desc">كل نص مُحوَّل يحمل مجموع تحقق SHA-256 لتعلم أنه وصل دون تعديل. <a href="security#layer-1">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>لا إعادة تنزيل</strong><span class="item-desc">بمجرد استلامك للنص، لا يبقى شيء على خوادمنا. لا يوجد خيار "تنزيل مرة أخرى". <a href="security#layer-6">اعرف أكثر →</a></span></span></li>
+</ul>
+
+<span class="section-label">ما لا نجمعه أو نفعله</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>بريدك الإلكتروني أو اسمك — لا يُخزَّنان أبداً</strong><span class="item-desc">نحتفظ فقط بتجزئة أحادية الاتجاه لمعرّف حسابك. لا يمكن عكسها للكشف عن هويتك. <a href="privacy#sign-in">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>عنوان IP الخاص بك — لا يُسجَّل أبداً</strong><span class="item-desc">يُستخدم باختصار لتحديد معدل الطلبات (كتجزئة)، ثم يُتجاهل. لا يظهر في أي سجل. <a href="privacy#zero-disk">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>تسجيلاتك — لا تُستخدم للتدريب أبداً</strong><span class="item-desc">يُحذف صوتك فور انتهاء النسخ. لا نسخة، لا أرشيف، لا مجموعة بيانات تدريب. <a href="privacy#zero-disk">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>لا تنميط أو قرارات آلية</strong><span class="item-desc">لا نقيّمك أو نرتّبك أو نتخذ قرارات آلية بشأنك أبداً. <a href="privacy#your-rights">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>لا تتبع للسلوك</strong><span class="item-desc">نستخدم صفراً من SDKs التحليلات. لا Mixpanel، لا Firebase Analytics، لا أي أداة تتبع. <a href="privacy#third-parties">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>لا جهات اتصال أو موقع أو بيانات بيومترية</strong><span class="item-desc">نطلب فقط إذن الميكروفون — لا شيء آخر من جهازك. <a href="privacy#no-collect">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>تفاصيل الدفع — لا نطّلع عليها أبداً</strong><span class="item-desc">تتم المدفوعات بالكامل عبر Apple أو Google. نتلقى فقط إيصال شراء. <a href="privacy#billing">اعرف أكثر →</a></span></span></li>
+</ul>
+
+<span class="section-label">كيف نحمي البيانات المنقولة</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AES-256 + مفاتيح مدعومة بالعتاد</strong><span class="item-desc">النصوص على جهازك مشفرة. المفاتيح مخزنة في iOS Keychain أو Android Keystore. <a href="security#layer-4">اعرف أكثر →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>تقارير الأعطال: مغلقة افتراضياً</strong><span class="item-desc">اختياري. عند التفعيل، تُزال البيانات الشخصية تلقائياً قبل مغادرة جهازك. <a href="security#layer-5">اعرف أكثر →</a></span></span></li>
 </ul>
 
 ---
@@ -212,12 +223,12 @@ lang: ar
     <div class="pricing-rate">$0.0165/دقيقة</div>
   </div>
   <div class="pricing-card popular">
-    <div class="pricing-amount">$4.49</div>
-    <div class="pricing-minutes">5 ساعات</div>
+    <div class="pricing-amount">$6.49</div>
+    <div class="pricing-minutes">7 ساعات</div>
     <div class="pricing-rate">$0.015/دقيقة</div>
   </div>
   <div class="pricing-card">
-    <div class="pricing-amount">$12.49</div>
+    <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 ساعة</div>
     <div class="pricing-rate">$0.014/دقيقة</div>
   </div>
@@ -229,6 +240,11 @@ lang: ar
   <div class="pricing-card">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 ساعة</div>
+    <div class="pricing-rate">$0.012/دقيقة</div>
+  </div>
+  <div class="pricing-card">
+    <div class="pricing-amount">$84.99</div>
+    <div class="pricing-minutes">120 ساعة</div>
     <div class="pricing-rate">$0.012/دقيقة</div>
   </div>
 </div>
@@ -270,7 +286,7 @@ lang: ar
 
 <details class="faq-item">
   <summary>كيف تُشفّر بياناتي؟</summary>
-  <div class="faq-answer">أثناء النقل: تشفير TLS مع تثبيت الشهادات يضمن وصول بياناتك إلى خوادم SafeScribe فقط. على جهازك: تُخزّن النصوص في حاويات مشفرة بـ AES-256 مع مفاتيح محمية بالعتاد الأمني في هاتفك (iOS Keychain / Android Keystore).</div>
+  <div class="faq-answer">أثناء النقل: تشفير TLS 1.2+ يحمي بياناتك بين جهازك وخوادم SafeScribe. على جهازك: تُخزّن النصوص في حاويات مشفرة بـ AES-256 مع مفاتيح محمية بالعتاد الأمني في هاتفك (iOS Keychain / Android Keystore).</div>
 </details>
 
 <details class="faq-item">
@@ -289,13 +305,8 @@ lang: ar
 </details>
 
 <details class="faq-item">
-  <summary>ما معنى "المعالجة بذاكرة مقفلة"؟</summary>
-  <div class="faq-answer">يمكن لأنظمة التشغيل نقل محتوى RAM مؤقتاً إلى القرص (ما يُسمى "المبادلة") عند ضغط الذاكرة. قفل الذاكرة (<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>) يوجّه نظام التشغيل للاحتفاظ بصفحات ذاكرة معينة في RAM باستمرار — بدون مبادلة، بدون تلامس مع القرص. تستخدم عملية النسخ في SafeScribe هذا الضمان على مستوى نظام التشغيل بحيث يبقى صوتك في الذاكرة المتطايرة فقط، غير مرئي لأي تحليل جنائي للقرص حتى لو تم الاستيلاء على الخادم مادياً.</div>
-</details>
-
-<details class="faq-item">
-  <summary>كيف يحسّن العزل الصوتي الدقة؟</summary>
-  <div class="faq-answer">يستخدم SafeScribe نموذج فصل مصادر الصوت مدعوم بالذكاء الاصطناعي لعزل الكلام عن ضوضاء الخلفية. يحلل صوتك أولاً — إذا اكتشف ضوضاء مستمرة (موسيقى، حشود، أصوات خلفية)، يعمل العزل الصوتي تلقائياً. في التسجيلات الصوتية الواضحة، يُتخطى. تُظهر هذه التقنية انخفاضاً ملحوظاً في معدل خطأ الكلمات في البيئات الصاخبة. بالاقتران مع كشف النشاط الصوتي، يضمن حصولك على نص نظيف ودقيق حتى من التسجيلات الصعبة.</div>
+  <summary>كيف تُحسّن المعالجة المسبقة على الجهاز الدقة؟</summary>
+  <div class="faq-answer">قبل الرفع، يطبّق SafeScribe سلسلة مرشحات صوتية على جهازك: تصفية الترددات العالية عند 200 Hz تُزيل الطنين وضوضاء الخلفية، وتطبيع مستوى الصوت LUFS (-16 LUFS) يُهيّئ مستويات الصوت لنموذج Whisper، وضغط النطاق الديناميكي يُعادل تفاوت مستوى الصوت. بالاقتران مع كشف النشاط الصوتي على الخادم، يضمن ذلك الحصول على نص نظيف ودقيق حتى من التسجيلات الصعبة.</div>
 </details>
 
 ---

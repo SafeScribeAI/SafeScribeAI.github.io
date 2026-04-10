@@ -81,7 +81,7 @@ lang: zh
 
 | 数据 | 用途 |
 |------|------|
-| 崩溃报告 | 通过Sentry提升应用稳定性——传输前移除所有个人信息 |
+| 崩溃报告 | 通过SafeScribe自有崩溃报告端点提升应用稳定性——传输前移除所有个人信息 |
 
 <div class="callout callout-green">
   <strong>服务器从不存储您的姓名、电子邮件地址、IP地址、音频内容或转录文本。</strong>与您账户关联的唯一持久记录是不可逆用户哈希值、匿名设备标识符、信用余额和使用统计数据（仅数字——无内容，无身份信息）。
@@ -138,7 +138,6 @@ lang: zh
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>不用于AI训练</strong><span class="item-desc">——您的音频永远不会用于改进模型</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>自托管AI</strong><span class="item-desc">——没有任何第三方AI服务接收您的音频</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTL安全保护</strong><span class="item-desc">——即使删除代码失败，数据也会自动销毁</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>内存锁定</strong><span class="item-desc">——操作系统级别的锁定防止音频被交换到磁盘</span></span></li>
 </ul>
 
 ---
@@ -172,7 +171,7 @@ lang: zh
 <span class="section-label">错误追踪</span>
 ## 崩溃报告（可选）
 
-我们使用Sentry进行可选的崩溃报告。默认情况下**已关闭**，可随时在隐私设置中切换。
+我们将可选的崩溃报告发送至SafeScribe自有崩溃报告端点。默认情况下**已关闭**，可随时在隐私设置中切换。
 
 在传输任何报告之前，以下内容会被自动移除：
 
@@ -193,7 +192,7 @@ lang: zh
 | Apple Sign-In | 身份验证 | 仅OIDC令牌 | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | 应用内购买 | 仅购买收据 | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Google Play Store | 应用内购买 | 仅购买收据 | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Sentry | 崩溃报告（可选） | 匿名错误报告——个人信息已删除 | [sentry.io/privacy](https://sentry.io/privacy/) |
+| SafeScribe崩溃报告端点 | 崩溃报告（可选） | 匿名错误报告——个人信息已删除 | 由SafeScribe自行运营，无第三方 |
 
 ---
 

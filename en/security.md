@@ -24,7 +24,7 @@ lang: en
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Layer 1 — Transport</h4>
-    <p>TLS 1.2+ encryption and certificate pinning on every connection. No proxy can intercept.</p>
+    <p>TLS 1.2+ encryption on every connection. Traffic is end-to-end encrypted with no exceptions.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -72,13 +72,10 @@ The difference: even if a server were physically seized, there would be no audio
 | Protection | What It Prevents |
 |------------|-----------------|
 | TLS 1.2+ encryption | Eavesdropping on network traffic |
-| Certificate pinning | Man-in-the-middle attacks, rogue servers |
 | Integrity checksums | Transcript corruption or tampering |
 
-The app contains a cryptographic fingerprint of SafeScribe's server certificate. Even if a certificate authority were compromised, the app refuses to connect to anything other than the genuine SafeScribe server.
-
 <div class="callout callout-green">
-  <strong>You can verify:</strong> Use any network inspection tool (e.g., Wireshark) to confirm all SafeScribe traffic is TLS-encrypted. Attempting to intercept with a proxy will fail — certificate pinning rejects the proxy's certificate.
+  <strong>You can verify:</strong> Use any network inspection tool (e.g., Wireshark) to confirm all SafeScribe traffic is TLS-encrypted.
 </div>
 
 ---
@@ -227,7 +224,7 @@ Done                           ZERO data remains
 We encourage security researchers and privacy advocates to verify our claims:
 
 <ul class="verify-steps">
-  <li><span><strong>Network analysis</strong> Use Wireshark or Charles Proxy to inspect traffic. All SafeScribe connections are TLS-encrypted; any interception attempt is blocked by certificate pinning.</span></li>
+  <li><span><strong>Network analysis</strong> Use Wireshark or Charles Proxy to inspect traffic. All SafeScribe connections are TLS-encrypted.</span></li>
   <li><span><strong>Published assessments</strong> Read our <a href="dpia">Data Protection Impact Assessment</a> for the full risk analysis and decision record.</span></li>
   <li><span><strong>Responsible disclosure</strong> Found a vulnerability? Contact <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</span></li>
 </ul>

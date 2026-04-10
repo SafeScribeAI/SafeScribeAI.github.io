@@ -24,7 +24,7 @@ lang: de
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Ebene 1 — Transport</h4>
-    <p>TLS 1.2+ und Certificate Pinning bei jeder Verbindung. Kein Proxy kann Daten abfangen.</p>
+    <p>TLS 1.2+ bei jeder Verbindung. Der Datenverkehr ist durchgehend verschlüsselt.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -70,13 +70,10 @@ Der entscheidende Unterschied: Selbst bei einer physischen Beschlagnahme des Ser
 | Schutzmaßnahme | Was verhindert wird |
 |----------------|---------------------|
 | TLS 1.2+ Verschlüsselung | Abhören des Netzwerkverkehrs |
-| Certificate Pinning | Man-in-the-Middle-Angriffe, gefälschte Server |
 | SHA-256-Integritätsprüfung | Manipulationen am Transkript während der Übertragung |
 
-Die App enthält einen kryptografischen Fingerabdruck des SafeScribe-Serverzertifikats. Selbst wenn eine Zertifizierungsstelle kompromittiert wäre, würde die App jede Verbindung ablehnen, die nicht zum echten SafeScribe-Server führt.
-
 <div class="callout callout-green">
-  <strong>Überprüfbar:</strong> Mit Wireshark lässt sich bestätigen, dass der gesamte SafeScribe-Datenverkehr TLS-verschlüsselt ist. Ein Abfangversuch per Proxy schlägt fehl — Certificate Pinning lehnt das Proxy-Zertifikat ab.
+  <strong>Überprüfbar:</strong> Mit Wireshark lässt sich bestätigen, dass der gesamte SafeScribe-Datenverkehr TLS-verschlüsselt ist.
 </div>
 
 ---
@@ -223,7 +220,7 @@ Fertig                         NULL Daten verbleiben
 Wir laden Sicherheitsforscher und Datenschutzbeauftragte ein, unsere Aussagen zu überprüfen:
 
 <ul class="verify-steps">
-  <li><span><strong>Netzwerkanalyse</strong> Mit Wireshark oder Charles Proxy lässt sich bestätigen, dass der gesamte SafeScribe-Datenverkehr TLS-verschlüsselt ist. Abfangversuche per Proxy scheitern an Certificate Pinning.</span></li>
+  <li><span><strong>Netzwerkanalyse</strong> Mit Wireshark oder Charles Proxy lässt sich bestätigen, dass der gesamte SafeScribe-Datenverkehr TLS-verschlüsselt ist.</span></li>
   <li><span><strong>Veröffentlichte Bewertungen</strong> Unsere <a href="dpia">Datenschutz-Folgenabschätzung</a> enthält die vollständige Risikoanalyse und Entscheidungsdokumentation.</span></li>
   <li><span><strong>Verantwortungsvolle Offenlegung</strong> Schwachstelle entdeckt? Schreiben Sie an <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</span></li>
 </ul>

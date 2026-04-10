@@ -116,28 +116,39 @@ lang: ja
 
 ---
 
-<span class="section-label">プライバシー保証</span>
-## 私たちが絶対にしないこと
+<span class="section-label">私たちの約束</span>
+## 14のプライバシー約束
+{: #privacy-promises}
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> 音声をディスクに保存すること — 一切ありません</li>
-  <li><span class="x-mark">&#x2717;</span> 録音をAIモデルの学習に使用すること</li>
-  <li><span class="x-mark">&#x2717;</span> データを広告主と共有・販売すること</li>
-  <li><span class="x-mark">&#x2717;</span> メールアドレス、氏名、またはIPアドレスを保存すること</li>
-</ul>
+以下の各項目はポリシーだけでなく、コードによって強制されています。それぞれに技術的な根拠へのリンクがあります。
 
-<p>完全なリストについては、<a href="privacy#data-we-dont-collect-or-store">プライバシーポリシー</a>をご覧ください。</p>
-
-<span class="section-label">私たちがすること</span>
-## 初日からプライバシーのために設計
+<span class="section-label">コアアーキテクチャ</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM専用処理</strong><span class="item-desc">音声は文字起こし中のみ揮発性メモリに存在します</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>即時削除</strong><span class="item-desc">テキストを受信した瞬間にデータを消去します</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>エンドツーエンド暗号化</strong><span class="item-desc">通信中はTLS、デバイス上ではAES-256で暗号化</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>ユーザープロファイルなし</strong><span class="item-desc">仮名による課金のみ、サーバー側に個人データの保存なし</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>自社ホスティングAI</strong><span class="item-desc">音声が第三者サービスに届くことはありません</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>データはあなたが管理</strong><span class="item-desc">アプリからエクスポート、削除、完全消去が可能</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM専用処理</strong><span class="item-desc">音声は文字起こし中のみ揮発性メモリに存在します — ディスクには一切書き込まれません。 <a href="security#layer-2">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>カスケード削除 + フェイルセーフ</strong><span class="item-desc">各ステップが前のステップのデータを削除します。コードが失敗した場合、データはTTLで自動消滅します。 <a href="security#layer-6">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>自社ホスティングAI</strong><span class="item-desc">音声はOpenAI、Google、その他いかなる第三者サービスにも届きません。自社インフラを運用しています。 <a href="security#layer-2">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>整合性検証</strong><span class="item-desc">すべての文字起こしはSHA-256チェックサムを持ち、改ざんなく届いたことを確認できます。 <a href="security#layer-1">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>再ダウンロード不可</strong><span class="item-desc">文字起こしを受け取った後、サーバーには何も残りません。「もう一度ダウンロード」は存在しません。 <a href="security#layer-6">詳しく →</a></span></span></li>
+</ul>
+
+<span class="section-label">収集しないもの・しないこと</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>メールアドレスや氏名 — 一切保存しません</strong><span class="item-desc">アカウントIDの一方向ハッシュのみ保持します。逆算してあなたの身元を特定することはできません。 <a href="privacy#sign-in">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IPアドレス — 一切記録しません</strong><span class="item-desc">レート制限のために一時的に（ハッシュとして）使用した後、破棄します。どのログにも記録されません。 <a href="privacy#zero-disk">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>録音 — 学習に一切使用しません</strong><span class="item-desc">音声は文字起こし直後に削除されます。コピーなし、アーカイブなし、学習データセットなし。 <a href="privacy#zero-disk">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>プロファイリングや自動判断なし</strong><span class="item-desc">スコアリング、ランク付け、自動判断を一切行いません。 <a href="privacy#your-rights">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>行動追跡なし</strong><span class="item-desc">分析SDKはゼロ。Mixpanelなし、Firebase Analyticsなし、トラッカー一切なし。 <a href="privacy#third-parties">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>連絡先・位置情報・生体情報なし</strong><span class="item-desc">マイクのアクセス許可のみ要求します — デバイスから他は何も。 <a href="privacy#no-collect">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>支払い情報 — 私たちには見えません</strong><span class="item-desc">支払いはAppleまたはGoogleが全て処理します。購入レシートを受け取るだけです。 <a href="privacy#billing">詳しく →</a></span></span></li>
+</ul>
+
+<span class="section-label">転送データの保護方法</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AES-256 + ハードウェアバックの鍵</strong><span class="item-desc">デバイス上の文字起こしは暗号化されています。鍵はiOS KeychainまたはAndroid Keystoreに保存されます。 <a href="security#layer-4">詳しく →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>クラッシュレポート：デフォルトでオフ</strong><span class="item-desc">任意。有効にした場合、デバイスを離れる前に個人データが自動的に除去されます。 <a href="security#layer-5">詳しく →</a></span></span></li>
 </ul>
 
 ---
@@ -212,12 +223,12 @@ lang: ja
     <div class="pricing-rate">$0.0165/分</div>
   </div>
   <div class="pricing-card popular">
-    <div class="pricing-amount">$4.49</div>
-    <div class="pricing-minutes">5時間</div>
+    <div class="pricing-amount">$6.49</div>
+    <div class="pricing-minutes">7時間</div>
     <div class="pricing-rate">$0.015/分</div>
   </div>
   <div class="pricing-card">
-    <div class="pricing-amount">$12.49</div>
+    <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15時間</div>
     <div class="pricing-rate">$0.014/分</div>
   </div>
@@ -229,6 +240,11 @@ lang: ja
   <div class="pricing-card">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60時間</div>
+    <div class="pricing-rate">$0.012/分</div>
+  </div>
+  <div class="pricing-card">
+    <div class="pricing-amount">$84.99</div>
+    <div class="pricing-minutes">120時間</div>
     <div class="pricing-rate">$0.012/分</div>
   </div>
 </div>
@@ -270,7 +286,7 @@ lang: ja
 
 <details class="faq-item">
   <summary>データはどのように暗号化されますか？</summary>
-  <div class="faq-answer">通信中：証明書ピンニング付きTLS暗号化により、データはSafeScribeサーバーにのみ到達します。デバイス上：文字起こしはAES-256暗号化コンテナに保存され、鍵はスマートフォンのセキュアハードウェア（iOS Keychain / Android Keystore）で保護されています。</div>
+  <div class="faq-answer">通信中：TLS 1.2+暗号化がデバイスとSafeScribeサーバー間のデータを保護します。デバイス上：文字起こしはAES-256暗号化コンテナに保存され、鍵はスマートフォンのセキュアハードウェア（iOS Keychain / Android Keystore）で保護されています。</div>
 </details>
 
 <details class="faq-item">
@@ -289,13 +305,8 @@ lang: ja
 </details>
 
 <details class="faq-item">
-  <summary>「メモリロック処理」とはどういう意味ですか？</summary>
-  <div class="faq-answer">オペレーティングシステムはメモリが逼迫した際にRAMの内容を一時的にディスクに移動することがあります（「スワップ」と呼ばれます）。メモリロック（<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>）は、特定のメモリページを常にRAMに保持するようOSに指示します — スワップなし、ディスク接触なし。SafeScribeの文字起こしプロセスはこのOSレベルの保証を使用しているため、音声は揮発性メモリにのみ存在し、サーバーが物理的に押収されてもディスクフォレンジクスには見えません。</div>
-</details>
-
-<details class="faq-item">
-  <summary>ボーカル分離はどのように精度を向上させますか？</summary>
-  <div class="faq-answer">SafeScribeは、背景ノイズから音声を分離するAI駆動の音源分離モデルを使用しています。まず音声を分析し、継続的なノイズ（音楽、群衆音、背景音）を検出した場合にボーカル分離を自動実行します。クリアな音声録音の場合はスキップされます。この技術は騒がしい環境で単語誤り率を大幅に削減します。音声活動検出と組み合わせることで、難しい録音からもクリーンで正確なテキストが得られます。</div>
+  <summary>デバイス上の前処理はどのように精度を向上させますか？</summary>
+  <div class="faq-answer">アップロード前に、SafeScribeはデバイス上でオーディオフィルターチェーンを適用します：200 Hzのハイパスフィルタリングでこもり音や背景ノイズを除去し、LUFSラウドネス正規化（-16 LUFS）でWhisper向けに音量を最適化し、ダイナミックレンジ圧縮で音量の変動を均一にします。サーバー上の音声活動検出と組み合わせることで、難しい録音からもクリーンで正確なテキストが得られます。</div>
 </details>
 
 ---

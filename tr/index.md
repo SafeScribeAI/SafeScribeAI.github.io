@@ -116,28 +116,39 @@ lang: tr
 
 ---
 
-<span class="section-label">Gizlilik Garantileri</span>
-## Asla Yapmadığımız Şeyler
+<span class="section-label">Taahhütlerimiz</span>
+## 14 Gizlilik Sözü
+{: #privacy-promises}
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Sesinizi diske kaydetmek — hiçbir zaman</li>
-  <li><span class="x-mark">&#x2717;</span> Kayıtlarınızı YZ modellerini eğitmek için kullanmak</li>
-  <li><span class="x-mark">&#x2717;</span> Verilerinizi reklamcılarla paylaşmak veya satmak</li>
-  <li><span class="x-mark">&#x2717;</span> E-postanızı, adınızı veya IP adresinizi saklamak</li>
-</ul>
+Aşağıdaki her madde yalnızca bir politika değil, kodla zorunlu kılınmış bir yapıdır. Her biri teknik kanıtına bağlantı içerir.
 
-<p>Tam liste için <a href="privacy#data-we-dont-collect-or-store">Gizlilik Politikamıza</a> bakın.</p>
-
-<span class="section-label">Ne Yapıyoruz</span>
-## İlk Günden Gizlilik İçin Tasarlandı
+<span class="section-label">Temel Mimari</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yalnızca RAM'de işleme</strong><span class="item-desc">ses yalnızca transkripsiyon sırasında uçucu bellekte bulunur</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Anında silme</strong><span class="item-desc">transkriptinizi aldığınız anda veriler silinir</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Uçtan uca şifreleme</strong><span class="item-desc">iletimde TLS, cihazınızda AES-256</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kullanıcı profili yok</strong><span class="item-desc">takma kimlikli faturalandırma, sunucuda kişisel veri saklanmaz</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırdığımız YZ</strong><span class="item-desc">sesiniz hiçbir üçüncü taraf hizmete ulaşmaz</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Verileriniz sizin kontrolünüzde</strong><span class="item-desc">uygulamadan dışa aktarın, silin veya her şeyi temizleyin</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yalnızca RAM'de işleme</strong><span class="item-desc">Sesiniz yalnızca transkripsiyon sırasında uçucu bellekte bulunur — diske hiçbir zaman yazılmaz. <a href="security#layer-2">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kademeli silme + güvenli yedek</strong><span class="item-desc">Her adım bir önceki adımın verisini siler. Kodumuz başarısız olursa veriler TTL ile kendiliğinden yok olur. <a href="security#layer-6">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırdığımız YZ</strong><span class="item-desc">Sesiniz OpenAI'ye, Google'a veya herhangi bir üçüncü tarafa ulaşmaz. Kendi altyapımızı işletiyoruz. <a href="security#layer-2">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Bütünlük doğrulaması</strong><span class="item-desc">Her transkript, değiştirilmeden ulaştığını kanıtlayan bir SHA-256 sağlama toplamı taşır. <a href="security#layer-1">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tekrar indirme yok</strong><span class="item-desc">Transkriptinizi aldıktan sonra sunucularımızda hiçbir şey kalmaz. "Tekrar indir" diye bir seçenek yoktur. <a href="security#layer-6">devamını oku →</a></span></span></li>
+</ul>
+
+<span class="section-label">Toplamadıklarımız</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>E-posta veya isim — hiç saklanmaz</strong><span class="item-desc">Yalnızca hesap kimliğinizin tek yönlü özeti tutulur. Geri döndürülerek kim olduğunuz ortaya çıkarılamaz. <a href="privacy#sign-in">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IP adresiniz — hiç kaydedilmez</strong><span class="item-desc">Kısa süreliğine hız sınırlama için (özet olarak) kullanılır, ardından silinir. Hiçbir kayıtta yer almaz. <a href="privacy#zero-disk">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kayıtlarınız — eğitim için asla kullanılmaz</strong><span class="item-desc">Sesiniz transkripsiyon biter bitmez silinir. Kopya yok, arşiv yok, eğitim verisi yok. <a href="privacy#zero-disk">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Profilleme veya otomatik karar yok</strong><span class="item-desc">Sizi hiçbir zaman puanlamaz, sıralamaz veya hakkınızda otomatik karar vermeyiz. <a href="privacy#your-rights">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Davranış takibi yok</strong><span class="item-desc">Sıfır analitik SDK kullanıyoruz. Mixpanel yok, Firebase Analytics yok, hiçbir takip aracı yok. <a href="privacy#third-parties">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kişi listesi, konum veya biyometri yok</strong><span class="item-desc">Yalnızca mikrofon erişimi istiyoruz — cihazınızdan başka hiçbir şey. <a href="privacy#no-collect">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Ödeme bilgileri — bize hiç ulaşmaz</strong><span class="item-desc">Ödemeler tamamen Apple veya Google tarafından işlenir. Bize yalnızca bir satın alma makbuzu ulaşır. <a href="privacy#billing">devamını oku →</a></span></span></li>
+</ul>
+
+<span class="section-label">Aktarılanları Nasıl Koruruz</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AES-256 + donanım destekli anahtarlar</strong><span class="item-desc">Cihazınızdaki transkriptler şifrelidir. Anahtarlar iOS Keychain veya Android Keystore'da saklanır. <a href="security#layer-4">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kilitlenme raporları: varsayılan olarak kapalı</strong><span class="item-desc">İsteğe bağlıdır. Etkinleştirilirse, cihazınızdan çıkmadan önce kişisel veriler otomatik olarak ayıklanır. <a href="security#layer-5">devamını oku →</a></span></span></li>
 </ul>
 
 ---
@@ -212,12 +223,12 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
     <div class="pricing-rate">$0.0165/dk</div>
   </div>
   <div class="pricing-card popular">
-    <div class="pricing-amount">$4.49</div>
-    <div class="pricing-minutes">5 saat</div>
+    <div class="pricing-amount">$6.49</div>
+    <div class="pricing-minutes">7 saat</div>
     <div class="pricing-rate">$0.015/dk</div>
   </div>
   <div class="pricing-card">
-    <div class="pricing-amount">$12.49</div>
+    <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 saat</div>
     <div class="pricing-rate">$0.014/dk</div>
   </div>
@@ -229,6 +240,11 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
   <div class="pricing-card">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 saat</div>
+    <div class="pricing-rate">$0.012/dk</div>
+  </div>
+  <div class="pricing-card">
+    <div class="pricing-amount">$84.99</div>
+    <div class="pricing-minutes">120 saat</div>
     <div class="pricing-rate">$0.012/dk</div>
   </div>
 </div>
@@ -249,9 +265,8 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
     {"@type": "Question", "name": "Kayıtlarımı YZ eğitmek için kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitimi için kullanılmaz. Kendi YZ altyapımızı işletiyoruz."}},
     {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 100 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
     {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4 ve MOV. 50 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
-    {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde sertifika sabitleme ile TLS. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
-    {"@type": "Question", "name": "IP adresimi kaydediyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. IP adresleri hiçbir zaman saklanmaz. Günlük sistemi IP'leri herhangi bir çıktıya ulaşmadan düşürür. Dahili işlemler için tek yönlü SHA-256 karması kullanılır."}},
-    {"@type": "Question", "name": "Bellek kilitli işleme ne anlama geliyor?", "acceptedAnswer": {"@type": "Answer", "text": "Bellek kilitleme (mlockall) sesi işleme sırasında kalıcı olarak RAM'de tutar — diske takas yok. Sesiniz yalnızca uçucu bellekte kalır, disk adli incelemesinde görünmez."}}
+    {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde TLS 1.2+ şifreleme. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
+    {"@type": "Question", "name": "IP adresimi kaydediyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. IP adresleri hiçbir zaman saklanmaz. Günlük sistemi IP'leri herhangi bir çıktıya ulaşmadan düşürür. Dahili işlemler için tek yönlü SHA-256 karması kullanılır."}}
   ]
 }
 </script>
@@ -286,7 +301,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 <details class="faq-item">
   <summary>Verilerim nasıl şifreleniyor?</summary>
-  <div class="faq-answer">İletimde: Sertifika sabitleme ile TLS şifreleme, verilerinizin yalnızca SafeScribe sunucularına ulaşmasını sağlar. Cihazınızda: transkriptler, anahtarları telefonunuzun güvenli donanımı (iOS Keychain / Android Keystore) tarafından korunan AES-256 şifreli kaplarda saklanır.</div>
+  <div class="faq-answer">İletimde: TLS 1.2+ şifreleme, verilerinizin SafeScribe sunucularına ulaşana kadar korunmasını sağlar. Cihazınızda: transkriptler, anahtarları telefonunuzun güvenli donanımı (iOS Keychain / Android Keystore) tarafından korunan AES-256 şifreli kaplarda saklanır.</div>
 </details>
 
 <details class="faq-item">
@@ -305,13 +320,8 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 </details>
 
 <details class="faq-item">
-  <summary>"Bellek kilitli işleme" ne anlama geliyor?</summary>
-  <div class="faq-answer">İşletim sistemleri, bellek baskısı altında RAM içeriğini geçici olarak diske taşıyabilir ("takas"). Bellek kilitleme (<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>), işletim sistemine belirli bellek sayfalarını kalıcı olarak RAM'de tutmasını söyler — takas yok, disk teması yok. SafeScribe'ın transkripsiyon süreci bu işletim sistemi düzeyinde garantiyi kullanır; böylece sesiniz yalnızca uçucu bellekte kalır ve sunucu fiziksel olarak ele geçirilse bile disk adli incelemesinde görünmez.</div>
-</details>
-
-<details class="faq-item">
-  <summary>Ses izolasyonu doğruluğu nasıl artırıyor?</summary>
-  <div class="faq-answer">SafeScribe, konuşmayı arka plan gürültüsünden izole eden YZ destekli bir ses kaynak ayırma modeli kullanır. Sesiniz önce analiz edilir — sürekli gürültü (müzik, kalabalık sesi, arka plan gürültüsü) tespit edilirse ses izolasyonu otomatik olarak çalışır. Temiz konuşma kayıtlarında atlanır. Bu teknik, gürültülü ortamlarda kelime hata oranını önemli ölçüde düşürmektedir. Ses Aktivite Algılama ile birlikte, zorlu kayıtlardan bile temiz ve doğru metin elde etmenizi sağlar.</div>
+  <summary>Cihazda ön işleme doğruluğu nasıl artırıyor?</summary>
+  <div class="faq-answer">Yüklemeden önce SafeScribe, cihazda bir ses filtre zinciri uygular: 200 Hz yüksek geçişli filtreleme gürültü ve uğultuyu temizler, LUFS ses normalizasyonu (-16 LUFS) ses seviyelerini Whisper için optimize eder ve dinamik aralık sıkıştırma ses yüksekliği değişkenliğini dengeler. Sunucudaki Ses Aktivite Algılama ile birleştiğinde, zorlu kayıtlardan bile temiz ve doğru metin elde etmenizi sağlar.</div>
 </details>
 
 ---

@@ -116,28 +116,39 @@ lang: zh
 
 ---
 
-<span class="section-label">隐私保证</span>
-## 我们绝不做的事
+<span class="section-label">我们的承诺</span>
+## 14条隐私承诺
+{: #privacy-promises}
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> 将您的音频存储到磁盘——永远不会</li>
-  <li><span class="x-mark">&#x2717;</span> 使用您的录音训练AI模型</li>
-  <li><span class="x-mark">&#x2717;</span> 向广告商共享或出售数据</li>
-  <li><span class="x-mark">&#x2717;</span> 存储您的邮箱、姓名或IP地址</li>
-</ul>
+以下每条承诺均由代码强制执行——而非仅靠政策。每条均附有技术证据链接。
 
-<p>完整列表请参阅我们的<a href="privacy#data-we-dont-collect-or-store">隐私政策</a>。</p>
-
-<span class="section-label">我们所做的</span>
-## 从第一天起就为隐私而生
+<span class="section-label">核心架构</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>纯内存处理</strong><span class="item-desc">——音频仅在转录期间存在于易失性内存中</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>即时删除</strong><span class="item-desc">——您收到转录文本的那一刻数据即被清除</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>端到端加密</strong><span class="item-desc">——传输中使用TLS，设备上使用AES-256静态加密</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>无用户画像</strong><span class="item-desc">——仅匿名化计费，服务器端不存储个人数据</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>自托管AI</strong><span class="item-desc">——您的音频不会到达任何第三方服务</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>您掌控自己的数据</strong><span class="item-desc">——可在应用内导出、删除或清除所有数据</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>纯内存处理</strong><span class="item-desc">您的音频仅在转录期间存在于易失性内存中——从不写入磁盘。 <a href="security#layer-2">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>级联删除 + 故障保护</strong><span class="item-desc">每个步骤都删除上一步的数据。若代码出错，数据通过TTL自动销毁。 <a href="security#layer-6">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>自托管AI</strong><span class="item-desc">您的音频永远不会到达OpenAI、Google或任何第三方服务。我们自己运营基础设施。 <a href="security#layer-2">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>完整性验证</strong><span class="item-desc">每份转录文本携带SHA-256校验和，确认其原封不动地送达。 <a href="security#layer-1">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>不支持重新下载</strong><span class="item-desc">您收到转录文本后，服务器上什么都不剩。没有"再次下载"这个选项。 <a href="security#layer-6">了解更多 →</a></span></span></li>
+</ul>
+
+<span class="section-label">我们不收集也不做的事</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>您的邮箱或姓名——从不存储</strong><span class="item-desc">我们只保存账户ID的单向哈希值。无法被逆向还原以揭露您的身份。 <a href="privacy#sign-in">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>您的IP地址——从不记录</strong><span class="item-desc">仅短暂用于速率限制（以哈希形式），随后丢弃。从不出现在任何日志中。 <a href="privacy#zero-disk">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>您的录音——从不用于训练</strong><span class="item-desc">转录完成后音频立即删除。无副本、无存档、无训练数据集。 <a href="privacy#zero-disk">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>不做画像或自动化决策</strong><span class="item-desc">我们从不对您评分、排名或作出任何自动化决定。 <a href="privacy#your-rights">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>不追踪行为</strong><span class="item-desc">我们不使用任何分析SDK。没有Mixpanel，没有Firebase Analytics，没有任何追踪器。 <a href="privacy#third-parties">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>不收集通讯录、位置或生物特征</strong><span class="item-desc">我们只申请麦克风权限——不需要设备上的任何其他信息。 <a href="privacy#no-collect">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>支付信息——我们从不知晓</strong><span class="item-desc">支付完全由Apple或Google处理。我们只收到一张购买收据。 <a href="privacy#billing">了解更多 →</a></span></span></li>
+</ul>
+
+<span class="section-label">我们如何保护传输中的数据</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AES-256 + 硬件支持的密钥</strong><span class="item-desc">设备上的转录文本经过加密。密钥存储在iOS Keychain或Android Keystore中。 <a href="security#layer-4">了解更多 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>崩溃报告：默认关闭</strong><span class="item-desc">可选开启。启用后，个人数据在离开设备前会自动剥离。 <a href="security#layer-5">了解更多 →</a></span></span></li>
 </ul>
 
 ---
@@ -212,12 +223,12 @@ lang: zh
     <div class="pricing-rate">$0.0165/分钟</div>
   </div>
   <div class="pricing-card popular">
-    <div class="pricing-amount">$4.49</div>
-    <div class="pricing-minutes">5小时</div>
+    <div class="pricing-amount">$6.49</div>
+    <div class="pricing-minutes">7小时</div>
     <div class="pricing-rate">$0.015/分钟</div>
   </div>
   <div class="pricing-card">
-    <div class="pricing-amount">$12.49</div>
+    <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15小时</div>
     <div class="pricing-rate">$0.014/分钟</div>
   </div>
@@ -229,6 +240,11 @@ lang: zh
   <div class="pricing-card">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60小时</div>
+    <div class="pricing-rate">$0.012/分钟</div>
+  </div>
+  <div class="pricing-card">
+    <div class="pricing-amount">$84.99</div>
+    <div class="pricing-minutes">120小时</div>
     <div class="pricing-rate">$0.012/分钟</div>
   </div>
 </div>
@@ -270,7 +286,7 @@ lang: zh
 
 <details class="faq-item">
   <summary>我的数据是如何加密的？</summary>
-  <div class="faq-answer">传输中：TLS加密配合证书固定，确保您的数据仅到达SafeScribe服务器。在您的设备上：转录文本存储在AES-256加密容器中，密钥受手机安全硬件保护（iOS Keychain / Android Keystore）。</div>
+  <div class="faq-answer">传输中：TLS 1.2+加密保护您的数据在设备与SafeScribe服务器之间的传输安全。在您的设备上：转录文本存储在AES-256加密容器中，密钥受手机安全硬件保护（iOS Keychain / Android Keystore）。</div>
 </details>
 
 <details class="faq-item">
@@ -289,13 +305,8 @@ lang: zh
 </details>
 
 <details class="faq-item">
-  <summary>"内存锁定处理"是什么意思？</summary>
-  <div class="faq-answer">操作系统在内存压力下可能会将RAM内容临时移动到磁盘（称为"交换"）。内存锁定（<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>）指示操作系统将特定内存页面永久保留在RAM中——不交换、不接触磁盘。SafeScribe的转录进程使用这一操作系统级保证，使您的音频仅存在于易失性内存中，即使服务器被物理扣押，也对任何磁盘取证不可见。</div>
-</details>
-
-<details class="faq-item">
-  <summary>人声分离如何提高准确度？</summary>
-  <div class="faq-answer">SafeScribe使用AI驱动的音频源分离模型，可将语音从背景噪声中分离出来。首先分析您的音频——如果检测到持续噪声（音乐、人群、背景声），人声分离自动运行。对于清晰的语音录音，则跳过此步骤。该技术在嘈杂环境中能显著降低词错误率（WER）。结合语音活动检测，即使是高难度录音也能获得清晰、准确的文本。</div>
+  <summary>设备端预处理如何提高准确度？</summary>
+  <div class="faq-answer">上传前，SafeScribe在设备上应用音频滤波链：200 Hz高通滤波消除低频噪声和背景嗡嗡声，LUFS响度归一化（-16 LUFS）为Whisper优化音频电平，动态范围压缩平衡音量变化。结合服务器上的语音活动检测，即使是高难度录音也能获得清晰、准确的文本。</div>
 </details>
 
 ---

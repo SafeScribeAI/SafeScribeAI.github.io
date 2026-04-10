@@ -41,7 +41,7 @@ lang: en
 | Account balance + usage metadata | Until account deletion |
 | Email address | Transit only — **not stored** |
 | IP addresses | Transit only — **not logged** |
-| Crash reports (opt-in) | Sentry retention policy |
+| Crash reports (opt-in) | SafeScribe's crash reporting endpoint — not shared with third parties |
 
 <p>For complete data inventory details, see <a href="privacy#data-we-collect">Privacy Policy § Data We Collect</a>.</p>
 
@@ -57,8 +57,8 @@ lang: en
 
 <div class="flow-diagram">
 1. User records or selects audio on device
-2. Audio preprocessed on-device (80 Hz high-pass filter, leading-silence trimming, single-pass loudness normalization to -16 LUFS (speech-optimized, not broadcast-compliant) — peak limiting, 16 kHz resampling, FLAC encoding)
-3. Encrypted upload to SafeScribe servers (TLS + certificate pinning)
+2. Audio preprocessed on-device (200 Hz high-pass filter, leading-silence trimming, single-pass loudness normalization to -16 LUFS (speech-optimized, not broadcast-compliant) — peak limiting, 16 kHz resampling, FLAC encoding)
+3. Encrypted upload to SafeScribe servers (TLS 1.2+)
 4. Server processes audio in RAM — self-hosted Whisper model weights via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, no third-party API calls
 5. Transcript returned with SHA-256 integrity checksum
 6. Client verifies checksum, acknowledges receipt
@@ -94,10 +94,10 @@ All GDPR and KVKK data subject rights (access, rectification, erasure, restricti
 | Risk | Inherent | Mitigation | Residual |
 |------|----------|-----------|---------|
 | Audio contains sensitive personal data (health, legal, financial) | **High** | RAM-only processing; immediate deletion; no persistent storage; no third-party access | **Low** |
-| Unauthorised access to transcript in transit | Medium | TLS 1.2+ with certificate pinning enforced in production builds; SHA-256 integrity checksum | **Low** |
+| Unauthorised access to transcript in transit | Medium | TLS 1.2+ enforced in production builds; SHA-256 integrity checksum | **Low** |
 | Server-side breach exposing audio or transcripts | Medium | No persistent audio storage; authenticated API; per-user job isolation; TTL failsafe | **Low** |
 | Unauthorised access to local encrypted storage | Low | AES-256 encrypted containers; key in iOS Keychain / Android Keystore | **Low** |
-| PII leakage through crash reports | Low | Pattern-based scrubbing of emails, phones, IPs, tokens, and work IDs before Sentry | **Low** |
+| PII leakage through crash reports | Low | Pattern-based scrubbing of emails, phones, IPs, tokens, and work IDs before sending to SafeScribe's own crash reporting endpoint | **Low** |
 | Cross-border data transfer | Medium | KVKK explicit consent at first launch; GDPR SCCs with sub-processors | **Low** |
 | AI producing inaccurate transcript of sensitive content | Low | Transcription is informational only; user reviews all output; no automated decisions | **Low** |
 

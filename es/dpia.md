@@ -41,7 +41,7 @@ lang: es
 | Saldo + metadatos de uso | Hasta eliminación de la cuenta |
 | Dirección de correo electrónico | Solo tránsito — **no almacenada** |
 | Direcciones IP | Solo tránsito — **no registradas** |
-| Informes de fallos (opt-in) | Política de retención de Sentry |
+| Informes de fallos (opt-in) | Endpoint propio de informes de fallos de SafeScribe — no compartido con terceros |
 
 <p>Para el inventario completo de datos, consulta la <a href="privacy#data-we-collect">Política de Privacidad § Datos que recopilamos</a>.</p>
 
@@ -57,8 +57,8 @@ lang: es
 
 <div class="flow-diagram">
 1. El usuario graba o selecciona audio en su dispositivo
-2. Preprocesamiento de audio en el dispositivo (filtro paso alto 80 Hz, recorte de silencio inicial, normalización de loudness a -16 LUFS, limitación de pico, remuestreo a 16 kHz, codificación FLAC)
-3. Subida cifrada a los servidores SafeScribe (TLS + certificate pinning)
+2. Preprocesamiento de audio en el dispositivo (filtro paso alto 200 Hz, recorte de silencio inicial, normalización de loudness a -16 LUFS, limitación de pico, remuestreo a 16 kHz, codificación FLAC)
+3. Subida cifrada a los servidores SafeScribe (TLS 1.2+)
 4. El servidor procesa el audio en RAM — pesos del modelo Whisper auto-alojados mediante <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, sin llamadas a APIs de terceros
 5. La transcripción se devuelve con suma de verificación de integridad SHA-256
 6. El cliente verifica la suma de verificación y confirma la recepción
@@ -94,10 +94,10 @@ Todos los derechos de los interesados bajo el RGPD y la KVKK (acceso, rectificac
 | Riesgo | Inherente | Medidas de mitigación | Residual |
 |--------|-----------|----------------------|---------|
 | El audio contiene datos personales sensibles (salud, legal, financiero) | **Alto** | Procesamiento solo en RAM; eliminación inmediata; sin almacenamiento persistente; sin acceso de terceros | **Bajo** |
-| Acceso no autorizado a la transcripción en tránsito | Medio | TLS 1.2+ con certificate pinning; suma de verificación SHA-256 | **Bajo** |
+| Acceso no autorizado a la transcripción en tránsito | Medio | TLS 1.2+; suma de verificación SHA-256 | **Bajo** |
 | Brecha en servidor que exponga audio o transcripciones | Medio | Sin almacenamiento persistente de audio; API autenticada; aislamiento por trabajo; TTL de seguridad | **Bajo** |
 | Acceso no autorizado al almacenamiento local cifrado | Bajo | Contenedores cifrados AES-256; clave en iOS Keychain / Android Keystore | **Bajo** |
-| Filtración de DCP a través de informes de fallos | Bajo | Depuración por patrones de correos, teléfonos, IPs, tokens antes de Sentry | **Bajo** |
+| Filtración de DCP a través de informes de fallos | Bajo | Depuración por patrones de correos, teléfonos, IPs, tokens antes de enviar al endpoint propio de informes de fallos de SafeScribe | **Bajo** |
 | Transferencia de datos transfronteriza | Medio | Consentimiento explícito KVKK en el primer inicio; CCE RGPD con subencargados | **Bajo** |
 | IA genera transcripción imprecisa de contenido sensible | Bajo | La transcripción es solo informativa; el usuario revisa todos los resultados; sin decisiones automatizadas | **Bajo** |
 

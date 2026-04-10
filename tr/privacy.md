@@ -81,7 +81,7 @@ lang: tr
 
 | Veri | Amaç |
 |------|------|
-| Kilitlenme raporları | Sentry aracılığıyla uygulama kararlılığı — iletimden önce tüm PII temizlenir |
+| Kilitlenme raporları | SafeScribe'ın kendi kilitlenme raporlama uç noktası aracılığıyla uygulama kararlılığı — iletimden önce tüm PII temizlenir |
 
 <div class="callout callout-green">
   <strong>Sunucu asla adınızı, e-posta adresinizi, IP adresinizi, ses içeriğinizi veya transkript metninizi saklamaz.</strong> Hesabınıza bağlı kalıcı kayıtlar yalnızca geri döndürülemez bir kullanıcı karması, takma adlı bir cihaz tanımlayıcısı, bir kredi bakiyesi ve kullanım istatistiklerinden (yalnızca sayılar — içerik yok, kimlik yok) oluşur.
@@ -172,7 +172,7 @@ Kişi listenize, takviminize veya diğer hesap verilerinize erişmiyoruz.
 <span class="section-label">Hata Takibi</span>
 ## Kilitlenme Raporları (İsteğe Bağlı)
 
-İsteğe bağlı kilitlenme raporlaması için Sentry kullanıyoruz. Varsayılan olarak **kapalıdır** ve istediğiniz zaman Gizlilik Ayarları'ndan değiştirilebilir.
+İsteğe bağlı kilitlenme raporlarını SafeScribe'ın kendi kilitlenme raporlama uç noktasına gönderiyoruz. Varsayılan olarak **kapalıdır** ve istediğiniz zaman Gizlilik Ayarları'ndan değiştirilebilir.
 
 Herhangi bir rapor iletilmeden önce şunlar otomatik olarak kaldırılır:
 
@@ -193,7 +193,7 @@ Aşağıdaki hizmetleri kullanıyoruz. Belirtilen bilgilerin ötesinde ses, tran
 | Apple Sign-In | Kimlik doğrulama | Yalnızca OIDC token | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | Uygulama içi satın alma | Yalnızca satın alma makbuzu | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Google Play Store | Uygulama içi satın alma | Yalnızca satın alma makbuzu | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Sentry | Kilitlenme raporlama (isteğe bağlı) | Anonim hata raporu — PII temizlenmiş | [sentry.io/privacy](https://sentry.io/privacy/) |
+| SafeScribe kilitlenme uç noktası | Kilitlenme raporlama (isteğe bağlı) | Anonim hata raporu — PII temizlenmiş | SafeScribe tarafından işletilir, üçüncü taraf yoktur |
 
 ---
 

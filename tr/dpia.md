@@ -41,7 +41,7 @@ lang: tr
 | Hesap bakiyesi + kullanım meta verisi | Hesap silinene kadar |
 | E-posta adresi | Yalnızca iletim — **saklanmıyor** |
 | IP adresleri | Yalnızca iletim — **günlüğe kaydedilmiyor** |
-| Kilitlenme raporları (katılım) | Sentry saklama politikası |
+| Kilitlenme raporları (katılım) | SafeScribe'ın kendi kilitlenme raporlama uç noktası — üçüncü taraflarla paylaşılmaz |
 
 <p>Tam veri envanteri ayrıntıları için bkz. <a href="privacy#data-we-collect">Gizlilik Politikası § Topladığımız Veriler</a>.</p>
 
@@ -57,8 +57,8 @@ lang: tr
 
 <div class="flow-diagram">
 1. Kullanıcı cihazında ses kaydeder veya seçer
-2. Ses cihazda ön işlemden geçer (80 Hz yüksek geçişli filtre, baştaki sessizlik kırpma, -16 LUFS hedefli ses normalizasyonu (konuşma için optimize edilmiş) — tepe sınırlama, 16 kHz yeniden örnekleme, FLAC kodlama)
-3. SafeScribe sunucularına şifreli yükleme (TLS + sertifika sabitleme)
+2. Ses cihazda ön işlemden geçer (200 Hz yüksek geçişli filtre, baştaki sessizlik kırpma, -16 LUFS hedefli ses normalizasyonu (konuşma için optimize edilmiş) — tepe sınırlama, 16 kHz yeniden örnekleme, FLAC kodlama)
+3. SafeScribe sunucularına şifreli yükleme (TLS 1.2+)
 4. Sunucu sesi RAM'de işler — <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2 aracılığıyla kendi barındırılan Whisper model ağırlıkları, üçüncü taraf API çağrısı yok
 5. Transkript SHA-256 bütünlük sağlamasıyla döndürülür
 6. İstemci sağlamayı doğrular, teslimi onaylar
@@ -94,10 +94,10 @@ Tüm GDPR ve KVKK veri sahibi hakları (erişim, düzeltme, silme, kısıtlama, 
 | Risk | Doğal | Azaltma | Artık |
 |------|-------|---------|-------|
 | Ses hassas kişisel veri içerir (sağlık, hukuk, finans) | **Yüksek** | Yalnızca RAM'de işleme; anında silme; kalıcı depolama yok; üçüncü taraf erişimi yok | **Düşük** |
-| İletim sırasında transkripte yetkisiz erişim | Orta | Üretim derlemelerinde zorunlu TLS 1.2+ ve sertifika sabitleme; SHA-256 bütünlük sağlaması | **Düşük** |
+| İletim sırasında transkripte yetkisiz erişim | Orta | Üretim derlemelerinde zorunlu TLS 1.2+; SHA-256 bütünlük sağlaması | **Düşük** |
 | Sunucu taraflı ihlal — ses veya transkript ifşası | Orta | Kalıcı ses depolaması yok; kimlik doğrulamalı API; kullanıcı başına iş izolasyonu; TTL güvenlik kilidi | **Düşük** |
 | Yerel şifreli depolamaya yetkisiz erişim | Düşük | AES-256 şifreli kaplar; anahtar iOS Keychain / Android Keystore'da | **Düşük** |
-| Kilitlenme raporları üzerinden KKV sızıntısı | Düşük | E-posta, telefon, IP, token ve iş kimliklerinin örüntü tabanlı gizlenmesi, Sentry'den önce | **Düşük** |
+| Kilitlenme raporları üzerinden KKV sızıntısı | Düşük | E-posta, telefon, IP, token ve iş kimliklerinin örüntü tabanlı gizlenmesi, SafeScribe'ın kendi kilitlenme raporlama uç noktasına gönderilmeden önce | **Düşük** |
 | Sınır ötesi veri aktarımı | Orta | İlk açılışta KVKK açık rızası; alt işleyenlerle GDPR SCC'leri | **Düşük** |
 | Yapay zekanın hassas içeriği yanlış yazıya dökmesi | Düşük | Transkripsiyon yalnızca bilgilendirme amaçlıdır; kullanıcı tüm çıktıyı inceler; otomatik karar yoktur | **Düşük** |
 

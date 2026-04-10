@@ -116,28 +116,39 @@ lang: ko
 
 ---
 
-<span class="section-label">개인정보 보호 보장</span>
-## 저희가 절대 하지 않는 것
+<span class="section-label">저희의 약속</span>
+## 14가지 개인정보 보호 약속
+{: #privacy-promises}
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> 오디오를 디스크에 저장하는 것 — 절대로</li>
-  <li><span class="x-mark">&#x2717;</span> 녹음을 AI 모델 학습에 사용하는 것</li>
-  <li><span class="x-mark">&#x2717;</span> 광고주에게 데이터를 공유하거나 판매하는 것</li>
-  <li><span class="x-mark">&#x2717;</span> 이메일, 이름, 또는 IP 주소를 저장하는 것</li>
-</ul>
+아래의 모든 내용은 정책이 아니라 코드로 강제됩니다. 각 항목에는 기술적 근거 링크가 포함되어 있습니다.
 
-<p>전체 목록은 <a href="privacy#data-we-dont-collect-or-store">개인정보 처리방침</a>을 참조하세요.</p>
-
-<span class="section-label">저희가 하는 것</span>
-## 처음부터 개인정보 보호를 위해 설계
+<span class="section-label">핵심 아키텍처</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM 전용 처리</strong><span class="item-desc">오디오는 전사 중에만 휘발성 메모리에 존재합니다</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>즉시 삭제</strong><span class="item-desc">전사 텍스트를 수신하는 순간 데이터 소거</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>종단간 암호화</strong><span class="item-desc">전송 중 TLS, 기기 내 AES-256 정적 암호화</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>사용자 프로필 없음</strong><span class="item-desc">가명 청구만, 서버 측 개인 데이터 저장 없음</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>자체 호스팅 AI</strong><span class="item-desc">오디오가 제3자 서비스에 전달되지 않습니다</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>데이터는 사용자가 관리</strong><span class="item-desc">앱에서 내보내기, 삭제 또는 전체 초기화 가능</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM 전용 처리</strong><span class="item-desc">오디오는 전사 중에만 휘발성 메모리에 존재합니다 — 디스크에는 절대 기록되지 않습니다. <a href="security#layer-2">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>단계적 삭제 + 페일세이프</strong><span class="item-desc">각 단계는 이전 단계의 데이터를 삭제합니다. 코드가 실패해도 데이터는 TTL로 자동 소멸됩니다. <a href="security#layer-6">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>자체 호스팅 AI</strong><span class="item-desc">오디오는 OpenAI, Google, 또는 어떤 제3자 서비스에도 전달되지 않습니다. 자체 인프라를 운영합니다. <a href="security#layer-2">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>무결성 검증</strong><span class="item-desc">모든 전사 텍스트에는 SHA-256 체크섬이 포함되어 변조 없이 전달되었음을 확인합니다. <a href="security#layer-1">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>재다운로드 불가</strong><span class="item-desc">전사 텍스트를 수신한 후에는 서버에 아무것도 남지 않습니다. "다시 다운로드"는 존재하지 않습니다. <a href="security#layer-6">자세히 →</a></span></span></li>
+</ul>
+
+<span class="section-label">수집하지 않는 것</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>이메일이나 이름 — 절대 저장하지 않음</strong><span class="item-desc">계정 ID의 단방향 해시만 보관합니다. 역산하여 신원을 파악할 수 없습니다. <a href="privacy#sign-in">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IP 주소 — 절대 기록하지 않음</strong><span class="item-desc">속도 제한에 잠시 사용(해시 형태)한 후 폐기합니다. 어떤 로그에도 기록되지 않습니다. <a href="privacy#zero-disk">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>녹음 — 학습에 절대 사용하지 않음</strong><span class="item-desc">오디오는 전사 직후 삭제됩니다. 복사본 없음, 아카이브 없음, 학습 데이터셋 없음. <a href="privacy#zero-disk">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>프로파일링 또는 자동화된 결정 없음</strong><span class="item-desc">점수를 매기거나 순위를 정하거나 자동화된 결정을 내리는 일이 없습니다. <a href="privacy#your-rights">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>행동 추적 없음</strong><span class="item-desc">분석 SDK를 전혀 사용하지 않습니다. Mixpanel 없음, Firebase Analytics 없음, 어떤 추적기도 없음. <a href="privacy#third-parties">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>연락처, 위치, 생체 정보 없음</strong><span class="item-desc">마이크 접근 권한만 요청합니다 — 기기에서 그 외 아무것도 요청하지 않습니다. <a href="privacy#no-collect">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>결제 정보 — 저희는 볼 수 없습니다</strong><span class="item-desc">결제는 Apple 또는 Google이 전적으로 처리합니다. 저희는 구매 영수증만 받습니다. <a href="privacy#billing">자세히 →</a></span></span></li>
+</ul>
+
+<span class="section-label">전송 데이터 보호 방법</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AES-256 + 하드웨어 기반 키</strong><span class="item-desc">기기의 전사 텍스트는 암호화됩니다. 키는 iOS Keychain 또는 Android Keystore에 저장됩니다. <a href="security#layer-4">자세히 →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>충돌 보고: 기본 비활성화</strong><span class="item-desc">선택 사항입니다. 활성화 시, 기기를 떠나기 전에 개인 데이터가 자동으로 제거됩니다. <a href="security#layer-5">자세히 →</a></span></span></li>
 </ul>
 
 ---
@@ -212,12 +223,12 @@ lang: ko
     <div class="pricing-rate">$0.0165/분</div>
   </div>
   <div class="pricing-card popular">
-    <div class="pricing-amount">$4.49</div>
-    <div class="pricing-minutes">5시간</div>
+    <div class="pricing-amount">$6.49</div>
+    <div class="pricing-minutes">7시간</div>
     <div class="pricing-rate">$0.015/분</div>
   </div>
   <div class="pricing-card">
-    <div class="pricing-amount">$12.49</div>
+    <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15시간</div>
     <div class="pricing-rate">$0.014/분</div>
   </div>
@@ -229,6 +240,11 @@ lang: ko
   <div class="pricing-card">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60시간</div>
+    <div class="pricing-rate">$0.012/분</div>
+  </div>
+  <div class="pricing-card">
+    <div class="pricing-amount">$84.99</div>
+    <div class="pricing-minutes">120시간</div>
     <div class="pricing-rate">$0.012/분</div>
   </div>
 </div>
@@ -270,7 +286,7 @@ lang: ko
 
 <details class="faq-item">
   <summary>데이터는 어떻게 암호화되나요?</summary>
-  <div class="faq-answer">전송 중: 인증서 고정이 적용된 TLS 암호화로 데이터가 SafeScribe 서버에만 도달하도록 보장합니다. 기기 내: 전사 텍스트는 AES-256 암호화 컨테이너에 저장되며, 키는 휴대폰의 보안 하드웨어(iOS Keychain / Android Keystore)로 보호됩니다.</div>
+  <div class="faq-answer">전송 중: TLS 1.2+ 암호화가 기기와 SafeScribe 서버 사이의 데이터를 보호합니다. 기기 내: 전사 텍스트는 AES-256 암호화 컨테이너에 저장되며, 키는 휴대폰의 보안 하드웨어(iOS Keychain / Android Keystore)로 보호됩니다.</div>
 </details>
 
 <details class="faq-item">
@@ -289,13 +305,8 @@ lang: ko
 </details>
 
 <details class="faq-item">
-  <summary>"메모리 잠금 처리"란 무슨 의미인가요?</summary>
-  <div class="faq-answer">운영 체제는 메모리가 부족할 때 RAM 내용을 디스크로 임시로 이동할 수 있습니다("스왑"이라고 함). 메모리 잠금(<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>)은 특정 메모리 페이지를 항상 RAM에 유지하도록 OS에 지시합니다 — 스왑 없음, 디스크 접촉 없음. SafeScribe의 전사 프로세스는 이 OS 수준의 보장을 사용하므로 귀하의 오디오는 휘발성 메모리에만 존재하며, 서버가 물리적으로 압수되더라도 디스크 포렌식에는 보이지 않습니다.</div>
-</details>
-
-<details class="faq-item">
-  <summary>음성 분리는 어떻게 정확도를 향상시키나요?</summary>
-  <div class="faq-answer">SafeScribe는 배경 소음에서 음성을 분리하는 AI 기반 오디오 음원 분리 모델을 사용합니다. 먼저 오디오를 분석하여 지속적인 소음(음악, 군중 소리, 배경 소음)이 감지되면 음성 분리를 자동으로 실행합니다. 깨끗한 음성 녹음에서는 건너뜁니다. 이 기술은 소음 환경에서 단어 오류율(WER)을 크게 줄입니다. 음성 활동 감지와 결합하여 어려운 녹음에서도 깨끗하고 정확한 텍스트를 얻을 수 있습니다.</div>
+  <summary>기기 내 전처리는 어떻게 정확도를 향상시키나요?</summary>
+  <div class="faq-answer">업로드 전에 SafeScribe는 기기에서 오디오 필터 체인을 적용합니다: 200 Hz 하이패스 필터링으로 저주파 잡음과 배경 소음을 제거하고, LUFS 라우드니스 정규화(-16 LUFS)로 Whisper에 최적화된 음량을 설정하며, 다이나믹 레인지 압축으로 음량 변화를 고르게 만듭니다. 서버의 음성 활동 감지와 결합하여 어려운 녹음에서도 깨끗하고 정확한 텍스트를 얻을 수 있습니다.</div>
 </details>
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Privacy-First AI Transcription
-description: Your transcription app keeps your recordings for days. Ours? Zero seconds. RAM-only processing, AI vocal isolation for accuracy, deleted the moment you receive your text.
+description: Your transcription app keeps your recordings for days. Ours? Zero seconds. RAM-only processing, on-device noise reduction for accuracy, deleted the moment you receive your text.
 lang: en
 ---
 
@@ -9,7 +9,7 @@ lang: en
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Your transcription app keeps your recordings for days.<br>Ours? Zero seconds.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM-only processing. AI vocal isolation for accuracy. Deleted the moment you receive your text.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM-only processing. On-device noise reduction for accuracy. Deleted the moment you receive your text.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacy isn't a policy we follow — it's a structure we built. You can't subpoena data that was never stored.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Get Started — See Pricing</a>
@@ -64,7 +64,7 @@ lang: en
       <td class="no">Yes</td>
     </tr>
     <tr>
-      <td>AI vocal isolation</td>
+      <td>On-device noise reduction</td>
       <td class="yes">Yes</td>
       <td class="no">No</td>
       <td class="no">No</td>
@@ -116,28 +116,39 @@ lang: en
 
 ---
 
-<span class="section-label">Privacy Guarantees</span>
-## What We Never Do
+<span class="section-label">Our Commitments</span>
+## 14 Privacy Promises
+{: #privacy-promises}
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Store your audio on disk — ever</li>
-  <li><span class="x-mark">&#x2717;</span> Use your recordings to train AI models</li>
-  <li><span class="x-mark">&#x2717;</span> Share or sell your data to advertisers</li>
-  <li><span class="x-mark">&#x2717;</span> Store your email, name, or IP address</li>
-</ul>
+Every claim below is enforced in code — not just policy. Each links to the technical evidence.
 
-<p>For the complete list, see our <a href="privacy#data-we-dont-collect-or-store">Privacy Policy</a>.</p>
-
-<span class="section-label">What We Do</span>
-## Built for Privacy from Day One
+<span class="section-label">Core Architecture</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM-only processing</strong><span class="item-desc">audio exists in volatile memory only during transcription</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Immediate deletion</strong><span class="item-desc">data erased the moment you receive your transcript</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>End-to-end encryption</strong><span class="item-desc">TLS in transit, AES-256 at rest on your device</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No user profiles</strong><span class="item-desc">pseudonymous billing only, no personal data stored server-side</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Self-hosted AI</strong><span class="item-desc">your audio never reaches any third-party service</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>You control your data</strong><span class="item-desc">export, delete, or wipe everything from the app</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM-only processing</strong><span class="item-desc">Your audio exists in volatile memory only during transcription — never written to disk. <a href="security#layer-2">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Cascade deletion + failsafe</strong><span class="item-desc">Each step deletes the previous step's data. If our code fails, data self-destructs via TTL. <a href="security#layer-6">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Self-hosted AI</strong><span class="item-desc">Your audio never reaches OpenAI, Google, or any third-party service. We run our own infrastructure. <a href="security#layer-2">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Integrity verification</strong><span class="item-desc">Every transcript carries a SHA-256 checksum so you know it arrived unaltered. <a href="security#layer-1">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No re-download</strong><span class="item-desc">Once you receive your transcript, nothing remains on our servers. There is no "download again." <a href="security#layer-6">learn more →</a></span></span></li>
+</ul>
+
+<span class="section-label">What We Don't Collect or Do</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Your email or name — never stored</strong><span class="item-desc">Only a one-way hash of your account ID is kept. It cannot be reversed to reveal who you are. <a href="privacy#sign-in">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Your IP address — never logged</strong><span class="item-desc">Used briefly for rate limiting (as a hash), then discarded. Never appears in any log. <a href="privacy#zero-disk">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Your recordings — never used for training</strong><span class="item-desc">Your audio is deleted immediately after transcription. No copy, no archive, no training dataset. <a href="privacy#zero-disk">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No profiling or automated decisions</strong><span class="item-desc">We never score, rank, or make automated decisions about you. <a href="privacy#your-rights">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No behaviour tracking</strong><span class="item-desc">We use zero analytics SDKs. No Mixpanel, no Firebase Analytics, no trackers of any kind. <a href="privacy#third-parties">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No contacts, location, or biometrics</strong><span class="item-desc">We request only microphone access — nothing else from your device. <a href="privacy#no-collect">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Payment details — never seen by us</strong><span class="item-desc">Payments handled entirely by Apple or Google. We receive only a purchase receipt. <a href="privacy#billing">learn more →</a></span></span></li>
+</ul>
+
+<span class="section-label">How We Protect What Must Move</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AES-256 + hardware-backed keys</strong><span class="item-desc">Transcripts on your device are encrypted. Keys stored in iOS Keychain or Android Keystore. <a href="security#layer-4">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Crash reports: off by default</strong><span class="item-desc">Optional. If enabled, personal data is automatically stripped before anything leaves your device. <a href="security#layer-5">learn more →</a></span></span></li>
 </ul>
 
 ---
@@ -183,8 +194,8 @@ Every audio file passes through an optimized pipeline — on your device and on 
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>AI Vocal Isolation</h4>
-    <p>Automatically applied when audio analysis detects noise or continuous energy. Isolates speech from background sounds — skipped for clean recordings. AI-powered source separation demonstrates significant word error rate reduction in noisy environments.</p>
+    <h4>Audio Preprocessing</h4>
+    <p>On-device FFmpeg filter chain: high-pass filtering, loudness normalization (-16 LUFS), dynamic range compression, and silence trimming — optimized for Whisper accuracy before upload.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
@@ -212,12 +223,12 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
     <div class="pricing-rate">$0.0165/min</div>
   </div>
   <div class="pricing-card popular">
-    <div class="pricing-amount">$4.49</div>
-    <div class="pricing-minutes">5 hours</div>
+    <div class="pricing-amount">$6.49</div>
+    <div class="pricing-minutes">7 hours</div>
     <div class="pricing-rate">$0.015/min</div>
   </div>
   <div class="pricing-card">
-    <div class="pricing-amount">$12.49</div>
+    <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 hours</div>
     <div class="pricing-rate">$0.014/min</div>
   </div>
@@ -229,6 +240,11 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
   <div class="pricing-card">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 hours</div>
+    <div class="pricing-rate">$0.012/min</div>
+  </div>
+  <div class="pricing-card">
+    <div class="pricing-amount">$84.99</div>
+    <div class="pricing-minutes">120 hours</div>
     <div class="pricing-rate">$0.012/min</div>
   </div>
 </div>
@@ -249,9 +265,8 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
     {"@type": "Question", "name": "Do you use my recordings to train AI?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your audio is used only for generating your transcript. Never stored, analyzed, or used for model training. We run our own AI infrastructure."}},
     {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "The open-source Whisper model supports 100 languages with automatic detection. You can also manually select the language for improved accuracy."}},
     {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4, and MOV. Files up to 50 MB and 2 hours."}},
-    {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS with certificate pinning in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
-    {"@type": "Question", "name": "Do you log my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "No. IP addresses are never stored. The logging system drops IPs before any output. We use a one-way SHA-256 hash for internal operations."}},
-    {"@type": "Question", "name": "What does memory-locked processing mean?", "acceptedAnswer": {"@type": "Answer", "text": "Memory locking (mlockall) keeps audio in RAM permanently during processing — no swap to disk. Your audio stays in volatile memory only, invisible to disk forensics."}}
+    {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS 1.2+ encryption in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
+    {"@type": "Question", "name": "Do you log my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "No. IP addresses are never stored. The logging system drops IPs before any output. We use a one-way SHA-256 hash for internal operations."}}
   ]
 }
 </script>
@@ -286,7 +301,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 <details class="faq-item">
   <summary>How is my data encrypted?</summary>
-  <div class="faq-answer">In transit: TLS encryption with certificate pinning ensures your data only reaches SafeScribe servers. On your device: transcripts are stored in AES-256 encrypted containers with keys protected by your phone's secure hardware (iOS Keychain / Android Keystore).</div>
+  <div class="faq-answer">In transit: TLS 1.2+ encryption ensures your data is protected between your device and SafeScribe servers. On your device: transcripts are stored in AES-256 encrypted containers with keys protected by your phone's secure hardware (iOS Keychain / Android Keystore).</div>
 </details>
 
 <details class="faq-item">
@@ -305,13 +320,8 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 </details>
 
 <details class="faq-item">
-  <summary>What does "memory-locked processing" mean?</summary>
-  <div class="faq-answer">Operating systems can temporarily move RAM contents to disk (called "swap") when memory is under pressure. Memory locking (<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>) instructs the OS to keep specific memory pages in RAM permanently — no swap, no disk contact. SafeScribe's transcription process uses this OS-level guarantee so that your audio stays in volatile memory only, invisible to any disk forensics even if the server is physically seized.</div>
-</details>
-
-<details class="faq-item">
-  <summary>How does vocal isolation improve accuracy?</summary>
-  <div class="faq-answer">SafeScribe uses AI-powered audio source separation to isolate speech from background noise. Your audio is analysed first — if continuous noise (music, crowd, background sound) is detected, vocal isolation runs automatically. For clean speech recordings, it is skipped. This technique significantly reduces word error rate in noisy environments. Combined with Voice Activity Detection, it ensures you get clean, accurate text even from challenging recordings.</div>
+  <summary>How does on-device preprocessing improve accuracy?</summary>
+  <div class="faq-answer">Before upload, SafeScribe applies an on-device audio filter chain: 200Hz high-pass filtering removes rumble and background hum, LUFS loudness normalization (-16 LUFS) optimizes audio levels for Whisper, and dynamic range compression evens out volume variation. Combined with Voice Activity Detection on the server, this ensures you get clean, accurate text even from challenging recordings.</div>
 </details>
 
 ---

@@ -81,7 +81,7 @@ lang: ko
 
 | 데이터 | 목적 |
 |------|---------|
-| 충돌 보고서 | Sentry를 통한 앱 안정성 — 전송 전 모든 개인 정보 제거 |
+| 충돌 보고서 | SafeScribe 자체 충돌 보고 엔드포인트를 통한 앱 안정성 — 전송 전 모든 개인 정보 제거 |
 
 <div class="callout callout-green">
   <strong>서버는 귀하의 이름, 이메일 주소, IP 주소, 오디오 내용 또는 전사 텍스트를 절대 저장하지 않습니다.</strong> 귀하의 계정과 연결된 유일한 영구 기록은 역산 불가능한 사용자 해시 값, 가명 기기 식별자, 크레딧 잔액, 그리고 사용 통계(숫자만 — 내용 없음, 신원 없음)입니다.
@@ -138,7 +138,6 @@ lang: ko
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AI 훈련 없음</strong><span class="item-desc">오디오는 절대 모델 개선에 사용되지 않음</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>자체 호스팅 AI</strong><span class="item-desc">제3자 AI 서비스가 오디오를 받지 않음</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTL 안전장치</strong><span class="item-desc">삭제 코드가 실패해도 데이터 자동 소멸</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>메모리 잠금</strong><span class="item-desc">OS 수준 잠금으로 오디오가 디스크로 스왑되는 것을 방지</span></span></li>
 </ul>
 
 ---
@@ -172,7 +171,7 @@ Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용�
 <span class="section-label">오류 추적</span>
 ## 충돌 보고서 (선택 사항)
 
-선택적 충돌 보고를 위해 Sentry를 사용합니다. **기본적으로 비활성화**되어 있으며 개인정보 보호 설정에서 언제든지 변경할 수 있습니다.
+선택적 충돌 보고서는 SafeScribe 자체 충돌 보고 엔드포인트로 전송됩니다. **기본적으로 비활성화**되어 있으며 개인정보 보호 설정에서 언제든지 변경할 수 있습니다.
 
 보고서 전송 전 다음 항목이 자동으로 제거됩니다:
 
@@ -193,7 +192,7 @@ Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용�
 | Apple Sign-In | 인증 | OIDC 토큰만 | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | 인앱 구매 | 구매 영수증만 | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Google Play Store | 인앱 구매 | 구매 영수증만 | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Sentry | 충돌 보고 (옵트인) | 익명 오류 보고서 — 개인 정보 제거됨 | [sentry.io/privacy](https://sentry.io/privacy/) |
+| SafeScribe 충돌 보고 엔드포인트 | 충돌 보고 (옵트인) | 익명 오류 보고서 — 개인 정보 제거됨 | SafeScribe 자체 운영, 제3자 없음 |
 
 ---
 

@@ -24,7 +24,7 @@ lang: pt
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Camada 1 — Transporte</h4>
-    <p>Criptografia TLS 1.2+ e certificate pinning em cada conexão. Nenhum proxy consegue interceptar os dados.</p>
+    <p>Criptografia TLS 1.2+ em cada conexão. O tráfego é criptografado de ponta a ponta, sem exceções.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -70,13 +70,10 @@ A diferença fundamental: mesmo em caso de apreensão física do servidor, não 
 | Proteção | O que previne |
 |----------|--------------|
 | Criptografia TLS 1.2+ | Interceptação do tráfego de rede |
-| Certificate pinning | Ataques man-in-the-middle, servidores falsos |
 | Checksum SHA-256 | Adulteração da transcrição em trânsito |
 
-O app contém uma impressão digital criptográfica do certificado do servidor SafeScribe. Mesmo que uma autoridade certificadora fosse comprometida, o app rejeitaria qualquer conexão que não levasse ao servidor real do SafeScribe.
-
 <div class="callout callout-green">
-  <strong>Verificável:</strong> O Wireshark permite confirmar que todo o tráfego do SafeScribe é criptografado com TLS. Qualquer tentativa de interceptação via proxy falha — o certificate pinning rejeita o certificado do proxy.
+  <strong>Verificável:</strong> O Wireshark permite confirmar que todo o tráfego do SafeScribe é criptografado com TLS.
 </div>
 
 ---
@@ -223,7 +220,7 @@ Concluído                      ZERO dados restam
 Encorajamos pesquisadores de segurança e defensores da privacidade a verificar nossas afirmações:
 
 <ul class="verify-steps">
-  <li><span><strong>Análise de rede</strong> O Wireshark ou Charles Proxy permite confirmar que todo o tráfego do SafeScribe é criptografado com TLS; qualquer tentativa de interceptação é bloqueada pelo certificate pinning.</span></li>
+  <li><span><strong>Análise de rede</strong> O Wireshark ou Charles Proxy permite confirmar que todo o tráfego do SafeScribe é criptografado com TLS.</span></li>
   <li><span><strong>Avaliações publicadas</strong> Nossa <a href="dpia">Avaliação de Impacto de Proteção de Dados</a> contém a análise completa de riscos e o registro de decisões.</span></li>
   <li><span><strong>Divulgação responsável</strong> Encontrou uma vulnerabilidade? Entre em contato com <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</span></li>
 </ul>

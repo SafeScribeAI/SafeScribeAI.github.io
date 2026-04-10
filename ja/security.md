@@ -24,7 +24,7 @@ lang: ja
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>レイヤー 1 — 通信</h4>
-    <p>すべての接続で TLS 1.2+ 暗号化と証明書ピン留めを使用。プロキシによる傍受は不可能です。</p>
+    <p>すべての接続で TLS 1.2+ 暗号化を使用。通信はエンドツーエンドで暗号化され、例外はありません。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -70,13 +70,10 @@ lang: ja
 | 保護手段 | 防ぐもの |
 |---------|--------|
 | TLS 1.2+ 暗号化 | ネットワークトラフィックの盗聴 |
-| 証明書ピン留め | 中間者攻撃、偽サーバー |
 | SHA-256 整合性チェックサム | 転送中の文字起こしへの改ざん |
 
-アプリには SafeScribe サーバー証明書の暗号指紋が組み込まれています。認証局が侵害されても、アプリは本物の SafeScribe サーバー以外への接続をすべて拒否します。
-
 <div class="callout callout-green">
-  <strong>検証可能：</strong>Wireshark を使用して SafeScribe のすべての通信が TLS 暗号化されていることを確認できます。プロキシによる傍受の試みは失敗します — 証明書ピン留めがプロキシの証明書を拒否するためです。
+  <strong>検証可能：</strong>Wireshark を使用して SafeScribe のすべての通信が TLS 暗号化されていることを確認できます。
 </div>
 
 ---
@@ -224,7 +221,7 @@ SafeScribe は Google ログインと Sign in with Apple を使用します。�
 セキュリティ研究者やプライバシー擁護者による当社の主張の検証を歓迎します：
 
 <ul class="verify-steps">
-  <li><span><strong>ネットワーク解析</strong> Wireshark または Charles Proxy を使用して SafeScribe のすべての通信が TLS 暗号化されていることを確認できます。傍受の試みは証明書ピン留めによってブロックされます。</span></li>
+  <li><span><strong>ネットワーク解析</strong> Wireshark または Charles Proxy を使用して SafeScribe のすべての通信が TLS 暗号化されていることを確認できます。</span></li>
   <li><span><strong>公開された評価書</strong> 当社の<a href="dpia">データ保護影響評価</a>には完全なリスク分析と決定記録が含まれています。</span></li>
   <li><span><strong>責任ある開示</strong> 脆弱性を発見しましたか？<a href="mailto:security@safescribe.dev">security@safescribe.dev</a> までご連絡ください。</span></li>
 </ul>

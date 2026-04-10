@@ -41,7 +41,7 @@ lang: fr
 | Solde du compte + métadonnées d'utilisation | Jusqu'à suppression du compte |
 | Adresse e-mail | Transit uniquement — **non stockée** |
 | Adresses IP | Transit uniquement — **non journalisées** |
-| Rapports de plantage (opt-in) | Politique de rétention Sentry |
+| Rapports de plantage (opt-in) | Point de terminaison de rapport de plantage de SafeScribe — non partagé avec des tiers |
 
 <p>Pour l'inventaire complet des données, voir <a href="privacy#data-we-collect">Politique de Confidentialité § Données que nous collectons</a>.</p>
 
@@ -57,8 +57,8 @@ lang: fr
 
 <div class="flow-diagram">
 1. L'utilisateur enregistre ou sélectionne de l'audio sur son appareil
-2. Prétraitement audio côté appareil (filtre passe-haut 80 Hz, écrêtage du silence, normalisation de loudness à -16 LUFS, limitation de crête, rééchantillonnage 16 kHz, encodage FLAC)
-3. Envoi chiffré vers les serveurs SafeScribe (TLS + certificate pinning)
+2. Prétraitement audio côté appareil (filtre passe-haut 200 Hz, écrêtage du silence, normalisation de loudness à -16 LUFS, limitation de crête, rééchantillonnage 16 kHz, encodage FLAC)
+3. Envoi chiffré vers les serveurs SafeScribe (TLS 1.2+)
 4. Traitement audio en RAM côté serveur — poids du modèle Whisper auto-hébergés via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, aucun appel API tiers
 5. Transcription retournée avec somme de contrôle d'intégrité SHA-256
 6. Le client vérifie la somme de contrôle et confirme la réception
@@ -94,10 +94,10 @@ Tous les droits des personnes concernées au titre du RGPD et du KVKK (accès, r
 | Risque | Inhérent | Mesures d'atténuation | Résiduel |
 |--------|----------|-----------------------|---------|
 | L'audio contient des données personnelles sensibles (santé, juridique, financier) | **Élevé** | Traitement RAM uniquement ; suppression immédiate ; aucun stockage persistant ; aucun accès tiers | **Faible** |
-| Accès non autorisé à la transcription en transit | Moyen | TLS 1.2+ avec certificate pinning ; somme de contrôle SHA-256 | **Faible** |
+| Accès non autorisé à la transcription en transit | Moyen | TLS 1.2+ ; somme de contrôle SHA-256 | **Faible** |
 | Intrusion côté serveur exposant audio ou transcriptions | Moyen | Aucun stockage audio persistant ; API authentifiée ; isolation par traitement ; TTL de sécurité | **Faible** |
 | Accès non autorisé au stockage local chiffré | Faible | Conteneurs chiffrés AES-256 ; clé dans iOS Keychain / Android Keystore | **Faible** |
-| Fuite de DCP via les rapports de plantage | Faible | Suppression par motif des e-mails, téléphones, IP, tokens avant Sentry | **Faible** |
+| Fuite de DCP via les rapports de plantage | Faible | Suppression par motif des e-mails, téléphones, IP, tokens avant envoi au point de terminaison de rapport de plantage de SafeScribe | **Faible** |
 | Transfert de données transfrontalier | Moyen | Consentement explicite KVKK au premier lancement ; CCT RGPD avec sous-traitants | **Faible** |
 | L'IA produit une transcription inexacte de contenu sensible | Faible | La transcription est purement informative ; l'utilisateur examine toutes les sorties ; aucune décision automatisée | **Faible** |
 

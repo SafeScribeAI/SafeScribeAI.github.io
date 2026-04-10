@@ -81,7 +81,7 @@ lang: ja
 
 | データ | 目的 |
 |------|---------|
-| クラッシュレポート | Sentryによるアプリ安定性 — 送信前にすべての個人情報を削除 |
+| クラッシュレポート | SafeScribe自社のクラッシュレポートエンドポイントによるアプリ安定性 — 送信前にすべての個人情報を削除 |
 
 <div class="callout callout-green">
   <strong>サーバーはお客様の氏名、メールアドレス、IPアドレス、音声コンテンツ、文字起こしテキストを一切保存しません。</strong>お客様のアカウントに紐付く唯一の永続的な記録は、不可逆のユーザーハッシュ値、仮名デバイス識別子、クレジット残高、および使用統計（数値のみ — コンテンツなし、個人識別情報なし）です。
@@ -138,7 +138,6 @@ lang: ja
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AIトレーニングなし</strong><span class="item-desc">音声はモデル改善に使用されない</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>自社ホスティングAI</strong><span class="item-desc">第三者AIサービスが音声を受け取ることはない</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTLセーフガード</strong><span class="item-desc">削除コードが失敗してもデータが自動消滅</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>メモリロック</strong><span class="item-desc">OSレベルのロックで音声がディスクにスワップされるのを防ぐ</span></span></li>
 </ul>
 
 ---
@@ -172,7 +171,7 @@ Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用して
 <span class="section-label">エラー追跡</span>
 ## クラッシュレポート（オプション）
 
-オプションのクラッシュレポートにSentryを使用しています。**デフォルトでオフ**になっており、いつでもプライバシー設定で変更できます。
+オプションのクラッシュレポートはSafeScribe自社のクラッシュレポートエンドポイントに送信されます。**デフォルトでオフ**になっており、いつでもプライバシー設定で変更できます。
 
 レポートが送信される前に、以下が自動的に削除されます：
 
@@ -193,7 +192,7 @@ Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用して
 | Apple Sign-In | 認証 | OIDCトークンのみ | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | アプリ内購入 | 購入レシートのみ | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Google Play Store | アプリ内購入 | 購入レシートのみ | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Sentry | クラッシュレポート（オプトイン） | 匿名エラーレポート — 個人情報削除済み | [sentry.io/privacy](https://sentry.io/privacy/) |
+| SafeScribeクラッシュレポートエンドポイント | クラッシュレポート（オプトイン） | 匿名エラーレポート — 個人情報削除済み | SafeScribeが自社運営、第三者なし |
 
 ---
 

@@ -80,7 +80,7 @@ lang: en
 
 | Data | Purpose |
 |------|---------|
-| Crash reports | App stability via Sentry — all PII stripped before sending |
+| Crash reports | App stability via SafeScribe's own crash reporting endpoint — all PII stripped before sending |
 
 <div class="callout callout-green">
   <strong>The server never stores your name, email address, IP address, audio content, or transcript text.</strong> The only persistent records linked to your account are a non-reversible user hash, a pseudonymous device identifier, a credit balance, and usage statistics (numbers only — no content, no identity).
@@ -137,7 +137,6 @@ Our disk:    Balance records only — no audio, no transcript, no email
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No AI training</strong><span class="item-desc">your audio is never used to improve models</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Self-hosted AI</strong><span class="item-desc">no third-party AI service receives your audio</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTL failsafe</strong><span class="item-desc">data self-destructs even if deletion code fails</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Memory-locked</strong><span class="item-desc">OS-level lock prevents audio from swapping to disk</span></span></li>
 </ul>
 
 ---
@@ -171,7 +170,7 @@ Payments are processed entirely by Apple App Store or Google Play Store. SafeScr
 <span class="section-label">Error Tracking</span>
 ## Crash Reports (Optional)
 
-We use Sentry for optional crash reporting. It is **off by default** and can be toggled from Privacy Settings at any time.
+We send optional crash reports to SafeScribe's own crash reporting endpoint. This is **off by default** and can be toggled from Privacy Settings at any time.
 
 Before any report is transmitted, the following are automatically removed:
 
@@ -192,7 +191,7 @@ We use the following services. No audio, transcript content, or personal informa
 | Apple Sign-In | Authentication | OIDC token only | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | In-app purchases | Purchase receipt only | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Google Play Store | In-app purchases | Purchase receipt only | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Sentry | Crash reporting (opt-in) | Anonymised error report — PII stripped | [sentry.io/privacy](https://sentry.io/privacy/) |
+| SafeScribe crash endpoint | Crash reporting (opt-in) | Anonymised error report — PII stripped | SafeScribe-operated, no third party |
 
 ---
 

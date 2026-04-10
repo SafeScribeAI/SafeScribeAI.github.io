@@ -41,7 +41,7 @@ lang: de
 | Kontoguthaben + Nutzungsmetadaten | Bis zur Kontolöschung |
 | E-Mail-Adresse | Nur Transit — **nicht gespeichert** |
 | IP-Adressen | Nur Transit — **nicht protokolliert** |
-| Absturzberichte (Opt-in) | Sentry-Aufbewahrungsrichtlinie |
+| Absturzberichte (Opt-in) | SafeScribes eigener Absturzbericht-Endpunkt — keine Weitergabe an Dritte |
 
 <p>Vollständige Details zum Datenbestand finden Sie in der <a href="privacy#data-we-collect">Datenschutzerklärung § Daten, die wir erheben</a>.</p>
 
@@ -57,8 +57,8 @@ lang: de
 
 <div class="flow-diagram">
 1. Benutzer nimmt Audio auf dem Gerät auf oder wählt es aus
-2. Audio wird geräteseitig vorverarbeitet (80-Hz-Hochpassfilter, Stille-Trimmen, Lautstärkenormalisierung auf -16 LUFS, Peak-Limiting, 16-kHz-Resampling, FLAC-Kodierung)
-3. Verschlüsselter Upload zu SafeScribe-Servern (TLS + Certificate Pinning)
+2. Audio wird geräteseitig vorverarbeitet (200-Hz-Hochpassfilter, Stille-Trimmen, Lautstärkenormalisierung auf -16 LUFS, Peak-Limiting, 16-kHz-Resampling, FLAC-Kodierung)
+3. Verschlüsselter Upload zu SafeScribe-Servern (TLS 1.2+)
 4. Server verarbeitet Audio im RAM — selbst gehostete Whisper-Modellgewichte via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, keine Drittanbieter-API-Aufrufe
 5. Transkript wird mit SHA-256-Integritätsprüfsumme zurückgegeben
 6. Client überprüft Prüfsumme, bestätigt Empfang
@@ -94,10 +94,10 @@ Alle DSGVO- und KVKK-Betroffenenrechte (Auskunft, Berichtigung, Löschung, Einsc
 | Risiko | Inhärent | Schutzmaßnahmen | Residual |
 |--------|----------|-----------------|----------|
 | Audio enthält sensible personenbezogene Daten (Gesundheit, Recht, Finanzen) | **Hoch** | Nur-RAM-Verarbeitung; sofortige Löschung; keine dauerhafte Speicherung; kein Drittanbieterzugriff | **Niedrig** |
-| Unbefugter Zugriff auf Transkript während der Übertragung | Mittel | TLS 1.2+ mit Certificate Pinning; SHA-256-Integritätsprüfung | **Niedrig** |
+| Unbefugter Zugriff auf Transkript während der Übertragung | Mittel | TLS 1.2+; SHA-256-Integritätsprüfung | **Niedrig** |
 | Serverseitiger Einbruch mit Offenlegung von Audio oder Transkripten | Mittel | Keine dauerhafte Audiospeicherung; authentifizierte API; Auftragsisolierung; TTL-Failsafe | **Niedrig** |
 | Unbefugter Zugriff auf lokal verschlüsselten Speicher | Niedrig | AES-256-verschlüsselte Container; Schlüssel in iOS Keychain / Android Keystore | **Niedrig** |
-| PII-Leck durch Absturzberichte | Niedrig | Musterbasierte Bereinigung von E-Mails, Telefonnummern, IPs, Tokens vor Sentry | **Niedrig** |
+| PII-Leck durch Absturzberichte | Niedrig | Musterbasierte Bereinigung von E-Mails, Telefonnummern, IPs, Tokens vor Übermittlung an SafeScribes eigenen Absturzbericht-Endpunkt | **Niedrig** |
 | Grenzüberschreitende Datenübertragung | Mittel | KVKK-ausdrückliche Einwilligung beim ersten Start; DSGVO-SCCs mit Unterauftragsverarbeitern | **Niedrig** |
 | KI erzeugt ungenaues Transkript sensibler Inhalte | Niedrig | Transkription ist nur informativ; Benutzer prüft alle Ausgaben; keine automatisierten Entscheidungen | **Niedrig** |
 

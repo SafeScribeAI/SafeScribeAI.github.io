@@ -24,7 +24,7 @@ lang: zh
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>第一层 — 传输安全</h4>
-    <p>每次连接使用 TLS 1.2+ 加密和证书锁定，任何代理均无法拦截数据。</p>
+    <p>每次连接使用 TLS 1.2+ 加密，流量全程端对端加密，无例外。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -70,13 +70,10 @@ lang: zh
 | 保护措施 | 防范内容 |
 |---------|---------|
 | TLS 1.2+ 加密 | 网络流量窃听 |
-| 证书锁定 | 中间人攻击、伪造服务器 |
 | SHA-256 完整性校验 | 传输过程中的转录篡改 |
 
-应用程序内含 SafeScribe 服务器证书的加密指纹。即使证书颁发机构被入侵，应用程序也会拒绝任何不通向真实 SafeScribe 服务器的连接。
-
 <div class="callout callout-green">
-  <strong>可验证：</strong>可使用 Wireshark 确认所有 SafeScribe 流量均经过 TLS 加密。通过代理拦截的尝试会失败——证书锁定会拒绝代理证书。
+  <strong>可验证：</strong>可使用 Wireshark 确认所有 SafeScribe 流量均经过 TLS 加密。
 </div>
 
 ---
@@ -223,7 +220,7 @@ SafeScribe 使用 Google 登录和 Sign in with Apple。您的个人数据从不
 我们欢迎安全研究人员和隐私倡导者验证我们的声明：
 
 <ul class="verify-steps">
-  <li><span><strong>网络分析</strong> 使用 Wireshark 或 Charles Proxy 可确认所有 SafeScribe 流量均经过 TLS 加密；任何拦截尝试均被证书锁定阻止。</span></li>
+  <li><span><strong>网络分析</strong> 使用 Wireshark 或 Charles Proxy 可确认所有 SafeScribe 流量均经过 TLS 加密。</span></li>
   <li><span><strong>已发布评估</strong> 我们的<a href="dpia">数据保护影响评估</a>包含完整的风险分析和决策记录。</span></li>
   <li><span><strong>负责任披露</strong> 发现漏洞？请联系 <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>。</span></li>
 </ul>

@@ -24,7 +24,7 @@ lang: ar
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>الطبقة 1 — النقل</h4>
-    <p>تشفير TLS 1.2+ وتثبيت الشهادات في كل اتصال. لا يمكن لأي وكيل وسيط اعتراض البيانات.</p>
+    <p>تشفير TLS 1.2+ في كل اتصال. حركة البيانات مشفرة بالكامل من طرف إلى طرف دون استثناء.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -70,13 +70,10 @@ lang: ar
 | الحماية | ما تمنعه |
 |---------|---------|
 | تشفير TLS 1.2+ | التنصت على حركة الشبكة |
-| تثبيت الشهادات | هجمات الوسيط، الخوادم المزيفة |
 | مجموع تحقق SHA-256 | التلاعب بالنص المحوَّل أثناء النقل |
 
-يحتوي التطبيق على بصمة تشفيرية لشهادة خادم SafeScribe. حتى لو تعرضت جهة إصدار الشهادات للاختراق، سيرفض التطبيق أي اتصال لا يؤدي إلى خادم SafeScribe الحقيقي.
-
 <div class="callout callout-green">
-  <strong>قابل للتحقق:</strong> يمكن استخدام Wireshark للتأكد من أن جميع حركة SafeScribe مشفرة بـ TLS. أي محاولة اعتراض عبر وكيل وسيط تفشل — تثبيت الشهادات يرفض شهادة الوكيل.
+  <strong>قابل للتحقق:</strong> يمكن استخدام Wireshark للتأكد من أن جميع حركة SafeScribe مشفرة بـ TLS.
 </div>
 
 ---
@@ -223,7 +220,7 @@ lang: ar
 نشجع باحثي الأمن والمدافعين عن الخصوصية على التحقق من ادعاءاتنا:
 
 <ul class="verify-steps">
-  <li><span><strong>تحليل الشبكة</strong> يتيح Wireshark أو Charles Proxy التأكد من أن جميع حركة SafeScribe مشفرة بـ TLS؛ أي محاولة اعتراض تُعطَّل بواسطة تثبيت الشهادات.</span></li>
+  <li><span><strong>تحليل الشبكة</strong> يتيح Wireshark أو Charles Proxy التأكد من أن جميع حركة SafeScribe مشفرة بـ TLS.</span></li>
   <li><span><strong>التقييمات المنشورة</strong> يتضمن <a href="dpia">تقييم أثر حماية البيانات</a> تحليل المخاطر الكامل وسجل القرارات.</span></li>
   <li><span><strong>الإفصاح المسؤول</strong> اكتشفت ثغرة أمنية؟ تواصل مع <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</span></li>
 </ul>

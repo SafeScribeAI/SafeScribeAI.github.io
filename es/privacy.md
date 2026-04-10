@@ -81,7 +81,7 @@ lang: es
 
 | Datos | Finalidad |
 |-------|-----------|
-| Informes de fallos | Estabilidad de la app mediante Sentry — todos los datos personales eliminados antes de la transmisión |
+| Informes de fallos | Estabilidad de la app mediante el punto de conexión propio de SafeScribe para informes de fallos — todos los datos personales eliminados antes de la transmisión |
 
 <div class="callout callout-green">
   <strong>El servidor nunca almacena su nombre, dirección de correo electrónico, dirección IP, contenido de audio ni texto de transcripción.</strong> Los únicos registros persistentes vinculados a su cuenta son un hash de usuario no reversible, un identificador de dispositivo pseudónimo, un saldo de crédito y estadísticas de uso (solo números — sin contenido, sin identidad).
@@ -138,7 +138,6 @@ Nuestro disco:  Solo registros de saldo — sin audio, sin transcripción, sin c
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sin entrenamiento de IA</strong><span class="item-desc">su audio nunca se usa para mejorar modelos</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IA propia</strong><span class="item-desc">ningún servicio de IA de terceros recibe su audio</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Protección TTL</strong><span class="item-desc">los datos se autodestruyen aunque el código de eliminación falle</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Bloqueo de memoria</strong><span class="item-desc">bloqueo a nivel de sistema operativo impide que el audio se intercambie al disco</span></span></li>
 </ul>
 
 ---
@@ -172,7 +171,7 @@ Los pagos son procesados íntegramente por Apple App Store o Google Play Store. 
 <span class="section-label">Seguimiento de errores</span>
 ## Informes de fallos (Opcional)
 
-Usamos Sentry para los informes de fallos opcionales. Está **desactivado por defecto** y puede cambiarse en cualquier momento desde la Configuración de privacidad.
+Enviamos los informes de fallos opcionales al punto de conexión propio de SafeScribe para informes de fallos. Está **desactivado por defecto** y puede cambiarse en cualquier momento desde la Configuración de privacidad.
 
 Antes de transmitir cualquier informe, se eliminan automáticamente los siguientes datos:
 
@@ -193,7 +192,7 @@ Utilizamos los siguientes servicios. No se comparte audio, contenido de transcri
 | Apple Sign-In | Autenticación | Solo token OIDC | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | Compras en la app | Solo recibo de compra | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Google Play Store | Compras en la app | Solo recibo de compra | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Sentry | Informes de fallos (opt-in) | Informe de error anónimo — datos personales eliminados | [sentry.io/privacy](https://sentry.io/privacy/) |
+| Punto de conexión propio de SafeScribe | Informes de fallos (opt-in) | Informe de error anónimo — datos personales eliminados | Operado por SafeScribe, sin terceros |
 
 ---
 

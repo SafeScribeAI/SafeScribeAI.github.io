@@ -81,7 +81,7 @@ lang: fr
 
 | Données | Finalité |
 |---------|----------|
-| Rapports de plantage | Stabilité de l'application via Sentry — toutes les données personnelles supprimées avant transmission |
+| Rapports de plantage | Stabilité de l'application via le point de terminaison de rapport de plantage propre à SafeScribe — toutes les données personnelles supprimées avant transmission |
 
 <div class="callout callout-green">
   <strong>Le serveur ne stocke jamais votre nom, votre adresse e-mail, votre adresse IP, le contenu audio ou le texte de transcription.</strong> Les seuls enregistrements persistants liés à votre compte sont un hachage utilisateur non réversible, un identifiant d'appareil pseudonyme, un solde de crédits et des statistiques d'utilisation (chiffres uniquement — aucun contenu, aucune identité).
@@ -172,7 +172,7 @@ Les paiements sont traités entièrement par Apple App Store ou Google Play Stor
 <span class="section-label">Suivi des erreurs</span>
 ## Rapports de plantage (Optionnel)
 
-Nous utilisons Sentry pour les rapports de plantage optionnels. Il est **désactivé par défaut** et peut être modifié à tout moment dans les Paramètres de confidentialité.
+Nous envoyons les rapports de plantage optionnels vers le point de terminaison de rapport de plantage propre à SafeScribe. Il est **désactivé par défaut** et peut être modifié à tout moment dans les Paramètres de confidentialité.
 
 Avant la transmission de tout rapport, les éléments suivants sont automatiquement supprimés :
 
@@ -193,7 +193,7 @@ Nous utilisons les services suivants. Aucune information audio, contenu de trans
 | Apple Sign-In | Authentification | Jeton OIDC uniquement | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | Achats intégrés | Reçu d'achat uniquement | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Google Play Store | Achats intégrés | Reçu d'achat uniquement | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Sentry | Rapports de plantage (opt-in) | Rapport d'erreur anonyme — données personnelles supprimées | [sentry.io/privacy](https://sentry.io/privacy/) |
+| Point de terminaison SafeScribe | Rapports de plantage (opt-in) | Rapport d'erreur anonyme — données personnelles supprimées | Exploité par SafeScribe, aucun tiers impliqué |
 
 ---
 

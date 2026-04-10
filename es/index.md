@@ -116,28 +116,39 @@ lang: es
 
 ---
 
-<span class="section-label">Garantías de privacidad</span>
-## Lo que nunca hacemos
+<span class="section-label">Nuestros compromisos</span>
+## 14 promesas de privacidad
+{: #privacy-promises}
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Almacenar tu audio en disco — jamás</li>
-  <li><span class="x-mark">&#x2717;</span> Usar tus grabaciones para entrenar modelos de IA</li>
-  <li><span class="x-mark">&#x2717;</span> Compartir o vender tus datos a anunciantes</li>
-  <li><span class="x-mark">&#x2717;</span> Almacenar tu correo electrónico, nombre o dirección IP</li>
-</ul>
+Cada afirmación a continuación está respaldada por código — no solo por política. Cada una enlaza a la evidencia técnica.
 
-<p>Para la lista completa, consulte nuestra <a href="privacy#data-we-dont-collect-or-store">Política de privacidad</a>.</p>
-
-<span class="section-label">Lo que hacemos</span>
-## Construido para la privacidad desde el primer día
+<span class="section-label">Arquitectura central</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Procesamiento solo en RAM</strong><span class="item-desc">el audio existe en memoria volátil solo durante la transcripción</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Eliminación inmediata</strong><span class="item-desc">datos borrados en el momento en que recibes tu transcripción</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Cifrado de extremo a extremo</strong><span class="item-desc">TLS en tránsito, AES-256 en reposo en tu dispositivo</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sin perfiles de usuario</strong><span class="item-desc">facturación seudónima únicamente, sin datos personales almacenados en el servidor</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IA propia</strong><span class="item-desc">tu audio nunca llega a ningún servicio de terceros</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tú controlas tus datos</strong><span class="item-desc">exporte, elimine o borre todo desde la app</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Procesamiento solo en RAM</strong><span class="item-desc">Tu audio existe en memoria volátil solo durante la transcripción — nunca se escribe en disco. <a href="security#layer-2">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Eliminación en cascada + failsafe</strong><span class="item-desc">Cada paso elimina los datos del paso anterior. Si nuestro código falla, los datos se autodestruyen mediante TTL. <a href="security#layer-6">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IA propia</strong><span class="item-desc">Tu audio nunca llega a OpenAI, Google ni ningún servicio externo. Operamos nuestra propia infraestructura. <a href="security#layer-2">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Verificación de integridad</strong><span class="item-desc">Cada transcripción lleva una suma de comprobación SHA-256 para confirmar que llegó sin alteraciones. <a href="security#layer-1">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sin re-descarga</strong><span class="item-desc">Una vez que recibes tu transcripción, nada queda en nuestros servidores. No existe un "descargar de nuevo". <a href="security#layer-6">más información →</a></span></span></li>
+</ul>
+
+<span class="section-label">Lo que no recopilamos</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tu correo o nombre — nunca almacenados</strong><span class="item-desc">Solo se guarda un hash unidireccional de tu ID de cuenta. No puede invertirse para revelar quién eres. <a href="privacy#sign-in">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tu dirección IP — nunca registrada</strong><span class="item-desc">Se usa brevemente para limitación de velocidad (como hash) y se descarta. Nunca aparece en ningún registro. <a href="privacy#zero-disk">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tus grabaciones — nunca usadas para entrenamiento</strong><span class="item-desc">Tu audio se elimina de inmediato tras la transcripción. Sin copia, sin archivo, sin conjunto de datos de entrenamiento. <a href="privacy#zero-disk">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sin perfilado ni decisiones automatizadas</strong><span class="item-desc">Nunca te puntuamos, clasificamos ni tomamos decisiones automatizadas sobre ti. <a href="privacy#your-rights">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sin rastreo de comportamiento</strong><span class="item-desc">Usamos cero SDKs de analíticas. Sin Mixpanel, sin Firebase Analytics, sin ningún tipo de rastreador. <a href="privacy#third-parties">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sin contactos, ubicación ni biometría</strong><span class="item-desc">Solo solicitamos acceso al micrófono — nada más de tu dispositivo. <a href="privacy#no-collect">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Datos de pago — nunca los vemos</strong><span class="item-desc">Los pagos los gestiona íntegramente Apple o Google. Solo recibimos un recibo de compra. <a href="privacy#billing">más información →</a></span></span></li>
+</ul>
+
+<span class="section-label">Cómo protegemos lo que se transmite</span>
+
+<ul class="do-list">
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>AES-256 + claves respaldadas por hardware</strong><span class="item-desc">Las transcripciones en tu dispositivo están cifradas. Las claves se guardan en iOS Keychain o Android Keystore. <a href="security#layer-4">más información →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Informes de fallos: desactivados por defecto</strong><span class="item-desc">Opcional. Si se activa, los datos personales se eliminan automáticamente antes de salir de tu dispositivo. <a href="security#layer-5">más información →</a></span></span></li>
 </ul>
 
 ---
@@ -212,12 +223,12 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
     <div class="pricing-rate">$0.0165/min</div>
   </div>
   <div class="pricing-card popular">
-    <div class="pricing-amount">$4.49</div>
-    <div class="pricing-minutes">5 horas</div>
+    <div class="pricing-amount">$6.49</div>
+    <div class="pricing-minutes">7 horas</div>
     <div class="pricing-rate">$0.015/min</div>
   </div>
   <div class="pricing-card">
-    <div class="pricing-amount">$12.49</div>
+    <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 horas</div>
     <div class="pricing-rate">$0.014/min</div>
   </div>
@@ -229,6 +240,11 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
   <div class="pricing-card">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 horas</div>
+    <div class="pricing-rate">$0.012/min</div>
+  </div>
+  <div class="pricing-card">
+    <div class="pricing-amount">$84.99</div>
+    <div class="pricing-minutes">120 horas</div>
     <div class="pricing-rate">$0.012/min</div>
   </div>
 </div>
@@ -270,7 +286,7 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
 
 <details class="faq-item">
   <summary>¿Cómo se cifran mis datos?</summary>
-  <div class="faq-answer">En tránsito: el cifrado TLS con fijación de certificado garantiza que tus datos lleguen únicamente a los servidores de SafeScribe. En tu dispositivo: las transcripciones se almacenan en contenedores cifrados con AES-256 con claves protegidas por el hardware seguro de tu teléfono (iOS Keychain / Android Keystore).</div>
+  <div class="faq-answer">En tránsito: el cifrado TLS 1.2+ protege tus datos entre tu dispositivo y los servidores de SafeScribe. En tu dispositivo: las transcripciones se almacenan en contenedores cifrados con AES-256 con claves protegidas por el hardware seguro de tu teléfono (iOS Keychain / Android Keystore).</div>
 </details>
 
 <details class="faq-item">
@@ -289,13 +305,8 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
 </details>
 
 <details class="faq-item">
-  <summary>¿Qué significa "procesamiento con memoria bloqueada"?</summary>
-  <div class="faq-answer">Los sistemas operativos pueden mover temporalmente el contenido de la RAM al disco (llamado "swap") cuando la memoria está bajo presión. El bloqueo de memoria (<a href="https://man7.org/linux/man-pages/man2/mlockall.2.html"><code>mlockall</code></a>) indica al sistema operativo que mantenga páginas de memoria específicas en RAM de forma permanente — sin swap, sin contacto con el disco. El proceso de transcripción de SafeScribe usa esta garantía a nivel del sistema operativo para que tu audio permanezca únicamente en memoria volátil, invisible para cualquier análisis forense de disco incluso si el servidor es incautado físicamente.</div>
-</details>
-
-<details class="faq-item">
-  <summary>¿Cómo mejora el aislamiento vocal la precisión?</summary>
-  <div class="faq-answer">SafeScribe utiliza un modelo de separación de fuentes de audio potenciado por IA que aísla el habla del ruido de fondo. Tu audio se analiza primero — si se detecta ruido continuo (música, multitud, sonido de fondo), el aislamiento vocal se ejecuta automáticamente. Para grabaciones de habla limpia, se omite. Esta técnica reduce significativamente la tasa de error de palabras en entornos ruidosos. Combinado con la Detección de actividad de voz, garantiza que obtengas un texto limpio y preciso incluso de grabaciones desafiantes.</div>
+  <summary>¿Cómo mejora el preprocesamiento en el dispositivo la precisión?</summary>
+  <div class="faq-answer">Antes de la carga, SafeScribe aplica una cadena de filtros de audio en el dispositivo: el filtrado de paso alto a 200 Hz elimina el zumbido de fondo, la normalización de loudness LUFS (-16 LUFS) optimiza los niveles de audio para Whisper, y la compresión de rango dinámico nivela las variaciones de volumen. Combinado con la Detección de actividad de voz en el servidor, esto garantiza texto limpio y preciso incluso de grabaciones difíciles.</div>
 </details>
 
 ---

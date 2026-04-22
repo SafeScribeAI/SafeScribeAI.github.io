@@ -175,7 +175,7 @@ Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用して
 
 レポートが送信される前に、以下が自動的に削除されます：
 
-**削除：**メールアドレス · 電話番号 · IPアドレス · ファイルパス · 認証トークン · 業務識別子
+**削除：**メールアドレス · 電話番号 · IPアドレス · ファイルパス · 認証トークン
 
 **保持：**エラータイプとスタックトレース · デバイスモデル · OSバージョン · アプリバージョン
 
@@ -199,7 +199,7 @@ Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用して
 <span class="section-label">法的根拠</span>
 ## 処理の法的根拠
 
-| 処理活動 | GDPR根拠 | KVKK根拠 | 必須？ |
+| 処理活動 | GDPR根拠 | KVKK 根拠（トルコ） | 必須？ |
 |--------------------|-----------|-----------|---------|
 | 音声文字起こし | 第6(1)(b)条 — 契約 | 明示的同意 | サービス利用に必須 |
 | アカウント・課金 | 第6(1)(b)条 — 契約 | 契約履行 | サービス利用に必須 |
@@ -236,7 +236,7 @@ Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用して
 
 **バックアップ。**サービス継続性のため、アカウントレコード（仮名ID、残高、使用統計）の単一の日次バックアップが保持されます。各バックアップは前のものを上書きします。アカウント削除によって削除されたデータはライブシステムから即時に、バックアップからは24時間以内に削除されます。
 
-**国際送信。**EU/EEAからSafeScribeをご利用の場合、音声とアカウントデータはトルコのサーバーで処理されます。トルコは現在<a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EUの十分性認定</a>を受けていません；転送は初回起動時のお客様の明示的な十分な情報に基づく同意によってカバーされます（GDPR第49(1)(a)条）。トルコ（KVKK）ユーザーの場合、国境を越えた転送はKVKK第9条に基づく初回起動時の明示的な同意によって承認されます。
+**国際送信。**EU/EEAからSafeScribeをご利用の場合、音声とアカウントデータはトルコのサーバーで処理されます。トルコは現在<a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EUの十分性認定</a>を受けていません；転送は初回起動時のお客様の明示的な十分な情報に基づく同意によってカバーされます（GDPR第49(1)(a)条）。トルコ（KVKK — トルコ個人データ保護法）ユーザーの場合、国境を越えた転送はKVKK第9条に基づく初回起動時の明示的な同意によって承認されます。
 
 **お子様について。**SafeScribeはApp StoreおよびGoogle Playで17歳以上向けに評価されており、17歳未満のお子様向けではありません。未成年者からのデータを意図的に収集することはありません。法律上の完全な権利能力年齢が18歳となっている法域（トルコを含む）では、17歳のユーザーはアプリを使用する前に保護者の同意が必要です。
 

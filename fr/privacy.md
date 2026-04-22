@@ -176,7 +176,7 @@ Nous envoyons les rapports de plantage optionnels vers le point de terminaison d
 
 Avant la transmission de tout rapport, les éléments suivants sont automatiquement supprimés :
 
-**Supprimés :** adresses e-mail · numéros de téléphone · adresses IP · chemins de fichiers · jetons d'authentification · identifiants de tâche
+**Supprimés :** adresses e-mail · numéros de téléphone · adresses IP · chemins de fichiers · jetons d'authentification
 
 **Conservés :** type d'erreur et trace de pile · modèle d'appareil · version du système d'exploitation · version de l'application
 
@@ -200,7 +200,7 @@ Nous utilisons les services suivants. Aucune information audio, contenu de trans
 <span class="section-label">Base légale</span>
 ## Base légale du traitement
 
-| Activité de traitement | Base GDPR | Base KVKK | Obligatoire ? |
+| Activité de traitement | Base GDPR | Base KVKK (Turquie) | Obligatoire ? |
 |-----------------------|----------|----------|--------------|
 | Transcription audio | Art. 6(1)(b) — Contrat | Consentement explicite | Obligatoire pour utiliser le service |
 | Compte & facturation | Art. 6(1)(b) — Contrat | Exécution du contrat | Obligatoire pour utiliser le service |
@@ -237,7 +237,7 @@ Pour toute demande que vous ne pouvez pas effectuer dans l'application, contacte
 
 **Sauvegardes.** Une sauvegarde quotidienne unique des données de compte (ID pseudonyme, solde, statistiques d'utilisation) est conservée pour la continuité du service. Chaque sauvegarde écrase la précédente. Les données supprimées lors de la suppression du compte sont retirées immédiatement des systèmes actifs et de la sauvegarde dans les 24 heures.
 
-**Transferts internationaux.** Si vous utilisez SafeScribe depuis l'UE/l'EEE, vos données audio et de compte sont traitées sur des serveurs en Turquie. La Turquie ne dispose pas actuellement d'une <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">décision d'adéquation de l'UE</a> ; les transferts sont couverts par votre consentement explicite et éclairé lors du premier lancement (GDPR Art. 49(1)(a)). Pour les utilisateurs en Turquie (KVKK), le transfert transfrontalier est autorisé par le consentement explicite lors du premier lancement conformément à l'article 9 du KVKK.
+**Transferts internationaux.** Si vous utilisez SafeScribe depuis l'UE/l'EEE, vos données audio et de compte sont traitées sur des serveurs en Turquie. La Turquie ne dispose pas actuellement d'une <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">décision d'adéquation de l'UE</a> ; les transferts sont couverts par votre consentement explicite et éclairé lors du premier lancement (GDPR Art. 49(1)(a)). Pour les utilisateurs en Turquie (KVKK — loi turque sur la protection des données personnelles), le transfert transfrontalier est autorisé par le consentement explicite lors du premier lancement conformément à l'article 9 du KVKK.
 
 **Enfants.** SafeScribe est classé 17+ sur l'App Store et Google Play et n'est pas destiné aux utilisateurs de moins de 17 ans. Nous ne collectons pas sciemment de données auprès de personnes de moins de 17 ans. Dans les pays où 18 ans est l'âge de la pleine capacité juridique (y compris la Turquie), les utilisateurs âgés de 17 ans nécessitent le consentement d'un parent ou tuteur avant d'utiliser l'application.
 

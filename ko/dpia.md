@@ -22,7 +22,7 @@ lang: ko
 
 ### 처리 내용 및 이유
 
-| 목적 | 처리 데이터 | 법적 근거(GDPR) | KVKK 근거 |
+| 목적 | 처리 데이터 | 법적 근거(GDPR) | KVKK 근거 (터키) |
 |----|----------|--------------|---------|
 | 오디오 전사 | 오디오 파일(RAM만, 처리 후 삭제) | 제6조(1)(b) — 계약 이행 | 명시적 동의 |
 | 계정 및 청구 | 가명 사용자 ID, 잔액, 이용 메타데이터 | 제6조(1)(b) — 계약 이행 | 명시적 동의 |
@@ -36,7 +36,7 @@ lang: ko
 | 데이터 | 서버 보존 |
 |------|---------|
 | 오디오 파일 | RAM만 — 전사 후 삭제 |
-| 전사 텍스트 | 클라이언트 확인까지(약 수초) |
+| 전사 텍스트 | 클라이언트 확인까지(ACK 없을 경우 서버 24시간 TTL 안전장치) |
 | 가명 사용자 ID | 계정 삭제까지 |
 | 계정 잔액 + 이용 메타데이터 | 계정 삭제까지 |
 | 이메일 주소 | 통과만 — **저장 안 함** |
@@ -57,9 +57,9 @@ lang: ko
 
 <div class="flow-diagram">
 1. 사용자가 기기에서 오디오를 녹음하거나 선택
-2. 기기에서 오디오 전처리(200Hz 고역 통과 필터, 앞 묵음 트리밍, -16 LUFS 라우드니스 정규화, 피크 리미팅, 16kHz 리샘플링, FLAC 인코딩)
+2. 기기에서 오디오 전처리(80Hz 고역 통과 필터, 앞 묵음 트리밍, -16 LUFS 라우드니스 정규화, 피크 리미팅, 16kHz 리샘플링, FLAC 인코딩)
 3. SafeScribe 서버에 암호화 업로드(TLS 1.2+)
-4. 서버가 RAM에서 오디오 처리 — <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2를 통한 자체 호스팅 Whisper 모델 가중치, 제3자 API 호출 없음
+4. 서버가 RAM에서 오디오 처리 — 자체 호스팅, <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2를 통한 Whisper 계열의 강력한 모델, 제3자 API 호출 없음
 5. SHA-256 무결성 체크섬과 함께 전사본 반환
 6. 클라이언트가 체크섬 검증 후 수신 확인
 7. 서버가 RAM에서 전사본과 오디오를 즉시 삭제
@@ -76,7 +76,7 @@ lang: ko
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>인증은 필요합니다</strong><span class="item-desc">사용자별 청구 및 작업 격리에 필요합니다</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>충돌 보고서는 적절합니다</strong><span class="item-desc">전송 전 개인정보 제거; 선택 가입만</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>데이터 최소화</strong><span class="item-desc">오디오는 RAM에서만 처리되며 디스크에 기록되지 않습니다</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>최소 보존 기간</strong><span class="item-desc">전사본은 확인 후 수초 내에 삭제됩니다</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>최소 보존 기간</strong><span class="item-desc">전사본은 확인 즉시 삭제됩니다; 클라이언트가 확인하지 않을 경우 서버 24시간 TTL 안전장치 적용</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>이차 사용 없음</strong><span class="item-desc">오디오는 모델 훈련이나 분석에 절대 사용되지 않습니다</span></span></li>
 </ul>
 
@@ -97,8 +97,8 @@ GDPR 및 KVKK에 따른 모든 정보 주체의 권리(열람, 정정, 삭제, �
 | 전송 중 전사본에 대한 무단 접근 | 중간 | TLS 1.2+; SHA-256 무결성 체크섬 | **낮음** |
 | 서버 침해로 오디오 또는 전사본 노출 | 중간 | 영구 오디오 저장소 없음; 인증된 API; 작업 격리; TTL 안전 장치 | **낮음** |
 | 로컬 암호화 저장소에 대한 무단 접근 | 낮음 | AES-256 암호화 컨테이너; iOS Keychain / Android Keystore의 키 | **낮음** |
-| 충돌 보고서를 통한 개인정보 유출 | 낮음 | SafeScribe 자체 충돌 보고 엔드포인트 전송 전 이메일, 전화, IP, 토큰 패턴 기반 삭제 | **낮음** |
-| 국경 간 데이터 전송 | 중간 | 최초 실행 시 KVKK 명시적 동의; 하위 처리자와 GDPR SCC | **낮음** |
+| 충돌 보고서를 통한 개인정보 유출 | 낮음 | SafeScribe 자체 충돌 보고 엔드포인트 전송 전 이메일, 전화, IP 및 토큰 패턴 기반 삭제 | **낮음** |
+| 국경 간 데이터 전송 | 중간 | 터키 (KVKK — 터키 개인정보보호법) 최초 실행 시 명시적 동의; GDPR 제49조(1)(a)에 따른 최초 실행 시 명시적 충분한 정보에 근거한 동의 | **낮음** |
 | AI가 민감한 콘텐츠를 부정확하게 전사 | 낮음 | 전사는 정보 제공 목적만; 모든 출력을 사용자가 검토; 자동화된 의사결정 없음 | **낮음** |
 
 <div class="callout callout-green">

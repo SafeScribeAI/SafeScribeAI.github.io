@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — 개인정보 보호 우선 AI 음성 전사
-description: 다른 전사 앱은 녹음을 며칠간 보관합니다. 저희는요? 0초. RAM 전용 처리, AI 음성 분리 기반 정확도, 텍스트 수신 즉시 삭제.
+description: 다른 전사 앱은 녹음을 며칠간 보관합니다. 저희는요? 0초. RAM 전용 처리, 기기 내 오디오 최적화 기반 정확도, 텍스트 수신 즉시 삭제.
 lang: ko
 ---
 
@@ -9,7 +9,7 @@ lang: ko
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">다른 전사 앱은 녹음을 며칠간 보관합니다.<br>저희는요? 0초.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM 전용 처리. AI 음성 분리 기반 정확도. 텍스트 수신 즉시 삭제.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM 전용 처리. 기기 내 오디오 최적화 기반 정확도. 텍스트 수신 즉시 삭제.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">개인정보 보호는 저희가 따르는 정책이 아니라 저희가 구축한 구조입니다. 저장된 적 없는 데이터는 소환할 수 없습니다.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 요금 보기</a>
@@ -64,7 +64,7 @@ lang: ko
       <td class="no">예</td>
     </tr>
     <tr>
-      <td>AI 음성 분리</td>
+      <td>기기 내 오디오 최적화</td>
       <td class="yes">예</td>
       <td class="no">아니오</td>
       <td class="no">아니오</td>
@@ -193,11 +193,6 @@ lang: ko
     <p>하이패스 필터링, 앞부분 무음 제거, LUFS 라우드니스 정규화(-16 LUFS, ASR에 최적화), 피크 리미팅, 16 kHz 리샘플링 — 업로드 전 무손실 FLAC으로 인코딩.</p>
   </div>
   <div class="pipeline-step">
-    <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>AI 음성 분리</h4>
-    <p>오디오 분석이 소음이나 지속적인 에너지를 감지할 때 자동으로 적용됩니다. 배경 소리에서 음성을 분리 — 깨끗한 녹음에서는 건너뜁니다. AI 기반 음원 분리는 소음 환경에서 단어 오류율을 크게 감소시킵니다.</p>
-  </div>
-  <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
     <h4>음성 활동 감지</h4>
     <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a>가 음성 구간을 식별하고, 전사를 감지된 음성 구간으로만 제한함으로써 무음 구간에서의 AI 환각을 제거합니다.</p>
@@ -276,7 +271,7 @@ lang: ko
 
 <details class="faq-item">
   <summary>어떤 언어를 지원하나요?</summary>
-  <div class="faq-answer">오픈 소스 <a href="https://github.com/openai/whisper#available-models-and-languages">Whisper 음성 인식 모델</a>은 자동 언어 감지 기능으로 100개 언어를 지원합니다. 정확도 향상을 위해 전사 전에 수동으로 언어를 선택할 수도 있습니다.</div>
+  <div class="faq-answer">오픈 소스 <a href="https://github.com/openai/whisper#available-models-and-languages">Whisper 음성 인식 모델</a>은 자동 언어 감지 기능으로 99개 언어를 지원합니다. 정확도 향상을 위해 전사 전에 수동으로 언어를 선택할 수도 있습니다.</div>
 </details>
 
 <details class="faq-item">
@@ -306,7 +301,7 @@ lang: ko
 
 <details class="faq-item">
   <summary>기기 내 전처리는 어떻게 정확도를 향상시키나요?</summary>
-  <div class="faq-answer">업로드 전에 SafeScribe는 기기에서 오디오 필터 체인을 적용합니다: 200 Hz 하이패스 필터링으로 저주파 잡음과 배경 소음을 제거하고, LUFS 라우드니스 정규화(-16 LUFS)로 Whisper에 최적화된 음량을 설정하며, 다이나믹 레인지 압축으로 음량 변화를 고르게 만듭니다. 서버의 음성 활동 감지와 결합하여 어려운 녹음에서도 깨끗하고 정확한 텍스트를 얻을 수 있습니다.</div>
+  <div class="faq-answer">업로드 전에 SafeScribe는 기기에서 오디오 필터 체인을 적용합니다: 80 Hz 하이패스 필터링으로 저주파 잡음과 배경 소음을 제거하고, LUFS 라우드니스 정규화(-16 LUFS)로 Whisper에 최적화된 음량을 설정하며, 피크 리미팅으로 클리핑을 방지합니다. 서버의 음성 활동 감지와 결합하여 어려운 녹음에서도 깨끗하고 정확한 텍스트를 얻을 수 있습니다.</div>
 </details>
 
 ---

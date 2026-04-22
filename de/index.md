@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — KI-Transkription mit Datenschutz an erster Stelle
-description: Ihre Transkriptions-App speichert Ihre Aufnahmen tagelang. Unsere? Null Sekunden. Nur-RAM-Verarbeitung, KI-Stimmisolierung für Genauigkeit, gelöscht sobald Sie Ihren Text erhalten.
+description: Ihre Transkriptions-App speichert Ihre Aufnahmen tagelang. Unsere? Null Sekunden. Nur-RAM-Verarbeitung, Audio-Optimierung auf dem Gerät für Genauigkeit, gelöscht sobald Sie Ihren Text erhalten.
 lang: de
 ---
 
@@ -9,7 +9,7 @@ lang: de
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Ihre Transkriptions-App speichert Ihre Aufnahmen tagelang.<br>Unsere? Null Sekunden.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Nur-RAM-Verarbeitung. KI-Stimmisolierung für Genauigkeit. Gelöscht sobald Sie Ihren Text erhalten.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Nur-RAM-Verarbeitung. Audio-Optimierung auf dem Gerät für Genauigkeit. Gelöscht sobald Sie Ihren Text erhalten.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Datenschutz ist keine Richtlinie, die wir befolgen — es ist eine Struktur, die wir gebaut haben. Daten, die nie gespeichert wurden, können nicht beschlagnahmt werden.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Preise ansehen</a>
@@ -64,7 +64,7 @@ lang: de
       <td class="no">Ja</td>
     </tr>
     <tr>
-      <td>KI-Stimmisolierung</td>
+      <td>Audio-Optimierung auf dem Gerät</td>
       <td class="yes">Ja</td>
       <td class="no">Nein</td>
       <td class="no">Nein</td>
@@ -193,11 +193,6 @@ Jede Audiodatei durchläuft eine optimierte Verarbeitungspipeline — auf Ihrem 
     <p>Hochpassfilterung, Stille-Entfernung am Anfang, LUFS-Lautheitsnormalisierung (-16 LUFS, optimiert für ASR), Peakbegrenzung und 16 kHz-Resampling — verlustfrei als FLAC kodiert vor dem Upload.</p>
   </div>
   <div class="pipeline-step">
-    <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>KI-Stimmisolierung</h4>
-    <p>Wird automatisch angewendet, wenn die Audioanalyse Rauschen oder kontinuierliche Energie erkennt. Isoliert Sprache von Hintergrundgeräuschen — bei sauberen Aufnahmen übersprungen. KI-gestützte Quellentrennung zeigt eine signifikante Reduktion der Wortfehlerrate in lauten Umgebungen.</p>
-  </div>
-  <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
     <h4>Sprachaktivitätserkennung</h4>
     <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a> identifiziert Sprachsegmente und eliminiert KI-Halluzinationen in stillen Passagen, indem die Transkription auf erkannte Sprachbereiche beschränkt wird.</p>
@@ -276,7 +271,7 @@ Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen S
 
 <details class="faq-item">
   <summary>Welche Sprachen werden unterstützt?</summary>
-  <div class="faq-answer">Das quelloffene <a href="https://github.com/openai/whisper#available-models-and-languages">Whisper-Spracherkennungsmodell</a> unterstützt 100 Sprachen mit automatischer Spracherkennung. Sie können die Sprache auch manuell vor der Transkription auswählen, um die Genauigkeit zu verbessern.</div>
+  <div class="faq-answer">Das quelloffene <a href="https://github.com/openai/whisper#available-models-and-languages">Whisper-Spracherkennungsmodell</a> unterstützt 99 Sprachen mit automatischer Spracherkennung. Sie können die Sprache auch manuell vor der Transkription auswählen, um die Genauigkeit zu verbessern.</div>
 </details>
 
 <details class="faq-item">
@@ -306,7 +301,7 @@ Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen S
 
 <details class="faq-item">
   <summary>Wie verbessert die Vorverarbeitung auf dem Gerät die Genauigkeit?</summary>
-  <div class="faq-answer">Vor dem Upload wendet SafeScribe eine Audiofilterkette auf dem Gerät an: 200-Hz-Hochpassfilterung beseitigt Brummen und Hintergrundgeräusche, LUFS-Lautheitsnormalisierung (-16 LUFS) optimiert die Audioenpegel für Whisper, und die Dynamikkompression gleicht Lautstärkeschwankungen aus. Kombiniert mit der Sprachaktivitätserkennung auf dem Server sorgt dies für sauberen, präzisen Text — auch bei schwierigen Aufnahmen.</div>
+  <div class="faq-answer">Vor dem Upload wendet SafeScribe eine Audiofilterkette auf dem Gerät an: 80-Hz-Hochpassfilterung beseitigt Brummen und Hintergrundgeräusche, LUFS-Lautheitsnormalisierung (-16 LUFS) optimiert die Audioenpegel für Whisper, und das Peak-Limiting verhindert Clipping. Kombiniert mit der Sprachaktivitätserkennung auf dem Server sorgt dies für sauberen, präzisen Text — auch bei schwierigen Aufnahmen.</div>
 </details>
 
 ---

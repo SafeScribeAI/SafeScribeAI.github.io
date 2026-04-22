@@ -22,7 +22,7 @@ lang: pt
 
 ### O que processamos e por quê
 
-| Finalidade | Dados processados | Base legal (RGPD) | Base KVKK |
+| Finalidade | Dados processados | Base legal (RGPD) | Base KVKK (Turquia) |
 |------------|------------------|-------------------|-----------|
 | Transcrição de áudio | Arquivo de áudio (apenas RAM, excluído após processamento) | Art. 6(1)(b) — Execução de contrato | Consentimento explícito |
 | Conta e faturamento | Identificador pseudônimo, saldo, metadados de uso | Art. 6(1)(b) — Execução de contrato | Consentimento explícito |
@@ -36,7 +36,7 @@ lang: pt
 | Dados | Retenção no servidor |
 |-------|---------------------|
 | Arquivo de áudio | Apenas RAM — excluído após transcrição |
-| Texto da transcrição | Até confirmação do cliente (~segundos) |
+| Texto da transcrição | Até confirmação do cliente (TTL de 24 horas no servidor se nenhum ACK for recebido) |
 | Identificador pseudônimo | Até exclusão da conta |
 | Saldo + metadados de uso | Até exclusão da conta |
 | Endereço de e-mail | Apenas trânsito — **não armazenado** |
@@ -57,9 +57,9 @@ lang: pt
 
 <div class="flow-diagram">
 1. O usuário grava ou seleciona áudio no dispositivo
-2. Pré-processamento de áudio no dispositivo (filtro passa-alta 200 Hz, corte de silêncio inicial, normalização de loudness a -16 LUFS, limitação de pico, reamostragem para 16 kHz, codificação FLAC)
+2. Pré-processamento de áudio no dispositivo (filtro passa-alta 80 Hz, corte de silêncio inicial, normalização de loudness a -16 LUFS, limitação de pico, reamostragem para 16 kHz, codificação FLAC)
 3. Upload criptografado para os servidores SafeScribe (TLS 1.2+)
-4. Servidor processa áudio na RAM — pesos do modelo Whisper auto-hospedados via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, sem chamadas a APIs de terceiros
+4. Servidor processa áudio na RAM — auto-hospedado, um poderoso modelo da família Whisper via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, sem chamadas a APIs de terceiros
 5. Transcrição retornada com checksum de integridade SHA-256
 6. Cliente verifica checksum e confirma recebimento
 7. Servidor exclui imediatamente a transcrição e o áudio da RAM
@@ -76,7 +76,7 @@ lang: pt
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>A autenticação é necessária</strong><span class="item-desc">necessária para faturamento por usuário e isolamento de trabalhos</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Os relatórios de falhas são proporcionais</strong><span class="item-desc">as DCP são removidas antes da transmissão; apenas opt-in</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Minimização de dados</strong><span class="item-desc">o áudio é processado apenas na RAM, nunca gravado em disco</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Retenção mínima</strong><span class="item-desc">as transcrições são excluídas em segundos após a confirmação</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Retenção mínima</strong><span class="item-desc">as transcrições são excluídas imediatamente na confirmação; TTL de 24 horas no servidor se o cliente nunca confirmar</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sem uso secundário</strong><span class="item-desc">o áudio nunca é usado para treinamento de modelos ou análises</span></span></li>
 </ul>
 
@@ -97,8 +97,8 @@ Todos os direitos dos titulares de dados sob o RGPD e a KVKK (acesso, retificaç
 | Acesso não autorizado à transcrição em trânsito | Médio | TLS 1.2+; checksum SHA-256 | **Baixo** |
 | Violação no servidor expondo áudio ou transcrições | Médio | Sem armazenamento persistente de áudio; API autenticada; isolamento por trabalho; TTL failsafe | **Baixo** |
 | Acesso não autorizado ao armazenamento local criptografado | Baixo | Contêineres criptografados AES-256; chave no iOS Keychain / Android Keystore | **Baixo** |
-| Vazamento de DCP por relatórios de falhas | Baixo | Remoção por padrão de e-mails, telefones, IPs, tokens antes de enviar ao endpoint próprio de relatórios de falhas do SafeScribe | **Baixo** |
-| Transferência de dados transfronteiriça | Médio | Consentimento explícito KVKK no primeiro acesso; CCPs RGPD com subprocessadores | **Baixo** |
+| Vazamento de DCP por relatórios de falhas | Baixo | Remoção por padrão de e-mails, telefones, IPs e tokens antes de enviar ao endpoint próprio de relatórios de falhas do SafeScribe | **Baixo** |
+| Transferência de dados transfronteiriça | Médio | Turquia (KVKK — Lei turca de proteção de dados pessoais) consentimento explícito no primeiro acesso; consentimento explícito e informado no primeiro acesso nos termos do art. 49(1)(a) do RGPD | **Baixo** |
 | IA gera transcrição imprecisa de conteúdo sensível | Baixo | A transcrição é apenas informativa; o usuário revisa todos os resultados; sem decisões automatizadas | **Baixo** |
 
 <div class="callout callout-green">

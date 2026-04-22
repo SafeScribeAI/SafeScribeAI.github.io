@@ -175,7 +175,7 @@ Wir senden optionale Absturzberichte an SafeScribes eigenen Absturzbericht-Endpu
 
 Bevor ein Bericht übertragen wird, werden folgende Daten automatisch entfernt:
 
-**Entfernt:** E-Mail-Adressen · Telefonnummern · IP-Adressen · Dateipfade · Authentifizierungstoken · Auftragsbezeichner
+**Entfernt:** E-Mail-Adressen · Telefonnummern · IP-Adressen · Dateipfade · Authentifizierungstoken
 
 **Behalten:** Fehlertyp und Stack-Trace · Gerätemodell · Betriebssystemversion · App-Version
 
@@ -199,7 +199,7 @@ Wir verwenden folgende Dienste. Über das Angegebene hinaus werden keine Audio-,
 <span class="section-label">Rechtsgrundlage</span>
 ## Rechtsgrundlage der Verarbeitung
 
-| Verarbeitungsaktivität | GDPR-Grundlage | KVKK-Grundlage | Erforderlich? |
+| Verarbeitungsaktivität | GDPR-Grundlage | KVKK-Grundlage (Türkei) | Erforderlich? |
 |----------------------|----------------|----------------|--------------|
 | Audiotranskription | Art. 6(1)(b) — Vertrag | Ausdrückliche Einwilligung | Erforderlich zur Nutzung des Dienstes |
 | Konto & Abrechnung | Art. 6(1)(b) — Vertrag | Vertragserfüllung | Erforderlich zur Nutzung des Dienstes |
@@ -236,7 +236,7 @@ Für Anfragen, die Sie nicht in der App erledigen können, wenden Sie sich an **
 
 **Backups.** Eine tägliche Sicherung der Kontodaten (pseudonyme ID, Guthaben, Nutzungsstatistiken) wird zur Aufrechterhaltung des Dienstes aufbewahrt. Jede Sicherung überschreibt die vorherige. Durch Kontolöschung gelöschte Daten werden sofort aus den Live-Systemen und innerhalb von 24 Stunden aus der Sicherung entfernt.
 
-**Internationale Übertragungen.** Wenn Sie SafeScribe aus der EU/dem EWR nutzen, werden Ihre Audio- und Kontodaten auf Servern in der Türkei verarbeitet. Die Türkei verfügt derzeit über keinen <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU-Angemessenheitsbeschluss</a>; Übertragungen werden durch Ihre ausdrückliche informierte Einwilligung beim ersten Start abgedeckt (GDPR Art. 49(1)(a)). Für Nutzer in der Türkei (KVKK) wird die grenzüberschreitende Übertragung durch die ausdrückliche Einwilligung beim ersten Start gemäß KVKK Art. 9 genehmigt.
+**Internationale Übertragungen.** Wenn Sie SafeScribe aus der EU/dem EWR nutzen, werden Ihre Audio- und Kontodaten auf Servern in der Türkei verarbeitet. Die Türkei verfügt derzeit über keinen <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU-Angemessenheitsbeschluss</a>; Übertragungen werden durch Ihre ausdrückliche informierte Einwilligung beim ersten Start abgedeckt (GDPR Art. 49(1)(a)). Für Nutzer in der Türkei (KVKK – türkisches Datenschutzgesetz) wird die grenzüberschreitende Übertragung durch die ausdrückliche Einwilligung beim ersten Start gemäß KVKK Art. 9 genehmigt.
 
 **Kinder.** SafeScribe ist ab 17 Jahren eingestuft und nicht für Nutzer unter 17 Jahren bestimmt. Wir erfassen wissentlich keine Daten von Minderjährigen. In Ländern, in denen 18 Jahre das Volljährigkeitsalter ist (einschließlich der Türkei), benötigen Nutzer im Alter von 17 Jahren die Zustimmung eines Elternteils oder Erziehungsberechtigten, bevor sie die App nutzen.
 

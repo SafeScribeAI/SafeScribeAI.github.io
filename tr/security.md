@@ -161,7 +161,7 @@ Birisi cihazınızın dosya sistemine erişse bile, transkript verileri şifreli
 Uygulama bir hatayla karşılaştığında, isteğe bağlı bir kilitlenme raporu gönderilebilir. Herhangi bir rapor cihazınızdan ayrılmadan önce şunlar otomatik olarak kaldırılır:
 
 <div class="callout callout-info">
-  <strong>Gönderilmeden önce silinen:</strong> E-posta adresleri · Telefon numaraları · IP adresleri · Dosya yolları · Kimlik doğrulama belirteçleri · İş tanımlayıcıları
+  <strong>Gönderilmeden önce silinen:</strong> E-posta adresleri · Telefon numaraları · IP adresleri · Dosya yolları · Kimlik doğrulama belirteçleri
 </div>
 
 <div class="callout callout-green">

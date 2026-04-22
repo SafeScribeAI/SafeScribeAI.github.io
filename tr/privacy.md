@@ -176,7 +176,7 @@ Kişi listenize, takviminize veya diğer hesap verilerinize erişmiyoruz.
 
 Herhangi bir rapor iletilmeden önce şunlar otomatik olarak kaldırılır:
 
-**Silinen:** e-posta adresleri · telefon numaraları · IP adresleri · dosya yolları · kimlik doğrulama token'ları · iş tanımlayıcıları
+**Silinen:** e-posta adresleri · telefon numaraları · IP adresleri · dosya yolları · kimlik doğrulama token'ları
 
 **Saklanan:** hata türü ve yığın izleme · cihaz modeli · işletim sistemi sürümü · uygulama sürümü
 

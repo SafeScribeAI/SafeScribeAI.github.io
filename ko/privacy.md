@@ -175,7 +175,7 @@ Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용�
 
 보고서 전송 전 다음 항목이 자동으로 제거됩니다:
 
-**제거됨:** 이메일 주소 · 전화번호 · IP 주소 · 파일 경로 · 인증 토큰 · 작업 식별자
+**제거됨:** 이메일 주소 · 전화번호 · IP 주소 · 파일 경로 · 인증 토큰
 
 **보존됨:** 오류 유형 및 스택 추적 · 기기 모델 · OS 버전 · 앱 버전
 
@@ -199,7 +199,7 @@ Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용�
 <span class="section-label">법적 근거</span>
 ## 처리의 법적 근거
 
-| 처리 활동 | GDPR 근거 | KVKK 근거 | 필수 여부 |
+| 처리 활동 | GDPR 근거 | KVKK 근거 (터키) | 필수 여부 |
 |--------------------|-----------|-----------|---------|
 | 오디오 전사 | 제6(1)(b)조 — 계약 | 명시적 동의 | 서비스 이용에 필수 |
 | 계정 및 청구 | 제6(1)(b)조 — 계약 | 계약 이행 | 서비스 이용에 필수 |
@@ -236,7 +236,7 @@ Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용�
 
 **백업.** 서비스 연속성을 위해 계정 기록(가명 ID, 잔액, 사용 통계)의 단일 일일 백업이 유지됩니다. 각 백업은 이전 백업을 덮어씁니다. 계정 삭제로 삭제된 데이터는 즉시 실시간 시스템에서 제거되고 24시간 이내에 백업에서도 제거됩니다.
 
-**국제 전송.** EU/EEA에서 SafeScribe를 이용하는 경우, 귀하의 오디오와 계정 데이터는 터키의 서버에서 처리됩니다. 터키는 현재 <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU 적절성 결정</a>을 보유하고 있지 않습니다. 전송은 첫 실행 시 귀하의 명시적이고 충분한 정보에 근거한 동의로 커버됩니다 (GDPR 제49(1)(a)조). 터키(KVKK) 사용자의 경우, 국경 간 전송은 KVKK 제9조에 따른 첫 실행 시 명시적 동의로 승인됩니다.
+**국제 전송.** EU/EEA에서 SafeScribe를 이용하는 경우, 귀하의 오디오와 계정 데이터는 터키의 서버에서 처리됩니다. 터키는 현재 <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU 적절성 결정</a>을 보유하고 있지 않습니다. 전송은 첫 실행 시 귀하의 명시적이고 충분한 정보에 근거한 동의로 커버됩니다 (GDPR 제49(1)(a)조). 터키(KVKK — 터키 개인정보보호법) 사용자의 경우, 국경 간 전송은 KVKK 제9조에 따른 첫 실행 시 명시적 동의로 승인됩니다.
 
 **아동.** SafeScribe는 App Store 및 Google Play에서 17세 이상으로 등급이 매겨져 있으며 17세 미만 아동을 대상으로 하지 않습니다. 미성년자로부터 의도적으로 데이터를 수집하지 않습니다. 법적 완전한 권리 능력 연령이 18세인 법역(터키 포함)에서는 17세 사용자가 앱을 사용하기 전에 부모 또는 보호자의 동의가 필요합니다.
 

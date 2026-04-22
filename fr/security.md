@@ -159,7 +159,7 @@ Même avec un accès direct au système de fichiers, les données de transcripti
 Si l'application rencontre une erreur, un rapport de plantage peut optionnellement être envoyé. Avant de quitter votre appareil, les éléments suivants sont automatiquement supprimés :
 
 <div class="callout callout-info">
-  <strong>Supprimés avant envoi :</strong> Adresses e-mail · Numéros de téléphone · Adresses IP · Chemins de fichiers · Tokens d'authentification · Identifiants de traitement
+  <strong>Supprimés avant envoi :</strong> Adresses e-mail · Numéros de téléphone · Adresses IP · Chemins de fichiers · Tokens d'authentification
 </div>
 
 <div class="callout callout-green">

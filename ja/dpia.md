@@ -22,7 +22,7 @@ lang: ja
 
 ### 処理内容と目的
 
-| 目的 | 処理されるデータ | 法的根拠（GDPR） | KVKK の根拠 |
+| 目的 | 処理されるデータ | 法的根拠（GDPR） | KVKK の根拠（トルコ） |
 |----|--------------|--------------|-----------|
 | 音声文字起こし | 音声ファイル（RAM のみ、処理後削除） | 第 6 条 (1)(b) — 契約の履行 | 明示的な同意 |
 | アカウントと課金 | 仮名ユーザー ID、残高、利用メタデータ | 第 6 条 (1)(b) — 契約の履行 | 明示的な同意 |
@@ -36,7 +36,7 @@ lang: ja
 | データ | サーバーでの保持期間 |
 |------|-----------------|
 | 音声ファイル | RAM のみ — 文字起こし後に削除 |
-| 文字起こしテキスト | クライアントの確認まで（約数秒） |
+| 文字起こしテキスト | クライアントの確認まで（ACK がない場合は 24 時間サーバー TTL フェイルセーフ） |
 | 仮名ユーザー ID | アカウント削除まで |
 | アカウント残高 + 利用メタデータ | アカウント削除まで |
 | メールアドレス | 通過のみ — **保存しない** |
@@ -57,9 +57,9 @@ lang: ja
 
 <div class="flow-diagram">
 1. ユーザーがデバイスで音声を録音または選択する
-2. デバイスで音声を前処理（200 Hz ハイパスフィルター、冒頭無音のトリミング、-16 LUFS へのラウドネス正規化、ピークリミッティング、16 kHz リサンプリング、FLAC エンコード）
+2. デバイスで音声を前処理（80 Hz ハイパスフィルター、冒頭無音のトリミング、-16 LUFS へのラウドネス正規化、ピークリミッティング、16 kHz リサンプリング、FLAC エンコード）
 3. SafeScribe サーバーへ暗号化してアップロード（TLS 1.2+）
-4. サーバーが RAM で音声を処理 — <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2 経由の自己ホスト型 Whisper モデルウェイト、サードパーティ API 呼び出しなし
+4. サーバーが RAM で音声を処理 — 自己ホスト型、<a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2 経由の Whisper ファミリーの強力なモデル、サードパーティ API 呼び出しなし
 5. SHA-256 整合性チェックサム付きで文字起こしを返送
 6. クライアントがチェックサムを検証し受信確認
 7. サーバーが RAM から文字起こしと音声を即座に削除
@@ -76,7 +76,7 @@ lang: ja
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>認証は必要です</strong><span class="item-desc">ユーザーごとの課金とジョブの分離に必要です</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>クラッシュレポートは適切です</strong><span class="item-desc">送信前に個人情報を削除；オプトインのみ</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>データの最小化</strong><span class="item-desc">音声は RAM のみで処理され、ディスクへの書き込みはありません</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>最小限の保持期間</strong><span class="item-desc">文字起こしは確認後数秒以内に削除されます</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>最小限の保持期間</strong><span class="item-desc">文字起こしは確認時に即座に削除されます；クライアントが確認しない場合は 24 時間サーバー TTL フェイルセーフが適用されます</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>二次利用なし</strong><span class="item-desc">音声はモデルのトレーニングや分析に使用されません</span></span></li>
 </ul>
 
@@ -97,8 +97,8 @@ GDPR および KVKK に基づくすべてのデータ主体の権利（アクセ
 | 転送中の文字起こしへの不正アクセス | 中 | TLS 1.2+；SHA-256 整合性チェックサム | **低** |
 | サーバー侵害による音声や文字起こしの漏洩 | 中 | 永続的な音声ストレージなし；認証 API；ジョブ分離；TTL フェイルセーフ | **低** |
 | ローカル暗号化ストレージへの不正アクセス | 低 | AES-256 暗号化コンテナ；鍵は iOS Keychain / Android Keystore | **低** |
-| クラッシュレポートによる個人情報漏洩 | 低 | SafeScribe 独自のクラッシュレポートエンドポイントへの送信前にメール、電話、IP、トークンのパターンベース削除 | **低** |
-| 国境を越えたデータ転送 | 中 | 初回起動時の KVKK 明示的同意；サブプロセッサーとの GDPR SCC | **低** |
+| クラッシュレポートによる個人情報漏洩 | 低 | SafeScribe 独自のクラッシュレポートエンドポイントへの送信前にメール、電話、IP およびトークンのパターンベース削除 | **低** |
+| 国境を越えたデータ転送 | 中 | トルコ（KVKK — トルコ個人データ保護法）初回起動時の明示的同意；GDPR 第 49 条 (1)(a) に基づく初回起動時の明示的な十分な情報に基づく同意 | **低** |
 | AI が機密コンテンツの不正確な文字起こしを生成 | 低 | 文字起こしは情報提供のみ；ユーザーがすべての出力を確認；自動化された意思決定なし | **低** |
 
 <div class="callout callout-green">

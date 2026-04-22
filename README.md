@@ -15,26 +15,15 @@ _layouts/
   default.html               Layout: language-aware nav, footer, lang switcher
 assets/css/
   style.css                  Custom styles (dark/light mode, all components)
-en/
-  index.md                   How It Works
+<lang>/                          10 languages: en tr de fr es pt ar zh ja ko
+  index.md                   Home (How It Works, pricing, FAQ)
   privacy.md                 Privacy Policy
   security.md                Security Architecture
   dpia.md                    Data Protection Impact Assessment
   terms.md                   Terms of Use
-tr/
-  index.md                   Nasıl Çalışır
-  privacy.md                 Gizlilik Politikası
-  security.md                Güvenlik Mimarisi
-  dpia.md                    Veri Koruma Etki Değerlendirmesi
-  terms.md                   Kullanım Şartları
-de/ fr/ es/ pt/ ar/ zh/ ja/ ko/
-  index.md                   How It Works (localized)
-  privacy.md                 Privacy Policy (localized)
 ```
 
-**Language coverage:**
-- All 10 languages (`en tr de fr es pt ar zh ja ko`): `index.md`, `privacy.md`
-- English + Turkish only: `security.md`, `dpia.md`, `terms.md` — other languages link to the English versions
+**Language coverage:** All 10 languages ship the full set of 5 pages.
 
 ## Adding a new language page
 

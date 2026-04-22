@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Transcrição de IA com privacidade em primeiro lugar
-description: Seu app de transcrição guarda suas gravações por dias. O nosso? Zero segundos. Processamento somente em RAM, precisão com isolamento vocal por IA, excluído no momento em que você recebe seu texto.
+description: Seu app de transcrição guarda suas gravações por dias. O nosso? Zero segundos. Processamento somente em RAM, otimização de áudio no dispositivo para precisão, excluído no momento em que você recebe seu texto.
 lang: pt
 ---
 
@@ -9,7 +9,7 @@ lang: pt
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Seu app de transcrição guarda suas gravações por dias.<br>O nosso? Zero segundos.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Processamento somente em RAM. Precisão com isolamento vocal por IA. Excluído no momento em que você recebe seu texto.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Processamento somente em RAM. Otimização de áudio no dispositivo para precisão. Excluído no momento em que você recebe seu texto.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacidade não é uma política que seguimos — é uma estrutura que construímos. Não é possível requisitar dados que nunca foram armazenados.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Ver preços</a>
@@ -64,7 +64,7 @@ lang: pt
       <td class="no">Sim</td>
     </tr>
     <tr>
-      <td>Isolamento vocal por IA</td>
+      <td>Otimização de áudio no dispositivo</td>
       <td class="yes">Sim</td>
       <td class="no">Não</td>
       <td class="no">Não</td>
@@ -193,11 +193,6 @@ Cada arquivo de áudio passa por um pipeline otimizado — no seu dispositivo e 
     <p>Filtragem passa-alta, remoção de silêncio inicial, normalização de loudness LUFS (-16 LUFS, otimizado para ASR), limitação de pico e reamostrado a 16 kHz — codificado como FLAC sem perdas antes do envio.</p>
   </div>
   <div class="pipeline-step">
-    <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Isolamento vocal por IA</h4>
-    <p>Aplicado automaticamente quando a análise de áudio detecta ruído ou energia contínua. Isola a fala dos sons de fundo — ignorado em gravações limpas. A separação de fontes por IA demonstra redução significativa da taxa de erro de palavras em ambientes ruidosos.</p>
-  </div>
-  <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
     <h4>Detecção de atividade de voz</h4>
     <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a> identifica segmentos de fala e elimina alucinações da IA em trechos silenciosos ao restringir a transcrição apenas às regiões de fala detectadas.</p>
@@ -276,7 +271,7 @@ Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao con
 
 <details class="faq-item">
   <summary>Quais idiomas são suportados?</summary>
-  <div class="faq-answer">O <a href="https://github.com/openai/whisper#available-models-and-languages">modelo de reconhecimento de voz Whisper</a> de código aberto suporta 100 idiomas com detecção automática de idioma. Você também pode selecionar o idioma manualmente antes da transcrição para melhorar a precisão.</div>
+  <div class="faq-answer">O <a href="https://github.com/openai/whisper#available-models-and-languages">modelo de reconhecimento de voz Whisper</a> de código aberto suporta 99 idiomas com detecção automática de idioma. Você também pode selecionar o idioma manualmente antes da transcrição para melhorar a precisão.</div>
 </details>
 
 <details class="faq-item">
@@ -306,7 +301,7 @@ Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao con
 
 <details class="faq-item">
   <summary>Como o pré-processamento no dispositivo melhora a precisão?</summary>
-  <div class="faq-answer">Antes do envio, o SafeScribe aplica uma cadeia de filtros de áudio no dispositivo: filtragem passa-alta a 200 Hz remove ruídos e zumbidos de fundo, a normalização de loudness LUFS (-16 LUFS) otimiza os níveis de áudio para o Whisper, e a compressão de faixa dinâmica equilibra as variações de volume. Combinado com a Detecção de atividade de voz no servidor, isso garante texto limpo e preciso mesmo de gravações desafiadoras.</div>
+  <div class="faq-answer">Antes do envio, o SafeScribe aplica uma cadeia de filtros de áudio no dispositivo: filtragem passa-alta a 80 Hz remove ruídos e zumbidos de fundo, a normalização de loudness LUFS (-16 LUFS) otimiza os níveis de áudio para o Whisper, e a limitação de pico evita clipping. Combinado com a Detecção de atividade de voz no servidor, isso garante texto limpo e preciso mesmo de gravações desafiadoras.</div>
 </details>
 
 ---

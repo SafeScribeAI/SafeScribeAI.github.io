@@ -175,7 +175,7 @@ Enviamos los informes de fallos opcionales al punto de conexión propio de SafeS
 
 Antes de transmitir cualquier informe, se eliminan automáticamente los siguientes datos:
 
-**Eliminados:** direcciones de correo electrónico · números de teléfono · direcciones IP · rutas de archivo · tokens de autenticación · identificadores de trabajo
+**Eliminados:** direcciones de correo electrónico · números de teléfono · direcciones IP · rutas de archivo · tokens de autenticación
 
 **Conservados:** tipo de error y seguimiento de pila · modelo de dispositivo · versión del sistema operativo · versión de la app
 
@@ -199,7 +199,7 @@ Utilizamos los siguientes servicios. No se comparte audio, contenido de transcri
 <span class="section-label">Base legal</span>
 ## Base legal del tratamiento
 
-| Actividad de tratamiento | Base GDPR | Base KVKK | ¿Obligatorio? |
+| Actividad de tratamiento | Base GDPR | Base KVKK (Turquía) | ¿Obligatorio? |
 |------------------------|----------|----------|--------------|
 | Transcripción de audio | Art. 6(1)(b) — Contrato | Consentimiento explícito | Obligatorio para usar el servicio |
 | Cuenta y facturación | Art. 6(1)(b) — Contrato | Ejecución del contrato | Obligatorio para usar el servicio |
@@ -236,7 +236,7 @@ Para cualquier solicitud que no pueda completar en la app, contacte con **privac
 
 **Copias de seguridad.** Se mantiene una única copia de seguridad diaria de los registros de cuenta (ID pseudónimo, saldo, estadísticas de uso) para la continuidad del servicio. Cada copia de seguridad sobrescribe la anterior. Los datos eliminados mediante la eliminación de cuenta se retiran inmediatamente de los sistemas activos y de la copia de seguridad en 24 horas.
 
-**Transferencias internacionales.** Si usa SafeScribe desde la UE/EEE, su audio y los datos de su cuenta se procesan en servidores en Turquía. Turquía no dispone actualmente de una <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">decisión de adecuación de la UE</a>; las transferencias están cubiertas por su consentimiento explícito e informado al primer inicio (GDPR Art. 49(1)(a)). Para los usuarios de Turquía (KVKK), la transferencia transfronteriza está autorizada por consentimiento explícito al primer inicio bajo el KVKK Art. 9.
+**Transferencias internacionales.** Si usa SafeScribe desde la UE/EEE, su audio y los datos de su cuenta se procesan en servidores en Turquía. Turquía no dispone actualmente de una <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">decisión de adecuación de la UE</a>; las transferencias están cubiertas por su consentimiento explícito e informado al primer inicio (GDPR Art. 49(1)(a)). Para los usuarios de Turquía (KVKK — Ley turca de protección de datos personales), la transferencia transfronteriza está autorizada por consentimiento explícito al primer inicio bajo el KVKK Art. 9.
 
 **Menores.** SafeScribe está clasificado para mayores de 17 años en App Store y Google Play y no está destinado a usuarios menores de 17 años. No recopilamos datos de menores de 17 años de manera consciente. En jurisdicciones donde 18 es la edad de plena capacidad legal (incluida Turquía), los usuarios de 17 años requieren el consentimiento de un padre o tutor antes de usar la app.
 

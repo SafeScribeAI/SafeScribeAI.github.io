@@ -161,7 +161,7 @@ Even if someone accesses your device's file system, transcript data appears as e
 When the app encounters an error, an optional crash report can be sent. Before any report leaves your device, the following are automatically removed:
 
 <div class="callout callout-info">
-  <strong>Redacted before sending:</strong> Email addresses · Phone numbers · IP addresses · File paths · Authentication tokens · Work identifiers
+  <strong>Redacted before sending:</strong> Email addresses · Phone numbers · IP addresses · File paths · Authentication tokens
 </div>
 
 <div class="callout callout-green">

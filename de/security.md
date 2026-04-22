@@ -159,7 +159,7 @@ Selbst bei direktem Zugriff auf das Dateisystem erscheinen Transkriptdaten als u
 Wenn die App auf einen Fehler stößt, kann optional ein Absturzbericht gesendet werden. Vor dem Verlassen Ihres Geräts werden folgende Daten automatisch entfernt:
 
 <div class="callout callout-info">
-  <strong>Vor dem Senden entfernt:</strong> E-Mail-Adressen · Telefonnummern · IP-Adressen · Dateipfade · Authentifizierungstoken · Auftrags-IDs
+  <strong>Vor dem Senden entfernt:</strong> E-Mail-Adressen · Telefonnummern · IP-Adressen · Dateipfade · Authentifizierungstoken
 </div>
 
 <div class="callout callout-green">

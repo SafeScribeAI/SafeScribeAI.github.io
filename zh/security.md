@@ -159,7 +159,7 @@ SafeScribe 使用 Google 登录和 Sign in with Apple。您的个人数据从不
 应用遇到错误时，可选择性发送崩溃报告。报告离开设备前，以下内容会自动清除：
 
 <div class="callout callout-info">
-  <strong>发送前清除：</strong>电子邮件地址 · 电话号码 · IP 地址 · 文件路径 · 身份验证令牌 · 任务 ID
+  <strong>发送前清除：</strong>电子邮件地址 · 电话号码 · IP 地址 · 文件路径 · 身份验证令牌
 </div>
 
 <div class="callout callout-green">

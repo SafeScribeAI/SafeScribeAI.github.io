@@ -159,7 +159,7 @@ SafeScribe は Google ログインと Sign in with Apple を使用します。�
 アプリがエラーに遭遇した場合、オプションでクラッシュレポートを送信できます。デバイスを離れる前に、以下が自動的に除去されます：
 
 <div class="callout callout-info">
-  <strong>送信前に除去：</strong>メールアドレス · 電話番号 · IP アドレス · ファイルパス · 認証トークン · ジョブ ID
+  <strong>送信前に除去：</strong>メールアドレス · 電話番号 · IP アドレス · ファイルパス · 認証トークン
 </div>
 
 <div class="callout callout-green">

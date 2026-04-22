@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Gizlilik Öncelikli Yapay Zeka Transkripsiyon
-description: Transkripsiyon uygulamanız kayıtlarınızı günlerce saklıyor. Bizimki? Sıfır saniye. Yalnızca RAM'de işleme, YZ ses izolasyonu ile doğruluk, metninizi aldığınız anda siliniyor.
+description: Transkripsiyon uygulamanız kayıtlarınızı günlerce saklıyor. Bizimki? Sıfır saniye. Yalnızca RAM'de işleme, cihazda ses optimizasyonu ile doğruluk, metninizi aldığınız anda siliniyor.
 lang: tr
 ---
 
@@ -9,7 +9,7 @@ lang: tr
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Transkripsiyon uygulamanız kayıtlarınızı günlerce saklıyor.<br>Bizimki? Sıfır saniye.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Yalnızca RAM'de işleme. YZ ses izolasyonu ile doğruluk. Metninizi aldığınız anda siliniyor.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Yalnızca RAM'de işleme. Cihazda ses optimizasyonu ile doğruluk. Metninizi aldığınız anda siliniyor.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Gizlilik, uyduğumuz bir politika değil — inşa ettiğimiz bir yapıdır. Hiç saklanmamış verilere mahkeme celbi gönderilemez.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Fiyatları Görün</a>
@@ -64,7 +64,7 @@ lang: tr
       <td class="no">Evet</td>
     </tr>
     <tr>
-      <td>YZ ses izolasyonu</td>
+      <td>Cihazda ses optimizasyonu</td>
       <td class="yes">Evet</td>
       <td class="no">Hayır</td>
       <td class="no">Hayır</td>
@@ -193,11 +193,6 @@ Her ses dosyası, mümkün olan en yüksek doğruluğu sağlamak için optimize 
     <p>Yüksek geçişli filtreleme, baştaki sessizliğin kırpılması, LUFS ses normalizasyonu (-16 LUFS, ASR için optimize edilmiş), tepe sınırlama ve 16 kHz yeniden örnekleme — yüklemeden önce kayıpsız FLAC olarak kodlanır.</p>
   </div>
   <div class="pipeline-step">
-    <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>YZ Ses İzolasyonu</h4>
-    <p>Ses analizi gürültü veya sürekli enerji tespit ettiğinde otomatik olarak devreye girer. Konuşmayı arka plan seslerinden izole eder — temiz kayıtlarda atlanır. YZ destekli kaynak ayırma, gürültülü ortamlarda kelime hata oranında önemli düşüşler sağlamaktadır.</p>
-  </div>
-  <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
     <h4>Ses Aktivite Algılama</h4>
     <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a>, konuşma segmentlerini belirler ve transkripsiyonu yalnızca algılanan konuşma bölgeleriyle sınırlandırarak sessiz bölümlerdeki YZ halüsinasyonlarını ortadan kaldırır.</p>
@@ -263,7 +258,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
   "mainEntity": [
     {"@type": "Question", "name": "Transkripsiyon sonrası sesime ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur."}},
     {"@type": "Question", "name": "Kayıtlarımı YZ eğitmek için kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitimi için kullanılmaz. Kendi YZ altyapımızı işletiyoruz."}},
-    {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 100 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
+    {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 99 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
     {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4 ve MOV. 50 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
     {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde TLS 1.2+ şifreleme. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
     {"@type": "Question", "name": "IP adresimi kaydediyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. IP adresleri hiçbir zaman saklanmaz. Günlük sistemi IP'leri herhangi bir çıktıya ulaşmadan düşürür. Dahili işlemler için tek yönlü SHA-256 karması kullanılır."}}
@@ -291,7 +286,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 <details class="faq-item">
   <summary>Hangi diller destekleniyor?</summary>
-  <div class="faq-answer">Açık kaynaklı <a href="https://github.com/openai/whisper#available-models-and-languages">Whisper konuşma tanıma modeli</a>, otomatik dil algılama ile 100 dili destekler. Daha iyi doğruluk için transkripsiyon öncesi dili manuel olarak da seçebilirsiniz.</div>
+  <div class="faq-answer">Açık kaynaklı <a href="https://github.com/openai/whisper#available-models-and-languages">Whisper konuşma tanıma modeli</a>, otomatik dil algılama ile 99 dili destekler. Daha iyi doğruluk için transkripsiyon öncesi dili manuel olarak da seçebilirsiniz.</div>
 </details>
 
 <details class="faq-item">
@@ -321,7 +316,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 <details class="faq-item">
   <summary>Cihazda ön işleme doğruluğu nasıl artırıyor?</summary>
-  <div class="faq-answer">Yüklemeden önce SafeScribe, cihazda bir ses filtre zinciri uygular: 200 Hz yüksek geçişli filtreleme gürültü ve uğultuyu temizler, LUFS ses normalizasyonu (-16 LUFS) ses seviyelerini Whisper için optimize eder ve dinamik aralık sıkıştırma ses yüksekliği değişkenliğini dengeler. Sunucudaki Ses Aktivite Algılama ile birleştiğinde, zorlu kayıtlardan bile temiz ve doğru metin elde etmenizi sağlar.</div>
+  <div class="faq-answer">Yüklemeden önce SafeScribe, cihazda bir ses filtre zinciri uygular: 80 Hz yüksek geçişli filtreleme gürültü ve uğultuyu temizler, LUFS ses normalizasyonu (-16 LUFS) ses seviyelerini Whisper için optimize eder ve tepe sınırlama kırpılmayı önler. Sunucudaki Ses Aktivite Algılama ile birleştiğinde, zorlu kayıtlardan bile temiz ve doğru metin elde etmenizi sağlar.</div>
 </details>
 
 ---

@@ -36,7 +36,7 @@ lang: tr
 | Veri | Sunucuda Saklama |
 |------|-----------------|
 | Ses dosyası | Yalnızca RAM — transkripsiyon sonrası silinir |
-| Transkript metni | İstemci onayına kadar (~saniyeler) |
+| Transkript metni | İstemci onayına kadar (istemci onay vermezse 24 saatlik sunucu TTL güvenlik kilidi) |
 | Takma adlı kullanıcı kimliği | Hesap silinene kadar |
 | Hesap bakiyesi + kullanım meta verisi | Hesap silinene kadar |
 | E-posta adresi | Yalnızca iletim — **saklanmıyor** |
@@ -57,9 +57,9 @@ lang: tr
 
 <div class="flow-diagram">
 1. Kullanıcı cihazında ses kaydeder veya seçer
-2. Ses cihazda ön işlemden geçer (200 Hz yüksek geçişli filtre, baştaki sessizlik kırpma, -16 LUFS hedefli ses normalizasyonu (konuşma için optimize edilmiş) — tepe sınırlama, 16 kHz yeniden örnekleme, FLAC kodlama)
+2. Ses cihazda ön işlemden geçer (80 Hz yüksek geçişli filtre, baştaki sessizlik kırpma, -16 LUFS hedefli ses normalizasyonu (konuşma için optimize edilmiş) — tepe sınırlama, 16 kHz yeniden örnekleme, FLAC kodlama)
 3. SafeScribe sunucularına şifreli yükleme (TLS 1.2+)
-4. Sunucu sesi RAM'de işler — <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2 aracılığıyla kendi barındırılan Whisper model ağırlıkları, üçüncü taraf API çağrısı yok
+4. Sunucu sesi RAM'de işler — kendi barındırılan, <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2 aracılığıyla Whisper ailesinden güçlü bir model, üçüncü taraf API çağrısı yok
 5. Transkript SHA-256 bütünlük sağlamasıyla döndürülür
 6. İstemci sağlamayı doğrular, teslimi onaylar
 7. Sunucu transkripti ve sesi RAM'den hemen siler
@@ -76,7 +76,7 @@ lang: tr
   <li><span class="check-mark">&#x2713;</span> <strong>Kimlik doğrulama zorunludur</strong> kullanıcı başına faturalandırma ve iş izolasyonu için gereklidir</li>
   <li><span class="check-mark">&#x2713;</span> <strong>Kilitlenme raporlama orantılıdır</strong> KKV iletimden önce gizlenir; yalnızca katılım ile etkindir</li>
   <li><span class="check-mark">&#x2713;</span> <strong>Veri en aza indirilmiştir</strong> ses yalnızca RAM'de işlenir, diske hiç yazılmaz</li>
-  <li><span class="check-mark">&#x2713;</span> <strong>Saklama en aza indirilmiştir</strong> transkriptler onaydan saniyeler içinde silinir</li>
+  <li><span class="check-mark">&#x2713;</span> <strong>Saklama en aza indirilmiştir</strong> transkriptler onay üzerine anında silinir; istemci hiçbir zaman onay vermezse 24 saatlik sunucu TTL güvenlik kilidi devreye girer</li>
   <li><span class="check-mark">&#x2713;</span> <strong>İkincil kullanım yok</strong> ses hiçbir zaman model eğitimi veya analitikte kullanılmaz</li>
 </ul>
 
@@ -97,8 +97,8 @@ Tüm GDPR ve KVKK veri sahibi hakları (erişim, düzeltme, silme, kısıtlama, 
 | İletim sırasında transkripte yetkisiz erişim | Orta | Üretim derlemelerinde zorunlu TLS 1.2+; SHA-256 bütünlük sağlaması | **Düşük** |
 | Sunucu taraflı ihlal — ses veya transkript ifşası | Orta | Kalıcı ses depolaması yok; kimlik doğrulamalı API; kullanıcı başına iş izolasyonu; TTL güvenlik kilidi | **Düşük** |
 | Yerel şifreli depolamaya yetkisiz erişim | Düşük | AES-256 şifreli kaplar; anahtar iOS Keychain / Android Keystore'da | **Düşük** |
-| Kilitlenme raporları üzerinden KKV sızıntısı | Düşük | E-posta, telefon, IP, token ve iş kimliklerinin örüntü tabanlı gizlenmesi, SafeScribe'ın kendi kilitlenme raporlama uç noktasına gönderilmeden önce | **Düşük** |
-| Sınır ötesi veri aktarımı | Orta | İlk açılışta KVKK açık rızası; alt işleyenlerle GDPR SCC'leri | **Düşük** |
+| Kilitlenme raporları üzerinden KKV sızıntısı | Düşük | E-posta, telefon, IP ve token'ların örüntü tabanlı gizlenmesi, SafeScribe'ın kendi kilitlenme raporlama uç noktasına gönderilmeden önce | **Düşük** |
+| Sınır ötesi veri aktarımı | Orta | İlk açılışta KVKK açık rızası; ilk açılışta GDPR Mad. 49(1)(a) açık bilgilendirilmiş rıza | **Düşük** |
 | Yapay zekanın hassas içeriği yanlış yazıya dökmesi | Düşük | Transkripsiyon yalnızca bilgilendirme amaçlıdır; kullanıcı tüm çıktıyı inceler; otomatik karar yoktur | **Düşük** |
 
 <div class="callout callout-green">

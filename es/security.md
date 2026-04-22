@@ -159,7 +159,7 @@ Incluso con acceso directo al sistema de archivos, los datos de transcripción a
 Si la app encuentra un error, puede enviarse opcionalmente un informe de fallos. Antes de salir de tu dispositivo, se eliminan automáticamente:
 
 <div class="callout callout-info">
-  <strong>Eliminado antes del envío:</strong> Direcciones de correo · Números de teléfono · Direcciones IP · Rutas de archivos · Tokens de autenticación · Identificadores de trabajos
+  <strong>Eliminado antes del envío:</strong> Direcciones de correo · Números de teléfono · Direcciones IP · Rutas de archivos · Tokens de autenticación
 </div>
 
 <div class="callout callout-green">

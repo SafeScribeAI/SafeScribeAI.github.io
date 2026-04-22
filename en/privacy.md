@@ -174,7 +174,7 @@ We send optional crash reports to SafeScribe's own crash reporting endpoint. Thi
 
 Before any report is transmitted, the following are automatically removed:
 
-**Redacted:** email addresses · phone numbers · IP addresses · file paths · authentication tokens · work identifiers
+**Redacted:** email addresses · phone numbers · IP addresses · file paths · authentication tokens
 
 **Retained:** error type and stack trace · device model · OS version · app version
 
@@ -198,7 +198,7 @@ We use the following services. No audio, transcript content, or personal informa
 <span class="section-label">Legal Basis</span>
 ## Legal Basis for Processing
 
-| Processing activity | GDPR Basis | KVKK Basis | Required? |
+| Processing activity | GDPR Basis | KVKK Basis (Turkey) | Required? |
 |--------------------|-----------|-----------|---------|
 | Audio transcription | Art. 6(1)(b) — Contract | Explicit consent | Required to use the service |
 | Account & billing | Art. 6(1)(b) — Contract | Contract performance | Required to use the service |
@@ -235,7 +235,7 @@ For any request you can't complete in-app, contact **privacy@safescribe.dev**.
 
 **Backups.** A single daily backup of account records (pseudonymous ID, balance, usage statistics) is maintained for service continuity. Each backup overwrites the previous one. Data deleted by account deletion is removed from live systems immediately and from the backup within 24 hours.
 
-**International transfers.** If you use SafeScribe from the EU/EEA, your audio and account data are processed on servers in Turkey. Turkey does not currently hold an <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU adequacy decision</a>; transfers are covered by your explicit informed consent at first launch (GDPR Art. 49(1)(a)). For Turkey (KVKK) users, cross-border transfer is authorised by explicit consent at first launch under KVKK Art. 9.
+**International transfers.** If you use SafeScribe from the EU/EEA, your audio and account data are processed on servers in Turkey. Turkey does not currently hold an <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU adequacy decision</a>; transfers are covered by your explicit informed consent at first launch (GDPR Art. 49(1)(a)). For Turkey (KVKK — Turkey's Personal Data Protection Law) users, cross-border transfer is authorised by explicit consent at first launch under KVKK Art. 9.
 
 **Children.** SafeScribe is rated 17+ on the App Store and Google Play and is not intended for users under 17. We do not knowingly collect data from anyone under 17. In jurisdictions where 18 is the age of full legal capacity (including Turkey), users aged 17 require parental or guardian consent before using the app.
 

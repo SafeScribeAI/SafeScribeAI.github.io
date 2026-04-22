@@ -22,7 +22,7 @@ lang: en
 
 ### What we process and why
 
-| Purpose | Data Processed | Legal Basis (GDPR) | KVKK Basis |
+| Purpose | Data Processed | Legal Basis (GDPR) | KVKK Basis (Turkey) |
 |---------|---------------|-------------------|-----------|
 | Audio transcription | Audio file (RAM only, deleted after processing) | Art. 6(1)(b) — Contract performance | Explicit consent |
 | Account & billing | Pseudonymous user ID, balance, usage metadata | Art. 6(1)(b) — Contract performance | Explicit consent |
@@ -36,7 +36,7 @@ lang: en
 | Data | Server Retention |
 |------|-----------------|
 | Audio file | RAM only — deleted after transcription |
-| Transcript text | Until client acknowledgment (~seconds) |
+| Transcript text | Until client acknowledgment (24-hour server failsafe if no ACK received) |
 | Pseudonymous user ID | Until account deletion |
 | Account balance + usage metadata | Until account deletion |
 | Email address | Transit only — **not stored** |
@@ -57,9 +57,9 @@ lang: en
 
 <div class="flow-diagram">
 1. User records or selects audio on device
-2. Audio preprocessed on-device (200 Hz high-pass filter, leading-silence trimming, single-pass loudness normalization to -16 LUFS (speech-optimized, not broadcast-compliant) — peak limiting, 16 kHz resampling, FLAC encoding)
+2. Audio preprocessed on-device (80 Hz high-pass filter, leading-silence trimming, single-pass loudness normalization to -16 LUFS (speech-optimized, not broadcast-compliant) — peak limiting, 16 kHz resampling, FLAC encoding)
 3. Encrypted upload to SafeScribe servers (TLS 1.2+)
-4. Server processes audio in RAM — self-hosted Whisper model weights via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, no third-party API calls
+4. Server processes audio in RAM — self-hosted, a powerful model from the Whisper family via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, no third-party API calls
 5. Transcript returned with SHA-256 integrity checksum
 6. Client verifies checksum, acknowledges receipt
 7. Server deletes transcript and audio from RAM immediately
@@ -76,7 +76,7 @@ lang: en
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Authentication is necessary</strong><span class="item-desc">required for per-user billing and job isolation</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Crash reporting is proportionate</strong><span class="item-desc">PII is redacted before transmission; opt-in only</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Data is minimised</strong><span class="item-desc">audio processed in RAM only, never written to disk</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Retention is minimised</strong><span class="item-desc">transcripts deleted within seconds of acknowledgment</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Retention is minimised</strong><span class="item-desc">transcripts deleted immediately on acknowledgment; 24-hour server TTL failsafe if client never acknowledges</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No secondary use</strong><span class="item-desc">audio is never used for model training or analytics</span></span></li>
 </ul>
 
@@ -97,8 +97,8 @@ All GDPR and KVKK data subject rights (access, rectification, erasure, restricti
 | Unauthorised access to transcript in transit | Medium | TLS 1.2+ enforced in production builds; SHA-256 integrity checksum | **Low** |
 | Server-side breach exposing audio or transcripts | Medium | No persistent audio storage; authenticated API; per-user job isolation; TTL failsafe | **Low** |
 | Unauthorised access to local encrypted storage | Low | AES-256 encrypted containers; key in iOS Keychain / Android Keystore | **Low** |
-| PII leakage through crash reports | Low | Pattern-based scrubbing of emails, phones, IPs, tokens, and work IDs before sending to SafeScribe's own crash reporting endpoint | **Low** |
-| Cross-border data transfer | Medium | KVKK explicit consent at first launch; GDPR SCCs with sub-processors | **Low** |
+| PII leakage through crash reports | Low | Pattern-based scrubbing of emails, phones, IPs, and tokens before sending to SafeScribe's own crash reporting endpoint | **Low** |
+| Cross-border data transfer | Medium | Turkey (KVKK — Turkey's Personal Data Protection Law) explicit consent at first launch; GDPR Art. 49(1)(a) explicit informed consent at first launch | **Low** |
 | AI producing inaccurate transcript of sensitive content | Low | Transcription is informational only; user reviews all output; no automated decisions | **Low** |
 
 <div class="callout callout-green">

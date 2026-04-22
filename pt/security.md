@@ -159,7 +159,7 @@ Mesmo com acesso direto ao sistema de arquivos, os dados de transcrição aparec
 Se o app encontrar um erro, um relatório de falha pode ser enviado opcionalmente. Antes de sair do seu dispositivo, os itens a seguir são removidos automaticamente:
 
 <div class="callout callout-info">
-  <strong>Removido antes do envio:</strong> Endereços de e-mail · Números de telefone · Endereços IP · Caminhos de arquivo · Tokens de autenticação · Identificadores de trabalhos
+  <strong>Removido antes do envio:</strong> Endereços de e-mail · Números de telefone · Endereços IP · Caminhos de arquivo · Tokens de autenticação
 </div>
 
 <div class="callout callout-green">

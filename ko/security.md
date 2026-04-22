@@ -159,7 +159,7 @@ SafeScribe는 Google 로그인과 Sign in with Apple을 사용합니다. 개인 
 앱에 오류가 발생하면 선택적으로 충돌 보고서를 전송할 수 있습니다. 기기를 떠나기 전 다음 항목이 자동으로 제거됩니다:
 
 <div class="callout callout-info">
-  <strong>전송 전 제거:</strong> 이메일 주소 · 전화번호 · IP 주소 · 파일 경로 · 인증 토큰 · 작업 ID
+  <strong>전송 전 제거:</strong> 이메일 주소 · 전화번호 · IP 주소 · 파일 경로 · 인증 토큰
 </div>
 
 <div class="callout callout-green">

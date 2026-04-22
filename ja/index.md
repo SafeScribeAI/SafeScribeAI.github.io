@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — プライバシー最優先のAI音声文字起こし
-description: 他の文字起こしアプリはあなたの録音を何日も保持します。私たちは？ゼロ秒。RAM専用処理、AIボーカル分離による高精度、テキスト受信と同時に削除。
+description: 他の文字起こしアプリはあなたの録音を何日も保持します。私たちは？ゼロ秒。RAM専用処理、デバイス上での音声最適化による高精度、テキスト受信と同時に削除。
 lang: ja
 ---
 
@@ -9,7 +9,7 @@ lang: ja
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">他の文字起こしアプリはあなたの録音を何日も保持します。<br>私たちは？ゼロ秒。</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM専用処理。AIボーカル分離による高精度。テキスト受信と同時に削除。</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM専用処理。デバイス上での音声最適化による高精度。テキスト受信と同時に削除。</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">プライバシーとは私たちが従うポリシーではなく、私たちが構築した構造です。保存されなかったデータを召喚令状で取得することはできません。</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 料金を見る</a>
@@ -64,7 +64,7 @@ lang: ja
       <td class="no">はい</td>
     </tr>
     <tr>
-      <td>AIボーカル分離</td>
+      <td>デバイス上での音声最適化</td>
       <td class="yes">はい</td>
       <td class="no">いいえ</td>
       <td class="no">いいえ</td>
@@ -193,11 +193,6 @@ lang: ja
     <p>ハイパスフィルタリング、先頭無音除去、LUFSラウドネス正規化（-16 LUFS、ASR向けに最適化）、ピークリミッティング、16 kHzリサンプリング — ロスレスFLACとしてエンコードしてからアップロード。</p>
   </div>
   <div class="pipeline-step">
-    <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>AIボーカル分離</h4>
-    <p>音声分析がノイズや継続的なエネルギーを検出した場合に自動適用。背景音から音声を分離 — クリアな録音ではスキップされます。AI駆動の音源分離により、騒がしい環境での単語誤り率の大幅な削減が実証されています。</p>
-  </div>
-  <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
     <h4>音声活動検出</h4>
     <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a>が音声区間を特定し、文字起こしを検出された音声区間のみに制限することで、無音部分でのAIハルシネーションを排除します。</p>
@@ -276,7 +271,7 @@ lang: ja
 
 <details class="faq-item">
   <summary>対応言語は？</summary>
-  <div class="faq-answer">オープンソースの<a href="https://github.com/openai/whisper#available-models-and-languages">Whisper音声認識モデル</a>は100 の言語に対応し、自動言語検出機能を備えています。精度向上のため、文字起こし前に手動で言語を選択することも可能です。</div>
+  <div class="faq-answer">オープンソースの<a href="https://github.com/openai/whisper#available-models-and-languages">Whisper音声認識モデル</a>は99 の言語に対応し、自動言語検出機能を備えています。精度向上のため、文字起こし前に手動で言語を選択することも可能です。</div>
 </details>
 
 <details class="faq-item">
@@ -306,7 +301,7 @@ lang: ja
 
 <details class="faq-item">
   <summary>デバイス上の前処理はどのように精度を向上させますか？</summary>
-  <div class="faq-answer">アップロード前に、SafeScribeはデバイス上でオーディオフィルターチェーンを適用します：200 Hzのハイパスフィルタリングでこもり音や背景ノイズを除去し、LUFSラウドネス正規化（-16 LUFS）でWhisper向けに音量を最適化し、ダイナミックレンジ圧縮で音量の変動を均一にします。サーバー上の音声活動検出と組み合わせることで、難しい録音からもクリーンで正確なテキストが得られます。</div>
+  <div class="faq-answer">アップロード前に、SafeScribeはデバイス上でオーディオフィルターチェーンを適用します：80 Hzのハイパスフィルタリングでこもり音や背景ノイズを除去し、LUFSラウドネス正規化（-16 LUFS）でWhisper向けに音量を最適化し、ピークリミッティングでクリッピングを防ぎます。サーバー上の音声活動検出と組み合わせることで、難しい録音からもクリーンで正確なテキストが得られます。</div>
 </details>
 
 ---

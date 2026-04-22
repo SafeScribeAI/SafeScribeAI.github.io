@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — 隐私优先的AI语音转录
-description: 其他转录应用会保留您的录音数天。我们呢？零秒。纯内存处理，AI人声分离驱动的精准度，文本交付后立即删除。
+description: 其他转录应用会保留您的录音数天。我们呢？零秒。纯内存处理，设备端音频优化以提升精准度，文本交付后立即删除。
 lang: zh
 ---
 
@@ -9,7 +9,7 @@ lang: zh
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">其他转录应用会保留您的录音数天。<br>我们呢？零秒。</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">纯内存处理。AI人声分离驱动的精准度。文本交付后立即删除。</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">纯内存处理。设备端音频优化以提升精准度。文本交付后立即删除。</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">隐私不是我们遵守的政策——而是我们构建的架构。无法传唤从未存储过的数据。</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 查看价格</a>
@@ -64,7 +64,7 @@ lang: zh
       <td class="no">是</td>
     </tr>
     <tr>
-      <td>AI人声分离</td>
+      <td>设备端音频优化</td>
       <td class="yes">是</td>
       <td class="no">否</td>
       <td class="no">否</td>
@@ -193,11 +193,6 @@ lang: zh
     <p>高通滤波、前置静音裁剪、LUFS响度归一化（-16 LUFS，针对ASR优化）、峰值限幅及16kHz重采样——以无损FLAC格式编码后上传。</p>
   </div>
   <div class="pipeline-step">
-    <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>AI人声分离</h4>
-    <p>当音频分析检测到噪声或持续能量时自动启用。将语音从背景声中隔离——对清晰录音跳过此步骤。AI驱动的音源分离技术在嘈杂环境中可显著降低词错误率。</p>
-  </div>
-  <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
     <h4>语音活动检测</h4>
     <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a>识别语音片段，通过将转录限制在检测到语音的区域，消除静音段中的AI幻觉。</p>
@@ -276,7 +271,7 @@ lang: zh
 
 <details class="faq-item">
   <summary>支持哪些语言？</summary>
-  <div class="faq-answer">开源<a href="https://github.com/openai/whisper#available-models-and-languages">Whisper语音识别模型</a>支持 100 种语言并可自动检测语言。您也可以在转录前手动选择语言以提高准确度。</div>
+  <div class="faq-answer">开源<a href="https://github.com/openai/whisper#available-models-and-languages">Whisper语音识别模型</a>支持 99 种语言并可自动检测语言。您也可以在转录前手动选择语言以提高准确度。</div>
 </details>
 
 <details class="faq-item">
@@ -306,7 +301,7 @@ lang: zh
 
 <details class="faq-item">
   <summary>设备端预处理如何提高准确度？</summary>
-  <div class="faq-answer">上传前，SafeScribe在设备上应用音频滤波链：200 Hz高通滤波消除低频噪声和背景嗡嗡声，LUFS响度归一化（-16 LUFS）为Whisper优化音频电平，动态范围压缩平衡音量变化。结合服务器上的语音活动检测，即使是高难度录音也能获得清晰、准确的文本。</div>
+  <div class="faq-answer">上传前，SafeScribe在设备上应用音频滤波链：80 Hz高通滤波消除低频噪声和背景嗡嗡声，LUFS响度归一化（-16 LUFS）为Whisper优化音频电平，峰值限制防止削波。结合服务器上的语音活动检测，即使是高难度录音也能获得清晰、准确的文本。</div>
 </details>
 
 ---

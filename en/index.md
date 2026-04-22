@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Privacy-First AI Transcription
-description: Your transcription app keeps your recordings for days. Ours? Zero seconds. RAM-only processing, on-device noise reduction for accuracy, deleted the moment you receive your text.
+description: Your transcription app keeps your recordings for days. Ours? Zero seconds. RAM-only processing, on-device audio optimization for accuracy, deleted the moment you receive your text.
 lang: en
 ---
 
@@ -9,7 +9,7 @@ lang: en
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Your transcription app keeps your recordings for days.<br>Ours? Zero seconds.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM-only processing. On-device noise reduction for accuracy. Deleted the moment you receive your text.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM-only processing. On-device audio optimization for accuracy. Deleted the moment you receive your text.</p>
   <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacy isn't a policy we follow — it's a structure we built. You can't subpoena data that was never stored.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Get Started — See Pricing</a>
@@ -64,7 +64,7 @@ lang: en
       <td class="no">Yes</td>
     </tr>
     <tr>
-      <td>On-device noise reduction</td>
+      <td>On-device audio optimization</td>
       <td class="yes">Yes</td>
       <td class="no">No</td>
       <td class="no">No</td>
@@ -193,11 +193,6 @@ Every audio file passes through an optimized pipeline — on your device and on 
     <p>High-pass filtering, leading-silence trimming, LUFS loudness normalization (-16 LUFS, optimized for ASR), peak limiting, and 16 kHz resampling — encoded as lossless FLAC before upload.</p>
   </div>
   <div class="pipeline-step">
-    <div class="pipeline-icon">&#x1f3b5;</div>
-    <h4>Audio Preprocessing</h4>
-    <p>On-device FFmpeg filter chain: high-pass filtering, loudness normalization (-16 LUFS), dynamic range compression, and silence trimming — optimized for Whisper accuracy before upload.</p>
-  </div>
-  <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
     <h4>Voice Activity Detection</h4>
     <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a> identifies speech segments and eliminates AI hallucinations in silent passages by restricting transcription to detected speech regions only.</p>
@@ -263,7 +258,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
   "mainEntity": [
     {"@type": "Question", "name": "What happens to my audio after transcription?", "acceptedAnswer": {"@type": "Answer", "text": "It's gone permanently. Your audio is processed entirely in server RAM and deleted the instant your transcript is delivered. No disk copy, no backup, no recovery."}},
     {"@type": "Question", "name": "Do you use my recordings to train AI?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your audio is used only for generating your transcript. Never stored, analyzed, or used for model training. We run our own AI infrastructure."}},
-    {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "The open-source Whisper model supports 100 languages with automatic detection. You can also manually select the language for improved accuracy."}},
+    {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "The open-source Whisper model supports 99 languages with automatic detection. You can also manually select the language for improved accuracy."}},
     {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4, and MOV. Files up to 50 MB and 2 hours."}},
     {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS 1.2+ encryption in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
     {"@type": "Question", "name": "Do you log my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "No. IP addresses are never stored. The logging system drops IPs before any output. We use a one-way SHA-256 hash for internal operations."}}
@@ -291,7 +286,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 <details class="faq-item">
   <summary>Which languages are supported?</summary>
-  <div class="faq-answer">The open-source <a href="https://github.com/openai/whisper#available-models-and-languages">Whisper speech recognition model</a> supports 100 languages with automatic language detection. You can also manually select the language before transcription for improved accuracy.</div>
+  <div class="faq-answer">The open-source <a href="https://github.com/openai/whisper#available-models-and-languages">Whisper speech recognition model</a> supports 99 languages with automatic language detection. You can also manually select the language before transcription for improved accuracy.</div>
 </details>
 
 <details class="faq-item">
@@ -321,7 +316,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 <details class="faq-item">
   <summary>How does on-device preprocessing improve accuracy?</summary>
-  <div class="faq-answer">Before upload, SafeScribe applies an on-device audio filter chain: 200Hz high-pass filtering removes rumble and background hum, LUFS loudness normalization (-16 LUFS) optimizes audio levels for Whisper, and dynamic range compression evens out volume variation. Combined with Voice Activity Detection on the server, this ensures you get clean, accurate text even from challenging recordings.</div>
+  <div class="faq-answer">Before upload, SafeScribe applies an on-device audio filter chain: 80 Hz high-pass filtering removes rumble and background hum, LUFS loudness normalization (-16 LUFS) optimizes audio levels for Whisper, and peak limiting prevents clipping. Combined with Voice Activity Detection on the server, this ensures you get clean, accurate text even from challenging recordings.</div>
 </details>
 
 ---

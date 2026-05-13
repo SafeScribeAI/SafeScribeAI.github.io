@@ -15,7 +15,25 @@ lang: fr
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Voir les tarifs</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Comment nous protégeons vos données</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Bientôt sur l'App Store et Google Play.</p>
+  <p class="hero-free-tier">&#x2728; Commencez avec 2 heures gratuites — sans carte</p>
+  <div class="store-badges" aria-label="App Store et Google Play — Bientôt">
+    <span class="store-badge" role="img" aria-label="App Store — Bientôt">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Bientôt sur</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">Bientôt</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — Bientôt">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Bientôt sur</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">Bientôt</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ Chaque fichier audio passe par un pipeline optimisé — sur votre appareil et s
 ## Simple, à l'utilisation
 {: #pricing}
 
-Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les quand vous voulez. Contrairement aux services par abonnement, vous ne payez jamais pour du temps que vous n'utilisez pas.
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2 heures gratuites pour démarrer</span></div>
+
+Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les quand vous voulez. Contrairement aux services par abonnement, vous ne payez jamais pour du temps que vous n'utilisez pas. Chaque nouveau compte démarre avec 2 heures de transcription gratuites — sans carte.
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -276,7 +296,7 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
 
 <details class="faq-item">
   <summary>Quels formats de fichier puis-je utiliser ?</summary>
-  <div class="faq-answer">MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4 et MOV. Fichiers jusqu'à 50 Mo et jusqu'à 2 heures.</div>
+  <div class="faq-answer"><strong>40 formats</strong> sont pris en charge — 22 formats audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR et plus) et 18 formats vidéo (MP4, MOV, MKV, AVI, WEBM, 3GP et plus — la piste audio est extraite sur votre appareil avant le téléversement). Fichiers jusqu'à 50 Mo et jusqu'à 2 heures.</div>
 </details>
 
 <details class="faq-item">

@@ -19,8 +19,14 @@ Marketing landing site for [SafeScribe](https://safescribe.dev) — privacy-firs
 | `_data/i18n.yml` | Nav/footer label translations |
 | `_layouts/default.html` | Layout — language-aware nav, footer, lang switcher |
 | `assets/css/style.css` | Custom styles (dark/light mode, components) |
-| `<lang>/index.md` | Per-language home — How It Works, pricing, FAQ |
+| `<lang>/index.md` | Per-language home — hero, comparison, How It Works, personas, pipeline, pricing, FAQ |
 | `<lang>/privacy.md` | Per-language privacy policy |
+| `<lang>/security.md` | Per-language security architecture |
+| `<lang>/dpia.md` | Per-language DPIA |
+| `<lang>/terms.md` | Per-language terms of service |
+| `<lang>/resources.md` | Per-language Resources hub (links to /en/resources/* deep pages) |
+| `<lang>/whats-new.md` | Per-language release notes (Apple-style aggregate, not per-commit) |
+| `en/resources/*.md` | English-only deep pages: how-we-compare, security-tradeoffs, our-stack |
 | `CNAME` | Custom domain (`safescribe.dev`) |
 
 ## Development

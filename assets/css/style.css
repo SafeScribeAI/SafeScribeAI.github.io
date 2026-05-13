@@ -1105,3 +1105,100 @@ hr {
   .content-wrapper { padding: 0 16px; }
   .page-content { padding: 1.5rem 0 3rem; }
 }
+
+/* ============ Free Tier Callout ============ */
+.hero-free-tier {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.85rem auto 0;
+  padding: 0.45rem 0.95rem;
+  background: var(--color-green-light);
+  color: var(--color-green);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border: 1px solid var(--color-green);
+  border-color: rgba(5, 150, 105, 0.35);
+}
+.pricing-free-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 auto 1rem;
+  padding: 0.4rem 0.9rem;
+  background: var(--color-green-light);
+  color: var(--color-green);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(5, 150, 105, 0.35);
+}
+.pricing-free-wrapper {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ============ Store Badges (Coming Soon) ============ */
+.store-badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 1.5rem auto 0;
+  flex-wrap: wrap;
+}
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.65rem 1.15rem;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  text-decoration: none;
+  filter: grayscale(0.95) opacity(0.78);
+  cursor: not-allowed;
+  position: relative;
+  transition: filter 0.2s, opacity 0.2s;
+  min-width: 175px;
+}
+.store-badge:hover {
+  filter: grayscale(0.6) opacity(0.92);
+}
+.store-badge-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-text);
+}
+.store-badge-textcol {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.15;
+}
+.store-badge-tagline {
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.store-badge-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.store-badge-status {
+  position: absolute;
+  top: -8px;
+  right: 8px;
+  background: var(--color-accent-light);
+  color: var(--color-accent-dark);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-border);
+}

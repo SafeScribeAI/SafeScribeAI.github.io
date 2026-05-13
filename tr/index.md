@@ -15,7 +15,25 @@ lang: tr
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Fiyatları Görün</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Verilerinizi Nasıl Koruyoruz</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">App Store ve Google Play'de yakında.</p>
+  <p class="hero-free-tier">&#x2728; 2 saat ücretsizle başlayın — kart bilgisi gerekmez</p>
+  <div class="store-badges" aria-label="App Store ve Google Play — Yakında">
+    <span class="store-badge" role="img" aria-label="App Store — Yakında">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Yakında</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">Yakında</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — Yakında">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Yakında</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">Yakında</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ Her ses dosyası, mümkün olan en yüksek doğruluğu sağlamak için optimize 
 ## Basit, Kullandıkça Öde
 {: #pricing}
 
-Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın. Abonelik hizmetlerinin aksine, kullanmadığınız zaman için asla ödeme yapmazsınız.
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2 saat ücretsiz başlangıç</span></div>
+
+Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın. Abonelik hizmetlerinin aksine, kullanmadığınız zaman için asla ödeme yapmazsınız. Her yeni hesaba 2 saat ücretsiz transkripsiyon hediyemiz olsun — kart bilgisi gerekmez.
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -259,7 +279,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
     {"@type": "Question", "name": "Transkripsiyon sonrası sesime ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur."}},
     {"@type": "Question", "name": "Kayıtlarımı YZ eğitmek için kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitimi için kullanılmaz. Kendi YZ altyapımızı işletiyoruz."}},
     {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 99 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
-    {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4 ve MOV. 50 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
+    {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "40 format desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses cihazınızda çıkarılır). 50 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
     {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde TLS 1.2+ şifreleme. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
     {"@type": "Question", "name": "IP adresimi kaydediyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. IP adresleri hiçbir zaman saklanmaz. Günlük sistemi IP'leri herhangi bir çıktıya ulaşmadan düşürür. Dahili işlemler için tek yönlü SHA-256 karması kullanılır."}}
   ]
@@ -291,7 +311,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 <details class="faq-item">
   <summary>Hangi dosya formatlarını kullanabilirim?</summary>
-  <div class="faq-answer">MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4 ve MOV. 50 MB'a kadar dosya boyutu ve 2 saate kadar süre.</div>
+  <div class="faq-answer"><strong>40 format</strong> desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses, yüklemeden önce cihazınızda çıkarılır). 50 MB'a kadar dosya boyutu ve 2 saate kadar süre.</div>
 </details>
 
 <details class="faq-item">

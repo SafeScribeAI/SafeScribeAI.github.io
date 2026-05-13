@@ -15,7 +15,25 @@ lang: zh
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 查看价格</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; 我们如何保护您的数据</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">即将登陆 App Store 和 Google Play。</p>
+  <p class="hero-free-tier">&#x2728; 免费试用2小时 — 无需信用卡</p>
+  <div class="store-badges" aria-label="App Store 和 Google Play — 即将推出">
+    <span class="store-badge" role="img" aria-label="App Store — 即将推出">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">即将上架</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">即将推出</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — 即将推出">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">即将上架</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">即将推出</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ lang: zh
 ## 简单，按量付费
 {: #pricing}
 
-无订阅。无隐藏费用。购买积分，随时使用。与订阅服务不同，您永远不会为未使用的时间付费。
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 免费试用2小时</span></div>
+
+无订阅。无隐藏费用。购买积分，随时使用。与订阅服务不同，您永远不会为未使用的时间付费。每个新账户均可获得2小时免费转录额度——无需信用卡。
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -276,7 +296,7 @@ lang: zh
 
 <details class="faq-item">
   <summary>我可以使用哪些文件格式？</summary>
-  <div class="faq-answer">MP3、WAV、FLAC、M4A、OGG、Opus、AAC、WMA、MP4和MOV。文件大小最多50 MB，时长最长2小时。</div>
+  <div class="faq-answer">支持<strong>40种格式</strong> — 22种音频格式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMR等）和18种视频格式（MP4、MOV、MKV、AVI、WEBM、3GP等 — 上传前在您的设备上提取音频）。文件大小最多50 MB，时长最长2小时。</div>
 </details>
 
 <details class="faq-item">

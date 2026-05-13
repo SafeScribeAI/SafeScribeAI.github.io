@@ -15,7 +15,25 @@ lang: de
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Preise ansehen</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; So schützen wir Ihre Daten</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Bald im App Store und bei Google Play.</p>
+  <p class="hero-free-tier">&#x2728; Mit 2 kostenlosen Stunden starten — keine Kreditkarte</p>
+  <div class="store-badges" aria-label="App Store und Google Play — Demnächst">
+    <span class="store-badge" role="img" aria-label="App Store — Demnächst">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Demnächst</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">Demnächst</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — Demnächst">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Demnächst</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">Demnächst</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ Jede Audiodatei durchläuft eine optimierte Verarbeitungspipeline — auf Ihrem 
 ## Einfach, nach Verbrauch
 {: #pricing}
 
-Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen Sie es, wann immer Sie möchten. Anders als bei Abo-Diensten zahlen Sie nie für Zeit, die Sie nicht nutzen.
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2 kostenlose Stunden zum Start</span></div>
+
+Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen Sie es, wann immer Sie möchten. Anders als bei Abo-Diensten zahlen Sie nie für Zeit, die Sie nicht nutzen. Jedes neue Konto startet mit 2 kostenlosen Stunden Transkription — ohne Karte.
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -276,7 +296,7 @@ Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen S
 
 <details class="faq-item">
   <summary>Welche Dateiformate kann ich verwenden?</summary>
-  <div class="faq-answer">MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4 und MOV. Dateien bis zu 50 MB und bis zu 2 Stunden Länge.</div>
+  <div class="faq-answer"><strong>40 Formate</strong> werden unterstützt — 22 Audioformate (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR und mehr) und 18 Videoformate (MP4, MOV, MKV, AVI, WEBM, 3GP und mehr — der Audiostream wird vor dem Hochladen auf Ihrem Gerät extrahiert). Dateien bis zu 50 MB und bis zu 2 Stunden Länge.</div>
 </details>
 
 <details class="faq-item">

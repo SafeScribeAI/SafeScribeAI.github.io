@@ -15,7 +15,25 @@ lang: ar
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; عرض الأسعار</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; كيف نحمي بياناتك</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">قريبًا على App Store وGoogle Play.</p>
+  <p class="hero-free-tier">&#x2728; ابدأ بساعتين مجانًا — بدون بطاقة</p>
+  <div class="store-badges" aria-label="App Store وGoogle Play — قريبًا">
+    <span class="store-badge" role="img" aria-label="App Store — قريبًا">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">قريبًا على</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">قريبًا</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — قريبًا">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">قريبًا على</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">قريبًا</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ lang: ar
 ## بسيطة، ادفع حسب الاستخدام
 {: #pricing}
 
-لا اشتراكات. لا رسوم خفية. اشترِ رصيداً واستخدمه متى شئت. على عكس خدمات الاشتراك، لا تدفع أبداً مقابل وقت لا تستخدمه.
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; ساعتان مجانيتان للبدء</span></div>
+
+لا اشتراكات. لا رسوم خفية. اشترِ رصيداً واستخدمه متى شئت. على عكس خدمات الاشتراك، لا تدفع أبداً مقابل وقت لا تستخدمه. كل حساب جديد يبدأ بساعتين مجانيتين من النسخ — بدون بطاقة.
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -276,7 +296,7 @@ lang: ar
 
 <details class="faq-item">
   <summary>ما صيغ الملفات التي يمكنني استخدامها؟</summary>
-  <div class="faq-answer">MP3 وWAV وFLAC وM4A وOGG وOpus وAAC وWMA وMP4 وMOV. ملفات تصل إلى 50 ميجابايت وحتى ساعتين.</div>
+  <div class="faq-answer">يتم دعم <strong>40 صيغة</strong> — 22 صيغة صوتية (MP3 وWAV وFLAC وM4A وOGG وOpus وAAC وAIFF وAMR والمزيد) و18 صيغة فيديو (MP4 وMOV وMKV وAVI وWEBM و3GP والمزيد — يتم استخراج الصوت على جهازك قبل الرفع). ملفات تصل إلى 50 ميجابايت وحتى ساعتين.</div>
 </details>
 
 <details class="faq-item">

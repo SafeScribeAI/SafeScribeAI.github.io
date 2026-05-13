@@ -15,7 +15,25 @@ lang: ko
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 요금 보기</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; 데이터 보호 방법</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">App Store 및 Google Play 출시 예정.</p>
+  <p class="hero-free-tier">&#x2728; 2시간 무료로 시작 — 신용카드 불필요</p>
+  <div class="store-badges" aria-label="App Store 및 Google Play — 출시 예정">
+    <span class="store-badge" role="img" aria-label="App Store — 출시 예정">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">곧 출시</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">출시 예정</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — 출시 예정">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">곧 출시</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">출시 예정</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ lang: ko
 ## 간단한 종량제
 {: #pricing}
 
-구독 없음. 숨겨진 수수료 없음. 크레딧을 구매하고 원할 때 사용하세요. 구독 서비스와 달리, 사용하지 않는 시간에 대해 비용을 지불할 필요가 없습니다.
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2시간 무료로 시작</span></div>
+
+구독 없음. 숨겨진 수수료 없음. 크레딧을 구매하고 원할 때 사용하세요. 구독 서비스와 달리, 사용하지 않는 시간에 대해 비용을 지불할 필요가 없습니다. 모든 신규 계정은 2시간 무료 전사부터 시작합니다 — 신용카드 불필요.
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -276,7 +296,7 @@ lang: ko
 
 <details class="faq-item">
   <summary>어떤 파일 형식을 사용할 수 있나요?</summary>
-  <div class="faq-answer">MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4, MOV. 파일 크기 최대 50 MB, 길이 최대 2시간.</div>
+  <div class="faq-answer"><strong>40가지 형식</strong>을 지원합니다 — 22가지 오디오 형식(MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR 등)과 18가지 비디오 형식(MP4, MOV, MKV, AVI, WEBM, 3GP 등 — 업로드 전에 기기에서 오디오가 추출됩니다). 파일 크기 최대 50 MB, 길이 최대 2시간.</div>
 </details>
 
 <details class="faq-item">

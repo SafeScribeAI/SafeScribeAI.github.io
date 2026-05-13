@@ -15,7 +15,25 @@ lang: pt
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Ver preços</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Como protegemos seus dados</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Em breve na App Store e Google Play.</p>
+  <p class="hero-free-tier">&#x2728; Comece com 2 horas grátis — sem cartão</p>
+  <div class="store-badges" aria-label="App Store e Google Play — Em breve">
+    <span class="store-badge" role="img" aria-label="App Store — Em breve">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Em breve na</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">Em breve</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — Em breve">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Em breve na</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">Em breve</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ Cada arquivo de áudio passa por um pipeline otimizado — no seu dispositivo e 
 ## Simples, pague conforme o uso
 {: #pricing}
 
-Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao contrário dos serviços de assinatura, você nunca paga pelo tempo que não usa.
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2 horas grátis para começar</span></div>
+
+Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao contrário dos serviços de assinatura, você nunca paga pelo tempo que não usa. Toda conta nova começa com 2 horas grátis de transcrição — sem cartão.
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -276,7 +296,7 @@ Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao con
 
 <details class="faq-item">
   <summary>Quais formatos de arquivo posso usar?</summary>
-  <div class="faq-answer">MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4 e MOV. Arquivos de até 50 MB e até 2 horas de duração.</div>
+  <div class="faq-answer">São suportados <strong>40 formatos</strong> — 22 formatos de áudio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR e mais) e 18 formatos de vídeo (MP4, MOV, MKV, AVI, WEBM, 3GP e mais — o áudio é extraído no seu dispositivo antes do envio). Arquivos de até 50 MB e até 2 horas de duração.</div>
 </details>
 
 <details class="faq-item">

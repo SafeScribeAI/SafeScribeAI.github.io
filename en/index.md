@@ -15,7 +15,25 @@ lang: en
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Get Started — See Pricing</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; How We Protect Your Data</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">Coming soon to App Store and Google Play.</p>
+  <p class="hero-free-tier">&#x2728; Start with 2 hours free — no credit card</p>
+  <div class="store-badges" aria-label="App Store and Google Play — Coming Soon">
+    <span class="store-badge" role="img" aria-label="App Store — Coming Soon">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Coming to</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">Coming Soon</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — Coming Soon">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">Coming to</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">Coming Soon</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ Every audio file passes through an optimized pipeline — on your device and on 
 ## Simple, Pay-As-You-Go
 {: #pricing}
 
-No subscriptions. No hidden fees. Buy credits and use them whenever you want. Unlike subscription services, you never pay for time you don't use.
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; Start with 2 hours free</span></div>
+
+No subscriptions. No hidden fees. Buy credits and use them whenever you want. Unlike subscription services, you never pay for time you don't use. Every new account starts with 2 hours of free transcription — no card required.
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -259,7 +279,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
     {"@type": "Question", "name": "What happens to my audio after transcription?", "acceptedAnswer": {"@type": "Answer", "text": "It's gone permanently. Your audio is processed entirely in server RAM and deleted the instant your transcript is delivered. No disk copy, no backup, no recovery."}},
     {"@type": "Question", "name": "Do you use my recordings to train AI?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your audio is used only for generating your transcript. Never stored, analyzed, or used for model training. We run our own AI infrastructure."}},
     {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "The open-source Whisper model supports 99 languages with automatic detection. You can also manually select the language for improved accuracy."}},
-    {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4, and MOV. Files up to 50 MB and 2 hours."}},
+    {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "40 formats — 22 audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR and more) and 18 video (MP4, MOV, MKV, AVI, WEBM, 3GP and more) with audio extracted on-device. Files up to 50 MB and 2 hours."}},
     {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS 1.2+ encryption in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
     {"@type": "Question", "name": "Do you log my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "No. IP addresses are never stored. The logging system drops IPs before any output. We use a one-way SHA-256 hash for internal operations."}}
   ]
@@ -291,7 +311,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 <details class="faq-item">
   <summary>What file formats can I use?</summary>
-  <div class="faq-answer">MP3, WAV, FLAC, M4A, OGG, Opus, AAC, WMA, MP4, and MOV. Files up to 50 MB and up to 2 hours long.</div>
+  <div class="faq-answer"><strong>40 formats</strong> are supported — 22 audio formats (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR, and more) plus 18 video formats (MP4, MOV, MKV, AVI, WEBM, 3GP, and more — audio is extracted on your device before upload). Files up to 50 MB and up to 2 hours long.</div>
 </details>
 
 <details class="faq-item">

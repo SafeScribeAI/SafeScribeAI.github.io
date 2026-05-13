@@ -15,7 +15,25 @@ lang: ja
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 料金を見る</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; データ保護の仕組み</a>
   </div>
-  <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">App Store・Google Playで近日公開。</p>
+  <p class="hero-free-tier">&#x2728; 2時間無料で始められます — クレジットカード不要</p>
+  <div class="store-badges" aria-label="App StoreとGoogle Play — 近日公開">
+    <span class="store-badge" role="img" aria-label="App Store — 近日公開">
+      <span class="store-badge-icon">&#xf8ff;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">近日公開</span>
+        <span class="store-badge-name">App Store</span>
+      </span>
+      <span class="store-badge-status">近日公開</span>
+    </span>
+    <span class="store-badge" role="img" aria-label="Google Play — 近日公開">
+      <span class="store-badge-icon">&#x25B6;</span>
+      <span class="store-badge-textcol">
+        <span class="store-badge-tagline">近日公開</span>
+        <span class="store-badge-name">Google Play</span>
+      </span>
+      <span class="store-badge-status">近日公開</span>
+    </span>
+  </div>
 </div>
 
 ---
@@ -209,7 +227,9 @@ lang: ja
 ## シンプルな従量課金
 {: #pricing}
 
-サブスクリプションなし。隠れた料金なし。クレジットを購入して、いつでも使用できます。サブスクリプションサービスと異なり、使わない分に料金がかかることはありません。
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2時間無料で始められます</span></div>
+
+サブスクリプションなし。隠れた料金なし。クレジットを購入して、いつでも使用できます。サブスクリプションサービスと異なり、使わない分に料金がかかることはありません。新規アカウントは最初の2時間が無料 — クレジットカード不要です。
 
 <div class="pricing-grid">
   <div class="pricing-card">
@@ -276,7 +296,7 @@ lang: ja
 
 <details class="faq-item">
   <summary>どのファイル形式に対応していますか？</summary>
-  <div class="faq-answer">MP3、WAV、FLAC、M4A、OGG、Opus、AAC、WMA、MP4、MOV。ファイルサイズは最大50 MB、長さは最大2時間まで。</div>
+  <div class="faq-answer"><strong>40形式</strong>に対応 — 22の音声形式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMRなど）と18の動画形式（MP4、MOV、MKV、AVI、WEBM、3GPなど — アップロード前にデバイス上で音声が抽出されます）。ファイルサイズは最大50 MB、長さは最大2時間まで。</div>
 </details>
 
 <details class="faq-item">

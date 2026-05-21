@@ -1,0 +1,27 @@
+---
+layout: default
+title: Page Not Found — SafeScribe
+description: The page you're looking for doesn't exist. Return to SafeScribe home.
+lang: en
+permalink: /404.html
+sitemap: false
+---
+
+<div class="error-page">
+  <div class="error-icon">&#x1f50d;</div>
+  <h1>404 — Page Not Found</h1>
+  <p class="error-tagline">The page you're looking for has wandered off — privacy-first, so we don't track where.</p>
+  <p>Let's get you back on track.</p>
+  <div class="cta-group">
+    <a class="cta-btn cta-btn-primary" href="{{ '/' | relative_url }}">&#x1f3e0; Return Home</a>
+    <a class="cta-btn cta-btn-secondary" href="{{ '/en/' | relative_url }}">&#x1f30d; Browse in English</a>
+  </div>
+</div>
+
+<style>
+.error-page { text-align: center; padding: 4rem 1rem; max-width: 600px; margin: 0 auto; }
+.error-icon { font-size: 4rem; margin-bottom: 1rem; opacity: 0.7; }
+.error-page h1 { font-size: 2rem; margin: 0 0 1rem; }
+.error-tagline { font-size: 1.1rem; color: var(--color-text-secondary); margin: 0 0 1rem; }
+.error-page .cta-group { margin-top: 2rem; }
+</style>

@@ -4,12 +4,30 @@
 {% assign page_slug = page.path | split: '/' | last | remove: '.md' | remove: '.html' %}
 {% if page_slug == 'index' or page_slug == '' %}{% assign page_slug = 'index' %}{% endif %}
 {% assign all_langs = 'en,tr,de,fr,es,pt,ar,zh,ja,ko' | split: ',' %}
-<html lang="{{ lang }}">
+{% case lang %}
+  {% when 'en' %}{% assign og_locale = 'en_US' %}
+  {% when 'tr' %}{% assign og_locale = 'tr_TR' %}
+  {% when 'de' %}{% assign og_locale = 'de_DE' %}
+  {% when 'fr' %}{% assign og_locale = 'fr_FR' %}
+  {% when 'es' %}{% assign og_locale = 'es_ES' %}
+  {% when 'pt' %}{% assign og_locale = 'pt_BR' %}
+  {% when 'ar' %}{% assign og_locale = 'ar_AR' %}
+  {% when 'zh' %}{% assign og_locale = 'zh_CN' %}
+  {% when 'ja' %}{% assign og_locale = 'ja_JP' %}
+  {% when 'ko' %}{% assign og_locale = 'ko_KR' %}
+  {% else %}{% assign og_locale = 'en_US' %}
+{% endcase %}
+{% if lang == 'ar' %}{% assign text_dir = 'rtl' %}{% else %}{% assign text_dir = 'ltr' %}{% endif %}
+<html lang="{{ lang }}" dir="{{ text_dir }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Favicon — single SVG at site root (modern browsers auto-scale to any tab/bookmark size) -->
+  <link rel="icon" type="image/svg+xml" href="{{ '/safescribe.svg' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/safescribe.svg' | relative_url }}">
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ page.title | default: site.title }}">
@@ -17,12 +35,17 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:site_name" content="SafeScribe">
-  <meta property="og:locale" content="{{ lang }}">
+  <meta property="og:locale" content="{{ og_locale }}">
+  <meta property="og:image" content="{{ '/assets/og-image.png' | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SafeScribe — Privacy-first AI transcription">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/og-image.png' | absolute_url }}">
 
   <!-- Canonical -->
   <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -53,12 +76,14 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD",
-      "description": "Free to download, pay-as-you-go credits starting at $0.99/hour"
+      "availability": "https://schema.org/PreOrder",
+      "category": "free download with optional in-app purchase",
+      "description": "Free download with optional pay-as-you-go credits starting at $0.99/hour"
     },
     "featureList": [
       "RAM-only audio processing",
       "Immediate data deletion after transcription",
-      "End-to-end encryption (TLS + AES-256)",
+      "TLS 1.3 encryption in transit, AES-256 encrypted local storage",
       "On-device audio optimization",
       "99 language support via Whisper",
       "No user profiles or personal data stored server-side"
@@ -67,7 +92,7 @@
   </script>
   {% endif %}
 
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self';">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>

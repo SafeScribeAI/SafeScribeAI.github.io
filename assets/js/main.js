@@ -31,16 +31,29 @@ document.addEventListener('DOMContentLoaded', function () {
   if (cards.length >= 2) {
     var lang = document.documentElement.lang || 'en';
     var fmt = saveFmt[lang] || saveFmt.en;
-    function parseRate(card) {
-      var el = card.querySelector('.pricing-rate');
+    // Savings = discount amount / full price, derived from the actual price
+    // and hours — NOT the rounded per-minute display rate, which overstated it
+    // (e.g. 7h showed 9% from rounded $0.015 vs the true 6%). Floor so a badge
+    // never claims more discount than the price actually gives.
+    function dollars(card) {
+      var el = card.querySelector('.pricing-amount');
       return el ? parseFloat(el.textContent.replace(/[^0-9.]/g, '')) : NaN;
     }
-    var base = parseRate(cards[0]);
-    if (base) {
+    // Hours come from each card's explicit data-hours attribute, not the
+    // translated label — some locales spell the number out (e.g. Arabic
+    // "one hour"), so parsing display text would miss it.
+    function hoursOf(card) {
+      return parseFloat(card.getAttribute('data-hours'));
+    }
+    var baseRate = dollars(cards[0]) / hoursOf(cards[0]);
+    if (baseRate > 0) {
       for (var i = 1; i < cards.length; i++) {
-        var rate = parseRate(cards[i]);
-        if (isNaN(rate) || rate >= base) continue;
-        var pct = Math.round((1 - rate / base) * 100);
+        var price = dollars(cards[i]);
+        var hours = hoursOf(cards[i]);
+        if (isNaN(price) || isNaN(hours) || hours <= 0) continue;
+        var rate = price / hours;
+        if (rate >= baseRate) continue;
+        var pct = Math.floor((1 - rate / baseRate) * 100);
         if (pct > 0) {
           var badge = document.createElement('div');
           badge.className = 'pricing-save';

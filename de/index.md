@@ -232,32 +232,32 @@ Jede Audiodatei durchläuft eine optimierte Verarbeitungspipeline — auf Ihrem 
 Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen Sie es, wann immer Sie möchten. Anders als bei Abo-Diensten zahlen Sie nie für Zeit, die Sie nicht nutzen. Jedes neue Konto startet mit 2 kostenlosen Stunden Transkription — ohne Karte.
 
 <div class="pricing-grid">
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1 Stunde</div>
     <div class="pricing-rate">$0.0165/Min.</div>
   </div>
-  <div class="pricing-card popular">
+  <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7 Stunden</div>
     <div class="pricing-rate">$0.015/Min.</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 Stunden</div>
     <div class="pricing-rate">$0.014/Min.</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30 Stunden</div>
     <div class="pricing-rate">$0.013/Min.</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 Stunden</div>
     <div class="pricing-rate">$0.012/Min.</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120 Stunden</div>
     <div class="pricing-rate">$0.012/Min.</div>

@@ -232,32 +232,32 @@ lang: ar
 لا اشتراكات. لا رسوم خفية. اشترِ رصيداً واستخدمه متى شئت. على عكس خدمات الاشتراك، لا تدفع أبداً مقابل وقت لا تستخدمه. كل حساب جديد يبدأ بساعتين مجانيتين من النسخ — بدون بطاقة.
 
 <div class="pricing-grid">
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">ساعة واحدة</div>
     <div class="pricing-rate">$0.0165/دقيقة</div>
   </div>
-  <div class="pricing-card popular">
+  <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7 ساعات</div>
     <div class="pricing-rate">$0.015/دقيقة</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 ساعة</div>
     <div class="pricing-rate">$0.014/دقيقة</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30 ساعة</div>
     <div class="pricing-rate">$0.013/دقيقة</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 ساعة</div>
     <div class="pricing-rate">$0.012/دقيقة</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120 ساعة</div>
     <div class="pricing-rate">$0.012/دقيقة</div>

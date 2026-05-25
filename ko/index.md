@@ -232,32 +232,32 @@ lang: ko
 구독 없음. 숨겨진 수수료 없음. 크레딧을 구매하고 원할 때 사용하세요. 구독 서비스와 달리, 사용하지 않는 시간에 대해 비용을 지불할 필요가 없습니다. 모든 신규 계정은 2시간 무료 전사부터 시작합니다 — 신용카드 불필요.
 
 <div class="pricing-grid">
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1시간</div>
     <div class="pricing-rate">$0.0165/분</div>
   </div>
-  <div class="pricing-card popular">
+  <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7시간</div>
     <div class="pricing-rate">$0.015/분</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15시간</div>
     <div class="pricing-rate">$0.014/분</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30시간</div>
     <div class="pricing-rate">$0.013/분</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60시간</div>
     <div class="pricing-rate">$0.012/분</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120시간</div>
     <div class="pricing-rate">$0.012/분</div>

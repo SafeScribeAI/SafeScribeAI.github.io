@@ -232,32 +232,32 @@ Cada archivo de audio pasa por una pipeline optimizada — en tu dispositivo y e
 Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera. A diferencia de los servicios de suscripción, nunca paga por el tiempo que no usa. Cada nueva cuenta empieza con 2 horas gratis de transcripción — sin tarjeta.
 
 <div class="pricing-grid">
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1 hora</div>
     <div class="pricing-rate">$0.0165/min</div>
   </div>
-  <div class="pricing-card popular">
+  <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7 horas</div>
     <div class="pricing-rate">$0.015/min</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 horas</div>
     <div class="pricing-rate">$0.014/min</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30 horas</div>
     <div class="pricing-rate">$0.013/min</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 horas</div>
     <div class="pricing-rate">$0.012/min</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120 horas</div>
     <div class="pricing-rate">$0.012/min</div>

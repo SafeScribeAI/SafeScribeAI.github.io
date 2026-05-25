@@ -232,32 +232,32 @@ Her ses dosyası, mümkün olan en yüksek doğruluğu sağlamak için optimize 
 Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın. Abonelik hizmetlerinin aksine, kullanmadığınız zaman için asla ödeme yapmazsınız. Her yeni hesaba 2 saat ücretsiz transkripsiyon hediyemiz olsun — kart bilgisi gerekmez.
 
 <div class="pricing-grid">
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1 saat</div>
     <div class="pricing-rate">$0.0165/dk</div>
   </div>
-  <div class="pricing-card popular">
+  <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7 saat</div>
     <div class="pricing-rate">$0.015/dk</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 saat</div>
     <div class="pricing-rate">$0.014/dk</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30 saat</div>
     <div class="pricing-rate">$0.013/dk</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 saat</div>
     <div class="pricing-rate">$0.012/dk</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120 saat</div>
     <div class="pricing-rate">$0.012/dk</div>

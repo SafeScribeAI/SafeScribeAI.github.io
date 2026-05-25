@@ -232,32 +232,32 @@ lang: ja
 サブスクリプションなし。隠れた料金なし。クレジットを購入して、いつでも使用できます。サブスクリプションサービスと異なり、使わない分に料金がかかることはありません。新規アカウントは最初の2時間が無料 — クレジットカード不要です。
 
 <div class="pricing-grid">
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1時間</div>
     <div class="pricing-rate">$0.0165/分</div>
   </div>
-  <div class="pricing-card popular">
+  <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7時間</div>
     <div class="pricing-rate">$0.015/分</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15時間</div>
     <div class="pricing-rate">$0.014/分</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30時間</div>
     <div class="pricing-rate">$0.013/分</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60時間</div>
     <div class="pricing-rate">$0.012/分</div>
   </div>
-  <div class="pricing-card">
+  <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120時間</div>
     <div class="pricing-rate">$0.012/分</div>

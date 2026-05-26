@@ -126,8 +126,8 @@ Uygulama içi silme işlemi, GDPR Art. 17 ve KVKK Mad. 11(e) kapsamındaki silme
 ## Sıfır Disk Politikası
 
 <div class="flow-diagram">
-Sesiniz:  Yükleme --> RAM --> YZ Transkripsiyonu --> Teslim --> SİL
-                                                             (anında)
+Sesiniz:  Yükleme --> RAM --> Yapay Zeka Transkripsiyonu --> Teslim --> SİL
+                                                                     (anında)
 
 Diskimiz: Yalnızca bakiye kayıtları — ses, transkript veya e-posta yok
 </div>

@@ -1,21 +1,21 @@
 ---
 layout: default
 title: SafeScribe — 개인정보 보호 우선 AI 음성 전사
-description: 다른 전사 앱은 녹음을 며칠간 보관합니다. 저희는요? 0초. RAM 전용 처리, 기기 내 오디오 최적화 기반 정확도, 텍스트 수신 즉시 삭제.
+description: 대부분의 전사 앱은 녹음을 며칠간 보관합니다. SafeScribe는 보관하지 않습니다. 음성은 서버 메모리(RAM)에서만 처리되며 디스크에 기록되지 않고, 텍스트가 완성되는 즉시 삭제됩니다.
 lang: ko
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">다른 전사 앱은 녹음을 며칠간 보관합니다.<br>저희는요? 0초.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM 전용 처리. 기기 내 오디오 최적화 기반 정확도. 텍스트 수신 즉시 삭제.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">개인정보 보호는 저희가 따르는 정책이 아니라 저희가 구축한 구조입니다. 저장된 적 없는 데이터는 소환할 수 없습니다.</p>
+  <p class="hero-tagline">대부분의 전사 앱은 녹음을 며칠간 보관합니다.<br>SafeScribe는 전혀 보관하지 않습니다.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">음성은 서버 메모리(RAM)에서만 처리되며 디스크에 기록되지 않고, 텍스트를 받는 즉시 삭제됩니다.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">개인정보 보호는 여기서 정책이 아니라 시스템이 설계된 방식입니다. 법원 명령이 있더라도 넘길 수 있는 음성·전사본·이름·이메일·IP는 없습니다. 일방향 해시에 연결된 잔액과 사용 기록만 있을 뿐, 본인의 신원과는 결코 연결되지 않습니다.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 요금 보기</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; 데이터 보호 방법</a>
   </div>
-  <p class="hero-free-tier">&#x2728; 2시간 무료로 시작 — 신용카드 불필요</p>
+  <p class="hero-free-tier">2시간 무료 사용으로 시작 — 신용카드 불필요</p>
   <div class="store-badges" aria-label="App Store 및 Google Play — 출시 예정">
     <span class="store-badge" role="img" aria-label="App Store — 출시 예정">
       <span class="store-badge-icon">&#xf8ff;</span>
@@ -172,28 +172,28 @@ lang: ko
 ---
 
 <span class="section-label">이런 분들을 위해</span>
-## 정보 유출을 감당할 수 없는 분들을 위해 설계
+## 개인정보 보호가 필수적인 작업을 위해
 
 <div class="segment-cards">
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>기자</h4>
-    <p>취재원은 안전합니다 — 약속하기 때문이 아니라, 접근할 수 없기 때문입니다. 데이터 보존 제로는 강제 공개 위험 제로를 의미합니다.</p>
+    <p>취재원은 안전하게 유지됩니다 — 약속하기 때문이 아니라, 저희가 접근할 수 없기 때문입니다. 서버에 아무것도 보존되지 않으므로 요청을 받더라도 공개할 것이 없습니다.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>변호사</h4>
-    <p>변호사-의뢰인 비밀유지특권 수준의 전사. 서버에 발견 가능한 데이터가 전혀 없습니다 — 소환할 것도, 유출될 것도 없습니다.</p>
+    <p>변호사-의뢰인 비밀유지에 적합한 전사. 서버에는 소환되거나 유출될 수 있는 데이터가 없습니다.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>활동가</h4>
-    <p>감시에 안전한 전사. 로그 없음, 프로필 없음, 흔적 없음. 목소리가 텍스트가 되고 나머지는 사라집니다.</p>
+    <p>감시에 강한 전사. 로그·프로필·흔적이 보관되지 않으며, 목소리가 텍스트가 되고 나머지는 삭제됩니다.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>전문직</h4>
-    <p>빠르고 정확하며 모든 것을 잊는 전사. 회의록, 인터뷰, 받아쓰기 — 완전한 안심과 함께.</p>
+    <p>회의록, 인터뷰, 받아쓰기를 위한 빠르고 정확한 전사. 작업이 끝나면 서버에 데이터가 남지 않습니다.</p>
   </div>
 </div>
 
@@ -227,7 +227,7 @@ lang: ko
 ## 간단한 종량제
 {: #pricing}
 
-<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2시간 무료로 시작</span></div>
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">2시간 무료 사용으로 시작</span></div>
 
 구독 없음. 숨겨진 수수료 없음. 크레딧을 구매하고 원할 때 사용하세요. 구독 서비스와 달리, 사용하지 않는 시간에 대해 비용을 지불할 필요가 없습니다. 모든 신규 계정은 2시간 무료 전사부터 시작합니다 — 신용카드 불필요.
 

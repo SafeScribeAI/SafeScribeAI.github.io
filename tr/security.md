@@ -201,7 +201,7 @@ Yerel ön işleme
     |
 Şifrele + yükle ---TLS--->  RAM'e al
                                    |
-                               YZ transkripsiyonu
+                               Yapay zeka transkripsiyonu
                                (yalnızca RAM)
                                    |
                                Ses SİLİNDİ

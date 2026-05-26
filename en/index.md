@@ -1,21 +1,21 @@
 ---
 layout: default
 title: SafeScribe — Privacy-First AI Transcription
-description: Your transcription app keeps your recordings for days. Ours? Zero seconds. RAM-only processing, on-device audio optimization for accuracy, deleted the moment you receive your text.
+description: Most transcription apps keep your recordings for days. SafeScribe doesn't: your audio is processed only in our server's memory (RAM), never written to disk, and deleted the moment your text is ready.
 lang: en
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">Your transcription app keeps your recordings for days.<br>Ours? Zero seconds.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM-only processing. On-device audio optimization for accuracy. Deleted the moment you receive your text.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacy isn't a policy we follow — it's a structure we built. You can't subpoena data that was never stored.</p>
+  <p class="hero-tagline">Most transcription apps keep your recordings for days.<br>SafeScribe keeps none.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Your audio is processed only in our server's memory (RAM), never written to disk, and deleted the moment you receive your text.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacy isn't a policy here — it's how the system is built. Even under a court order, we'd have no audio, transcript, name, email, or IP to hand over — only a balance and usage record tied to a one-way hash, never to your identity.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Get Started — See Pricing</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; How We Protect Your Data</a>
   </div>
-  <p class="hero-free-tier">&#x2728; Start with 2 hours free — no credit card</p>
+  <p class="hero-free-tier">Start with 2 hours of free usage — no credit card required</p>
   <div class="store-badges" aria-label="App Store and Google Play — Coming Soon">
     <span class="store-badge" role="img" aria-label="App Store — Coming Soon">
       <span class="store-badge-icon">&#xf8ff;</span>
@@ -172,28 +172,28 @@ Every claim below is enforced in code — not just policy. Each links to the tec
 ---
 
 <span class="section-label">Who Needs This</span>
-## Built for People Who Can't Afford Leaks
+## Built for Work Where Privacy Is Essential
 
 <div class="segment-cards">
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>Journalists</h4>
-    <p>Your sources are safe — not because we promise, but because we can't access them. Zero-retention means zero risk of compelled disclosure.</p>
+    <p>Your sources stay safe — not because we promise it, but because we have no access. Since nothing is retained on the server, there's nothing to disclose even if it's demanded.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>Lawyers</h4>
-    <p>Attorney-client privilege-grade transcription. No discoverable data on our servers — ever. Nothing to subpoena, nothing to breach.</p>
+    <p>Transcription suited to attorney-client confidentiality. Our servers hold no data that could be subpoenaed or breached.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>Activists</h4>
-    <p>Surveillance-proof transcription. No logs, no profiles, no traces. Your voice becomes text and the rest disappears.</p>
+    <p>Transcription that resists surveillance. No logs, profiles, or traces are kept; your voice becomes text and the rest is deleted.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>Professionals</h4>
-    <p>Fast, accurate transcription that forgets everything. Meeting notes, interviews, dictation — with complete peace of mind.</p>
+    <p>Fast, accurate transcription for meeting notes, interviews, and dictation — with no data left on the server once it's done.</p>
   </div>
 </div>
 
@@ -227,7 +227,7 @@ Every audio file passes through an optimized pipeline — on your device and on 
 ## Simple, Pay-As-You-Go
 {: #pricing}
 
-<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; Start with 2 hours free</span></div>
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">2 hours of free usage to start</span></div>
 
 No subscriptions. No hidden fees. Buy credits and use them whenever you want. Unlike subscription services, you never pay for time you don't use. Every new account starts with 2 hours of free transcription — no card required.
 

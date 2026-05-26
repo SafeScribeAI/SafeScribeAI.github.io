@@ -1,21 +1,21 @@
 ---
 layout: default
 title: SafeScribe — KI-Transkription mit Datenschutz an erster Stelle
-description: Ihre Transkriptions-App speichert Ihre Aufnahmen tagelang. Unsere? Null Sekunden. Nur-RAM-Verarbeitung, Audio-Optimierung auf dem Gerät für Genauigkeit, gelöscht sobald Sie Ihren Text erhalten.
+description: Die meisten Transkriptions-Apps speichern Ihre Aufnahmen tagelang. SafeScribe nicht: Ihr Audio wird nur im Arbeitsspeicher (RAM) unseres Servers verarbeitet, nie auf die Festplatte geschrieben und gelöscht, sobald Ihr Text fertig ist.
 lang: de
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">Ihre Transkriptions-App speichert Ihre Aufnahmen tagelang.<br>Unsere? Null Sekunden.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Nur-RAM-Verarbeitung. Audio-Optimierung auf dem Gerät für Genauigkeit. Gelöscht sobald Sie Ihren Text erhalten.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Datenschutz ist keine Richtlinie, die wir befolgen — es ist eine Struktur, die wir gebaut haben. Daten, die nie gespeichert wurden, können nicht beschlagnahmt werden.</p>
+  <p class="hero-tagline">Die meisten Transkriptions-Apps speichern Ihre Aufnahmen tagelang.<br>SafeScribe speichert nichts.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Ihr Audio wird nur im Arbeitsspeicher (RAM) unseres Servers verarbeitet, nie auf die Festplatte geschrieben und gelöscht, sobald Sie Ihren Text erhalten.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Datenschutz ist hier keine Richtlinie, sondern die Art, wie das System gebaut ist. Selbst auf gerichtliche Anordnung hätten wir kein Audio, kein Transkript, keinen Namen, keine E-Mail und keine IP herauszugeben — nur einen Kontostand und Nutzungsdaten, die mit einem Einweg-Hash verknüpft sind, nie mit Ihrer Identität.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Preise ansehen</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; So schützen wir Ihre Daten</a>
   </div>
-  <p class="hero-free-tier">&#x2728; Mit 2 kostenlosen Stunden starten — keine Kreditkarte</p>
+  <p class="hero-free-tier">Mit 2 Stunden kostenloser Nutzung starten — keine Kreditkarte erforderlich</p>
   <div class="store-badges" aria-label="App Store und Google Play — Demnächst">
     <span class="store-badge" role="img" aria-label="App Store — Demnächst">
       <span class="store-badge-icon">&#xf8ff;</span>
@@ -172,28 +172,28 @@ Jede der folgenden Aussagen wird durch Code erzwungen — nicht nur durch Richtl
 ---
 
 <span class="section-label">Für wen ist das</span>
-## Entwickelt für Menschen, die sich keine Datenlecks leisten können
+## Für Arbeit, bei der Datenschutz entscheidend ist
 
 <div class="segment-cards">
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>Journalisten</h4>
-    <p>Ihre Quellen sind sicher — nicht weil wir es versprechen, sondern weil wir keinen Zugriff darauf haben. Null Speicherung bedeutet null Risiko einer erzwungenen Offenlegung.</p>
+    <p>Ihre Quellen bleiben sicher — nicht weil wir es versprechen, sondern weil wir keinen Zugriff darauf haben. Da auf dem Server nichts gespeichert wird, gibt es selbst auf Anforderung nichts offenzulegen.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>Anwälte</h4>
-    <p>Transkription auf dem Niveau des Anwaltsgeheimnisses. Keine auffindbaren Daten auf unseren Servern — niemals. Nichts zu beschlagnahmen, nichts zu kompromittieren.</p>
+    <p>Transkription, die dem Anwaltsgeheimnis gerecht wird. Auf unseren Servern liegen keine Daten, die beschlagnahmt oder kompromittiert werden könnten.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>Aktivisten</h4>
-    <p>Überwachungssichere Transkription. Keine Protokolle, keine Profile, keine Spuren. Ihre Stimme wird zu Text und der Rest verschwindet.</p>
+    <p>Transkription, die Überwachung standhält. Es werden keine Protokolle, Profile oder Spuren gespeichert; Ihre Stimme wird zu Text und der Rest wird gelöscht.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>Berufstätige</h4>
-    <p>Schnelle, präzise Transkription, die alles vergisst. Besprechungsnotizen, Interviews, Diktate — mit vollem Vertrauen.</p>
+    <p>Schnelle, präzise Transkription für Besprechungsnotizen, Interviews und Diktate — ohne dass nach Abschluss Daten auf dem Server verbleiben.</p>
   </div>
 </div>
 
@@ -227,7 +227,7 @@ Jede Audiodatei durchläuft eine optimierte Verarbeitungspipeline — auf Ihrem 
 ## Einfach, nach Verbrauch
 {: #pricing}
 
-<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2 kostenlose Stunden zum Start</span></div>
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">2 Stunden kostenlose Nutzung zum Start</span></div>
 
 Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen Sie es, wann immer Sie möchten. Anders als bei Abo-Diensten zahlen Sie nie für Zeit, die Sie nicht nutzen. Jedes neue Konto startet mit 2 kostenlosen Stunden Transkription — ohne Karte.
 

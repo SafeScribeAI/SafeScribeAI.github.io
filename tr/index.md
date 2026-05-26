@@ -1,21 +1,21 @@
 ---
 layout: default
 title: SafeScribe — Gizlilik Öncelikli Yapay Zeka Transkripsiyon
-description: Transkripsiyon uygulamanız kayıtlarınızı günlerce saklıyor. Bizimki? Sıfır saniye. Yalnızca RAM'de işleme, cihazda ses optimizasyonu ile doğruluk, metninizi aldığınız anda siliniyor.
+description: Çoğu transkripsiyon uygulaması kayıtlarınızı günlerce saklar. SafeScribe saklamaz: sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, diske hiç yazılmaz ve metniniz hazır olur olmaz silinir.
 lang: tr
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">Transkripsiyon uygulamanız kayıtlarınızı günlerce saklıyor.<br>Bizimki? Sıfır saniye.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Yalnızca RAM'de işleme. Cihazda ses optimizasyonu ile doğruluk. Metninizi aldığınız anda siliniyor.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Gizlilik, uyduğumuz bir politika değil — inşa ettiğimiz bir yapıdır. Hiç saklanmamış verilere mahkeme celbi gönderilemez.</p>
+  <p class="hero-tagline">Çoğu transkripsiyon uygulaması kayıtlarınızı günlerce saklar.<br>SafeScribe hiç saklamaz.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, diske hiç yazılmaz ve metninizi aldığınız anda silinir.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Gizlilik bizde bir politika değil, sistemin temeli. Bir mahkeme kararı gelse bile elimizde paylaşılacak ses, metin, ad, e-posta veya IP yoktur — yalnızca kimliğinizle değil, tek yönlü bir özetle ilişkili bakiye ve kullanım kaydı bulunur.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Fiyatları Görün</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Verilerinizi Nasıl Koruyoruz</a>
   </div>
-  <p class="hero-free-tier">&#x2728; 2 saat ücretsizle başlayın — kart bilgisi gerekmez</p>
+  <p class="hero-free-tier">2 saat ücretsiz kullanım hakkı ile başlayın — kart bilgisi gerekmez</p>
   <div class="store-badges" aria-label="App Store ve Google Play — Yakında">
     <span class="store-badge" role="img" aria-label="App Store — Yakında">
       <span class="store-badge-icon">&#xf8ff;</span>
@@ -145,7 +145,7 @@ Aşağıdaki her madde yalnızca bir politika değil, kodla zorunlu kılınmış
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yalnızca RAM'de işleme</strong><span class="item-desc">Sesiniz yalnızca transkripsiyon sırasında uçucu bellekte bulunur — diske hiçbir zaman yazılmaz. <a href="security#layer-2">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kademeli silme + güvenli yedek</strong><span class="item-desc">Her adım bir önceki adımın verisini siler. Kodumuz başarısız olursa veriler TTL ile kendiliğinden yok olur. <a href="security#layer-6">devamını oku →</a></span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırdığımız YZ</strong><span class="item-desc">Sesiniz OpenAI'ye, Google'a veya herhangi bir üçüncü tarafa ulaşmaz. Kendi altyapımızı işletiyoruz. <a href="security#layer-2">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırdığımız yapay zeka</strong><span class="item-desc">Sesiniz OpenAI'ye, Google'a veya herhangi bir üçüncü tarafa ulaşmaz. Kendi altyapımızı işletiyoruz. <a href="security#layer-2">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Bütünlük doğrulaması</strong><span class="item-desc">Her transkript, değiştirilmeden ulaştığını kanıtlayan bir SHA-256 sağlama toplamı taşır. <a href="security#layer-1">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tekrar indirme yok</strong><span class="item-desc">Transkriptinizi aldıktan sonra sunucularımızda hiçbir şey kalmaz. "Tekrar indir" diye bir seçenek yoktur. <a href="security#layer-6">devamını oku →</a></span></span></li>
 </ul>
@@ -172,28 +172,28 @@ Aşağıdaki her madde yalnızca bir politika değil, kodla zorunlu kılınmış
 ---
 
 <span class="section-label">Kimin İçin</span>
-## Sızıntı Göze Alamayanlar İçin
+## Gizliliğin Şart Olduğu İşler İçin
 
 <div class="segment-cards">
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>Gazeteciler</h4>
-    <p>Kaynaklarınız güvende — söz verdiğimiz için değil, erişemediğimiz için. Sıfır veri tutma, sıfır zorunlu ifşa riski.</p>
+    <p>Kaynaklarınız güvende kalır — söz verdiğimiz için değil, erişimimiz olmadığı için. Sunucuda veri tutulmadığından, talep edilse bile paylaşılacak bir şey olmaz.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>Avukatlar</h4>
-    <p>Avukat-müvekkil gizliliği seviyesinde transkripsiyon. Sunucularımızda keşfedilebilir veri yok — asla. Celbe konu olacak, ihlal edilecek bir şey yok.</p>
+    <p>Avukat-müvekkil gizliliğine uygun transkripsiyon. Sunucularımızda celbe konu olabilecek ya da sızdırılabilecek bir veri tutulmaz.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>Aktivistler</h4>
-    <p>Gözetimden korunan transkripsiyon. Log yok, profil yok, iz yok. Sesiniz metne dönüşür, gerisi kaybolur.</p>
+    <p>Gözetime karşı dirençli transkripsiyon. Kayıt (log), profil ya da iz tutulmaz; sesiniz metne dönüşür, gerisi silinir.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>Profesyoneller</h4>
-    <p>Hızlı, doğru transkripsiyon — her şeyi unutur. Toplantı notları, röportajlar, dikte — tam bir gönül rahatlığıyla.</p>
+    <p>Toplantı notları, röportajlar ve dikte için hızlı ve doğru transkripsiyon — işlem bittiğinde sunucuda hiçbir veri kalmadan.</p>
   </div>
 </div>
 
@@ -213,7 +213,7 @@ Her ses dosyası, mümkün olan en yüksek doğruluğu sağlamak için optimize 
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>
     <h4>Ses Aktivite Algılama</h4>
-    <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a>, konuşma segmentlerini belirler ve transkripsiyonu yalnızca algılanan konuşma bölgeleriyle sınırlandırarak sessiz bölümlerdeki YZ halüsinasyonlarını ortadan kaldırır.</p>
+    <p><a href="https://github.com/snakers4/silero-vad">Silero VAD</a>, konuşma segmentlerini belirler ve transkripsiyonu yalnızca algılanan konuşma bölgeleriyle sınırlandırarak sessiz bölümlerdeki yapay zeka halüsinasyonlarını ortadan kaldırır.</p>
   </div>
 </div>
 
@@ -227,9 +227,9 @@ Her ses dosyası, mümkün olan en yüksek doğruluğu sağlamak için optimize 
 ## Basit, Kullandıkça Öde
 {: #pricing}
 
-<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2 saat ücretsiz başlangıç</span></div>
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">2 saat ücretsiz kullanım hakkı</span></div>
 
-Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın. Abonelik hizmetlerinin aksine, kullanmadığınız zaman için asla ödeme yapmazsınız. Her yeni hesaba 2 saat ücretsiz transkripsiyon hediyemiz olsun — kart bilgisi gerekmez.
+Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın. Abonelik hizmetlerinin aksine, kullanmadığınız zaman için asla ödeme yapmazsınız. Her yeni hesap 2 saat ücretsiz transkripsiyon ile başlar — kart bilgisi gerekmez.
 
 <div class="pricing-grid">
   <div class="pricing-card" data-hours="1">
@@ -277,7 +277,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Transkripsiyon sonrası sesime ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur."}},
-    {"@type": "Question", "name": "Kayıtlarımı YZ eğitmek için kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitimi için kullanılmaz. Kendi YZ altyapımızı işletiyoruz."}},
+    {"@type": "Question", "name": "Kayıtlarımı yapay zeka eğitiminde kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitiminde kullanılmaz. Kendi yapay zeka altyapımızı işletiyoruz."}},
     {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 99 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
     {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "40 format desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses cihazınızda çıkarılır). 50 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
     {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde TLS 1.2+ şifreleme. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
@@ -295,8 +295,8 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 </details>
 
 <details class="faq-item">
-  <summary>Kayıtlarımı YZ eğitmek için kullanıyor musunuz?</summary>
-  <div class="faq-answer">Kesinlikle hayır. Sesiniz yalnızca tek bir amaç için kullanılır: transkriptinizi oluşturmak. Asla saklanmaz, analiz edilmez veya model eğitimi ya da iyileştirmesi için kullanılmaz. Kendi YZ altyapımızı işletiyoruz — verileriniz hiçbir üçüncü taraf YZ hizmetine gitmez.</div>
+  <summary>Kayıtlarımı yapay zeka eğitiminde kullanıyor musunuz?</summary>
+  <div class="faq-answer">Kesinlikle hayır. Sesiniz yalnızca tek bir amaç için kullanılır: transkriptinizi oluşturmak. Asla saklanmaz, analiz edilmez veya model eğitiminde ya da iyileştirmesinde kullanılmaz. Kendi yapay zeka altyapımızı işletiyoruz — verileriniz hiçbir üçüncü taraf yapay zeka hizmetine gitmez.</div>
 </details>
 
 <details class="faq-item">

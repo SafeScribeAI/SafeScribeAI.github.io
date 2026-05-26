@@ -1,21 +1,21 @@
 ---
 layout: default
 title: SafeScribe — نسخ صوتي بالذكاء الاصطناعي مع الخصوصية أولاً
-description: تطبيقات النسخ الأخرى تحتفظ بتسجيلاتك لأيام. نحن؟ صفر ثوانٍ. معالجة في ذاكرة الوصول العشوائي فقط، تحسين الصوت على الجهاز لدقة عالية، يُحذف فور استلامك للنص.
+description: معظم تطبيقات النسخ تحتفظ بتسجيلاتك لأيام. أما SafeScribe فلا: تُعالَج تسجيلاتك الصوتية في ذاكرة خادمنا (RAM) فقط، ولا تُكتب على القرص أبداً، وتُحذف فور أن يصبح نصك جاهزاً.
 lang: ar
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">تطبيقات النسخ الأخرى تحتفظ بتسجيلاتك لأيام.<br>نحن؟ صفر ثوانٍ.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">المعالجة في RAM فقط. تحسين الصوت على الجهاز لدقة عالية. يُحذف فور استلامك للنص.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">الخصوصية ليست سياسة نتبعها — إنها بنية بنيناها. لا يمكن استدعاء بيانات لم تُخزَّن قط.</p>
+  <p class="hero-tagline">معظم تطبيقات النسخ تحتفظ بتسجيلاتك لأيام.<br>أما SafeScribe فلا يحتفظ بأي منها.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">تُعالَج تسجيلاتك الصوتية في ذاكرة خادمنا (RAM) فقط، ولا تُكتب على القرص أبداً، وتُحذف فور استلامك للنص.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">الخصوصية هنا ليست سياسة، بل هي طريقة بناء النظام. حتى بأمر من المحكمة، لا يوجد لدينا أي تسجيل صوتي أو نص أو اسم أو بريد إلكتروني أو عنوان IP لتسليمه — لا شيء سوى الرصيد وبيانات الاستخدام المرتبطة ببصمة أحادية الاتجاه، ولا ترتبط أبداً بهويتك.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; عرض الأسعار</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; كيف نحمي بياناتك</a>
   </div>
-  <p class="hero-free-tier">&#x2728; ابدأ بساعتين مجانًا — بدون بطاقة</p>
+  <p class="hero-free-tier">ابدأ بساعتين من الاستخدام المجاني — بدون بطاقة</p>
   <div class="store-badges" aria-label="App Store وGoogle Play — قريبًا">
     <span class="store-badge" role="img" aria-label="App Store — قريبًا">
       <span class="store-badge-icon">&#xf8ff;</span>
@@ -172,28 +172,28 @@ lang: ar
 ---
 
 <span class="section-label">من يحتاج هذا</span>
-## مصمم لمن لا يتحملون التسريبات
+## مصمم للأعمال التي تكون فيها الخصوصية ضرورية
 
 <div class="segment-cards">
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>الصحفيون</h4>
-    <p>مصادرك آمنة — ليس لأننا نعد بذلك، بل لأننا لا نستطيع الوصول إليها. عدم الاحتفاظ بالبيانات يعني صفر مخاطر للإفصاح القسري.</p>
+    <p>تبقى مصادرك آمنة — ليس لأننا نعد بذلك، بل لأننا لا نملك الوصول إليها. وبما أنه لا يُحتفظ بأي شيء على الخادم، فلا يوجد ما يمكن الإفصاح عنه حتى عند الطلب.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>المحامون</h4>
-    <p>نسخ بمستوى سرية المحامي والموكل. لا بيانات قابلة للاكتشاف على خوادمنا — أبداً. لا شيء للاستدعاء القضائي، لا شيء للاختراق.</p>
+    <p>نسخ يتوافق مع سرية العلاقة بين المحامي وموكله. لا تحتوي خوادمنا على بيانات يمكن استدعاؤها قضائياً أو اختراقها.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>الناشطون</h4>
-    <p>نسخ مقاوم للمراقبة. لا سجلات، لا ملفات تعريف، لا آثار. يتحول صوتك إلى نص والباقي يختفي.</p>
+    <p>نسخ يقاوم المراقبة. لا يُحتفظ بأي سجلات أو ملفات تعريف أو آثار؛ يتحول صوتك إلى نص ويُحذف الباقي.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>المهنيون</h4>
-    <p>نسخ سريع ودقيق ينسى كل شيء. ملاحظات الاجتماعات والمقابلات والإملاء — براحة بال تامة.</p>
+    <p>نسخ سريع ودقيق لملاحظات الاجتماعات والمقابلات والإملاء — دون بقاء أي بيانات على الخادم بعد الانتهاء.</p>
   </div>
 </div>
 
@@ -227,7 +227,7 @@ lang: ar
 ## بسيطة، ادفع حسب الاستخدام
 {: #pricing}
 
-<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; ساعتان مجانيتان للبدء</span></div>
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">ساعتان من الاستخدام المجاني للبدء</span></div>
 
 لا اشتراكات. لا رسوم خفية. اشترِ رصيداً واستخدمه متى شئت. على عكس خدمات الاشتراك، لا تدفع أبداً مقابل وقت لا تستخدمه. كل حساب جديد يبدأ بساعتين مجانيتين من النسخ — بدون بطاقة.
 

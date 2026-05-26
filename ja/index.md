@@ -1,21 +1,21 @@
 ---
 layout: default
 title: SafeScribe — プライバシー最優先のAI音声文字起こし
-description: 他の文字起こしアプリはあなたの録音を何日も保持します。私たちは？ゼロ秒。RAM専用処理、デバイス上での音声最適化による高精度、テキスト受信と同時に削除。
+description: ほとんどの文字起こしアプリは録音を何日も保持します。SafeScribeは保持しません。音声はサーバーのメモリ（RAM）内でのみ処理され、ディスクに書き込まれることはなく、テキストが完成した瞬間に削除されます。
 lang: ja
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">他の文字起こしアプリはあなたの録音を何日も保持します。<br>私たちは？ゼロ秒。</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">RAM専用処理。デバイス上での音声最適化による高精度。テキスト受信と同時に削除。</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">プライバシーとは私たちが従うポリシーではなく、私たちが構築した構造です。保存されなかったデータを召喚令状で取得することはできません。</p>
+  <p class="hero-tagline">ほとんどの文字起こしアプリは録音を何日も保持します。<br>SafeScribeは一切保持しません。</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">音声はサーバーのメモリ（RAM）内でのみ処理され、ディスクに書き込まれることはなく、テキストを受け取った瞬間に削除されます。</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">プライバシーはここでは方針ではなく、システムの設計そのものです。裁判所の命令があっても、お渡しできる音声・文字起こし・氏名・メールアドレス・IPはありません。あるのは一方向ハッシュに紐づく残高と利用記録だけで、ご本人の身元には決して結び付きません。</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 料金を見る</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; データ保護の仕組み</a>
   </div>
-  <p class="hero-free-tier">&#x2728; 2時間無料で始められます — クレジットカード不要</p>
+  <p class="hero-free-tier">2時間分の無料利用で始められます — クレジットカード不要</p>
   <div class="store-badges" aria-label="App StoreとGoogle Play — 近日公開">
     <span class="store-badge" role="img" aria-label="App Store — 近日公開">
       <span class="store-badge-icon">&#xf8ff;</span>
@@ -172,28 +172,28 @@ lang: ja
 ---
 
 <span class="section-label">こんな方に</span>
-## 情報漏洩が許されない方のために
+## プライバシーが不可欠な用途のために
 
 <div class="segment-cards">
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>ジャーナリスト</h4>
-    <p>情報源は安全です — 約束するからではなく、アクセスできないからです。データ保持ゼロは強制開示リスクゼロを意味します。</p>
+    <p>情報源は安全に保たれます — 約束するからではなく、私たちがアクセスできないからです。サーバーには何も保持されないため、要求されても開示するものがありません。</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>弁護士</h4>
-    <p>弁護士・依頼者間秘匿特権レベルの文字起こし。サーバー上に発見可能なデータは一切ありません — 召喚対象も漏洩対象もありません。</p>
+    <p>弁護士・依頼者間の秘匿性に適した文字起こし。サーバー上には、召喚や漏洩の対象となりうるデータはありません。</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>活動家</h4>
-    <p>監視を寄せ付けない文字起こし。ログなし、プロファイルなし、痕跡なし。音声がテキストになり、あとは消えます。</p>
+    <p>監視に強い文字起こし。ログ・プロファイル・痕跡は保持されません。音声はテキストになり、残りは削除されます。</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>ビジネスプロフェッショナル</h4>
-    <p>高速・高精度で、すべてを忘れる文字起こし。会議メモ、インタビュー、口述 — 完全な安心感とともに。</p>
+    <p>会議メモ、インタビュー、口述のための高速・高精度な文字起こし。処理が終わればサーバーにデータは残りません。</p>
   </div>
 </div>
 
@@ -227,7 +227,7 @@ lang: ja
 ## シンプルな従量課金
 {: #pricing}
 
-<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2時間無料で始められます</span></div>
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">2時間分の無料利用で開始</span></div>
 
 サブスクリプションなし。隠れた料金なし。クレジットを購入して、いつでも使用できます。サブスクリプションサービスと異なり、使わない分に料金がかかることはありません。新規アカウントは最初の2時間が無料 — クレジットカード不要です。
 

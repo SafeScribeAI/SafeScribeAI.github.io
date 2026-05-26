@@ -1,21 +1,21 @@
 ---
 layout: default
 title: SafeScribe — Transcrição de IA com privacidade em primeiro lugar
-description: Seu app de transcrição guarda suas gravações por dias. O nosso? Zero segundos. Processamento somente em RAM, otimização de áudio no dispositivo para precisão, excluído no momento em que você recebe seu texto.
+description: A maioria dos apps de transcrição guarda suas gravações por dias. O SafeScribe não: seu áudio é processado apenas na memória (RAM) do nosso servidor, nunca gravado em disco e excluído assim que seu texto fica pronto.
 lang: pt
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">Seu app de transcrição guarda suas gravações por dias.<br>O nosso? Zero segundos.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Processamento somente em RAM. Otimização de áudio no dispositivo para precisão. Excluído no momento em que você recebe seu texto.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacidade não é uma política que seguimos — é uma estrutura que construímos. Não é possível requisitar dados que nunca foram armazenados.</p>
+  <p class="hero-tagline">A maioria dos apps de transcrição guarda suas gravações por dias.<br>O SafeScribe não guarda nenhuma.</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Seu áudio é processado apenas na memória (RAM) do nosso servidor, nunca gravado em disco e excluído assim que você recebe seu texto.</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacidade aqui não é uma política, é a forma como o sistema é construído. Mesmo sob ordem judicial, não teríamos nenhum áudio, transcrição, nome, e-mail ou IP a entregar — apenas um saldo e dados de uso vinculados a um hash unidirecional, nunca à sua identidade.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Ver preços</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Como protegemos seus dados</a>
   </div>
-  <p class="hero-free-tier">&#x2728; Comece com 2 horas grátis — sem cartão</p>
+  <p class="hero-free-tier">Comece com 2 horas de uso grátis — sem cartão</p>
   <div class="store-badges" aria-label="App Store e Google Play — Em breve">
     <span class="store-badge" role="img" aria-label="App Store — Em breve">
       <span class="store-badge-icon">&#xf8ff;</span>
@@ -172,28 +172,28 @@ Cada afirmação abaixo é imposta por código — não apenas por política. Ca
 ---
 
 <span class="section-label">Para quem é</span>
-## Criado para quem não pode se dar ao luxo de vazamentos
+## Criado para usos em que a privacidade é essencial
 
 <div class="segment-cards">
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>Jornalistas</h4>
-    <p>Suas fontes estão seguras — não porque prometemos, mas porque não podemos acessá-las. Retenção zero significa risco zero de divulgação forçada.</p>
+    <p>Suas fontes permanecem seguras — não porque prometemos, mas porque não temos acesso a elas. Como nada é retido no servidor, não há nada a divulgar, mesmo se for exigido.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>Advogados</h4>
-    <p>Transcrição com nível de sigilo advogado-cliente. Nenhum dado descobrível em nossos servidores — jamais. Nada a intimar, nada a violar.</p>
+    <p>Transcrição compatível com o sigilo advogado-cliente. Nossos servidores não contêm dados que possam ser intimados ou violados.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>Ativistas</h4>
-    <p>Transcrição à prova de vigilância. Sem registros, sem perfis, sem rastros. Sua voz vira texto e o restante desaparece.</p>
+    <p>Transcrição que resiste à vigilância. Não são mantidos registros, perfis ou rastros; sua voz vira texto e o restante é excluído.</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
     <h4>Profissionais</h4>
-    <p>Transcrição rápida e precisa que esquece tudo. Anotações de reuniões, entrevistas, ditados — com total tranquilidade.</p>
+    <p>Transcrição rápida e precisa para anotações de reuniões, entrevistas e ditados — sem que nenhum dado permaneça no servidor depois de concluído.</p>
   </div>
 </div>
 
@@ -227,7 +227,7 @@ Cada arquivo de áudio passa por um pipeline otimizado — no seu dispositivo e 
 ## Simples, pague conforme o uso
 {: #pricing}
 
-<div class="pricing-free-wrapper"><span class="pricing-free-badge">&#x2728; 2 horas grátis para começar</span></div>
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">2 horas de uso grátis para começar</span></div>
 
 Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao contrário dos serviços de assinatura, você nunca paga pelo tempo que não usa. Toda conta nova começa com 2 horas grátis de transcrição — sem cartão.
 

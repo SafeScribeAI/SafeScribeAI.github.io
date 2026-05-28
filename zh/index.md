@@ -1,21 +1,21 @@
 ---
 layout: default
 title: SafeScribe — 隐私优先的AI语音转录
-description: 大多数转录应用会将您的录音保留数天。SafeScribe 不会：您的音频仅在我们服务器的内存（RAM）中处理，绝不写入磁盘，并在您的文本生成后立即删除。
+description: 大多数转录应用会把您的录音保留好几天。SafeScribe 不会：您的录音只在我们服务器的内存（RAM）里处理,不会写入磁盘,文本一生成就立即删除。
 lang: zh
 ---
 
 <div class="hero">
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
-  <p class="hero-tagline">大多数转录应用会将您的录音保留数天。<br>SafeScribe 一概不予保留。</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">您的音频仅在我们服务器的内存（RAM）中处理，绝不写入磁盘，并在您收到文本后立即删除。</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">隐私在这里不是一项政策，而是系统的构建方式。即便面对法院命令，我们也没有任何音频、转录文本、姓名、电子邮件或 IP 可供提交——只有与单向哈希关联的余额和使用记录，绝不与您的身份相关联。</p>
+  <p class="hero-tagline">大多数转录应用会把您的录音保留好几天。<br>SafeScribe 一概不保留。</p>
+  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">您的录音只在我们服务器的内存（RAM）里处理,不会写入磁盘,您一收到文本就立即删除。</p>
+  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">在 SafeScribe,隐私不是一项政策,而是系统本身的设计方式。即便面对法院调取,我们能交出的也只有与单向哈希关联的余额和使用记录——录音、转录文本、姓名、电子邮件、IP 从未保存过,因此无可交出,也绝不与您的身份相关联。</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 查看价格</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; 我们如何保护您的数据</a>
   </div>
-  <p class="hero-free-tier">2 小时免费使用即可开始 — 无需信用卡</p>
+  <p class="hero-free-tier">先免费用 2 小时即可开始 — 无需信用卡</p>
   <div class="store-badges" aria-label="App Store 和 Google Play — 即将推出">
     <span class="store-badge" role="img" aria-label="App Store — 即将推出">
       <span class="store-badge-icon">&#xf8ff;</span>
@@ -172,23 +172,23 @@ lang: zh
 ---
 
 <span class="section-label">谁需要这个</span>
-## 为隐私至关重要的工作而打造
+## 为重视隐私的场景而打造
 
 <div class="segment-cards">
   <div class="segment-card">
     <div class="segment-icon">&#x1f4f0;</div>
     <h4>新闻工作者</h4>
-    <p>您的消息来源始终安全——不是因为我们承诺，而是因为我们无法访问。由于服务器上不保留任何内容，即使被要求也无可披露。</p>
+    <p>您的消息来源始终安全——不是因为我们承诺,而是因为我们根本接触不到。服务器上不保留任何内容,即便被要求,我们也没有什么可以披露的。</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x2696;&#xfe0f;</div>
     <h4>律师</h4>
-    <p>适用于律师-客户保密要求的转录。我们的服务器上没有可被传唤或泄露的数据。</p>
+    <p>符合律师与当事人保密要求的转录。我们的服务器上没有可被调取或泄露的数据。</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x270a;</div>
     <h4>维权人士</h4>
-    <p>可抵御监控的转录。不保留日志、画像或痕迹；您的声音变成文字，其余内容随即删除。</p>
+    <p>可抵御监控的转录。不保留日志、用户画像或任何痕迹;您的声音变成文字,其余的随即删除。</p>
   </div>
   <div class="segment-card">
     <div class="segment-icon">&#x1f4bc;</div>
@@ -227,7 +227,7 @@ lang: zh
 ## 简单，按量付费
 {: #pricing}
 
-<div class="pricing-free-wrapper"><span class="pricing-free-badge">2 小时免费使用即可开始</span></div>
+<div class="pricing-free-wrapper"><span class="pricing-free-badge">先免费用 2 小时</span></div>
 
 无订阅。无隐藏费用。购买积分，随时使用。与订阅服务不同，您永远不会为未使用的时间付费。每个新账户均可获得2小时免费转录额度——无需信用卡。
 

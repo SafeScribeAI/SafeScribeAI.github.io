@@ -4,3 +4,6 @@ Thumbs.db
 
 # Blueprint audit artifacts
 .audit/
+
+# ds-blueprint audit artifacts
+ds/audit/

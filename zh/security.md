@@ -24,7 +24,7 @@ lang: zh
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>第一层 — 传输安全</h4>
-    <p>每次连接使用 TLS 1.2+ 加密，流量全程端对端加密，无例外。</p>
+    <p>每次连接使用 TLS 1.3 加密，流量全程端对端加密，无例外。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -69,7 +69,7 @@ lang: zh
 
 | 保护措施 | 防范内容 |
 |---------|---------|
-| TLS 1.2+ 加密 | 网络流量窃听 |
+| TLS 1.3 加密 | 网络流量窃听 |
 | SHA-256 完整性校验 | 传输过程中的转录篡改 |
 
 <div class="callout callout-green">

@@ -296,12 +296,12 @@ lang: ar
 
 <details class="faq-item">
   <summary>ما صيغ الملفات التي يمكنني استخدامها؟</summary>
-  <div class="faq-answer">يتم دعم <strong>40 صيغة</strong> — 22 صيغة صوتية (MP3 وWAV وFLAC وM4A وOGG وOpus وAAC وAIFF وAMR والمزيد) و18 صيغة فيديو (MP4 وMOV وMKV وAVI وWEBM و3GP والمزيد — يتم استخراج الصوت على جهازك قبل الرفع). ملفات تصل إلى 50 ميجابايت وحتى ساعتين.</div>
+  <div class="faq-answer">يتم دعم <strong>40 صيغة</strong> — 22 صيغة صوتية (MP3 وWAV وFLAC وM4A وOGG وOpus وAAC وAIFF وAMR والمزيد) و18 صيغة فيديو (MP4 وMOV وMKV وAVI وWEBM و3GP والمزيد — يتم استخراج الصوت على جهازك قبل الرفع). ملفات تصل إلى 96 ميجابايت وحتى ساعتين.</div>
 </details>
 
 <details class="faq-item">
   <summary>كيف تُشفّر بياناتي؟</summary>
-  <div class="faq-answer">أثناء النقل: تشفير TLS 1.2+ يحمي بياناتك بين جهازك وخوادم SafeScribe. على جهازك: تُخزّن النصوص في حاويات مشفرة بـ AES-256 مع مفاتيح محمية بالعتاد الأمني في هاتفك (iOS Keychain / Android Keystore).</div>
+  <div class="faq-answer">أثناء النقل: تشفير TLS 1.3 يحمي بياناتك بين جهازك وخوادم SafeScribe. على جهازك: تُخزّن النصوص في حاويات مشفرة بـ AES-256 مع مفاتيح محمية بالعتاد الأمني في هاتفك (iOS Keychain / Android Keystore).</div>
 </details>
 
 <details class="faq-item">

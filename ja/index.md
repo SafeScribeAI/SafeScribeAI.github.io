@@ -296,12 +296,12 @@ lang: ja
 
 <details class="faq-item">
   <summary>どのファイル形式に対応していますか？</summary>
-  <div class="faq-answer"><strong>40形式</strong>に対応 — 22の音声形式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMRなど）と18の動画形式（MP4、MOV、MKV、AVI、WEBM、3GPなど — アップロード前にデバイス上で音声が抽出されます）。ファイルサイズは最大50 MB、長さは最大2時間まで。</div>
+  <div class="faq-answer"><strong>40形式</strong>に対応 — 22の音声形式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMRなど）と18の動画形式（MP4、MOV、MKV、AVI、WEBM、3GPなど — アップロード前にデバイス上で音声が抽出されます）。ファイルサイズは最大96 MB、長さは最大2時間まで。</div>
 </details>
 
 <details class="faq-item">
   <summary>データはどのように暗号化されますか？</summary>
-  <div class="faq-answer">通信中：TLS 1.2+暗号化がデバイスとSafeScribeサーバー間のデータを保護します。デバイス上：文字起こしはAES-256暗号化コンテナに保存され、鍵はスマートフォンのセキュアハードウェア（iOS Keychain / Android Keystore）で保護されています。</div>
+  <div class="faq-answer">通信中：TLS 1.3暗号化がデバイスとSafeScribeサーバー間のデータを保護します。デバイス上：文字起こしはAES-256暗号化コンテナに保存され、鍵はスマートフォンのセキュアハードウェア（iOS Keychain / Android Keystore）で保護されています。</div>
 </details>
 
 <details class="faq-item">

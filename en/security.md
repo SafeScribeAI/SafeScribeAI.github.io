@@ -24,7 +24,7 @@ lang: en
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Layer 1 — Transport</h4>
-    <p>TLS 1.2+ encryption on every connection. Traffic is end-to-end encrypted with no exceptions.</p>
+    <p>TLS 1.3 encryption on every connection. Traffic is end-to-end encrypted with no exceptions.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -71,7 +71,7 @@ The difference: even if a server were physically seized, there would be no audio
 
 | Protection | What It Prevents |
 |------------|-----------------|
-| TLS 1.2+ encryption | Eavesdropping on network traffic |
+| TLS 1.3 encryption | Eavesdropping on network traffic |
 | Integrity checksums | Transcript corruption or tampering |
 
 <div class="callout callout-green">

@@ -24,7 +24,7 @@ lang: ja
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>レイヤー 1 — 通信</h4>
-    <p>すべての接続で TLS 1.2+ 暗号化を使用。通信はエンドツーエンドで暗号化され、例外はありません。</p>
+    <p>すべての接続で TLS 1.3 暗号化を使用。通信はエンドツーエンドで暗号化され、例外はありません。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -69,7 +69,7 @@ lang: ja
 
 | 保護手段 | 防ぐもの |
 |---------|--------|
-| TLS 1.2+ 暗号化 | ネットワークトラフィックの盗聴 |
+| TLS 1.3 暗号化 | ネットワークトラフィックの盗聴 |
 | SHA-256 整合性チェックサム | 転送中の文字起こしへの改ざん |
 
 <div class="callout callout-green">

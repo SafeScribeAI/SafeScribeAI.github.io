@@ -24,7 +24,7 @@ lang: de
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Ebene 1 — Transport</h4>
-    <p>TLS 1.2+ bei jeder Verbindung. Der Datenverkehr ist durchgehend verschlüsselt.</p>
+    <p>TLS 1.3 bei jeder Verbindung. Der Datenverkehr ist durchgehend verschlüsselt.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -69,7 +69,7 @@ Der entscheidende Unterschied: Selbst bei einer physischen Beschlagnahme des Ser
 
 | Schutzmaßnahme | Was verhindert wird |
 |----------------|---------------------|
-| TLS 1.2+ Verschlüsselung | Abhören des Netzwerkverkehrs |
+| TLS 1.3 Verschlüsselung | Abhören des Netzwerkverkehrs |
 | SHA-256-Integritätsprüfung | Manipulationen am Transkript während der Übertragung |
 
 <div class="callout callout-green">

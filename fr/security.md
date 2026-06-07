@@ -24,7 +24,7 @@ lang: fr
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Couche 1 — Transport</h4>
-    <p>Chiffrement TLS 1.2+ sur chaque connexion. Le trafic est chiffré de bout en bout, sans exception.</p>
+    <p>Chiffrement TLS 1.3 sur chaque connexion. Le trafic est chiffré de bout en bout, sans exception.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -69,7 +69,7 @@ La différence fondamentale : même en cas de saisie physique du serveur, aucune
 
 | Protection | Ce qui est empêché |
 |------------|-------------------|
-| Chiffrement TLS 1.2+ | Écoute du trafic réseau |
+| Chiffrement TLS 1.3 | Écoute du trafic réseau |
 | Somme de contrôle SHA-256 | Altération de la transcription en transit |
 
 <div class="callout callout-green">

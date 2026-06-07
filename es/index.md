@@ -296,12 +296,12 @@ Sin suscripciones. Sin cargos ocultos. Compre créditos y úselos cuando quiera.
 
 <details class="faq-item">
   <summary>¿Qué formatos de archivo puedo usar?</summary>
-  <div class="faq-answer">Se admiten <strong>40 formatos</strong> — 22 formatos de audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR y más) y 18 formatos de video (MP4, MOV, MKV, AVI, WEBM, 3GP y más — el audio se extrae en tu dispositivo antes de subirlo). Archivos de hasta 50 MB y hasta 2 horas de duración.</div>
+  <div class="faq-answer">Se admiten <strong>40 formatos</strong> — 22 formatos de audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR y más) y 18 formatos de video (MP4, MOV, MKV, AVI, WEBM, 3GP y más — el audio se extrae en tu dispositivo antes de subirlo). Archivos de hasta 96 MB y hasta 2 horas de duración.</div>
 </details>
 
 <details class="faq-item">
   <summary>¿Cómo se cifran mis datos?</summary>
-  <div class="faq-answer">En tránsito: el cifrado TLS 1.2+ protege tus datos entre tu dispositivo y los servidores de SafeScribe. En tu dispositivo: las transcripciones se almacenan en contenedores cifrados con AES-256 con claves protegidas por el hardware seguro de tu teléfono (iOS Keychain / Android Keystore).</div>
+  <div class="faq-answer">En tránsito: el cifrado TLS 1.3 protege tus datos entre tu dispositivo y los servidores de SafeScribe. En tu dispositivo: las transcripciones se almacenan en contenedores cifrados con AES-256 con claves protegidas por el hardware seguro de tu teléfono (iOS Keychain / Android Keystore).</div>
 </details>
 
 <details class="faq-item">

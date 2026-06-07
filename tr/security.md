@@ -24,7 +24,7 @@ lang: tr
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Katman 1 — Aktarım</h4>
-    <p>Her bağlantıda TLS 1.2+ şifreleme. Trafik uçtan uca şifrelidir, istisna yoktur.</p>
+    <p>Her bağlantıda TLS 1.3 şifreleme. Trafik uçtan uca şifrelidir, istisna yoktur.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -71,7 +71,7 @@ Fark: Bir sunucu fiziksel olarak ele geçirilse bile, kurtarılacak ses veya tra
 
 | Koruma | Önlediği Şey |
 |--------|-------------|
-| TLS 1.2+ şifreleme | Ağ trafiğinin dinlenmesi |
+| TLS 1.3 şifreleme | Ağ trafiğinin dinlenmesi |
 | Bütünlük doğrulaması | Transkript bozulması veya kurcalanması |
 
 <div class="callout callout-green">

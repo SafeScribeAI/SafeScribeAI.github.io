@@ -296,12 +296,12 @@ lang: ko
 
 <details class="faq-item">
   <summary>어떤 파일 형식을 사용할 수 있나요?</summary>
-  <div class="faq-answer"><strong>40가지 형식</strong>을 지원합니다 — 22가지 오디오 형식(MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR 등)과 18가지 비디오 형식(MP4, MOV, MKV, AVI, WEBM, 3GP 등 — 업로드 전에 기기에서 오디오가 추출됩니다). 파일 크기 최대 50 MB, 길이 최대 2시간.</div>
+  <div class="faq-answer"><strong>40가지 형식</strong>을 지원합니다 — 22가지 오디오 형식(MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR 등)과 18가지 비디오 형식(MP4, MOV, MKV, AVI, WEBM, 3GP 등 — 업로드 전에 기기에서 오디오가 추출됩니다). 파일 크기 최대 96 MB, 길이 최대 2시간.</div>
 </details>
 
 <details class="faq-item">
   <summary>데이터는 어떻게 암호화되나요?</summary>
-  <div class="faq-answer">전송 중: TLS 1.2+ 암호화가 기기와 SafeScribe 서버 사이의 데이터를 보호합니다. 기기 내: 전사 텍스트는 AES-256 암호화 컨테이너에 저장되며, 키는 휴대폰의 보안 하드웨어(iOS Keychain / Android Keystore)로 보호됩니다.</div>
+  <div class="faq-answer">전송 중: TLS 1.3 암호화가 기기와 SafeScribe 서버 사이의 데이터를 보호합니다. 기기 내: 전사 텍스트는 AES-256 암호화 컨테이너에 저장되며, 키는 휴대폰의 보안 하드웨어(iOS Keychain / Android Keystore)로 보호됩니다.</div>
 </details>
 
 <details class="faq-item">

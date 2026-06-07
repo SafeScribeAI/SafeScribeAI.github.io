@@ -296,12 +296,12 @@ Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen S
 
 <details class="faq-item">
   <summary>Welche Dateiformate kann ich verwenden?</summary>
-  <div class="faq-answer"><strong>40 Formate</strong> werden unterstützt — 22 Audioformate (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR und mehr) und 18 Videoformate (MP4, MOV, MKV, AVI, WEBM, 3GP und mehr — der Audiostream wird vor dem Hochladen auf Ihrem Gerät extrahiert). Dateien bis zu 50 MB und bis zu 2 Stunden Länge.</div>
+  <div class="faq-answer"><strong>40 Formate</strong> werden unterstützt — 22 Audioformate (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR und mehr) und 18 Videoformate (MP4, MOV, MKV, AVI, WEBM, 3GP und mehr — der Audiostream wird vor dem Hochladen auf Ihrem Gerät extrahiert). Dateien bis zu 96 MB und bis zu 2 Stunden Länge.</div>
 </details>
 
 <details class="faq-item">
   <summary>Wie werden meine Daten verschlüsselt?</summary>
-  <div class="faq-answer">Bei der Übertragung: TLS 1.2+-Verschlüsselung schützt Ihre Daten auf dem Weg zu den SafeScribe-Servern. Auf Ihrem Gerät: Transkripte werden in AES-256-verschlüsselten Containern gespeichert, deren Schlüssel durch die sichere Hardware Ihres Telefons geschützt sind (iOS Keychain / Android Keystore).</div>
+  <div class="faq-answer">Bei der Übertragung: TLS 1.3-Verschlüsselung schützt Ihre Daten auf dem Weg zu den SafeScribe-Servern. Auf Ihrem Gerät: Transkripte werden in AES-256-verschlüsselten Containern gespeichert, deren Schlüssel durch die sichere Hardware Ihres Telefons geschützt sind (iOS Keychain / Android Keystore).</div>
 </details>
 
 <details class="faq-item">

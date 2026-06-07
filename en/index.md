@@ -279,8 +279,8 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
     {"@type": "Question", "name": "What happens to my audio after transcription?", "acceptedAnswer": {"@type": "Answer", "text": "It's gone permanently. Your audio is processed entirely in server RAM and deleted the instant your transcript is delivered. No disk copy, no backup, no recovery."}},
     {"@type": "Question", "name": "Do you use my recordings to train AI?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your audio is used only for generating your transcript. Never stored, analyzed, or used for model training. We run our own AI infrastructure."}},
     {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "The open-source Whisper model supports 99 languages with automatic detection. You can also manually select the language for improved accuracy."}},
-    {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "40 formats — 22 audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR and more) and 18 video (MP4, MOV, MKV, AVI, WEBM, 3GP and more) with audio extracted on-device. Files up to 50 MB and 2 hours."}},
-    {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS 1.2+ encryption in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
+    {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "40 formats — 22 audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR and more) and 18 video (MP4, MOV, MKV, AVI, WEBM, 3GP and more) with audio extracted on-device. Files up to 96 MB and 2 hours."}},
+    {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS 1.3 encryption in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
     {"@type": "Question", "name": "Do you log my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "No. IP addresses are never stored. The logging system drops IPs before any output. We use a one-way SHA-256 hash for internal operations."}}
   ]
 }
@@ -311,12 +311,12 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 <details class="faq-item">
   <summary>What file formats can I use?</summary>
-  <div class="faq-answer"><strong>40 formats</strong> are supported — 22 audio formats (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR, and more) plus 18 video formats (MP4, MOV, MKV, AVI, WEBM, 3GP, and more — audio is extracted on your device before upload). Files up to 50 MB and up to 2 hours long.</div>
+  <div class="faq-answer"><strong>40 formats</strong> are supported — 22 audio formats (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR, and more) plus 18 video formats (MP4, MOV, MKV, AVI, WEBM, 3GP, and more — audio is extracted on your device before upload). Files up to 96 MB and up to 2 hours long.</div>
 </details>
 
 <details class="faq-item">
   <summary>How is my data encrypted?</summary>
-  <div class="faq-answer">In transit: TLS 1.2+ encryption ensures your data is protected between your device and SafeScribe servers. On your device: transcripts are stored in AES-256 encrypted containers with keys protected by your phone's secure hardware (iOS Keychain / Android Keystore).</div>
+  <div class="faq-answer">In transit: TLS 1.3 encryption ensures your data is protected between your device and SafeScribe servers. On your device: transcripts are stored in AES-256 encrypted containers with keys protected by your phone's secure hardware (iOS Keychain / Android Keystore).</div>
 </details>
 
 <details class="faq-item">

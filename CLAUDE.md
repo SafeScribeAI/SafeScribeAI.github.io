@@ -51,56 +51,20 @@ bundle exec jekyll serve  # Local preview at http://localhost:4000
 
 ## Blueprint Profile
 
-**Project:** SafeScribeAI Website | **Type:** Frontend (static marketing landing) | **Stack:** Jekyll / GitHub Pages / 10-locale i18n | **Target:** Production (trust-brand site)
+Type: Frontend (static marketing/trust-brand) | Stack: Jekyll/GitHub Pages/10-locale i18n | Target: Production
+Priorities: Documentation, Spec-alignment, UX/Design, Performance
+Constraints: GitHub Pages built-in deploy (no custom build pipeline); no machine translation (hand-crafted i18n); Pages plugin whitelist
+Data: None (no forms/cookies/analytics) | Regulations: N/A on site; DPIA published as artifact
+Audience: Public visitors/prospects/regulatory reviewers | Deploy: GitHub Pages + CNAME safescribe.dev (Cloudflare DNS)
 
-### Config
-- **Priorities:** Documentation, Spec-alignment, UX/Design, Performance
-- **Constraints:** GitHub Pages built-in deploy (no custom build pipeline), no machine translation (hand-crafted i18n), Pages plugin whitelist
-- **Data:** None (no forms, no cookies, no analytics SDKs) | **Regulations:** N/A on website; DPIA published as artifact
-- **Audience:** Public visitors / prospects / regulatory reviewers | **Deploy:** GitHub Pages + CNAME `safescribe.dev` (Cloudflare DNS)
+Entry: index.md (root redirect → /en/ default)
+Modules: _layouts/default.html=template(nav,footer,head,CSP,SEO); _data/i18n.yml=i18n SSOT; {en,tr,de,fr,es,pt,ar,zh,ja,ko}/=per-locale pages(index,privacy,security,dpia,terms,resources,whats-new); en/resources/=EN deep pages; assets/css(24KB); assets/js(2KB)
+Data Flow: visitor→landing→CTA(#pricing/security)→store badges
+External: faster-whisper, silero-vad, Whisper — informational links only
+Toolchain: Jekyll (GitHub Pages) | CI: none (Pages built-in deploy) | Container: none
 
-### Project Map
-```
-Entry: index.md (root redirect) → /en/ default
-Layout: _layouts/default.html → shared template (nav, footer, head, CSP, SEO)
+Ideal: coupling=low cohesion=high complexity=na coverage=na
 
-Modules:
-  _data/i18n.yml                        → nav/footer translations (SSOT)
-  {en,tr,de,fr,es,pt,ar,zh,ja,ko}/      → per-locale pages: index, privacy, security, dpia, terms, resources, whats-new
-  en/resources/                         → EN-only deep pages: how-we-compare, our-stack, security-tradeoffs
-  assets/css/style.css                  → ~24KB unminified
-  assets/js/main.js                     → ~2KB unminified (lang-switcher + pricing badges)
-  CNAME                                 → safescribe.dev
-
-Data Flow: visitor → landing → CTA (#pricing / security) → store badges ("Coming Soon")
-External refs: faster-whisper (GitHub), silero-vad (GitHub), Whisper (OpenAI GitHub) — informational links only
-Toolchain: Jekyll (GitHub Pages), no Actions, no sitemap plugin
-Missing infra: robots.txt, sitemap.xml, .nojekyll, _headers, 404.html, favicon, og:image
-```
-
-### Ideal Metrics
-| Metric | Target |
-|--------|--------|
-| Coupling | Low (single layout, i18n via _data) |
-| Cohesion | High (1 locale dir per language) |
-| Complexity | N/A (static content) |
-| Coverage | N/A (link/HTML validation in CI desired) |
-
-### Current Scores
-| Dimension | Score | Status |
-|-----------|-------|--------|
-| Security & Privacy | 70 | WARN |
-| Code Quality | 73 | WARN |
-| Architecture | 70 | WARN |
-| Performance | 62 | WARN |
-| Resilience | 45 | FAIL |
-| Testing | N/A | — |
-| Stack Health | 75 | OK |
-| DX | 60 | WARN |
-| Documentation | 75 | OK |
-| Overall | 64 | WARN |
-
-### Last Run
-- 2026-05-13: ds-blueprint full | Findings: 24 (5 CRITICAL / 9 MAJOR / 10 MINOR) | Fixed: 0 | Skipped: 0 | Failed: 0 | Overall —→64
+Scores: sec=68 quality=72 arch=66 perf=62 resil=64 test=na stack=70 dx=65 docs=68 overall=66
 
 ## End Blueprint Profile

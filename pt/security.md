@@ -24,7 +24,7 @@ lang: pt
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Camada 1 — Transporte</h4>
-    <p>Criptografia TLS 1.2+ em cada conexão. O tráfego é criptografado de ponta a ponta, sem exceções.</p>
+    <p>Criptografia TLS 1.3 em cada conexão. O tráfego é criptografado de ponta a ponta, sem exceções.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -69,7 +69,7 @@ A diferença fundamental: mesmo em caso de apreensão física do servidor, não 
 
 | Proteção | O que previne |
 |----------|--------------|
-| Criptografia TLS 1.2+ | Interceptação do tráfego de rede |
+| Criptografia TLS 1.3 | Interceptação do tráfego de rede |
 | Checksum SHA-256 | Adulteração da transcrição em trânsito |
 
 <div class="callout callout-green">

@@ -58,7 +58,7 @@ lang: fr
 <div class="flow-diagram">
 1. L'utilisateur enregistre ou sélectionne de l'audio sur son appareil
 2. Prétraitement audio côté appareil (filtre passe-haut 80 Hz, écrêtage du silence, normalisation de loudness à -16 LUFS, limitation de crête, rééchantillonnage 16 kHz, encodage FLAC)
-3. Envoi chiffré vers les serveurs SafeScribe (TLS 1.2+)
+3. Envoi chiffré vers les serveurs SafeScribe (TLS 1.3)
 4. Traitement audio en RAM côté serveur — auto-hébergé, un modèle puissant de la famille Whisper via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, aucun appel API tiers
 5. Transcription retournée avec somme de contrôle d'intégrité SHA-256
 6. Le client vérifie la somme de contrôle et confirme la réception
@@ -94,7 +94,7 @@ Tous les droits des personnes concernées au titre du RGPD et du KVKK (accès, r
 | Risque | Inhérent | Mesures d'atténuation | Résiduel |
 |--------|----------|-----------------------|---------|
 | L'audio contient des données personnelles sensibles (santé, juridique, financier) | **Élevé** | Traitement RAM uniquement ; suppression immédiate ; aucun stockage persistant ; aucun accès tiers | **Faible** |
-| Accès non autorisé à la transcription en transit | Moyen | TLS 1.2+ ; somme de contrôle SHA-256 | **Faible** |
+| Accès non autorisé à la transcription en transit | Moyen | TLS 1.3 ; somme de contrôle SHA-256 | **Faible** |
 | Intrusion côté serveur exposant audio ou transcriptions | Moyen | Aucun stockage audio persistant ; API authentifiée ; isolation par traitement ; TTL de sécurité | **Faible** |
 | Accès non autorisé au stockage local chiffré | Faible | Conteneurs chiffrés AES-256 ; clé dans iOS Keychain / Android Keystore | **Faible** |
 | Fuite de DCP via les rapports de plantage | Faible | Suppression par motif des e-mails, téléphones, IP et tokens avant envoi au point de terminaison de rapport de plantage de SafeScribe | **Faible** |

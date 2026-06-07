@@ -24,7 +24,7 @@ lang: ko
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>레이어 1 — 전송</h4>
-    <p>모든 연결에 TLS 1.2+ 암호화 적용. 트래픽은 예외 없이 종단간 암호화됩니다.</p>
+    <p>모든 연결에 TLS 1.3 암호화 적용. 트래픽은 예외 없이 종단간 암호화됩니다.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -69,7 +69,7 @@ lang: ko
 
 | 보호 수단 | 방지 대상 |
 |---------|---------|
-| TLS 1.2+ 암호화 | 네트워크 트래픽 도청 |
+| TLS 1.3 암호화 | 네트워크 트래픽 도청 |
 | SHA-256 무결성 체크섬 | 전송 중 전사본 변조 |
 
 <div class="callout callout-green">

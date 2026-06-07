@@ -279,8 +279,8 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
     {"@type": "Question", "name": "Transkripsiyon sonrası sesime ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur."}},
     {"@type": "Question", "name": "Kayıtlarımı yapay zeka eğitiminde kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitiminde kullanılmaz. Kendi yapay zeka altyapımızı işletiyoruz."}},
     {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 99 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
-    {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "40 format desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses cihazınızda çıkarılır). 50 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
-    {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde TLS 1.2+ şifreleme. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
+    {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "40 format desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses cihazınızda çıkarılır). 96 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
+    {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde TLS 1.3 şifreleme. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
     {"@type": "Question", "name": "IP adresimi kaydediyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. IP adresleri hiçbir zaman saklanmaz. Günlük sistemi IP'leri herhangi bir çıktıya ulaşmadan düşürür. Dahili işlemler için tek yönlü SHA-256 karması kullanılır."}}
   ]
 }
@@ -311,12 +311,12 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 <details class="faq-item">
   <summary>Hangi dosya formatlarını kullanabilirim?</summary>
-  <div class="faq-answer"><strong>40 format</strong> desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses, yüklemeden önce cihazınızda çıkarılır). 50 MB'a kadar dosya boyutu ve 2 saate kadar süre.</div>
+  <div class="faq-answer"><strong>40 format</strong> desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses, yüklemeden önce cihazınızda çıkarılır). 96 MB'a kadar dosya boyutu ve 2 saate kadar süre.</div>
 </details>
 
 <details class="faq-item">
   <summary>Verilerim nasıl şifreleniyor?</summary>
-  <div class="faq-answer">İletimde: TLS 1.2+ şifreleme, verilerinizin SafeScribe sunucularına ulaşana kadar korunmasını sağlar. Cihazınızda: transkriptler, anahtarları telefonunuzun güvenli donanımı (iOS Keychain / Android Keystore) tarafından korunan AES-256 şifreli kaplarda saklanır.</div>
+  <div class="faq-answer">İletimde: TLS 1.3 şifreleme, verilerinizin SafeScribe sunucularına ulaşana kadar korunmasını sağlar. Cihazınızda: transkriptler, anahtarları telefonunuzun güvenli donanımı (iOS Keychain / Android Keystore) tarafından korunan AES-256 şifreli kaplarda saklanır.</div>
 </details>
 
 <details class="faq-item">

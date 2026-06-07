@@ -296,12 +296,12 @@ lang: zh
 
 <details class="faq-item">
   <summary>我可以使用哪些文件格式？</summary>
-  <div class="faq-answer">支持<strong>40种格式</strong> — 22种音频格式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMR等）和18种视频格式（MP4、MOV、MKV、AVI、WEBM、3GP等 — 上传前在您的设备上提取音频）。文件大小最多50 MB，时长最长2小时。</div>
+  <div class="faq-answer">支持<strong>40种格式</strong> — 22种音频格式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMR等）和18种视频格式（MP4、MOV、MKV、AVI、WEBM、3GP等 — 上传前在您的设备上提取音频）。文件大小最多96 MB，时长最长2小时。</div>
 </details>
 
 <details class="faq-item">
   <summary>我的数据是如何加密的？</summary>
-  <div class="faq-answer">传输中：TLS 1.2+加密保护您的数据在设备与SafeScribe服务器之间的传输安全。在您的设备上：转录文本存储在AES-256加密容器中，密钥受手机安全硬件保护（iOS Keychain / Android Keystore）。</div>
+  <div class="faq-answer">传输中：TLS 1.3加密保护您的数据在设备与SafeScribe服务器之间的传输安全。在您的设备上：转录文本存储在AES-256加密容器中，密钥受手机安全硬件保护（iOS Keychain / Android Keystore）。</div>
 </details>
 
 <details class="faq-item">

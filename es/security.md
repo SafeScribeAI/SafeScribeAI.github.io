@@ -24,7 +24,7 @@ lang: es
   <div class="infra-item">
     <div class="infra-icon">&#x1f510;</div>
     <h4>Capa 1 — Transporte</h4>
-    <p>Cifrado TLS 1.2+ en cada conexión. El tráfico está cifrado de extremo a extremo sin excepciones.</p>
+    <p>Cifrado TLS 1.3 en cada conexión. El tráfico está cifrado de extremo a extremo sin excepciones.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9e0;</div>
@@ -69,7 +69,7 @@ La diferencia clave: incluso si el servidor fuera incautado físicamente, no hab
 
 | Protección | Qué previene |
 |------------|--------------|
-| Cifrado TLS 1.2+ | Interceptación del tráfico de red |
+| Cifrado TLS 1.3 | Interceptación del tráfico de red |
 | Suma de verificación SHA-256 | Alteración de la transcripción en tránsito |
 
 <div class="callout callout-green">

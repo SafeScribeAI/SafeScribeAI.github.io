@@ -58,7 +58,7 @@ lang: pt
 <div class="flow-diagram">
 1. O usuário grava ou seleciona áudio no dispositivo
 2. Pré-processamento de áudio no dispositivo (filtro passa-alta 80 Hz, corte de silêncio inicial, normalização de loudness a -16 LUFS, limitação de pico, reamostragem para 16 kHz, codificação FLAC)
-3. Upload criptografado para os servidores SafeScribe (TLS 1.2+)
+3. Upload criptografado para os servidores SafeScribe (TLS 1.3)
 4. Servidor processa áudio na RAM — auto-hospedado, um poderoso modelo da família Whisper via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, sem chamadas a APIs de terceiros
 5. Transcrição retornada com checksum de integridade SHA-256
 6. Cliente verifica checksum e confirma recebimento
@@ -94,7 +94,7 @@ Todos os direitos dos titulares de dados sob o RGPD e a KVKK (acesso, retificaç
 | Risco | Inerente | Medidas de mitigação | Residual |
 |-------|----------|---------------------|---------|
 | Áudio contém dados pessoais sensíveis (saúde, jurídico, financeiro) | **Alto** | Processamento apenas em RAM; exclusão imediata; sem armazenamento persistente; sem acesso de terceiros | **Baixo** |
-| Acesso não autorizado à transcrição em trânsito | Médio | TLS 1.2+; checksum SHA-256 | **Baixo** |
+| Acesso não autorizado à transcrição em trânsito | Médio | TLS 1.3; checksum SHA-256 | **Baixo** |
 | Violação no servidor expondo áudio ou transcrições | Médio | Sem armazenamento persistente de áudio; API autenticada; isolamento por trabalho; TTL failsafe | **Baixo** |
 | Acesso não autorizado ao armazenamento local criptografado | Baixo | Contêineres criptografados AES-256; chave no iOS Keychain / Android Keystore | **Baixo** |
 | Vazamento de DCP por relatórios de falhas | Baixo | Remoção por padrão de e-mails, telefones, IPs e tokens antes de enviar ao endpoint próprio de relatórios de falhas do SafeScribe | **Baixo** |

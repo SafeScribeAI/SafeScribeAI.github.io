@@ -103,20 +103,20 @@ Dies sind zwei unterschiedliche Aktionen mit verschiedenen Folgen:
   <strong>Jederzeit neu installieren.</strong> Wenn Sie die App löschen, ohne Ihr Konto zu löschen, können Sie die App neu installieren und sich mit demselben Google- oder Apple-Konto anmelden, um Ihr vollständiges Guthaben und den Zugang wiederherzustellen — ohne weiteres Zutun.
 </div>
 
-### Kontolöschung — Null verbleibende Daten
+### Kontolöschung — Nichts bleibt, was Sie identifiziert
 
-Das Löschen Ihres Kontos aus den Datenschutzeinstellungen entfernt dauerhaft jeden serverseitigen Datensatz:
+Das Löschen Ihres Kontos in den Datenschutzeinstellungen entfernt dauerhaft jeden serverseitigen Datensatz, der mit Ihrer Identität verknüpft ist:
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonyme Benutzer-ID</strong><span class="item-desc">dauerhaft gelöscht</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonymer Gerätebezeichner</strong><span class="item-desc">dauerhaft gelöscht</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Guthabensaldo</strong><span class="item-desc">dauerhaft gelöscht</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonyme Nutzer-ID</strong><span class="item-desc">dauerhaft gelöscht</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Guthaben</strong><span class="item-desc">dauerhaft gelöscht</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Verbleibende Freiminuten</strong><span class="item-desc">dauerhaft gelöscht</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Alle auftragsbezogenen Statistiken</strong><span class="item-desc">dauerhaft gelöscht</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tägliche Sicherung innerhalb von 24 Stunden überschrieben</strong><span class="item-desc"><strong>nirgendwo verbleibt eine Kopie</strong></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Statistiken pro Auftrag</strong><span class="item-desc">sofort anonymisiert — dem gemeinsamen DELETED_USER-Platzhalter zugeordnet, nach 2 Jahren automatisch gelöscht</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonyme Gerätekennung</strong><span class="item-desc">auf einen gesalzenen Einweg-Hash reduziert, bis zu 2 Jahre aufbewahrt — verhindert wiederholten Missbrauch des Startguthabens, nicht umkehrbar und nicht mit Ihnen verknüpfbar</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tägliches Backup</strong><span class="item-desc">innerhalb von 24 Stunden überschrieben — nirgendwo verbleibt eine identifizierende Kopie</span></span></li>
 </ul>
 
-Dies ist keine Anonymisierung. Ihre Datensätze bleiben nicht in aggregierter oder veränderter Form bestehen — sie werden gelöscht. Die tägliche Sicherung wird innerhalb von 24 Stunden nach der Löschung überschrieben, danach existiert keine Kopie Ihrer Daten in einem System.
+Jede Verknüpfung zu Ihrer Identität wird im Moment der Löschung zerstört. Zwei eng begrenzte Kategorien bleiben befristet <em>ohne jede Identitätsverknüpfung</em> bestehen: Finanzdaten (Kauf- und Nutzungsbeträge) werden auf den DELETED_USER-Platzhalter anonymisiert und 2 Jahre gemäß der Verjährungsfrist für Verbraucherstreitigkeiten (TBK Art. 146) aufbewahrt; ein gesalzener Einweg-Geräte-Hash wird bis zu 2 Jahre aufbewahrt, um wiederholte Gratis-Guthaben zu verhindern (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse). Beides wird nach Ablauf automatisch gelöscht. Das einzige tägliche Backup wird innerhalb von 24 Stunden nach der Löschung überschrieben.
 
 Die In-App-Löschung gilt als formelle Ausübung Ihres Löschrechts gemäß GDPR Art. 17 und KVKK Art. 11(e). Falls Sie nicht auf Ihr Konto zugreifen können, kontaktieren Sie **privacy@safescribe.dev**, um einen Löschantrag per E-Mail zu stellen.
 

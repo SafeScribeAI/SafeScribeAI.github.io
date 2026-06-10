@@ -103,20 +103,20 @@ Estas son dos acciones distintas con resultados diferentes:
   <strong>Reinstale cuando quiera.</strong> Si elimina la app sin eliminar su cuenta, reinstalar e iniciar sesión con la misma cuenta de Google o Apple restaura su saldo completo y acceso — sin ninguna acción requerida.
 </div>
 
-### Eliminación de cuenta — Cero datos restantes
+### Eliminación de cuenta — No queda nada que le identifique
 
-Eliminar su cuenta desde la Configuración de privacidad elimina permanentemente cada registro del servidor:
+Eliminar su cuenta desde la Configuración de privacidad elimina permanentemente cada registro del servidor vinculado a su identidad:
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>ID de usuario pseudónimo</strong><span class="item-desc">eliminado permanentemente</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Identificador de dispositivo pseudónimo</strong><span class="item-desc">eliminado permanentemente</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Saldo de crédito</strong><span class="item-desc">eliminado permanentemente</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>ID de usuario seudónimo</strong><span class="item-desc">eliminado permanentemente</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Saldo de créditos</strong><span class="item-desc">eliminado permanentemente</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Minutos gratuitos restantes</strong><span class="item-desc">eliminados permanentemente</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Todas las estadísticas por trabajo</strong><span class="item-desc">eliminadas permanentemente</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Copia de seguridad diaria sobrescrita en 24 horas</strong><span class="item-desc"><strong>no queda ninguna copia en ningún lugar</strong></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Estadísticas por tarea</strong><span class="item-desc">anonimizadas de inmediato — reasignadas al marcador común DELETED_USER, purgadas automáticamente tras 2 años</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Identificador de dispositivo seudónimo</strong><span class="item-desc">reducido a un hash salado de un solo sentido conservado hasta 2 años — bloquea el abuso reiterado del crédito de bienvenida, irreversible y sin vínculo con usted</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Copia de seguridad diaria</strong><span class="item-desc">sobrescrita en 24 horas — no queda ninguna copia identificable en ningún lugar</span></span></li>
 </ul>
 
-Esto no es anonimización. Sus registros no persisten en forma agregada o modificada — se eliminan. La copia de seguridad diaria se sobrescribe en las 24 horas posteriores a la eliminación, tras lo cual no existe ninguna copia de sus datos en ningún sistema.
+Todo vínculo con su identidad se destruye en el momento de la eliminación. Dos categorías limitadas persisten temporalmente <em>sin ningún vínculo de identidad</em>: los registros financieros (importes de compra y uso) se anonimizan al marcador DELETED_USER y se conservan 2 años conforme a la prescripción de disputas de consumo (TBK art. 146); y un hash salado de dispositivo se conserva hasta 2 años para impedir la concesión repetida de créditos gratuitos (art. 6(1)(f) RGPD, interés legítimo). Ambos se purgan automáticamente al vencer el plazo. La única copia de seguridad diaria se sobrescribe en las 24 horas posteriores a la eliminación.
 
 El uso de la eliminación en la app constituye el ejercicio formal de su derecho de supresión bajo el GDPR Art. 17 y el KVKK Art. 11(e). Si no puede acceder a su cuenta, contacte con **privacy@safescribe.dev** para enviar una solicitud de eliminación por correo electrónico.
 

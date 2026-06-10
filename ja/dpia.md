@@ -115,22 +115,22 @@ GDPR および KVKK に基づくすべてのデータ主体の権利（アクセ
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>音声処理 <em style="font-weight:400;font-size:0.8rem;">（必須）</em></h4>
+    <h4>音声処理 <em class="u-label-light">（必須）</em></h4>
     <p>RAM 専用処理、即時削除、音声がディスクに書き込まれず第三者と共有されないことを説明します。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>保存データ <em style="font-weight:400;font-size:0.8rem;">（必須）</em></h4>
+    <h4>保存データ <em class="u-label-light">（必須）</em></h4>
     <p>保持される永続データを説明します：仮名アカウント ID、クレジット残高、匿名の利用メタデータ。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>年齢確認 <em style="font-weight:400;font-size:0.8rem;">（必須）</em></h4>
+    <h4>年齢確認 <em class="u-label-light">（必須）</em></h4>
     <p>ユーザーが 17 歳以上であることを確認します。必須カードは続行するために同意が必要です。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>クラッシュレポート <em style="font-weight:400;font-size:0.8rem;">（任意）</em></h4>
+    <h4>クラッシュレポート <em class="u-label-light">（任意）</em></h4>
     <p>匿名クラッシュレポートへのオプトインを許可します。デフォルトはオフ。プライバシー設定からいつでも変更できます。</p>
   </div>
 </div>

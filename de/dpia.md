@@ -115,22 +115,22 @@ Benutzern wird vor der ersten Nutzung ein granularer Einwilligungsbildschirm mit
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>Audioverarbeitung <em style="font-weight:400;font-size:0.8rem;">(erforderlich)</em></h4>
+    <h4>Audioverarbeitung <em class="u-label-light">(erforderlich)</em></h4>
     <p>Erklärt die Nur-RAM-Verarbeitung, sofortige Löschung und dass Audio nie auf Festplatte geschrieben oder mit Dritten geteilt wird.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>Gespeicherte Daten <em style="font-weight:400;font-size:0.8rem;">(erforderlich)</em></h4>
+    <h4>Gespeicherte Daten <em class="u-label-light">(erforderlich)</em></h4>
     <p>Erklärt, welche dauerhaften Daten gespeichert werden: pseudonyme Konto-ID, Guthabenstand und anonyme Nutzungsmetadaten.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>Altersbestätigung <em style="font-weight:400;font-size:0.8rem;">(erforderlich)</em></h4>
+    <h4>Altersbestätigung <em class="u-label-light">(erforderlich)</em></h4>
     <p>Bestätigt, dass der Benutzer 17 Jahre oder älter ist. Erforderliche Karten müssen akzeptiert werden, um fortzufahren.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>Absturzberichte <em style="font-weight:400;font-size:0.8rem;">(optional)</em></h4>
+    <h4>Absturzberichte <em class="u-label-light">(optional)</em></h4>
     <p>Ermöglicht das Opt-in für anonyme Absturzberichte. Standardmäßig deaktiviert. Jederzeit in den Datenschutzeinstellungen umschaltbar.</p>
   </div>
 </div>

@@ -115,22 +115,22 @@ Antes do primeiro uso, os usuários recebem uma tela de consentimento granular c
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>Processamento de Áudio <em style="font-weight:400;font-size:0.8rem;">(obrigatório)</em></h4>
+    <h4>Processamento de Áudio <em class="u-label-light">(obrigatório)</em></h4>
     <p>Explica o processamento apenas em RAM, a exclusão imediata e que o áudio nunca é gravado em disco nem compartilhado com terceiros.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>Dados Armazenados <em style="font-weight:400;font-size:0.8rem;">(obrigatório)</em></h4>
+    <h4>Dados Armazenados <em class="u-label-light">(obrigatório)</em></h4>
     <p>Explica quais dados persistentes são mantidos: identificador pseudônimo, saldo de créditos e metadados de uso anônimos.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>Confirmação de Idade <em style="font-weight:400;font-size:0.8rem;">(obrigatório)</em></h4>
+    <h4>Confirmação de Idade <em class="u-label-light">(obrigatório)</em></h4>
     <p>Confirma que o usuário tem 17 anos ou mais. Os cartões obrigatórios devem ser aceitos para continuar.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>Relatórios de Falhas <em style="font-weight:400;font-size:0.8rem;">(opcional)</em></h4>
+    <h4>Relatórios de Falhas <em class="u-label-light">(opcional)</em></h4>
     <p>Permite opt-in para relatórios de falhas anônimos. Desativado por padrão. Pode ser alterado a qualquer momento nas Configurações de Privacidade.</p>
   </div>
 </div>

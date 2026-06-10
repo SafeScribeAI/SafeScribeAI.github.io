@@ -115,22 +115,22 @@ lang: ar
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>معالجة الصوت <em style="font-weight:400;font-size:0.8rem;">(مطلوب)</em></h4>
+    <h4>معالجة الصوت <em class="u-label-light">(مطلوب)</em></h4>
     <p>يشرح المعالجة في RAM فقط، والحذف الفوري، وأن الصوت لا يُكتب على القرص أو يُشارك مع أطراف ثالثة.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>البيانات المخزنة <em style="font-weight:400;font-size:0.8rem;">(مطلوب)</em></h4>
+    <h4>البيانات المخزنة <em class="u-label-light">(مطلوب)</em></h4>
     <p>يوضح البيانات الدائمة المحتفظ بها: معرّف حساب مجهول، ورصيد الاعتمادات، وبيانات استخدام مجهولة.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>تأكيد العمر <em style="font-weight:400;font-size:0.8rem;">(مطلوب)</em></h4>
+    <h4>تأكيد العمر <em class="u-label-light">(مطلوب)</em></h4>
     <p>يؤكد أن المستخدم عمره 17 عامًا أو أكثر. يجب قبول البطاقات المطلوبة للمتابعة.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>تقارير الأعطال <em style="font-weight:400;font-size:0.8rem;">(اختياري)</em></h4>
+    <h4>تقارير الأعطال <em class="u-label-light">(اختياري)</em></h4>
     <p>يتيح الاشتراك الاختياري في تقارير الأعطال المجهولة. معطّل افتراضيًا. يمكن تغييره في أي وقت من إعدادات الخصوصية.</p>
   </div>
 </div>

@@ -102,20 +102,20 @@ These are two distinct actions with different outcomes:
   <strong>Reinstall anytime.</strong> If you delete the app without deleting your account, reinstalling and signing in with the same Google or Apple account restores your full balance and access — no action required.
 </div>
 
-### Account Deletion — Zero Data Remaining
+### Account Deletion — Nothing Left That Identifies You
 
-Deleting your account from Privacy Settings permanently removes every server-side record:
+Deleting your account from Privacy Settings permanently removes every server-side record linked to your identity:
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonymous user ID</strong><span class="item-desc">permanently deleted</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonymous device identifier</strong><span class="item-desc">permanently deleted</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Credit balance</strong><span class="item-desc">permanently deleted</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Free minutes remaining</strong><span class="item-desc">permanently deleted</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>All per-job statistics</strong><span class="item-desc">permanently deleted</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Daily backup</strong><span class="item-desc">overwritten within 24 hours — no copy remains anywhere</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Per-job statistics</strong><span class="item-desc">anonymized immediately — re-labelled to a shared DELETED_USER tombstone, auto-purged after 2 years</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonymous device identifier</strong><span class="item-desc">reduced to a salted one-way hash kept up to 2 years — blocks repeat welcome-credit abuse, cannot be reversed or tied to you</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Daily backup</strong><span class="item-desc">overwritten within 24 hours — no identifying copy remains anywhere</span></span></li>
 </ul>
 
-This is not anonymisation. Your records do not persist in aggregated or modified form — they are gone. The single daily backup is overwritten within 24 hours of deletion, after which no copy of your data exists in any system.
+Every link to your identity is destroyed at the moment of deletion. Two narrow categories persist for a limited time <em>without any identity link</em>: financial records (purchase and usage amounts) are anonymized to the DELETED_USER tombstone and kept for 2 years under the consumer-dispute statute of limitations (TBK Art. 146), and a salted one-way device hash is kept up to 2 years to prevent repeated free-credit grants (GDPR Art. 6(1)(f) legitimate interest). Both are automatically purged when the window expires. The single daily backup is overwritten within 24 hours of deletion.
 
 Using the in-app deletion constitutes your formal exercise of the right to erasure under GDPR Art. 17 and KVKK Art. 11(e). If you cannot access your account, contact **privacy@safescribe.dev** to submit a deletion request by email.
 

@@ -9,8 +9,8 @@ lang: ja
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">ほとんどの文字起こしアプリは録音を何日も保存します。<br>SafeScribeは保存しません。</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">音声はサーバーのメモリ(RAM)内だけで処理され、ディスクには書き込まれません。テキストが届くと同時に削除されます。</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">SafeScribeでは、プライバシーは後付けの方針ではなく、システムそのものの作りです。裁判所の命令があっても、お渡しできる音声・文字起こし・氏名・メールアドレス・IPはありません。あるのは一方向ハッシュに紐づいた残高と利用履歴だけで、あなたの身元と結びつくことはありません。</p>
+  <p class="hero-body-text">音声はサーバーのメモリ(RAM)内だけで処理され、ディスクには書き込まれません。テキストが届くと同時に削除されます。</p>
+  <p class="hero-footnote">SafeScribeでは、プライバシーは後付けの方針ではなく、システムそのものの作りです。裁判所の命令があっても、お渡しできる音声・文字起こし・氏名・メールアドレス・IPはありません。あるのは一方向ハッシュに紐づいた残高と利用履歴だけで、あなたの身元と結びつくことはありません。</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 料金を見る</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; データ保護の仕組み</a>
@@ -235,32 +235,26 @@ lang: ja
   <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1時間</div>
-    <div class="pricing-rate">$0.0165/分</div>
   </div>
   <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7時間</div>
-    <div class="pricing-rate">$0.015/分</div>
   </div>
   <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15時間</div>
-    <div class="pricing-rate">$0.014/分</div>
   </div>
   <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30時間</div>
-    <div class="pricing-rate">$0.013/分</div>
   </div>
   <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60時間</div>
-    <div class="pricing-rate">$0.012/分</div>
   </div>
   <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120時間</div>
-    <div class="pricing-rate">$0.012/分</div>
   </div>
 </div>
 
@@ -270,6 +264,25 @@ lang: ja
 </div>
 
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "文字起こし後、音声はどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "完全に消えます。音声はサーバーのRAM（揮発性メモリ）内でのみ処理され、テキストが配信された瞬間に削除されます。ディスクコピーもバックアップも存在せず、復元する方法はありません。サーバーを物理的に押収しても、音声データは一切取得できません。"}},
+    {"@type": "Question", "name": "録音をAIの学習に使用しますか？", "acceptedAnswer": {"@type": "Answer", "text": "一切使用しません。音声はテキストの生成という唯一の目的にのみ使用されます。保存、分析、モデルの学習や改善に使用されることは決してありません。独自のAIインフラを運用しており、データがサードパーティのAIサービスに送られることはありません。"}},
+    {"@type": "Question", "name": "お支払い情報やカード情報を確認できますか？", "acceptedAnswer": {"@type": "Answer", "text": "できません。すべての決済はApple App StoreまたはGoogle Playを通じて処理されます。残高確認のための購入レシートのみを受け取ります — カード番号やお支払い詳細を確認、受け取り、保存することは一切ありません。"}},
+    {"@type": "Question", "name": "対応言語は？", "acceptedAnswer": {"@type": "Answer", "text": "オープンソースのWhisper音声認識モデルは99 の言語に対応し、自動言語検出機能を備えています。精度向上のため、文字起こし前に手動で言語を選択することも可能です。"}},
+    {"@type": "Question", "name": "どのファイル形式に対応していますか？", "acceptedAnswer": {"@type": "Answer", "text": "40形式に対応 — 22の音声形式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMRなど）と18の動画形式（MP4、MOV、MKV、AVI、WEBM、3GPなど — アップロード前にデバイス上で音声が抽出されます）。ファイルサイズは最大96 MB、長さは最大6時間まで。"}},
+    {"@type": "Question", "name": "データはどのように暗号化されますか？", "acceptedAnswer": {"@type": "Answer", "text": "通信中：TLS 1.3暗号化がデバイスとSafeScribeサーバー間のデータを保護します。デバイス上：文字起こしはAES-256暗号化コンテナに保存され、鍵はスマートフォンのセキュアハードウェア（iOS Keychain / Android Keystore）で保護されています。"}},
+    {"@type": "Question", "name": "すべてのデータを削除できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。アプリ内から個別の文字起こしまたはアカウント全体を削除できます。アカウント削除により、ログインID、すべてのローカルデータ、残りのクレジット残高が完全に削除されます。処理後にサーバーが個人データを保持しないため、サーバー側で削除するものはありません。"}},
+    {"@type": "Question", "name": "IPアドレスを記録していますか？", "acceptedAnswer": {"@type": "Answer", "text": "記録しません。IPアドレスは保存またはログに記録されることはありません。当社のアーキテクチャはコードレベルでこれを強制しています — ログシステムはIPがログ出力に到達する前に削除するよう明示的に設定されています。内部操作にはすべて仮名識別子（ログインIDの一方向SHA-256ハッシュ）を使用します。このハッシュは逆算してお客様のIDを明らかにすることはできません。"}},
+    {"@type": "Question", "name": "プライバシーに関する主張をどう検証できますか？", "acceptedAnswer": {"@type": "Answer", "text": "完全なセキュリティアーキテクチャとデータ保護影響評価を技術的な透明性のために公開しています。ネットワーク分析ツール（Wiresharkなど）を使用して、すべての通信がTLS暗号化されていること — メール、氏名、個人識別子がリクエストに含まれないこと — を確認することも可能です。"}},
+    {"@type": "Question", "name": "デバイス上の前処理はどのように精度を向上させますか？", "acceptedAnswer": {"@type": "Answer", "text": "アップロード前に、SafeScribeはデバイス上でオーディオフィルターチェーンを適用します：80 Hzのハイパスフィルタリングでこもり音や背景ノイズを除去し、LUFSラウドネス正規化（-16 LUFS）でWhisper向けに音量を最適化し、ピークリミッティングでクリッピングを防ぎます。サーバー上の音声活動検出と組み合わせることで、難しい録音からもクリーンで正確なテキストが得られます。"}}
+  ]
+}
+</script>
 
 <span class="section-label">FAQ</span>
 ## よくある質問
@@ -296,7 +309,7 @@ lang: ja
 
 <details class="faq-item">
   <summary>どのファイル形式に対応していますか？</summary>
-  <div class="faq-answer"><strong>40形式</strong>に対応 — 22の音声形式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMRなど）と18の動画形式（MP4、MOV、MKV、AVI、WEBM、3GPなど — アップロード前にデバイス上で音声が抽出されます）。ファイルサイズは最大96 MB、長さは最大2時間まで。</div>
+  <div class="faq-answer"><strong>40形式</strong>に対応 — 22の音声形式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMRなど）と18の動画形式（MP4、MOV、MKV、AVI、WEBM、3GPなど — アップロード前にデバイス上で音声が抽出されます）。ファイルサイズは最大96 MB、長さは最大6時間まで。</div>
 </details>
 
 <details class="faq-item">
@@ -326,12 +339,12 @@ lang: ja
 
 ---
 
-<div class="callout callout-info" style="margin-top:1.5rem;">
-  <p style="margin:0 0 0.5rem;"><strong>アプリストアのプライバシーラベル</strong> — App Store と Google Play のプライバシーラベルは、ここに記載された内容を正確に反映しています。</p>
-  <p style="margin:0;"><strong>脆弱性の報告</strong> — セキュリティ上の問題を発見した場合は、<a href="mailto:security@safescribe.dev">security@safescribe.dev</a> までご連絡ください。</p>
+<div class="callout callout-info u-mt-15">
+  <p class="u-m0-b05"><strong>アプリストアのプライバシーラベル</strong> — App Store と Google Play のプライバシーラベルは、ここに記載された内容を正確に反映しています。</p>
+  <p class="u-m0"><strong>脆弱性の報告</strong> — セキュリティ上の問題を発見した場合は、<a href="mailto:security@safescribe.dev">security@safescribe.dev</a> までご連絡ください。</p>
 </div>
 
-<p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:1rem;">SafeScribeはOpenAIの<a href="https://github.com/openai/whisper">Whisper</a>モデルウェイトをオープンソースの<a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a>ライブラリ（SYSTRAN、MITライセンス）経由で使用しています。SafeScribeはOpenAIと提携・推薦・後援関係にはありません。</p>
+<p class="attribution-note">SafeScribeはOpenAIの<a href="https://github.com/openai/whisper">Whisper</a>モデルウェイトをオープンソースの<a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a>ライブラリ（SYSTRAN、MITライセンス）経由で使用しています。SafeScribeはOpenAIと提携・推薦・後援関係にはありません。</p>
 
 ---
 

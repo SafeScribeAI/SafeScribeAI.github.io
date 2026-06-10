@@ -115,22 +115,22 @@ Kullanıcılara ilk kullanımdan önce dört bağımsız karttan oluşan ayrınt
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>Ses İşleme <em style="font-weight:400;font-size:0.8rem;">(zorunlu)</em></h4>
+    <h4>Ses İşleme <em class="u-label-light">(zorunlu)</em></h4>
     <p>Yalnızca RAM'de işleme, anında silme ve sesin hiçbir zaman diske yazılmadığı ya da üçüncü taraflarla paylaşılmadığı açıklanır.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>Saklanan Veriler <em style="font-weight:400;font-size:0.8rem;">(zorunlu)</em></h4>
+    <h4>Saklanan Veriler <em class="u-label-light">(zorunlu)</em></h4>
     <p>Hangi kalıcı verilerin tutulduğu açıklanır: takma adlı hesap kimliği, kredi bakiyesi ve anonim kullanım meta verisi.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>Yaş Doğrulama <em style="font-weight:400;font-size:0.8rem;">(zorunlu)</em></h4>
+    <h4>Yaş Doğrulama <em class="u-label-light">(zorunlu)</em></h4>
     <p>Kullanıcının 17 yaşında veya daha büyük olduğunu doğrular. Zorunlu kartlar devam etmek için kabul edilmelidir.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>Kilitlenme Raporları <em style="font-weight:400;font-size:0.8rem;">(isteğe bağlı)</em></h4>
+    <h4>Kilitlenme Raporları <em class="u-label-light">(isteğe bağlı)</em></h4>
     <p>Anonim kilitlenme raporlamasına katılım seçeneği sunar. Varsayılan olarak kapalıdır. İstediğiniz zaman Gizlilik Ayarları'ndan değiştirilebilir.</p>
   </div>
 </div>

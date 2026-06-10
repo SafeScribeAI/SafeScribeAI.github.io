@@ -103,20 +103,20 @@ lang: ja
   <strong>いつでも再インストール可能。</strong>アカウントを削除せずにアプリを削除した場合、再インストールして同じGoogleまたはAppleアカウントでログインすると、残高とアクセス権が完全に復元されます — 追加の操作は不要です。
 </div>
 
-### アカウント削除 — 残存データゼロ
+### アカウント削除 — あなたを特定できるものは何も残りません
 
-プライバシー設定からアカウントを削除すると、すべてのサーバー側レコードが永久に削除されます：
+プライバシー設定からアカウントを削除すると、あなたの身元に紐づくすべてのサーバー側レコードが完全に削除されます：
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>仮名ユーザーID</strong><span class="item-desc">永久削除</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>仮名デバイス識別子</strong><span class="item-desc">永久削除</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>クレジット残高</strong><span class="item-desc">永久削除</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>残り無料分数</strong><span class="item-desc">永久削除</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>すべてのジョブ統計</strong><span class="item-desc">永久削除</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>日次バックアップが24時間以内に上書き</strong><span class="item-desc"><strong>どこにもコピーは残らない</strong></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>仮名ユーザーID</strong><span class="item-desc">完全に削除</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>クレジット残高</strong><span class="item-desc">完全に削除</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>残りの無料時間</strong><span class="item-desc">完全に削除</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>ジョブごとの統計</strong><span class="item-desc">即時に匿名化 — 共有の DELETED_USER マーカーに付け替えられ、2年後に自動消去</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>仮名デバイス識別子</strong><span class="item-desc">ソルト付き一方向ハッシュに縮約され最長2年保持 — ウェルカムクレジットの再取得悪用を防止。逆算もあなたへの紐付けも不可能</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>日次バックアップ</strong><span class="item-desc">24時間以内に上書き — 識別可能なコピーはどこにも残りません</span></span></li>
 </ul>
 
-これは匿名化ではありません。お客様のレコードは集計・変形された形式で残ることはなく、削除されます。唯一の日次バックアップは削除後24時間以内に上書きされ、以降はいかなるシステムにもお客様のデータのコピーは存在しません。
+削除の瞬間に、あなたの身元へのリンクはすべて破棄されます。<em>身元との関連を一切持たない</em>2つの限定的なカテゴリーのみが一時的に保持されます：財務記録（購入額・利用額）は DELETED_USER マーカーに匿名化され、消費者紛争の時効（トルコ債務法第146条）に基づき2年間保持されます。また、ソルト付き一方向デバイスハッシュは無料クレジットの重複付与を防ぐため最長2年間保持されます（GDPR第6条1項(f)・正当な利益）。いずれも期限が切れると自動的に消去されます。唯一の日次バックアップは削除後24時間以内に上書きされます。
 
 アプリ内での削除操作は、GDPRの第17条およびKVKKの第11条(e)に基づく削除権の正式な行使となります。アカウントにアクセスできない場合は、**privacy@safescribe.dev** までメールでの削除リクエストをお送りください。
 

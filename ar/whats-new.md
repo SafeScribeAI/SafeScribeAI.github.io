@@ -5,16 +5,16 @@ description: ملاحظات الإصدار وتحديثات SafeScribe.
 lang: ar
 ---
 
-<div class="hero" style="padding-bottom:1rem;">
+<div class="hero hero-compact">
   <h1>ما الجديد</h1>
-  <p class="hero-tagline" style="font-size:1rem;">ملاحظات إصدار SafeScribe.</p>
+  <p class="hero-tagline hero-tagline-sm">ملاحظات إصدار SafeScribe.</p>
 </div>
 
-<div class="content-section" style="max-width:760px;margin:0 auto;">
+<div class="content-section content-narrow-760">
 
-<p style="color:var(--color-text-secondary);font-style:italic;">يستعد SafeScribe لإطلاقه العام الأول. بمجرد توفر التطبيق على App Store وGoogle Play، سيتم تلخيص كل إصدار هنا بلغة بسيطة — بدون مصطلحات داخلية، فقط ما يتغير بالنسبة لك.</p>
+<p class="u-muted-italic">يستعد SafeScribe لإطلاقه العام الأول. بمجرد توفر التطبيق على App Store وGoogle Play، سيتم تلخيص كل إصدار هنا بلغة بسيطة — بدون مصطلحات داخلية، فقط ما يتغير بالنسبة لك.</p>
 
-<h2 style="margin-top:2rem;">v1.0 — قريبًا</h2>
+<h2 class="u-mt-2">v1.0 — قريبًا</h2>
 <ul>
   <li>أول إصدار عام.</li>
   <li>نسخ صوتي ومرئي مع تحسين على الجهاز.</li>
@@ -22,6 +22,6 @@ lang: ar
   <li>أرصدة بنظام الدفع حسب الاستخدام، مع ساعتين مجانيتين للبدء.</li>
 </ul>
 
-<p style="margin-top:2rem;color:var(--color-text-secondary);font-size:0.9rem;">تبحث عن سجل التغييرات على مستوى المشغّل؟ هو محفوظ في مستودعنا الداخلي — هذه الصفحة تغطي فقط التغييرات المرئية للمستخدمين.</p>
+<p class="note-muted-top">تبحث عن سجل التغييرات على مستوى المشغّل؟ هو محفوظ في مستودعنا الداخلي — هذه الصفحة تغطي فقط التغييرات المرئية للمستخدمين.</p>
 
 </div>

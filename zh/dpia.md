@@ -115,22 +115,22 @@ lang: zh
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>音频处理 <em style="font-weight:400;font-size:0.8rem;">（必选）</em></h4>
+    <h4>音频处理 <em class="u-label-light">（必选）</em></h4>
     <p>说明仅 RAM 处理、立即删除，以及音频从不写入磁盘或与第三方共享。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>存储数据 <em style="font-weight:400;font-size:0.8rem;">（必选）</em></h4>
+    <h4>存储数据 <em class="u-label-light">（必选）</em></h4>
     <p>说明保留的持久数据：假名账户 ID、积分余额及匿名使用元数据。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>年龄确认 <em style="font-weight:400;font-size:0.8rem;">（必选）</em></h4>
+    <h4>年龄确认 <em class="u-label-light">（必选）</em></h4>
     <p>确认用户年满 17 周岁。必选卡片须接受才能继续。</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>崩溃报告 <em style="font-weight:400;font-size:0.8rem;">（可选）</em></h4>
+    <h4>崩溃报告 <em class="u-label-light">（可选）</em></h4>
     <p>允许选择加入匿名崩溃报告。默认关闭，可随时在隐私设置中切换。</p>
   </div>
 </div>

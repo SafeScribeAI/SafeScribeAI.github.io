@@ -9,8 +9,8 @@ lang: fr
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">La plupart des applications de transcription conservent vos enregistrements pendant des jours.<br>SafeScribe n'en conserve aucun.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Votre audio est traité uniquement dans la mémoire (RAM) de notre serveur, jamais écrit sur le disque, et supprimé dès que vous recevez votre texte.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">La confidentialité n'est pas ici une politique, mais la façon dont le système est conçu. Même sur décision de justice, nous n'aurions aucun audio, aucune transcription, aucun nom, aucun e-mail ni aucune IP à fournir — uniquement un solde et des données d'utilisation liés à une empreinte à sens unique, jamais à votre identité.</p>
+  <p class="hero-body-text">Votre audio est traité uniquement dans la mémoire (RAM) de notre serveur, jamais écrit sur le disque, et supprimé dès que vous recevez votre texte.</p>
+  <p class="hero-footnote">La confidentialité n'est pas ici une politique, mais la façon dont le système est conçu. Même sur décision de justice, nous n'aurions aucun audio, aucune transcription, aucun nom, aucun e-mail ni aucune IP à fournir — uniquement un solde et des données d'utilisation liés à une empreinte à sens unique, jamais à votre identité.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Voir les tarifs</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Comment nous protégeons vos données</a>
@@ -235,32 +235,26 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
   <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1 heure</div>
-    <div class="pricing-rate">$0.0165/min</div>
   </div>
   <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7 heures</div>
-    <div class="pricing-rate">$0.015/min</div>
   </div>
   <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 heures</div>
-    <div class="pricing-rate">$0.014/min</div>
   </div>
   <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30 heures</div>
-    <div class="pricing-rate">$0.013/min</div>
   </div>
   <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 heures</div>
-    <div class="pricing-rate">$0.012/min</div>
   </div>
   <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120 heures</div>
-    <div class="pricing-rate">$0.012/min</div>
   </div>
 </div>
 
@@ -270,6 +264,25 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
 </div>
 
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Qu'advient-il de mon audio après la transcription ?", "acceptedAnswer": {"@type": "Answer", "text": "Il a disparu — définitivement. Votre audio est traité entièrement dans la RAM du serveur (mémoire volatile) et supprimé à l'instant où votre transcription est livrée. Il n'y a aucune copie sur disque, aucune sauvegarde et aucun moyen de le récupérer. Même une saisie physique du serveur ne produirait aucune donnée audio."}},
+    {"@type": "Question", "name": "Utilisez-vous mes enregistrements pour entraîner l'IA ?", "acceptedAnswer": {"@type": "Answer", "text": "Absolument pas. Votre audio n'est utilisé que dans un seul but : générer votre transcription. Il n'est jamais stocké, analysé ou utilisé pour l'entraînement ou l'amélioration de modèles. Nous exploitons notre propre infrastructure d'IA — vos données ne vont vers aucun service d'IA tiers."}},
+    {"@type": "Question", "name": "Voyez-vous mes coordonnées bancaires ou de paiement ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Tous les paiements sont entièrement traités par l'Apple App Store ou Google Play. Nous ne recevons qu'un reçu d'achat pour vérification du solde — nous ne voyons, ne recevons ni ne stockons jamais votre numéro de carte ou vos coordonnées bancaires."}},
+    {"@type": "Question", "name": "Quelles langues sont prises en charge ?", "acceptedAnswer": {"@type": "Answer", "text": "Le modèle de reconnaissance vocale open-source Whisper prend en charge 99 langues avec détection automatique de la langue. Vous pouvez également sélectionner manuellement la langue avant la transcription pour une meilleure précision."}},
+    {"@type": "Question", "name": "Quels formats de fichier puis-je utiliser ?", "acceptedAnswer": {"@type": "Answer", "text": "40 formats sont pris en charge — 22 formats audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR et plus) et 18 formats vidéo (MP4, MOV, MKV, AVI, WEBM, 3GP et plus — la piste audio est extraite sur votre appareil avant le téléversement). Fichiers jusqu'à 96 Mo et jusqu'à 6 heures."}},
+    {"@type": "Question", "name": "Comment mes données sont-elles chiffrées ?", "acceptedAnswer": {"@type": "Answer", "text": "En transit : le chiffrement TLS 1.3 protège vos données entre votre appareil et les serveurs SafeScribe. Sur votre appareil : les transcriptions sont stockées dans des conteneurs chiffrés AES-256 avec des clés protégées par le matériel sécurisé de votre téléphone (iOS Keychain / Android Keystore)."}},
+    {"@type": "Question", "name": "Puis-je supprimer toutes mes données ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Vous pouvez supprimer des transcriptions individuelles ou l'intégralité de votre compte depuis l'application. La suppression du compte supprime définitivement votre identité de connexion, toutes les données locales et le solde de crédits restant. Comme le serveur ne conserve aucune donnée personnelle après le traitement, il n'y a rien à supprimer côté serveur."}},
+    {"@type": "Question", "name": "Enregistrez-vous mon adresse IP ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Les adresses IP ne sont jamais stockées ni consignées. Notre architecture l'impose au niveau du code — le système de journalisation est explicitement configuré pour supprimer les IP avant qu'elles n'atteignent toute sortie de journal. Nous utilisons un identifiant pseudonyme (un hash SHA-256 à sens unique de votre identité de connexion) pour toutes les opérations internes. Ce hash ne peut pas être inversé pour révéler votre identité."}},
+    {"@type": "Question", "name": "Comment puis-je vérifier vos affirmations de confidentialité ?", "acceptedAnswer": {"@type": "Answer", "text": "Nous publions notre Architecture de sécurité complète et notre Analyse d'impact relative à la protection des données par souci de transparence technique. Vous pouvez également utiliser un outil d'analyse réseau (ex. Wireshark) pour confirmer que tout le trafic est chiffré TLS — aucun e-mail, nom ou identifiant personnel n'apparaît dans aucune requête."}},
+    {"@type": "Question", "name": "Comment le prétraitement sur l'appareil améliore-t-il la précision ?", "acceptedAnswer": {"@type": "Answer", "text": "Avant l'envoi, SafeScribe applique une chaîne de filtres audio sur l'appareil : un filtrage passe-haut à 80 Hz élimine les grondements et bourdonnements, la normalisation de loudness LUFS (-16 LUFS) optimise les niveaux sonores pour Whisper, et la limitation de crête empêche l'écrêtage. Combiné avec la détection d'activité vocale sur le serveur, cela garantit un texte propre et précis même avec des enregistrements difficiles."}}
+  ]
+}
+</script>
 
 <span class="section-label">FAQ</span>
 ## Foire aux questions
@@ -296,7 +309,7 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
 
 <details class="faq-item">
   <summary>Quels formats de fichier puis-je utiliser ?</summary>
-  <div class="faq-answer"><strong>40 formats</strong> sont pris en charge — 22 formats audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR et plus) et 18 formats vidéo (MP4, MOV, MKV, AVI, WEBM, 3GP et plus — la piste audio est extraite sur votre appareil avant le téléversement). Fichiers jusqu'à 96 Mo et jusqu'à 2 heures.</div>
+  <div class="faq-answer"><strong>40 formats</strong> sont pris en charge — 22 formats audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR et plus) et 18 formats vidéo (MP4, MOV, MKV, AVI, WEBM, 3GP et plus — la piste audio est extraite sur votre appareil avant le téléversement). Fichiers jusqu'à 96 Mo et jusqu'à 6 heures.</div>
 </details>
 
 <details class="faq-item">
@@ -326,12 +339,12 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
 
 ---
 
-<div class="callout callout-info" style="margin-top:1.5rem;">
-  <p style="margin:0 0 0.5rem;"><strong>Labels de confidentialité App Store</strong> — Nos labels de confidentialité sur l'App Store et Google Play reflètent exactement ce qui est documenté ici.</p>
-  <p style="margin:0;"><strong>Divulgation responsable</strong> — Vous avez trouvé une vulnérabilité ? Contactez <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</p>
+<div class="callout callout-info u-mt-15">
+  <p class="u-m0-b05"><strong>Labels de confidentialité App Store</strong> — Nos labels de confidentialité sur l'App Store et Google Play reflètent exactement ce qui est documenté ici.</p>
+  <p class="u-m0"><strong>Divulgation responsable</strong> — Vous avez trouvé une vulnérabilité ? Contactez <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</p>
 </div>
 
-<p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:1rem;">SafeScribe utilise les poids du modèle <a href="https://github.com/openai/whisper">Whisper</a> d'OpenAI via la bibliothèque open-source <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> (SYSTRAN, licence MIT). SafeScribe n'est pas affilié à OpenAI, ni approuvé ou parrainé par OpenAI.</p>
+<p class="attribution-note">SafeScribe utilise les poids du modèle <a href="https://github.com/openai/whisper">Whisper</a> d'OpenAI via la bibliothèque open-source <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> (SYSTRAN, licence MIT). SafeScribe n'est pas affilié à OpenAI, ni approuvé ou parrainé par OpenAI.</p>
 
 ---
 

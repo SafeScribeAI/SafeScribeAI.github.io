@@ -9,8 +9,8 @@ lang: zh
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">大多数转录应用会把您的录音保留好几天。<br>SafeScribe 一概不保留。</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">您的录音只在我们服务器的内存（RAM）里处理,不会写入磁盘,您一收到文本就立即删除。</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">在 SafeScribe,隐私不是一项政策,而是系统本身的设计方式。即便面对法院调取,我们能交出的也只有与单向哈希关联的余额和使用记录——录音、转录文本、姓名、电子邮件、IP 从未保存过,因此无可交出,也绝不与您的身份相关联。</p>
+  <p class="hero-body-text">您的录音只在我们服务器的内存（RAM）里处理,不会写入磁盘,您一收到文本就立即删除。</p>
+  <p class="hero-footnote">在 SafeScribe,隐私不是一项政策,而是系统本身的设计方式。即便面对法院调取,我们能交出的也只有与单向哈希关联的余额和使用记录——录音、转录文本、姓名、电子邮件、IP 从未保存过,因此无可交出,也绝不与您的身份相关联。</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 查看价格</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; 我们如何保护您的数据</a>
@@ -235,32 +235,26 @@ lang: zh
   <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1小时</div>
-    <div class="pricing-rate">$0.0165/分钟</div>
   </div>
   <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7小时</div>
-    <div class="pricing-rate">$0.015/分钟</div>
   </div>
   <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15小时</div>
-    <div class="pricing-rate">$0.014/分钟</div>
   </div>
   <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30小时</div>
-    <div class="pricing-rate">$0.013/分钟</div>
   </div>
   <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60小时</div>
-    <div class="pricing-rate">$0.012/分钟</div>
   </div>
   <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120小时</div>
-    <div class="pricing-rate">$0.012/分钟</div>
   </div>
 </div>
 
@@ -270,6 +264,25 @@ lang: zh
 </div>
 
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "转录完成后我的音频会怎样？", "acceptedAnswer": {"@type": "Answer", "text": "已永久消失。您的音频完全在服务器RAM（易失性内存）中处理，转录文本交付的瞬间即被删除。没有磁盘副本、没有备份、无法恢复。即使对服务器进行物理扣押也不会获得任何音频数据。"}},
+    {"@type": "Question", "name": "你们会用我的录音训练AI吗？", "acceptedAnswer": {"@type": "Answer", "text": "绝对不会。您的音频仅用于一个目的：生成您的转录文本。它永远不会被存储、分析或用于模型训练或改进。我们运行自己的AI基础设施——您的数据不会发送到任何第三方AI服务。"}},
+    {"@type": "Question", "name": "您能看到我的支付或卡片信息吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能。所有付款均通过Apple App Store或Google Play完全处理。我们仅收到一份购买收据用于余额验证——我们从不查看、接收或存储您的卡号或任何支付详情。"}},
+    {"@type": "Question", "name": "支持哪些语言？", "acceptedAnswer": {"@type": "Answer", "text": "开源Whisper语音识别模型支持 99 种语言并可自动检测语言。您也可以在转录前手动选择语言以提高准确度。"}},
+    {"@type": "Question", "name": "我可以使用哪些文件格式？", "acceptedAnswer": {"@type": "Answer", "text": "支持40种格式 — 22种音频格式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMR等）和18种视频格式（MP4、MOV、MKV、AVI、WEBM、3GP等 — 上传前在您的设备上提取音频）。文件大小最多96 MB，时长最长6小时。"}},
+    {"@type": "Question", "name": "我的数据是如何加密的？", "acceptedAnswer": {"@type": "Answer", "text": "传输中：TLS 1.3加密保护您的数据在设备与SafeScribe服务器之间的传输安全。在您的设备上：转录文本存储在AES-256加密容器中，密钥受手机安全硬件保护（iOS Keychain / Android Keystore）。"}},
+    {"@type": "Question", "name": "我可以删除所有数据吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。您可以在应用内删除单条转录文本或整个账户。删除账户将永久移除您的登录身份、所有本地数据和剩余积分余额。由于服务器在处理后不保留任何个人数据，服务器端无需删除任何内容。"}},
+    {"@type": "Question", "name": "你们会记录我的IP地址吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。IP地址从不存储或记录。我们的架构在代码层面强制执行这一点——日志系统被明确配置为在IP到达任何日志输出之前将其丢弃。我们对所有内部操作使用匿名标识符（您登录身份的SHA-256单向哈希值）。此哈希值无法被逆推以揭露您的身份。"}},
+    {"@type": "Question", "name": "如何验证你们的隐私声明？", "acceptedAnswer": {"@type": "Answer", "text": "我们发布完整的安全架构和数据保护影响评估以确保技术透明度。您也可以使用网络分析工具（如Wireshark）确认所有流量均经TLS加密——任何请求中都不会出现邮箱、姓名或个人标识符。"}},
+    {"@type": "Question", "name": "设备端预处理如何提高准确度？", "acceptedAnswer": {"@type": "Answer", "text": "上传前，SafeScribe在设备上应用音频滤波链：80 Hz高通滤波消除低频噪声和背景嗡嗡声，LUFS响度归一化（-16 LUFS）为Whisper优化音频电平，峰值限制防止削波。结合服务器上的语音活动检测，即使是高难度录音也能获得清晰、准确的文本。"}}
+  ]
+}
+</script>
 
 <span class="section-label">常见问题</span>
 ## 常见问题解答
@@ -296,7 +309,7 @@ lang: zh
 
 <details class="faq-item">
   <summary>我可以使用哪些文件格式？</summary>
-  <div class="faq-answer">支持<strong>40种格式</strong> — 22种音频格式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMR等）和18种视频格式（MP4、MOV、MKV、AVI、WEBM、3GP等 — 上传前在您的设备上提取音频）。文件大小最多96 MB，时长最长2小时。</div>
+  <div class="faq-answer">支持<strong>40种格式</strong> — 22种音频格式（MP3、WAV、FLAC、M4A、OGG、Opus、AAC、AIFF、AMR等）和18种视频格式（MP4、MOV、MKV、AVI、WEBM、3GP等 — 上传前在您的设备上提取音频）。文件大小最多96 MB，时长最长6小时。</div>
 </details>
 
 <details class="faq-item">
@@ -326,12 +339,12 @@ lang: zh
 
 ---
 
-<div class="callout callout-info" style="margin-top:1.5rem;">
-  <p style="margin:0 0 0.5rem;"><strong>应用商店隐私标签</strong> — 我们在 App Store 和 Google Play 上的隐私标签与此处文档内容完全一致。</p>
-  <p style="margin:0;"><strong>漏洞披露</strong> — 发现安全漏洞？请联系 <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>。</p>
+<div class="callout callout-info u-mt-15">
+  <p class="u-m0-b05"><strong>应用商店隐私标签</strong> — 我们在 App Store 和 Google Play 上的隐私标签与此处文档内容完全一致。</p>
+  <p class="u-m0"><strong>漏洞披露</strong> — 发现安全漏洞？请联系 <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>。</p>
 </div>
 
-<p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:1rem;">SafeScribe通过开源<a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a>库（SYSTRAN，MIT许可证）使用OpenAI的<a href="https://github.com/openai/whisper">Whisper</a>模型权重。SafeScribe与OpenAI没有关联，也未获得其背书或赞助。</p>
+<p class="attribution-note">SafeScribe通过开源<a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a>库（SYSTRAN，MIT许可证）使用OpenAI的<a href="https://github.com/openai/whisper">Whisper</a>模型权重。SafeScribe与OpenAI没有关联，也未获得其背书或赞助。</p>
 
 ---
 

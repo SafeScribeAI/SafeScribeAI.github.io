@@ -103,20 +103,20 @@ Ce sont deux actions distinctes avec des résultats différents :
   <strong>Réinstaller à tout moment.</strong> Si vous supprimez l'application sans supprimer votre compte, réinstaller et vous connecter avec le même compte Google ou Apple restaure votre solde complet et votre accès — sans aucune action requise.
 </div>
 
-### Suppression du compte — Zéro donnée restante
+### Suppression du compte — Rien ne subsiste qui vous identifie
 
-Supprimer votre compte depuis les Paramètres de confidentialité supprime définitivement chaque enregistrement côté serveur :
+Supprimer votre compte depuis les Paramètres de confidentialité supprime définitivement chaque enregistrement côté serveur lié à votre identité :
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Identifiant utilisateur pseudonyme</strong><span class="item-desc">définitivement supprimé</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Identifiant d'appareil pseudonyme</strong><span class="item-desc">définitivement supprimé</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Solde de crédits</strong><span class="item-desc">définitivement supprimé</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Minutes gratuites restantes</strong><span class="item-desc">définitivement supprimées</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Toutes les statistiques par tâche</strong><span class="item-desc">définitivement supprimées</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sauvegarde quotidienne écrasée dans les 24 heures</strong><span class="item-desc"><strong>aucune copie ne subsiste nulle part</strong></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Identifiant utilisateur pseudonyme</strong><span class="item-desc">supprimé définitivement</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Solde de crédits</strong><span class="item-desc">supprimé définitivement</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Minutes gratuites restantes</strong><span class="item-desc">supprimées définitivement</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Statistiques par tâche</strong><span class="item-desc">anonymisées immédiatement — rattachées au marqueur commun DELETED_USER, purgées automatiquement après 2 ans</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Identifiant d'appareil pseudonyme</strong><span class="item-desc">réduit à un hachage salé à sens unique conservé jusqu'à 2 ans — bloque les abus répétés du crédit de bienvenue, irréversible et impossible à relier à vous</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Sauvegarde quotidienne</strong><span class="item-desc">écrasée sous 24 heures — aucune copie identifiante ne subsiste nulle part</span></span></li>
 </ul>
 
-Il ne s'agit pas d'anonymisation. Vos enregistrements ne persistent pas sous forme agrégée ou modifiée — ils sont supprimés. La sauvegarde quotidienne unique est écrasée dans les 24 heures suivant la suppression, après quoi aucune copie de vos données n'existe dans un système.
+Tout lien avec votre identité est détruit au moment de la suppression. Deux catégories restreintes subsistent temporairement <em>sans aucun lien d'identité</em> : les enregistrements financiers (montants d'achat et d'utilisation) sont anonymisés vers le marqueur DELETED_USER et conservés 2 ans au titre de la prescription des litiges de consommation (TBK art. 146) ; un hachage d'appareil salé à sens unique est conservé jusqu'à 2 ans pour empêcher l'octroi répété de crédits gratuits (art. 6(1)(f) RGPD, intérêt légitime). Les deux sont purgés automatiquement à l'expiration. L'unique sauvegarde quotidienne est écrasée dans les 24 heures suivant la suppression.
 
 La suppression via l'application constitue l'exercice formel de votre droit à l'effacement au titre de l'article 17 du GDPR et de l'article 11(e) du KVKK. Si vous ne pouvez pas accéder à votre compte, contactez **privacy@safescribe.dev** pour soumettre une demande de suppression par e-mail.
 

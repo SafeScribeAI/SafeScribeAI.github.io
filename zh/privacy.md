@@ -103,20 +103,20 @@ lang: zh
   <strong>随时重新安装。</strong>如果您删除应用但不删除账户，重新安装并以相同的Google或Apple账户登录即可恢复完整余额和访问权限——无需任何操作。
 </div>
 
-### 删除账户——零数据残留
+### 删除账户——不留任何可识别您的信息
 
-从隐私设置中删除账户将永久删除所有服务器端记录：
+从隐私设置中删除账户将永久删除所有与您身份关联的服务器端记录：
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span> 匿名用户ID——永久删除</li>
-  <li><span class="check-mark">&#x2713;</span> 匿名设备标识符——永久删除</li>
-  <li><span class="check-mark">&#x2713;</span> 信用余额——永久删除</li>
-  <li><span class="check-mark">&#x2713;</span> 剩余免费分钟数——永久删除</li>
-  <li><span class="check-mark">&#x2713;</span> 所有任务统计数据——永久删除</li>
-  <li><span class="check-mark">&#x2713;</span> 每日备份在24小时内覆盖——<strong>任何地方均无副本残留</strong></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>假名用户 ID</strong><span class="item-desc">永久删除</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>信用余额</strong><span class="item-desc">永久删除</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>剩余免费分钟数</strong><span class="item-desc">永久删除</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>每次任务统计</strong><span class="item-desc">立即匿名化——归入共享的 DELETED_USER 标记，2 年后自动清除</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>假名设备标识符</strong><span class="item-desc">简化为加盐单向哈希，最长保留 2 年——防止重复滥用欢迎赠送额度，不可逆且无法关联到您</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>每日备份</strong><span class="item-desc">24 小时内被覆盖——任何地方都不会留下可识别的副本</span></span></li>
 </ul>
 
-这不是匿名化处理。您的记录不会以聚合或修改的形式保留——它们被删除。唯一的每日备份在删除后24小时内被覆盖，此后您的数据在任何系统中均不存在副本。
+删除的那一刻，所有指向您身份的关联即被销毁。仅有两类范围极窄的数据会在<em>不含任何身份关联</em>的情况下临时保留：财务记录（购买与使用金额）匿名化为 DELETED_USER 标记，依据消费者纠纷时效（土耳其债法第 146 条）保留 2 年；加盐单向设备哈希最长保留 2 年，用于防止重复领取免费额度（GDPR 第 6(1)(f) 条合法利益）。两者在期限届满后自动清除。唯一的每日备份会在删除后 24 小时内被覆盖。
 
 应用内删除操作构成您根据GDPR第17条及KVKK第11条(e)款正式行使删除权的行为。如果您无法访问账户，请联系**privacy@safescribe.dev**通过电子邮件提交删除请求。
 

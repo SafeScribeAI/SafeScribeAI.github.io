@@ -9,8 +9,8 @@ lang: ko
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">대부분의 전사 앱은 녹음을 며칠 동안 보관합니다.<br>SafeScribe는 보관하지 않습니다.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">음성은 서버 메모리(RAM)에서만 처리되고 디스크에는 저장되지 않으며, 텍스트를 받는 순간 삭제됩니다.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">SafeScribe에서 개인정보 보호는 정책이 아니라, 시스템이 설계된 방식 그 자체입니다. 법원 명령이 있더라도 음성·전사본·이름·이메일·IP는 애초에 보관하지 않아 제공할 수 없으며, 우리가 가진 것은 단방향 해시에 연결된 잔액과 사용 기록뿐입니다 — 어떤 경우에도 본인의 신원과 이어지지 않습니다.</p>
+  <p class="hero-body-text">음성은 서버 메모리(RAM)에서만 처리되고 디스크에는 저장되지 않으며, 텍스트를 받는 순간 삭제됩니다.</p>
+  <p class="hero-footnote">SafeScribe에서 개인정보 보호는 정책이 아니라, 시스템이 설계된 방식 그 자체입니다. 법원 명령이 있더라도 음성·전사본·이름·이메일·IP는 애초에 보관하지 않아 제공할 수 없으며, 우리가 가진 것은 단방향 해시에 연결된 잔액과 사용 기록뿐입니다 — 어떤 경우에도 본인의 신원과 이어지지 않습니다.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; 요금 보기</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; 데이터 보호 방법</a>
@@ -235,32 +235,26 @@ lang: ko
   <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1시간</div>
-    <div class="pricing-rate">$0.0165/분</div>
   </div>
   <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7시간</div>
-    <div class="pricing-rate">$0.015/분</div>
   </div>
   <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15시간</div>
-    <div class="pricing-rate">$0.014/분</div>
   </div>
   <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30시간</div>
-    <div class="pricing-rate">$0.013/분</div>
   </div>
   <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60시간</div>
-    <div class="pricing-rate">$0.012/분</div>
   </div>
   <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120시간</div>
-    <div class="pricing-rate">$0.012/분</div>
   </div>
 </div>
 
@@ -270,6 +264,25 @@ lang: ko
 </div>
 
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "전사 후 내 오디오는 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "영구적으로 사라집니다. 오디오는 서버 RAM(휘발성 메모리)에서만 처리되며, 전사 텍스트가 전달되는 즉시 삭제됩니다. 디스크 복사본도, 백업도, 복구 방법도 없습니다. 서버를 물리적으로 압수하더라도 오디오 데이터는 전혀 얻을 수 없습니다."}},
+    {"@type": "Question", "name": "녹음을 AI 학습에 사용하나요?", "acceptedAnswer": {"@type": "Answer", "text": "절대 아닙니다. 오디오는 오직 하나의 목적으로만 사용됩니다: 전사 텍스트 생성. 저장, 분석, 모델 학습이나 개선에 사용되는 일은 절대 없습니다. 자체 AI 인프라를 운영하며 — 데이터가 제3자 AI 서비스로 전송되지 않습니다."}},
+    {"@type": "Question", "name": "결제 또는 카드 정보를 볼 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니오. 모든 결제는 Apple App Store 또는 Google Play를 통해 처리됩니다. 잔액 확인을 위한 구매 영수증만 수신합니다 — 카드 번호나 결제 정보를 확인, 수신, 저장하는 일은 절대 없습니다."}},
+    {"@type": "Question", "name": "어떤 언어를 지원하나요?", "acceptedAnswer": {"@type": "Answer", "text": "오픈 소스 Whisper 음성 인식 모델은 자동 언어 감지 기능으로 99개 언어를 지원합니다. 정확도 향상을 위해 전사 전에 수동으로 언어를 선택할 수도 있습니다."}},
+    {"@type": "Question", "name": "어떤 파일 형식을 사용할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "40가지 형식을 지원합니다 — 22가지 오디오 형식(MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR 등)과 18가지 비디오 형식(MP4, MOV, MKV, AVI, WEBM, 3GP 등 — 업로드 전에 기기에서 오디오가 추출됩니다). 파일 크기 최대 96 MB, 길이 최대 6시간."}},
+    {"@type": "Question", "name": "데이터는 어떻게 암호화되나요?", "acceptedAnswer": {"@type": "Answer", "text": "전송 중: TLS 1.3 암호화가 기기와 SafeScribe 서버 사이의 데이터를 보호합니다. 기기 내: 전사 텍스트는 AES-256 암호화 컨테이너에 저장되며, 키는 휴대폰의 보안 하드웨어(iOS Keychain / Android Keystore)로 보호됩니다."}},
+    {"@type": "Question", "name": "모든 데이터를 삭제할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "예. 앱 내에서 개별 전사 텍스트 또는 계정 전체를 삭제할 수 있습니다. 계정 삭제 시 로그인 정보, 모든 로컬 데이터, 남은 크레딧 잔액이 영구적으로 제거됩니다. 서버는 처리 후 개인 데이터를 보유하지 않으므로 서버 측에서 삭제할 것이 없습니다."}},
+    {"@type": "Question", "name": "IP 주소를 기록하나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니오. IP 주소는 저장되거나 기록되지 않습니다. 저희 아키텍처는 코드 수준에서 이를 강제합니다 — 로깅 시스템은 IP가 로그 출력에 도달하기 전에 삭제하도록 명시적으로 구성되어 있습니다. 모든 내부 작업에는 가명 식별자(로그인 정보의 단방향 SHA-256 해시)를 사용합니다. 이 해시는 역산하여 신원을 확인할 수 없습니다."}},
+    {"@type": "Question", "name": "개인정보 보호 주장을 어떻게 검증할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "기술적 투명성을 위해 전체 보안 아키텍처와 데이터 보호 영향 평가를 공개합니다. 네트워크 분석 도구(예: Wireshark)를 사용해 모든 트래픽이 TLS 암호화되어 있음을 확인할 수 있습니다 — 이메일, 이름, 개인 식별자가 어떤 요청에도 표시되지 않습니다."}},
+    {"@type": "Question", "name": "기기 내 전처리는 어떻게 정확도를 향상시키나요?", "acceptedAnswer": {"@type": "Answer", "text": "업로드 전에 SafeScribe는 기기에서 오디오 필터 체인을 적용합니다: 80 Hz 하이패스 필터링으로 저주파 잡음과 배경 소음을 제거하고, LUFS 라우드니스 정규화(-16 LUFS)로 Whisper에 최적화된 음량을 설정하며, 피크 리미팅으로 클리핑을 방지합니다. 서버의 음성 활동 감지와 결합하여 어려운 녹음에서도 깨끗하고 정확한 텍스트를 얻을 수 있습니다."}}
+  ]
+}
+</script>
 
 <span class="section-label">FAQ</span>
 ## 자주 묻는 질문
@@ -296,7 +309,7 @@ lang: ko
 
 <details class="faq-item">
   <summary>어떤 파일 형식을 사용할 수 있나요?</summary>
-  <div class="faq-answer"><strong>40가지 형식</strong>을 지원합니다 — 22가지 오디오 형식(MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR 등)과 18가지 비디오 형식(MP4, MOV, MKV, AVI, WEBM, 3GP 등 — 업로드 전에 기기에서 오디오가 추출됩니다). 파일 크기 최대 96 MB, 길이 최대 2시간.</div>
+  <div class="faq-answer"><strong>40가지 형식</strong>을 지원합니다 — 22가지 오디오 형식(MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR 등)과 18가지 비디오 형식(MP4, MOV, MKV, AVI, WEBM, 3GP 등 — 업로드 전에 기기에서 오디오가 추출됩니다). 파일 크기 최대 96 MB, 길이 최대 6시간.</div>
 </details>
 
 <details class="faq-item">
@@ -326,12 +339,12 @@ lang: ko
 
 ---
 
-<div class="callout callout-info" style="margin-top:1.5rem;">
-  <p style="margin:0 0 0.5rem;"><strong>앱 스토어 개인정보 보호 레이블</strong> — App Store 및 Google Play의 개인정보 보호 레이블은 이 문서의 내용을 정확히 반영합니다.</p>
-  <p style="margin:0;"><strong>보안 취약점 신고</strong> — 취약점을 발견하셨나요? <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>로 연락해 주세요.</p>
+<div class="callout callout-info u-mt-15">
+  <p class="u-m0-b05"><strong>앱 스토어 개인정보 보호 레이블</strong> — App Store 및 Google Play의 개인정보 보호 레이블은 이 문서의 내용을 정확히 반영합니다.</p>
+  <p class="u-m0"><strong>보안 취약점 신고</strong> — 취약점을 발견하셨나요? <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>로 연락해 주세요.</p>
 </div>
 
-<p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:1rem;">SafeScribe는 오픈 소스 <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> 라이브러리(SYSTRAN, MIT 라이선스)를 통해 OpenAI의 <a href="https://github.com/openai/whisper">Whisper</a> 모델 가중치를 사용합니다. SafeScribe는 OpenAI와 제휴, 보증 또는 후원 관계에 있지 않습니다.</p>
+<p class="attribution-note">SafeScribe는 오픈 소스 <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> 라이브러리(SYSTRAN, MIT 라이선스)를 통해 OpenAI의 <a href="https://github.com/openai/whisper">Whisper</a> 모델 가중치를 사용합니다. SafeScribe는 OpenAI와 제휴, 보증 또는 후원 관계에 있지 않습니다.</p>
 
 ---
 

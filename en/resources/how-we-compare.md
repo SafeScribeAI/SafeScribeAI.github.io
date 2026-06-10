@@ -5,12 +5,12 @@ description: Side-by-side analysis of SafeScribe against Otter, Rev, Descript, F
 lang: en
 ---
 
-<div class="hero" style="padding-bottom:1rem;">
+<div class="hero hero-compact">
   <h1>How SafeScribe Compares</h1>
-  <p class="hero-tagline" style="font-size:1rem;">A side-by-side look at the privacy posture, pricing, and architecture of mainstream transcription tools.</p>
+  <p class="hero-tagline hero-tagline-sm">A side-by-side look at the privacy posture, pricing, and architecture of mainstream transcription tools.</p>
 </div>
 
-<div class="content-section" style="max-width:920px;margin:0 auto;">
+<div class="content-section content-narrow-920">
 
 <p>Every competitor in this market makes some version of the same promise: <em>"we respect your privacy."</em> The differences live in the architecture. The table below is the version we use internally — not curated marketing claims, but what each provider actually does with your audio.</p>
 
@@ -113,9 +113,9 @@ lang: en
 </table>
 </div>
 
-<p style="font-size:0.85rem;color:var(--color-text-secondary);font-style:italic;margin-top:0.5rem;">Pricing reflects publicly listed floors at the time of writing. The competitive landscape moves quickly — this is a snapshot, not a contract.</p>
+<p class="hero-lang-note">Pricing reflects publicly listed floors at the time of writing. The competitive landscape moves quickly — this is a snapshot, not a contract.</p>
 
-<span class="section-label" style="margin-top:2.5rem;">What stands out</span>
+<span class="section-label u-mt-25">What stands out</span>
 <h2>Five Things The Table Doesn't Tell You</h2>
 
 <div class="do-list-wrapper">
@@ -158,10 +158,10 @@ lang: en
 </ul>
 </div>
 
-<div class="callout callout-green" style="margin-top:2rem;">
+<div class="callout callout-green u-mt-2">
   <strong>Verify it yourself.</strong> After receiving a transcript, query <code>GET /v1/status/{work_id}</code> — the server returns <code>404 Not Found</code>. That's the receipt. There is no other copy.
 </div>
 
-<p style="margin-top:2rem;"><a href="../resources">&larr; Back to Resources</a></p>
+<p class="u-mt-2"><a href="../resources">&larr; Back to Resources</a></p>
 
 </div>

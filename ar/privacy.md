@@ -103,20 +103,20 @@ lang: ar
   <strong>أعد التثبيت في أي وقت.</strong> إذا حذفت التطبيق دون حذف حسابك، فإن إعادة التثبيت وتسجيل الدخول بنفس حساب Google أو Apple يستعيد رصيدك الكامل والوصول — دون أي إجراء مطلوب.
 </div>
 
-### حذف الحساب — صفر بيانات متبقية
+### حذف الحساب — لا يبقى شيء يحدد هويتك
 
-حذف حسابك من إعدادات الخصوصية يزيل بشكل دائم كل سجل على الخادم:
+حذف حسابك من إعدادات الخصوصية يزيل بشكل دائم كل سجل على الخادم مرتبط بهويتك:
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>معرّف المستخدم المستعار</strong><span class="item-desc">محذوف بشكل دائم</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>معرّف الجهاز المستعار</strong><span class="item-desc">محذوف بشكل دائم</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>رصيد الائتمان</strong><span class="item-desc">محذوف بشكل دائم</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>الدقائق المجانية المتبقية</strong><span class="item-desc">محذوفة بشكل دائم</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>جميع إحصاءات المهام</strong><span class="item-desc">محذوفة بشكل دائم</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>النسخ الاحتياطي اليومي يُستبدل خلال 24 ساعة</strong><span class="item-desc"><strong>لا تبقى أي نسخة في أي مكان</strong></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>معرّف المستخدم المستعار</strong><span class="item-desc">يُحذف نهائياً</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>رصيد الاعتمادات</strong><span class="item-desc">يُحذف نهائياً</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>الدقائق المجانية المتبقية</strong><span class="item-desc">تُحذف نهائياً</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>إحصاءات كل مهمة</strong><span class="item-desc">تُجهَّل فوراً — تُربط بعلامة DELETED_USER المشتركة وتُمسح تلقائياً بعد سنتين</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>معرّف الجهاز المستعار</strong><span class="item-desc">يُختزل إلى تجزئة أحادية الاتجاه مملّحة تُحفظ حتى سنتين — يمنع تكرار إساءة استخدام الرصيد الترحيبي، ولا يمكن عكسه أو ربطه بك</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>النسخة الاحتياطية اليومية</strong><span class="item-desc">تُستبدل خلال 24 ساعة — لا تبقى أي نسخة معرِّفة في أي مكان</span></span></li>
 </ul>
 
-هذا ليس إخفاءً للهوية. لا تستمر سجلاتك بصورة مجمّعة أو معدّلة — تُحذف. يُستبدل النسخ الاحتياطي اليومي الوحيد في غضون 24 ساعة من الحذف، وبعدها لا توجد أي نسخة من بياناتك في أي نظام.
+تُدمَّر كل صلة بهويتك لحظة الحذف. تبقى فئتان محدودتان مؤقتاً <em>دون أي صلة بالهوية</em>: السجلات المالية (مبالغ الشراء والاستخدام) تُجهَّل إلى علامة DELETED_USER وتُحفظ سنتين وفق تقادم نزاعات المستهلك (المادة 146 من قانون الالتزامات التركي)؛ وتُحفظ تجزئة جهاز مملّحة أحادية الاتجاه حتى سنتين لمنع تكرار منح الرصيد المجاني (المادة 6(1)(و) من اللائحة العامة لحماية البيانات — المصلحة المشروعة). تُمسح كلتاهما تلقائياً عند انتهاء المدة. وتُستبدل النسخة الاحتياطية اليومية الوحيدة خلال 24 ساعة من الحذف.
 
 يُعدّ الحذف داخل التطبيق ممارسةً رسمية لحق الحذف بموجب المادة 17 من GDPR والمادة 11(ه) من KVKK. إذا لم تتمكن من الوصول إلى حسابك، تواصل مع **privacy@safescribe.dev** لتقديم طلب حذف عبر البريد الإلكتروني.
 

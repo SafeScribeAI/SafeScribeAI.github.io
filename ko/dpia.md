@@ -115,22 +115,22 @@ GDPR 및 KVKK에 따른 모든 정보 주체의 권리(열람, 정정, 삭제, �
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>오디오 처리 <em style="font-weight:400;font-size:0.8rem;">（필수）</em></h4>
+    <h4>오디오 처리 <em class="u-label-light">（필수）</em></h4>
     <p>RAM 전용 처리, 즉시 삭제, 오디오가 디스크에 기록되지 않고 제3자와 공유되지 않음을 설명합니다.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>저장 데이터 <em style="font-weight:400;font-size:0.8rem;">（필수）</em></h4>
+    <h4>저장 데이터 <em class="u-label-light">（필수）</em></h4>
     <p>보존되는 영구 데이터를 설명합니다: 가명 계정 ID, 크레딧 잔액, 익명 이용 메타데이터.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>연령 확인 <em style="font-weight:400;font-size:0.8rem;">（필수）</em></h4>
+    <h4>연령 확인 <em class="u-label-light">（필수）</em></h4>
     <p>사용자가 만 17세 이상임을 확인합니다. 계속하려면 필수 카드에 동의해야 합니다.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>충돌 보고서 <em style="font-weight:400;font-size:0.8rem;">（선택）</em></h4>
+    <h4>충돌 보고서 <em class="u-label-light">（선택）</em></h4>
     <p>익명 충돌 보고서 선택 가입을 허용합니다. 기본값 해제. 개인정보 설정에서 언제든지 변경 가능합니다.</p>
   </div>
 </div>

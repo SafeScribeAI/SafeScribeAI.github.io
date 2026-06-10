@@ -115,22 +115,22 @@ Users are presented with a granular consent screen before first use, consisting 
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>Audio Processing <em style="font-weight:400;font-size:0.8rem;">(required)</em></h4>
+    <h4>Audio Processing <em class="u-label-light">(required)</em></h4>
     <p>Explains RAM-only processing, immediate deletion, and that audio is never written to disk or shared with third parties.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>Stored Data <em style="font-weight:400;font-size:0.8rem;">(required)</em></h4>
+    <h4>Stored Data <em class="u-label-light">(required)</em></h4>
     <p>Explains what persistent data is kept: pseudonymous account ID, credit balance, and anonymous usage metadata.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>Age Confirmation <em style="font-weight:400;font-size:0.8rem;">(required)</em></h4>
+    <h4>Age Confirmation <em class="u-label-light">(required)</em></h4>
     <p>Confirms the user is 17 or older. Required cards must be accepted to proceed.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>Crash Reports <em style="font-weight:400;font-size:0.8rem;">(optional)</em></h4>
+    <h4>Crash Reports <em class="u-label-light">(optional)</em></h4>
     <p>Allows opting into anonymous crash reporting. Defaults to off. Can be toggled at any time from Privacy Settings.</p>
   </div>
 </div>

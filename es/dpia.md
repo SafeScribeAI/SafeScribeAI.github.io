@@ -115,22 +115,22 @@ Antes del primer uso, se presenta a los usuarios una pantalla de consentimiento 
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>Procesamiento de Audio <em style="font-weight:400;font-size:0.8rem;">(obligatorio)</em></h4>
+    <h4>Procesamiento de Audio <em class="u-label-light">(obligatorio)</em></h4>
     <p>Explica el procesamiento solo en RAM, la eliminación inmediata y que el audio nunca se escribe en disco ni se comparte con terceros.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>Datos Almacenados <em style="font-weight:400;font-size:0.8rem;">(obligatorio)</em></h4>
+    <h4>Datos Almacenados <em class="u-label-light">(obligatorio)</em></h4>
     <p>Explica qué datos persistentes se conservan: identificador seudónimo, saldo de créditos y metadatos de uso anónimos.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>Confirmación de Edad <em style="font-weight:400;font-size:0.8rem;">(obligatorio)</em></h4>
+    <h4>Confirmación de Edad <em class="u-label-light">(obligatorio)</em></h4>
     <p>Confirma que el usuario tiene 17 años o más. Las tarjetas obligatorias deben aceptarse para continuar.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>Informes de Fallos <em style="font-weight:400;font-size:0.8rem;">(opcional)</em></h4>
+    <h4>Informes de Fallos <em class="u-label-light">(opcional)</em></h4>
     <p>Permite el opt-in a informes de fallos anónimos. Desactivado por defecto. Puede cambiarse en cualquier momento desde Configuración de Privacidad.</p>
   </div>
 </div>

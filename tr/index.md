@@ -9,8 +9,8 @@ lang: tr
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Çoğu transkripsiyon uygulaması kayıtlarınızı günlerce saklar.<br>SafeScribe hiç saklamaz.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, diske hiç yazılmaz ve metninizi aldığınız anda silinir.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Gizlilik bizde bir politika değil, sistemin temeli. Bir mahkeme kararı gelse bile elimizde paylaşılacak ses, metin, ad, e-posta veya IP yoktur — yalnızca kimliğinizle değil, tek yönlü bir özetle ilişkili bakiye ve kullanım kaydı bulunur.</p>
+  <p class="hero-body-text">Sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, diske hiç yazılmaz ve metninizi aldığınız anda silinir.</p>
+  <p class="hero-footnote">Gizlilik bizde bir politika değil, sistemin temeli. Bir mahkeme kararı gelse bile elimizde paylaşılacak ses, metin, ad, e-posta veya IP yoktur — yalnızca kimliğinizle değil, tek yönlü bir özetle ilişkili bakiye ve kullanım kaydı bulunur.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Fiyatları Görün</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; Verilerinizi Nasıl Koruyoruz</a>
@@ -235,32 +235,26 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
   <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1 saat</div>
-    <div class="pricing-rate">$0.0165/dk</div>
   </div>
   <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7 saat</div>
-    <div class="pricing-rate">$0.015/dk</div>
   </div>
   <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 saat</div>
-    <div class="pricing-rate">$0.014/dk</div>
   </div>
   <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30 saat</div>
-    <div class="pricing-rate">$0.013/dk</div>
   </div>
   <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 saat</div>
-    <div class="pricing-rate">$0.012/dk</div>
   </div>
   <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120 saat</div>
-    <div class="pricing-rate">$0.012/dk</div>
   </div>
 </div>
 
@@ -279,7 +273,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
     {"@type": "Question", "name": "Transkripsiyon sonrası sesime ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur."}},
     {"@type": "Question", "name": "Kayıtlarımı yapay zeka eğitiminde kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitiminde kullanılmaz. Kendi yapay zeka altyapımızı işletiyoruz."}},
     {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 99 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
-    {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "40 format desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses cihazınızda çıkarılır). 96 MB'a kadar dosya boyutu ve 2 saate kadar süre."}},
+    {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "40 format desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses cihazınızda çıkarılır). 96 MB'a kadar dosya boyutu ve 6 saate kadar süre."}},
     {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde TLS 1.3 şifreleme. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
     {"@type": "Question", "name": "IP adresimi kaydediyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. IP adresleri hiçbir zaman saklanmaz. Günlük sistemi IP'leri herhangi bir çıktıya ulaşmadan düşürür. Dahili işlemler için tek yönlü SHA-256 karması kullanılır."}}
   ]
@@ -311,7 +305,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 <details class="faq-item">
   <summary>Hangi dosya formatlarını kullanabilirim?</summary>
-  <div class="faq-answer"><strong>40 format</strong> desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses, yüklemeden önce cihazınızda çıkarılır). 96 MB'a kadar dosya boyutu ve 2 saate kadar süre.</div>
+  <div class="faq-answer"><strong>40 format</strong> desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses, yüklemeden önce cihazınızda çıkarılır). 96 MB'a kadar dosya boyutu ve 6 saate kadar süre.</div>
 </details>
 
 <details class="faq-item">
@@ -341,12 +335,12 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 ---
 
-<div class="callout callout-info" style="margin-top:1.5rem;">
-  <p style="margin:0 0 0.5rem;"><strong>App Store Gizlilik Etiketleri</strong> — App Store ve Google Play'deki gizlilik etiketlerimiz burada belgelenenlerle birebir örtüşmektedir.</p>
-  <p style="margin:0;"><strong>Sorumlu Açıklama</strong> — Bir güvenlik açığı mı buldunuz? <a href="mailto:security@safescribe.dev">security@safescribe.dev</a> adresine yazın.</p>
+<div class="callout callout-info u-mt-15">
+  <p class="u-m0-b05"><strong>App Store Gizlilik Etiketleri</strong> — App Store ve Google Play'deki gizlilik etiketlerimiz burada belgelenenlerle birebir örtüşmektedir.</p>
+  <p class="u-m0"><strong>Sorumlu Açıklama</strong> — Bir güvenlik açığı mı buldunuz? <a href="mailto:security@safescribe.dev">security@safescribe.dev</a> adresine yazın.</p>
 </div>
 
-<p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:1rem;">SafeScribe, açık kaynaklı <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> kütüphanesi (SYSTRAN, MIT lisansı) aracılığıyla OpenAI'nin <a href="https://github.com/openai/whisper">Whisper</a> model ağırlıklarını kullanmaktadır. SafeScribe, OpenAI ile herhangi bir bağlantısı olmayan, OpenAI tarafından onaylanmamış veya desteklenmemiş bağımsız bir uygulamadır.</p>
+<p class="attribution-note">SafeScribe, açık kaynaklı <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> kütüphanesi (SYSTRAN, MIT lisansı) aracılığıyla OpenAI'nin <a href="https://github.com/openai/whisper">Whisper</a> model ağırlıklarını kullanmaktadır. SafeScribe, OpenAI ile herhangi bir bağlantısı olmayan, OpenAI tarafından onaylanmamış veya desteklenmemiş bağımsız bir uygulamadır.</p>
 
 ---
 

@@ -9,8 +9,8 @@ lang: ar
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">معظم تطبيقات النسخ تحتفظ بتسجيلاتك أياماً.<br>أما SafeScribe فلا يحتفظ بشيء.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">تُعالَج تسجيلاتك في ذاكرة خادمنا (RAM) فقط، ولا تُكتب على القرص، وتُحذف بمجرد استلامك للنص.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">في SafeScribe، الخصوصية ليست سياسة نتبعها، بل هي طريقة بناء النظام نفسه. حتى بأمر قضائي، لا نملك ما نسلِّمه: لا تسجيل صوتي، ولا نص، ولا اسم، ولا بريد إلكتروني، ولا عنوان IP. كل ما لدينا هو الرصيد وبيانات الاستخدام المرتبطة بتجزئة أحادية الاتجاه — ولا ترتبط أبداً بهويتك.</p>
+  <p class="hero-body-text">تُعالَج تسجيلاتك في ذاكرة خادمنا (RAM) فقط، ولا تُكتب على القرص، وتُحذف بمجرد استلامك للنص.</p>
+  <p class="hero-footnote">في SafeScribe، الخصوصية ليست سياسة نتبعها، بل هي طريقة بناء النظام نفسه. حتى بأمر قضائي، لا نملك ما نسلِّمه: لا تسجيل صوتي، ولا نص، ولا اسم، ولا بريد إلكتروني، ولا عنوان IP. كل ما لدينا هو الرصيد وبيانات الاستخدام المرتبطة بتجزئة أحادية الاتجاه — ولا ترتبط أبداً بهويتك.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; عرض الأسعار</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; كيف نحمي بياناتك</a>
@@ -235,32 +235,26 @@ lang: ar
   <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">ساعة واحدة</div>
-    <div class="pricing-rate">$0.0165/دقيقة</div>
   </div>
   <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7 ساعات</div>
-    <div class="pricing-rate">$0.015/دقيقة</div>
   </div>
   <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 ساعة</div>
-    <div class="pricing-rate">$0.014/دقيقة</div>
   </div>
   <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30 ساعة</div>
-    <div class="pricing-rate">$0.013/دقيقة</div>
   </div>
   <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 ساعة</div>
-    <div class="pricing-rate">$0.012/دقيقة</div>
   </div>
   <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120 ساعة</div>
-    <div class="pricing-rate">$0.012/دقيقة</div>
   </div>
 </div>
 
@@ -270,6 +264,25 @@ lang: ar
 </div>
 
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "ماذا يحدث لصوتي بعد النسخ؟", "acceptedAnswer": {"@type": "Answer", "text": "يختفي — نهائياً. يُعالج صوتك بالكامل في ذاكرة RAM الخادم (الذاكرة المتطايرة) ويُحذف فور تسليم النص المُحوَّل. لا توجد نسخة على القرص، ولا نسخة احتياطية، ولا طريقة لاستعادته. حتى الاستيلاء المادي على الخادم لن يكشف أي بيانات صوتية."}},
+    {"@type": "Question", "name": "هل تستخدمون تسجيلاتي لتدريب الذكاء الاصطناعي؟", "acceptedAnswer": {"@type": "Answer", "text": "بالتأكيد لا. يُستخدم صوتك لغرض واحد فقط: إنشاء نصك المُحوَّل. لا يُخزّن أبداً، ولا يُحلّل، ولا يُستخدم لتدريب أو تحسين النماذج. نشغّل بنيتنا التحتية الخاصة للذكاء الاصطناعي — بياناتك لا تذهب إلى أي خدمة ذكاء اصطناعي تابعة لطرف ثالث."}},
+    {"@type": "Question", "name": "هل تطّلعون على بيانات الدفع أو البطاقة؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. تتم جميع المدفوعات بالكامل عبر Apple App Store أو Google Play. نتلقى فقط إيصال شراء للتحقق من الرصيد — لا نطّلع أبداً على رقم بطاقتك أو أي تفاصيل دفع، ولا نستلمها أو نخزّنها."}},
+    {"@type": "Question", "name": "ما اللغات المدعومة؟", "acceptedAnswer": {"@type": "Answer", "text": "يدعم نموذج التعرف على الكلام مفتوح المصدر Whisper 99 لغة مع الكشف التلقائي للغة. يمكنك أيضاً تحديد اللغة يدوياً قبل النسخ لتحسين الدقة."}},
+    {"@type": "Question", "name": "ما صيغ الملفات التي يمكنني استخدامها؟", "acceptedAnswer": {"@type": "Answer", "text": "يتم دعم 40 صيغة — 22 صيغة صوتية (MP3 وWAV وFLAC وM4A وOGG وOpus وAAC وAIFF وAMR والمزيد) و18 صيغة فيديو (MP4 وMOV وMKV وAVI وWEBM و3GP والمزيد — يتم استخراج الصوت على جهازك قبل الرفع). ملفات تصل إلى 96 ميجابايت وحتى 6 ساعات."}},
+    {"@type": "Question", "name": "كيف تُشفّر بياناتي؟", "acceptedAnswer": {"@type": "Answer", "text": "أثناء النقل: تشفير TLS 1.3 يحمي بياناتك بين جهازك وخوادم SafeScribe. على جهازك: تُخزّن النصوص في حاويات مشفرة بـ AES-256 مع مفاتيح محمية بالعتاد الأمني في هاتفك (iOS Keychain / Android Keystore)."}},
+    {"@type": "Question", "name": "هل يمكنني حذف جميع بياناتي؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم. يمكنك حذف نصوص فردية أو حسابك بالكامل من داخل التطبيق. حذف الحساب يزيل نهائياً هوية تسجيل الدخول وجميع البيانات المحلية ورصيد الائتمان المتبقي. بما أن الخادم لا يحتفظ بأي بيانات شخصية بعد المعالجة، فلا يوجد شيء لحذفه من جانب الخادم."}},
+    {"@type": "Question", "name": "هل تسجّلون عنوان IP الخاص بي؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. لا تُخزَّن عناوين IP أو تُسجَّل أبداً. تفرض بنيتنا ذلك على مستوى الكود — يُهيَّأ نظام التسجيل صراحةً لحذف عناوين IP قبل وصولها إلى أي مخرج سجل. نستخدم معرّفاً مستعاراً (تجزئة SHA-256 أحادية الاتجاه لهوية تسجيل الدخول) لجميع العمليات الداخلية. لا يمكن عكس هذه التجزئة للكشف عن هويتك."}},
+    {"@type": "Question", "name": "كيف أتحقق من ادعاءات الخصوصية الخاصة بكم؟", "acceptedAnswer": {"@type": "Answer", "text": "ننشر البنية الأمنية وتقييم أثر حماية البيانات من أجل الشفافية التقنية. يمكنك أيضاً استخدام أداة تحليل الشبكة (مثل Wireshark) للتأكد من أن جميع حركة البيانات مشفرة بـ TLS — لا يظهر أي بريد إلكتروني أو اسم أو معرّف شخصي في أي طلب."}},
+    {"@type": "Question", "name": "كيف تُحسّن المعالجة المسبقة على الجهاز الدقة؟", "acceptedAnswer": {"@type": "Answer", "text": "قبل الرفع، يطبّق SafeScribe سلسلة مرشحات صوتية على جهازك: تصفية الترددات المنخفضة عند 80 Hz تُزيل الطنين وضوضاء الخلفية، وتطبيع مستوى الصوت LUFS (-16 LUFS) يُهيّئ مستويات الصوت لنموذج Whisper، وتحديد الذروة يمنع القصّ. بالاقتران مع كشف النشاط الصوتي على الخادم، يضمن ذلك الحصول على نص نظيف ودقيق حتى من التسجيلات الصعبة."}}
+  ]
+}
+</script>
 
 <span class="section-label">الأسئلة الشائعة</span>
 ## الأسئلة الشائعة
@@ -296,7 +309,7 @@ lang: ar
 
 <details class="faq-item">
   <summary>ما صيغ الملفات التي يمكنني استخدامها؟</summary>
-  <div class="faq-answer">يتم دعم <strong>40 صيغة</strong> — 22 صيغة صوتية (MP3 وWAV وFLAC وM4A وOGG وOpus وAAC وAIFF وAMR والمزيد) و18 صيغة فيديو (MP4 وMOV وMKV وAVI وWEBM و3GP والمزيد — يتم استخراج الصوت على جهازك قبل الرفع). ملفات تصل إلى 96 ميجابايت وحتى ساعتين.</div>
+  <div class="faq-answer">يتم دعم <strong>40 صيغة</strong> — 22 صيغة صوتية (MP3 وWAV وFLAC وM4A وOGG وOpus وAAC وAIFF وAMR والمزيد) و18 صيغة فيديو (MP4 وMOV وMKV وAVI وWEBM و3GP والمزيد — يتم استخراج الصوت على جهازك قبل الرفع). ملفات تصل إلى 96 ميجابايت وحتى 6 ساعات.</div>
 </details>
 
 <details class="faq-item">
@@ -326,12 +339,12 @@ lang: ar
 
 ---
 
-<div class="callout callout-info" style="margin-top:1.5rem;">
-  <p style="margin:0 0 0.5rem;"><strong>تصنيفات الخصوصية في متاجر التطبيقات</strong> — تصنيفات الخصوصية الخاصة بنا على App Store وGoogle Play تعكس بالضبط ما هو موثق هنا.</p>
-  <p style="margin:0;"><strong>الإفصاح المسؤول</strong> — اكتشفتَ ثغرة أمنية؟ راسلنا على <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</p>
+<div class="callout callout-info u-mt-15">
+  <p class="u-m0-b05"><strong>تصنيفات الخصوصية في متاجر التطبيقات</strong> — تصنيفات الخصوصية الخاصة بنا على App Store وGoogle Play تعكس بالضبط ما هو موثق هنا.</p>
+  <p class="u-m0"><strong>الإفصاح المسؤول</strong> — اكتشفتَ ثغرة أمنية؟ راسلنا على <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</p>
 </div>
 
-<p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:1rem;">يستخدم SafeScribe أوزان نموذج <a href="https://github.com/openai/whisper">Whisper</a> من OpenAI عبر مكتبة <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> مفتوحة المصدر (SYSTRAN، رخصة MIT). SafeScribe غير تابع لـ OpenAI ولا مُعتمَد أو مدعوم منها.</p>
+<p class="attribution-note">يستخدم SafeScribe أوزان نموذج <a href="https://github.com/openai/whisper">Whisper</a> من OpenAI عبر مكتبة <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> مفتوحة المصدر (SYSTRAN، رخصة MIT). SafeScribe غير تابع لـ OpenAI ولا مُعتمَد أو مدعوم منها.</p>
 
 ---
 

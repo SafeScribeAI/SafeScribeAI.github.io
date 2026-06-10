@@ -9,8 +9,8 @@ lang: en
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Most transcription apps keep your recordings for days.<br>SafeScribe keeps none.</p>
-  <p style="font-size:0.95rem;color:var(--color-text-secondary);margin:0 auto 1.5rem;max-width:520px;">Your audio is processed only in our server's memory (RAM), never written to disk, and deleted the moment you receive your text.</p>
-  <p style="font-size:0.85rem;color:var(--color-text-secondary);margin:0 auto 0;max-width:600px;font-style:italic;">Privacy isn't a policy here — it's how the system is built. Even under a court order, we'd have no audio, transcript, name, email, or IP to hand over — only a balance and usage record tied to a one-way hash, never to your identity.</p>
+  <p class="hero-body-text">Your audio is processed only in our server's memory (RAM), never written to disk, and deleted the moment you receive your text.</p>
+  <p class="hero-footnote">Privacy isn't a policy here — it's how the system is built. Even under a court order, we'd have no audio, transcript, name, email, or IP to hand over — only a balance and usage record tied to a one-way hash, never to your identity.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Get Started — See Pricing</a>
     <a class="cta-btn cta-btn-secondary" href="security">&#x1f6e1; How We Protect Your Data</a>
@@ -235,32 +235,26 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
   <div class="pricing-card" data-hours="1">
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1 hour</div>
-    <div class="pricing-rate">$0.0165/min</div>
   </div>
   <div class="pricing-card popular" data-hours="7">
     <div class="pricing-amount">$6.49</div>
     <div class="pricing-minutes">7 hours</div>
-    <div class="pricing-rate">$0.015/min</div>
   </div>
   <div class="pricing-card" data-hours="15">
     <div class="pricing-amount">$12.99</div>
     <div class="pricing-minutes">15 hours</div>
-    <div class="pricing-rate">$0.014/min</div>
   </div>
   <div class="pricing-card" data-hours="30">
     <div class="pricing-amount">$23.99</div>
     <div class="pricing-minutes">30 hours</div>
-    <div class="pricing-rate">$0.013/min</div>
   </div>
   <div class="pricing-card" data-hours="60">
     <div class="pricing-amount">$44.99</div>
     <div class="pricing-minutes">60 hours</div>
-    <div class="pricing-rate">$0.012/min</div>
   </div>
   <div class="pricing-card" data-hours="120">
     <div class="pricing-amount">$84.99</div>
     <div class="pricing-minutes">120 hours</div>
-    <div class="pricing-rate">$0.012/min</div>
   </div>
 </div>
 
@@ -279,7 +273,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
     {"@type": "Question", "name": "What happens to my audio after transcription?", "acceptedAnswer": {"@type": "Answer", "text": "It's gone permanently. Your audio is processed entirely in server RAM and deleted the instant your transcript is delivered. No disk copy, no backup, no recovery."}},
     {"@type": "Question", "name": "Do you use my recordings to train AI?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your audio is used only for generating your transcript. Never stored, analyzed, or used for model training. We run our own AI infrastructure."}},
     {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "The open-source Whisper model supports 99 languages with automatic detection. You can also manually select the language for improved accuracy."}},
-    {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "40 formats — 22 audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR and more) and 18 video (MP4, MOV, MKV, AVI, WEBM, 3GP and more) with audio extracted on-device. Files up to 96 MB and 2 hours."}},
+    {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "40 formats — 22 audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR and more) and 18 video (MP4, MOV, MKV, AVI, WEBM, 3GP and more) with audio extracted on-device. Files up to 96 MB and 6 hours."}},
     {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS 1.3 encryption in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
     {"@type": "Question", "name": "Do you log my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "No. IP addresses are never stored. The logging system drops IPs before any output. We use a one-way SHA-256 hash for internal operations."}}
   ]
@@ -311,7 +305,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 <details class="faq-item">
   <summary>What file formats can I use?</summary>
-  <div class="faq-answer"><strong>40 formats</strong> are supported — 22 audio formats (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR, and more) plus 18 video formats (MP4, MOV, MKV, AVI, WEBM, 3GP, and more — audio is extracted on your device before upload). Files up to 96 MB and up to 2 hours long.</div>
+  <div class="faq-answer"><strong>40 formats</strong> are supported — 22 audio formats (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR, and more) plus 18 video formats (MP4, MOV, MKV, AVI, WEBM, 3GP, and more — audio is extracted on your device before upload). Files up to 96 MB and up to 6 hours long.</div>
 </details>
 
 <details class="faq-item">
@@ -341,12 +335,12 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 ---
 
-<div class="callout callout-info" style="margin-top:1.5rem;">
-  <p style="margin:0 0 0.5rem;"><strong>App Store Privacy Labels</strong> — Our privacy nutrition labels on the App Store and Google Play reflect exactly what is documented here.</p>
-  <p style="margin:0;"><strong>Responsible Disclosure</strong> — Found a vulnerability? Contact <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</p>
+<div class="callout callout-info u-mt-15">
+  <p class="u-m0-b05"><strong>App Store Privacy Labels</strong> — Our privacy nutrition labels on the App Store and Google Play reflect exactly what is documented here.</p>
+  <p class="u-m0"><strong>Responsible Disclosure</strong> — Found a vulnerability? Contact <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>.</p>
 </div>
 
-<p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:1rem;">SafeScribe uses OpenAI's <a href="https://github.com/openai/whisper">Whisper</a> model weights via the open-source <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> library (SYSTRAN, MIT license). SafeScribe is not affiliated with, endorsed by, or sponsored by OpenAI.</p>
+<p class="attribution-note">SafeScribe uses OpenAI's <a href="https://github.com/openai/whisper">Whisper</a> model weights via the open-source <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> library (SYSTRAN, MIT license). SafeScribe is not affiliated with, endorsed by, or sponsored by OpenAI.</p>
 
 ---
 

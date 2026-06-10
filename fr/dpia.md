@@ -115,22 +115,22 @@ Un écran de consentement granulaire est présenté aux utilisateurs avant la pr
 <div class="infra-grid">
   <div class="infra-item">
     <div class="infra-icon">&#x1f3a4;</div>
-    <h4>Traitement Audio <em style="font-weight:400;font-size:0.8rem;">(obligatoire)</em></h4>
+    <h4>Traitement Audio <em class="u-label-light">(obligatoire)</em></h4>
     <p>Explique le traitement RAM uniquement, la suppression immédiate et que l'audio n'est jamais écrit sur disque ni partagé avec des tiers.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f4ca;</div>
-    <h4>Données Stockées <em style="font-weight:400;font-size:0.8rem;">(obligatoire)</em></h4>
+    <h4>Données Stockées <em class="u-label-light">(obligatoire)</em></h4>
     <p>Explique quelles données persistantes sont conservées : identifiant pseudonyme, solde de crédits et métadonnées d'utilisation anonymes.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
-    <h4>Confirmation d'Âge <em style="font-weight:400;font-size:0.8rem;">(obligatoire)</em></h4>
+    <h4>Confirmation d'Âge <em class="u-label-light">(obligatoire)</em></h4>
     <p>Confirme que l'utilisateur a 17 ans ou plus. Les cartes obligatoires doivent être acceptées pour continuer.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>
-    <h4>Rapports de Plantage <em style="font-weight:400;font-size:0.8rem;">(optionnel)</em></h4>
+    <h4>Rapports de Plantage <em class="u-label-light">(optionnel)</em></h4>
     <p>Permet l'opt-in aux rapports de plantage anonymes. Désactivé par défaut. Modifiable à tout moment depuis les Paramètres de Confidentialité.</p>
   </div>
 </div>

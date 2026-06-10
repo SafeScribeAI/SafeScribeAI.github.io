@@ -103,20 +103,20 @@ lang: ko
   <strong>언제든지 재설치 가능.</strong> 계정을 삭제하지 않고 앱을 삭제한 경우, 재설치 후 동일한 Google 또는 Apple 계정으로 로그인하면 전체 잔액과 접근 권한이 복원됩니다 — 추가 작업 불필요.
 </div>
 
-### 계정 삭제 — 잔여 데이터 없음
+### 계정 삭제 — 본인을 식별할 수 있는 것은 아무것도 남지 않습니다
 
-개인정보 보호 설정에서 계정을 삭제하면 모든 서버 측 기록이 영구적으로 제거됩니다:
+개인정보 보호 설정에서 계정을 삭제하면 본인의 신원과 연결된 모든 서버 측 기록이 영구적으로 제거됩니다:
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>가명 사용자 ID</strong><span class="item-desc">영구 삭제</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>가명 기기 식별자</strong><span class="item-desc">영구 삭제</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>크레딧 잔액</strong><span class="item-desc">영구 삭제</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>남은 무료 분</strong><span class="item-desc">영구 삭제</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>모든 작업별 통계</strong><span class="item-desc">영구 삭제</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>일일 백업이 24시간 이내 덮어쓰기</strong><span class="item-desc"><strong>어디에도 사본이 남지 않음</strong></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>남은 무료 시간</strong><span class="item-desc">영구 삭제</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>작업별 통계</strong><span class="item-desc">즉시 익명화 — 공용 DELETED_USER 표식으로 변경되며 2년 후 자동 삭제</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>가명 기기 식별자</strong><span class="item-desc">솔트 처리된 단방향 해시로 축소되어 최대 2년 보관 — 환영 크레딧 반복 악용을 차단하며, 역산하거나 본인과 연결할 수 없습니다</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>일일 백업</strong><span class="item-desc">24시간 이내 덮어쓰기 — 어디에도 식별 가능한 사본이 남지 않습니다</span></span></li>
 </ul>
 
-이것은 익명화가 아닙니다. 귀하의 기록은 집계되거나 수정된 형태로 남지 않습니다 — 삭제됩니다. 단일 일일 백업은 삭제 후 24시간 이내에 덮어쓰여지며, 이후 어떤 시스템에도 귀하의 데이터 사본은 존재하지 않습니다.
+삭제 시점에 본인 신원과의 모든 연결이 파기됩니다. <em>신원과 전혀 연결되지 않은</em> 두 가지 제한된 범주만 한시적으로 보관됩니다: 금융 기록(구매·사용 금액)은 DELETED_USER 표식으로 익명화되어 소비자 분쟁 소멸시효(터키 채권법 제146조)에 따라 2년간 보관되고, 솔트 처리된 단방향 기기 해시는 무료 크레딧 반복 지급을 막기 위해 최대 2년간 보관됩니다(GDPR 제6조 1항 (f), 정당한 이익). 둘 다 기간이 만료되면 자동으로 삭제됩니다. 유일한 일일 백업은 삭제 후 24시간 이내에 덮어쓰기됩니다.
 
 앱 내 삭제 작업은 GDPR 제17조 및 KVKK 제11조(e)에 따른 삭제권의 공식적인 행사입니다. 계정에 접근할 수 없는 경우 **privacy@safescribe.dev**로 연락하여 이메일로 삭제 요청을 제출하세요.
 

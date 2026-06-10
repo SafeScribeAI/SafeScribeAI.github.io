@@ -103,20 +103,20 @@ Estas são duas ações distintas com resultados diferentes:
   <strong>Reinstale quando quiser.</strong> Se você excluir o app sem excluir sua conta, reinstalar e entrar com a mesma conta Google ou Apple restaura seu saldo completo e acesso — sem nenhuma ação necessária.
 </div>
 
-### Exclusão de conta — Zero dados restantes
+### Exclusão de conta — Nada resta que identifique você
 
-Excluir sua conta nas Configurações de privacidade remove permanentemente cada registro do servidor:
+Excluir sua conta nas Configurações de privacidade remove permanentemente cada registro do servidor vinculado à sua identidade:
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>ID de usuário pseudônimo</strong><span class="item-desc">excluído permanentemente</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Identificador de dispositivo pseudônimo</strong><span class="item-desc">excluído permanentemente</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Saldo de crédito</strong><span class="item-desc">excluído permanentemente</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Saldo de créditos</strong><span class="item-desc">excluído permanentemente</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Minutos gratuitos restantes</strong><span class="item-desc">excluídos permanentemente</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Todas as estatísticas por trabalho</strong><span class="item-desc">excluídas permanentemente</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Backup diário substituído em 24 horas</strong><span class="item-desc"><strong>nenhuma cópia permanece em lugar algum</strong></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Estatísticas por tarefa</strong><span class="item-desc">anonimizadas imediatamente — reatribuídas ao marcador comum DELETED_USER, expurgadas automaticamente após 2 anos</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Identificador de dispositivo pseudônimo</strong><span class="item-desc">reduzido a um hash salgado de mão única mantido por até 2 anos — bloqueia o abuso repetido do crédito de boas-vindas, irreversível e sem vínculo com você</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Backup diário</strong><span class="item-desc">sobrescrito em 24 horas — nenhuma cópia identificável permanece em lugar algum</span></span></li>
 </ul>
 
-Isso não é anonimização. Seus registros não persistem em forma agregada ou modificada — eles são excluídos. O backup diário único é substituído dentro de 24 horas após a exclusão, após o qual nenhuma cópia dos seus dados existe em qualquer sistema.
+Todo vínculo com sua identidade é destruído no momento da exclusão. Duas categorias restritas persistem temporariamente <em>sem qualquer vínculo de identidade</em>: registros financeiros (valores de compra e uso) são anonimizados para o marcador DELETED_USER e mantidos por 2 anos conforme a prescrição de disputas de consumo (TBK art. 146); e um hash salgado de dispositivo é mantido por até 2 anos para impedir a concessão repetida de créditos gratuitos (art. 6(1)(f) do GDPR, interesse legítimo). Ambos são expurgados automaticamente ao fim do prazo. O único backup diário é sobrescrito em até 24 horas após a exclusão.
 
 O uso da exclusão no app constitui o exercício formal do seu direito de apagamento sob o GDPR Art. 17 e o KVKK Art. 11(e). Se não puder acessar sua conta, entre em contato com **privacy@safescribe.dev** para enviar uma solicitação de exclusão por e-mail.
 

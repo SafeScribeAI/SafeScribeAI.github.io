@@ -103,20 +103,20 @@ Bunlar farklı sonuçları olan iki ayrı işlemdir:
   <strong>İstediğiniz zaman yeniden yükleyin.</strong> Hesabınızı silmeden uygulamayı silerseniz, uygulamayı yeniden yükleyip aynı Google veya Apple hesabıyla giriş yaparak tam bakiyenize ve erişiminize kavuşursunuz — herhangi bir işlem gerekmez.
 </div>
 
-### Hesap Silme — Sıfır Veri Kalır
+### Hesap Silme — Kimliğinizi Gösteren Hiçbir Şey Kalmaz
 
-Gizlilik Ayarları'ndan hesabınızı silmek her sunucu taraflı kaydı kalıcı olarak kaldırır:
+Gizlilik Ayarları'ndan hesabınızı silmek, kimliğinizle bağlantılı her sunucu taraflı kaydı kalıcı olarak kaldırır:
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Takma adlı kullanıcı kimliği</strong><span class="item-desc">kalıcı olarak silindi</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Takma adlı cihaz tanımlayıcısı</strong><span class="item-desc">kalıcı olarak silindi</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kredi bakiyesi</strong><span class="item-desc">kalıcı olarak silindi</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kalan ücretsiz dakikalar</strong><span class="item-desc">kalıcı olarak silindi</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tüm iş başına istatistikler</strong><span class="item-desc">kalıcı olarak silindi</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Günlük yedek 24 saat içinde üstüne yazılır</strong><span class="item-desc"><strong>hiçbir yerde kopya kalmaz</strong></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Takma adlı kullanıcı kimliği</strong><span class="item-desc">kalıcı olarak silinir</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kredi bakiyesi</strong><span class="item-desc">kalıcı olarak silinir</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kalan ücretsiz dakikalar</strong><span class="item-desc">kalıcı olarak silinir</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>İş başına istatistikler</strong><span class="item-desc">anında anonimleştirilir — ortak DELETED_USER işaretine bağlanır, 2 yıl sonra otomatik temizlenir</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Takma adlı cihaz tanımlayıcısı</strong><span class="item-desc">tuzlanmış tek yönlü bir karmaya indirgenir ve en fazla 2 yıl tutulur — tekrarlı hoş geldin kredisi istismarını engeller, geri çevrilemez ve sizinle ilişkilendirilemez</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Günlük yedek</strong><span class="item-desc">24 saat içinde üstüne yazılır — hiçbir yerde kimlik içeren kopya kalmaz</span></span></li>
 </ul>
 
-Bu işlem anonimleştirme değildir. Kayıtlarınız toplu veya değiştirilmiş biçimde varlığını sürdürmez — silinir. Tek günlük yedek, silme işleminin ardından 24 saat içinde üstüne yazılır; ardından verilerinizin hiçbir sistemde hiçbir kopyası kalmaz.
+Silme anında kimliğinize giden her bağ yok edilir. İki dar kategori, <em>hiçbir kimlik bağı olmadan</em> sınırlı süre saklanır: finansal kayıtlar (satın alma ve kullanım tutarları) DELETED_USER işaretiyle anonimleştirilip tüketici uyuşmazlığı zamanaşımı (TBK m.146) gereği 2 yıl tutulur; tuzlanmış tek yönlü cihaz karması ise tekrarlı ücretsiz kredi istismarını önlemek için en fazla 2 yıl tutulur (GDPR m.6(1)(f) meşru menfaat). Her ikisi de süre dolunca otomatik temizlenir. Tek günlük yedek, silme işleminin ardından 24 saat içinde üstüne yazılır.
 
 Uygulama içi silme işlemi, GDPR Art. 17 ve KVKK Mad. 11(e) kapsamındaki silme hakkınızın resmi kullanımı niteliğindedir. Hesabınıza erişemiyorsanız, e-posta yoluyla silme talebinde bulunmak için **privacy@safescribe.dev** adresiyle iletişime geçin.
 

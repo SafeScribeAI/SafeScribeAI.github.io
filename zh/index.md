@@ -236,25 +236,26 @@ lang: zh
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1小时</div>
   </div>
-  <div class="pricing-card popular" data-hours="7">
-    <div class="pricing-amount">$6.49</div>
-    <div class="pricing-minutes">7小时</div>
+  <div class="pricing-card recommended" data-hours="8">
+    <div class="pricing-recommended-badge">推荐</div>
+    <div class="pricing-amount">$6.99</div>
+    <div class="pricing-minutes">8小时</div>
   </div>
-  <div class="pricing-card" data-hours="15">
+  <div class="pricing-card" data-hours="16">
     <div class="pricing-amount">$12.99</div>
-    <div class="pricing-minutes">15小时</div>
+    <div class="pricing-minutes">16小时</div>
   </div>
-  <div class="pricing-card" data-hours="30">
-    <div class="pricing-amount">$23.99</div>
-    <div class="pricing-minutes">30小时</div>
+  <div class="pricing-card" data-hours="32">
+    <div class="pricing-amount">$24.99</div>
+    <div class="pricing-minutes">32小时</div>
   </div>
-  <div class="pricing-card" data-hours="60">
+  <div class="pricing-card" data-hours="64">
     <div class="pricing-amount">$44.99</div>
-    <div class="pricing-minutes">60小时</div>
+    <div class="pricing-minutes">64小时</div>
   </div>
-  <div class="pricing-card" data-hours="120">
-    <div class="pricing-amount">$84.99</div>
-    <div class="pricing-minutes">120小时</div>
+  <div class="pricing-card" data-hours="128">
+    <div class="pricing-amount">$79.99</div>
+    <div class="pricing-minutes">128小时</div>
   </div>
 </div>
 

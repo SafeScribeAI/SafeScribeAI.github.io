@@ -236,25 +236,26 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1 heure</div>
   </div>
-  <div class="pricing-card popular" data-hours="7">
-    <div class="pricing-amount">$6.49</div>
-    <div class="pricing-minutes">7 heures</div>
+  <div class="pricing-card recommended" data-hours="8">
+    <div class="pricing-recommended-badge">Recommandé</div>
+    <div class="pricing-amount">$6.99</div>
+    <div class="pricing-minutes">8 heures</div>
   </div>
-  <div class="pricing-card" data-hours="15">
+  <div class="pricing-card" data-hours="16">
     <div class="pricing-amount">$12.99</div>
-    <div class="pricing-minutes">15 heures</div>
+    <div class="pricing-minutes">16 heures</div>
   </div>
-  <div class="pricing-card" data-hours="30">
-    <div class="pricing-amount">$23.99</div>
-    <div class="pricing-minutes">30 heures</div>
+  <div class="pricing-card" data-hours="32">
+    <div class="pricing-amount">$24.99</div>
+    <div class="pricing-minutes">32 heures</div>
   </div>
-  <div class="pricing-card" data-hours="60">
+  <div class="pricing-card" data-hours="64">
     <div class="pricing-amount">$44.99</div>
-    <div class="pricing-minutes">60 heures</div>
+    <div class="pricing-minutes">64 heures</div>
   </div>
-  <div class="pricing-card" data-hours="120">
-    <div class="pricing-amount">$84.99</div>
-    <div class="pricing-minutes">120 heures</div>
+  <div class="pricing-card" data-hours="128">
+    <div class="pricing-amount">$79.99</div>
+    <div class="pricing-minutes">128 heures</div>
   </div>
 </div>
 

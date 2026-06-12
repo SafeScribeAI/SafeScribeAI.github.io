@@ -236,25 +236,26 @@ lang: ko
     <div class="pricing-amount">$0.99</div>
     <div class="pricing-minutes">1시간</div>
   </div>
-  <div class="pricing-card popular" data-hours="7">
-    <div class="pricing-amount">$6.49</div>
-    <div class="pricing-minutes">7시간</div>
+  <div class="pricing-card recommended" data-hours="8">
+    <div class="pricing-recommended-badge">추천</div>
+    <div class="pricing-amount">$6.99</div>
+    <div class="pricing-minutes">8시간</div>
   </div>
-  <div class="pricing-card" data-hours="15">
+  <div class="pricing-card" data-hours="16">
     <div class="pricing-amount">$12.99</div>
-    <div class="pricing-minutes">15시간</div>
+    <div class="pricing-minutes">16시간</div>
   </div>
-  <div class="pricing-card" data-hours="30">
-    <div class="pricing-amount">$23.99</div>
-    <div class="pricing-minutes">30시간</div>
+  <div class="pricing-card" data-hours="32">
+    <div class="pricing-amount">$24.99</div>
+    <div class="pricing-minutes">32시간</div>
   </div>
-  <div class="pricing-card" data-hours="60">
+  <div class="pricing-card" data-hours="64">
     <div class="pricing-amount">$44.99</div>
-    <div class="pricing-minutes">60시간</div>
+    <div class="pricing-minutes">64시간</div>
   </div>
-  <div class="pricing-card" data-hours="120">
-    <div class="pricing-amount">$84.99</div>
-    <div class="pricing-minutes">120시간</div>
+  <div class="pricing-card" data-hours="128">
+    <div class="pricing-amount">$79.99</div>
+    <div class="pricing-minutes">128시간</div>
   </div>
 </div>
 

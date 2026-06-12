@@ -510,9 +510,22 @@ hr {
   box-shadow: var(--shadow-sm);
 }
 
-.pricing-card.popular {
+.pricing-card.recommended {
+  position: relative;
   border-color: var(--color-accent);
   box-shadow: 0 0 0 1px var(--color-accent), var(--shadow-md);
+}
+
+.pricing-recommended-badge {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 2px 8px;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .pricing-amount {

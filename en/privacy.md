@@ -81,9 +81,10 @@ lang: en
 | Data | Purpose |
 |------|---------|
 | Crash reports | App stability via SafeScribe's own crash reporting endpoint — all PII stripped before sending |
+| Feedback & problem reports | Product improvement — a rating, bug report, complaint or suggestion you choose to send. Free text is PII-stripped server-side before storage; kept only with your pseudonymous user hash (no name, email, or IP). Retained up to 24 months, then auto-purged. |
 
 <div class="callout callout-green">
-  <strong>The server never stores your name, email address, IP address, audio content, or transcript text.</strong> The only persistent records linked to your account are a non-reversible user hash, a pseudonymous device identifier, a credit balance, and usage statistics (numbers only — no content, no identity).
+  <strong>The server never stores your name, email address, IP address, audio content, or transcript text.</strong> The only persistent records linked to your account are a non-reversible user hash, a pseudonymous device identifier, a credit balance, usage statistics (numbers only — no content, no identity), and any feedback you choose to send (PII-stripped). If we reply to a report, the reply reaches you only as a one-time in-app message matched to your user hash — we never learn who you are.
 </div>
 
 ---

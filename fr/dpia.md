@@ -57,7 +57,7 @@ lang: fr
 
 <div class="flow-diagram">
 1. L'utilisateur enregistre ou sélectionne de l'audio sur son appareil
-2. Prétraitement audio côté appareil (filtre passe-haut 80 Hz, écrêtage du silence, normalisation de loudness à -16 LUFS, limitation de crête, rééchantillonnage 16 kHz, encodage FLAC)
+2. Prétraitement audio côté appareil (filtre passe-haut 80 Hz, normalisation de loudness à -16 LUFS, limitation de crête, rééchantillonnage 16 kHz, encodage FLAC)
 3. Envoi chiffré vers les serveurs SafeScribe (TLS 1.3)
 4. Traitement audio en RAM côté serveur — auto-hébergé, un modèle puissant de la famille Whisper via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, aucun appel API tiers
 5. Transcription retournée avec somme de contrôle d'intégrité SHA-256

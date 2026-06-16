@@ -28,7 +28,7 @@ lang: zh
   <a class="step u-plain-link" href="../en/resources/our-stack">
     <div class="step-icon">&#x1f9e9;</div>
     <h3>我们的开放架构</h3>
-    <p>SafeScribe 所基于的开源模型和基础设施——Whisper large-v3-turbo、Silero VAD、Cloudflare Tunnel 等。</p>
+    <p>SafeScribe 所基于的开源模型和基础设施——Whisper large-v3、Silero VAD、Cloudflare Tunnel 等。</p>
   </a>
 </div>
 

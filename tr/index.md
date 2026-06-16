@@ -208,7 +208,7 @@ Her ses dosyası, mümkün olan en yüksek doğruluğu sağlamak için optimize 
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>Cihazda Optimizasyon</h4>
-    <p>Yüksek geçişli filtreleme, baştaki sessizliğin kırpılması, LUFS ses normalizasyonu (-16 LUFS, ASR için optimize edilmiş), tepe sınırlama ve 16 kHz yeniden örnekleme — yüklemeden önce kayıpsız FLAC olarak kodlanır.</p>
+    <p>Yüksek geçişli filtreleme, LUFS ses normalizasyonu (-16 LUFS, ASR için optimize edilmiş), tepe sınırlama ve 16 kHz yeniden örnekleme — yüklemeden önce kayıpsız FLAC olarak kodlanır.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>

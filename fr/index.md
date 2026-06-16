@@ -208,7 +208,7 @@ Chaque fichier audio passe par un pipeline optimisé — sur votre appareil et s
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>Optimisation sur l'appareil</h4>
-    <p>Filtrage passe-haut, suppression des silences initiaux, normalisation de loudness LUFS (-16 LUFS, optimisé pour l'ASR), limitation des crêtes et rééchantillonnage à 16 kHz — encodé en FLAC sans perte avant l'envoi.</p>
+    <p>Filtrage passe-haut, normalisation de loudness LUFS (-16 LUFS, optimisé pour l'ASR), limitation des crêtes et rééchantillonnage à 16 kHz — encodé en FLAC sans perte avant l'envoi.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>

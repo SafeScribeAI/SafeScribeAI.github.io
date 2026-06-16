@@ -208,7 +208,7 @@ Every audio file passes through an optimized pipeline — on your device and on 
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>On-Device Optimization</h4>
-    <p>High-pass filtering, leading-silence trimming, LUFS loudness normalization (-16 LUFS, optimized for ASR), peak limiting, and 16 kHz resampling — encoded as lossless FLAC before upload.</p>
+    <p>High-pass filtering, LUFS loudness normalization (-16 LUFS, optimized for ASR), peak limiting, and 16 kHz resampling — encoded as lossless FLAC before upload.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>

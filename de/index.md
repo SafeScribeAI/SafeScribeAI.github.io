@@ -208,7 +208,7 @@ Jede Audiodatei durchläuft eine optimierte Verarbeitungspipeline — auf Ihrem 
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>Optimierung auf dem Gerät</h4>
-    <p>Hochpassfilterung, Stille-Entfernung am Anfang, LUFS-Lautheitsnormalisierung (-16 LUFS, optimiert für ASR), Peakbegrenzung und 16 kHz-Resampling — verlustfrei als FLAC kodiert vor dem Upload.</p>
+    <p>Hochpassfilterung, LUFS-Lautheitsnormalisierung (-16 LUFS, optimiert für ASR), Peakbegrenzung und 16 kHz-Resampling — verlustfrei als FLAC kodiert vor dem Upload.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>

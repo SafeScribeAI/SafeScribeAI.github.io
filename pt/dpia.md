@@ -57,7 +57,7 @@ lang: pt
 
 <div class="flow-diagram">
 1. O usuário grava ou seleciona áudio no dispositivo
-2. Pré-processamento de áudio no dispositivo (filtro passa-alta 80 Hz, corte de silêncio inicial, normalização de loudness a -16 LUFS, limitação de pico, reamostragem para 16 kHz, codificação FLAC)
+2. Pré-processamento de áudio no dispositivo (filtro passa-alta 80 Hz, normalização de loudness a -16 LUFS, limitação de pico, reamostragem para 16 kHz, codificação FLAC)
 3. Upload criptografado para os servidores SafeScribe (TLS 1.3)
 4. Servidor processa áudio na RAM — auto-hospedado, um poderoso modelo da família Whisper via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, sem chamadas a APIs de terceiros
 5. Transcrição retornada com checksum de integridade SHA-256

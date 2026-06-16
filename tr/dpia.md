@@ -57,7 +57,7 @@ lang: tr
 
 <div class="flow-diagram">
 1. Kullanıcı cihazında ses kaydeder veya seçer
-2. Ses cihazda ön işlemden geçer (80 Hz yüksek geçişli filtre, baştaki sessizlik kırpma, -16 LUFS hedefli ses normalizasyonu (konuşma için optimize edilmiş) — tepe sınırlama, 16 kHz yeniden örnekleme, FLAC kodlama)
+2. Ses cihazda ön işlemden geçer (80 Hz yüksek geçişli filtre, -16 LUFS hedefli ses normalizasyonu (konuşma için optimize edilmiş) — tepe sınırlama, 16 kHz yeniden örnekleme, FLAC kodlama)
 3. SafeScribe sunucularına şifreli yükleme (TLS 1.3)
 4. Sunucu sesi RAM'de işler — kendi barındırılan, <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2 aracılığıyla Whisper ailesinden güçlü bir model, üçüncü taraf API çağrısı yok
 5. Transkript SHA-256 bütünlük sağlamasıyla döndürülür

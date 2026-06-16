@@ -28,7 +28,7 @@ lang: ja
   <a class="step u-plain-link" href="../en/resources/our-stack">
     <div class="step-icon">&#x1f9e9;</div>
     <h3>オープンなアーキテクチャ</h3>
-    <p>SafeScribeが利用しているオープンソースのモデルとインフラ — Whisper large-v3-turbo、Silero VAD、Cloudflare Tunnelなど。</p>
+    <p>SafeScribeが利用しているオープンソースのモデルとインフラ — Whisper large-v3、Silero VAD、Cloudflare Tunnelなど。</p>
   </a>
 </div>
 

@@ -57,7 +57,7 @@ lang: ko
 
 <div class="flow-diagram">
 1. 사용자가 기기에서 오디오를 녹음하거나 선택
-2. 기기에서 오디오 전처리(80Hz 고역 통과 필터, 앞 묵음 트리밍, -16 LUFS 라우드니스 정규화, 피크 리미팅, 16kHz 리샘플링, FLAC 인코딩)
+2. 기기에서 오디오 전처리(80Hz 고역 통과 필터, -16 LUFS 라우드니스 정규화, 피크 리미팅, 16kHz 리샘플링, FLAC 인코딩)
 3. SafeScribe 서버에 암호화 업로드(TLS 1.3)
 4. 서버가 RAM에서 오디오 처리 — 자체 호스팅, <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2를 통한 Whisper 계열의 강력한 모델, 제3자 API 호출 없음
 5. SHA-256 무결성 체크섬과 함께 전사본 반환

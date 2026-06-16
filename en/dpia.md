@@ -57,7 +57,7 @@ lang: en
 
 <div class="flow-diagram">
 1. User records or selects audio on device
-2. Audio preprocessed on-device (80 Hz high-pass filter, leading-silence trimming, single-pass loudness normalization to -16 LUFS (speech-optimized, not broadcast-compliant) — peak limiting, 16 kHz resampling, FLAC encoding)
+2. Audio preprocessed on-device (80 Hz high-pass filter, loudness normalization to -16 LUFS (speech-optimized, not broadcast-compliant) — peak limiting, 16 kHz resampling, FLAC encoding)
 3. Encrypted upload to SafeScribe servers (TLS 1.3)
 4. Server processes audio in RAM — self-hosted, a powerful model from the Whisper family via <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> / CTranslate2, no third-party API calls
 5. Transcript returned with SHA-256 integrity checksum

@@ -208,7 +208,7 @@ lang: zh
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>设备端优化</h4>
-    <p>高通滤波、前置静音裁剪、LUFS响度归一化（-16 LUFS，针对ASR优化）、峰值限幅及16kHz重采样——以无损FLAC格式编码后上传。</p>
+    <p>高通滤波、LUFS响度归一化（-16 LUFS，针对ASR优化）、峰值限幅及16kHz重采样——以无损FLAC格式编码后上传。</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>

@@ -208,7 +208,7 @@ lang: ja
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>デバイス上での最適化</h4>
-    <p>ハイパスフィルタリング、先頭無音除去、LUFSラウドネス正規化（-16 LUFS、ASR向けに最適化）、ピークリミッティング、16 kHzリサンプリング — ロスレスFLACとしてエンコードしてからアップロード。</p>
+    <p>ハイパスフィルタリング、LUFSラウドネス正規化（-16 LUFS、ASR向けに最適化）、ピークリミッティング、16 kHzリサンプリング — ロスレスFLACとしてエンコードしてからアップロード。</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>

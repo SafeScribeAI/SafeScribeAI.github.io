@@ -28,7 +28,7 @@ lang: ar
   <a class="step u-plain-link" href="../en/resources/our-stack">
     <div class="step-icon">&#x1f9e9;</div>
     <h3>بنيتنا المفتوحة</h3>
-    <p>النماذج مفتوحة المصدر والبنية التحتية التي يعمل عليها SafeScribe — Whisper large-v3-turbo وSilero VAD وCloudflare Tunnel والمزيد.</p>
+    <p>النماذج مفتوحة المصدر والبنية التحتية التي يعمل عليها SafeScribe — Whisper large-v3 وSilero VAD وCloudflare Tunnel والمزيد.</p>
   </a>
 </div>
 

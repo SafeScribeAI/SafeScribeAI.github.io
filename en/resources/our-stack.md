@@ -15,11 +15,11 @@ lang: en
 <p>SafeScribe is closed-source, but the technology underneath is largely open. Where we use third-party components, we use them because they're auditable, peer-reviewed, and battle-tested — not because they were the easiest box to check. This page lists what we run and why.</p>
 
 <span class="section-label">Speech recognition</span>
-<h2>Whisper large-v3-turbo</h2>
+<h2>Whisper large-v3</h2>
 
-<p><strong>What it is.</strong> An open-source speech recognition model from <a href="https://github.com/openai/whisper" rel="noopener noreferrer">OpenAI Whisper</a>, supporting 99 languages with automatic detection. We run the <code>large-v3-turbo</code> variant compiled to CTranslate2 via <a href="https://github.com/SYSTRAN/faster-whisper" rel="noopener noreferrer">faster-whisper</a> for GPU efficiency.</p>
+<p><strong>What it is.</strong> An open-source speech recognition model from <a href="https://github.com/openai/whisper" rel="noopener noreferrer">OpenAI Whisper</a>, supporting 99 languages with automatic detection. We run the <code>large-v3</code> model compiled to CTranslate2 via <a href="https://github.com/SYSTRAN/faster-whisper" rel="noopener noreferrer">faster-whisper</a> for GPU efficiency.</p>
 
-<p><strong>Why this model.</strong> We benchmarked Whisper variants against the FLEURS evaluation set on representative languages and tracked both word error rate and per-stream throughput. The configuration we ship gave us roughly three times the throughput of plain <code>large-v3</code> at slightly lower error rates — the combination of production-grade accuracy and a reasonable per-minute cost we needed to make a privacy-first PAYG model viable. We can quote our parameters because we measured them ourselves on a modern data-center GPU, not because we copied a marketing chart.</p>
+<p><strong>Why this model.</strong> We benchmarked Whisper variants against the FLEURS evaluation set on representative languages and tracked both word error rate and per-stream throughput. We ship <code>large-v3</code> for its accuracy: the faster <code>large-v3-turbo</code> variant was evaluated and rejected because it measured higher word error rates on our language mix (notably Turkish) despite its throughput advantage — for a privacy-first product that never re-runs on your data, accuracy wins. We can quote our parameters because we measured them ourselves on a modern data-center GPU, not because we copied a marketing chart.</p>
 
 <span class="section-label u-mt-25">Voice activity detection</span>
 <h2>Silero VAD</h2>
@@ -31,7 +31,7 @@ lang: en
 <span class="section-label u-mt-25">On-device audio pipeline</span>
 <h2>FFmpeg via ffmpeg_kit_flutter_new_audio</h2>
 
-<p><strong>What it does.</strong> Every audio file is preprocessed on your device before upload — high-pass filtering at 80 Hz to remove rumble, leading-silence trimming, two-pass loudness normalization to −16 LUFS (the level whisper-style models prefer), peak limiting, and resampling to 16 kHz mono FLAC. The server only ever sees an already-optimized, lossless stream.</p>
+<p><strong>What it does.</strong> Every audio file is preprocessed on your device before upload — high-pass filtering at 80 Hz to remove rumble, loudness normalization to −16 LUFS (the level whisper-style models prefer), peak limiting, and resampling to 16 kHz mono FLAC. Silence and non-speech are handled downstream by Silero VAD rather than an amplitude gate. The server only ever sees an already-optimized, lossless stream.</p>
 
 <p><strong>Why on-device.</strong> The fewer transformations we do server-side, the smaller the surface area where things can go wrong with your data. Doing the work on your device also means a 50 MB raw video can become a 2 MB FLAC before it touches the network — better for your data plan, better for our bandwidth, equivalent quality.</p>
 

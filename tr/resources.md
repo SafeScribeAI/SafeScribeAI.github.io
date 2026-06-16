@@ -28,7 +28,7 @@ lang: tr
   <a class="step u-plain-link" href="../en/resources/our-stack">
     <div class="step-icon">&#x1f9e9;</div>
     <h3>Açık Mimarimiz</h3>
-    <p>SafeScribe'ın üstünde çalıştığı açık kaynak modeller ve altyapı — Whisper large-v3-turbo, Silero VAD, Cloudflare Tunnel ve fazlası.</p>
+    <p>SafeScribe'ın üstünde çalıştığı açık kaynak modeller ve altyapı — Whisper large-v3, Silero VAD, Cloudflare Tunnel ve fazlası.</p>
   </a>
 </div>
 

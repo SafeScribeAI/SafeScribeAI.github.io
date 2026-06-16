@@ -208,7 +208,7 @@ lang: ko
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f4f1;</div>
     <h4>기기 내 최적화</h4>
-    <p>하이패스 필터링, 앞부분 무음 제거, LUFS 라우드니스 정규화(-16 LUFS, ASR에 최적화), 피크 리미팅, 16 kHz 리샘플링 — 업로드 전 무손실 FLAC으로 인코딩.</p>
+    <p>하이패스 필터링, LUFS 라우드니스 정규화(-16 LUFS, ASR에 최적화), 피크 리미팅, 16 kHz 리샘플링 — 업로드 전 무손실 FLAC으로 인코딩.</p>
   </div>
   <div class="pipeline-step">
     <div class="pipeline-icon">&#x1f6e1;</div>

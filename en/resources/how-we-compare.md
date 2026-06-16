@@ -32,7 +32,7 @@ lang: en
     <tr>
       <td><strong>SafeScribe</strong></td>
       <td>Consumer mobile, privacy-first</td>
-      <td>$0.012 – $0.0165</td>
+      <td>$0.0104 – $0.0165</td>
       <td>RAM-only, zero retention, no training, OIDC-pseudonymous</td>
       <td>Hybrid (device preprocess + RAM-only cloud inference)</td>
       <td>PAYG (no subscription)</td>
@@ -145,7 +145,7 @@ lang: en
     <span class="check-mark">&#x2713;</span>
     <span class="item-body">
       <strong>On-device preprocessing is a real differentiator.</strong>
-      <span class="item-desc">Roughly all cloud competitors upload your raw audio. We optimize on your device first (loudness normalization, high-pass filtering, silence trimming, 16 kHz FLAC) so the server only ever sees an already-processed stream — and then forgets it.</span>
+      <span class="item-desc">Roughly all cloud competitors upload your raw audio. We optimize on your device first (loudness normalization, high-pass filtering, 16 kHz FLAC) so the server only ever sees an already-processed stream — and then forgets it.</span>
     </span>
   </li>
   <li>

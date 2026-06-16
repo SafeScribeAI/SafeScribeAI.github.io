@@ -28,7 +28,7 @@ lang: ko
   <a class="step u-plain-link" href="../en/resources/our-stack">
     <div class="step-icon">&#x1f9e9;</div>
     <h3>우리의 개방형 아키텍처</h3>
-    <p>SafeScribe가 기반으로 하는 오픈소스 모델과 인프라 — Whisper large-v3-turbo, Silero VAD, Cloudflare Tunnel 등.</p>
+    <p>SafeScribe가 기반으로 하는 오픈소스 모델과 인프라 — Whisper large-v3, Silero VAD, Cloudflare Tunnel 등.</p>
   </a>
 </div>
 

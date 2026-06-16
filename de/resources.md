@@ -28,7 +28,7 @@ lang: de
   <a class="step u-plain-link" href="../en/resources/our-stack">
     <div class="step-icon">&#x1f9e9;</div>
     <h3>Unsere offene Architektur</h3>
-    <p>Die Open-Source-Modelle und Infrastruktur, auf denen SafeScribe läuft — Whisper large-v3-turbo, Silero VAD, Cloudflare Tunnel und mehr.</p>
+    <p>Die Open-Source-Modelle und Infrastruktur, auf denen SafeScribe läuft — Whisper large-v3, Silero VAD, Cloudflare Tunnel und mehr.</p>
   </a>
 </div>
 

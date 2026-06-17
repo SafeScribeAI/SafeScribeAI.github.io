@@ -82,9 +82,10 @@ lang: de
 | Daten | Zweck |
 |-------|-------|
 | Absturzberichte | App-Stabilität über SafeScribes eigenen Absturzbericht-Endpunkt — alle personenbezogenen Daten vor der Übertragung entfernt |
+| Feedback & Problemberichte | Produktverbesserung — eine Bewertung, ein Fehlerbericht, eine Beschwerde oder ein Vorschlag, den Sie freiwillig senden. Freitext wird serverseitig vor der Speicherung von personenbezogenen Daten bereinigt; nur zusammen mit Ihrem pseudonymen Benutzer-Hash aufbewahrt (kein Name, keine E-Mail-Adresse, keine IP-Adresse). Bis zu 24 Monate aufbewahrt, danach automatisch gelöscht. |
 
 <div class="callout callout-green">
-  <strong>Der Server speichert niemals Ihren Namen, Ihre E-Mail-Adresse, Ihre IP-Adresse, Audioinhalte oder Transkripttexte.</strong> Die einzigen dauerhaften Datensätze, die mit Ihrem Konto verknüpft sind, bestehen aus einem nicht umkehrbaren Benutzer-Hash, einem pseudonymen Gerätebezeichner, einem Guthaben und Nutzungsstatistiken (nur Zahlen — keine Inhalte, keine Identität).
+  <strong>Der Server speichert niemals Ihren Namen, Ihre E-Mail-Adresse, Ihre IP-Adresse, Audioinhalte oder Transkripttexte.</strong> Die einzigen dauerhaften Datensätze, die mit Ihrem Konto verknüpft sind, bestehen aus einem nicht umkehrbaren Benutzer-Hash, einem pseudonymen Gerätebezeichner, einem Guthaben, Nutzungsstatistiken (nur Zahlen — keine Inhalte, keine Identität) und etwaigem Feedback, das Sie freiwillig senden (von personenbezogenen Daten bereinigt). Wenn wir auf einen Bericht antworten, erreicht Sie die Antwort nur als einmalige In-App-Nachricht, die Ihrem Benutzer-Hash zugeordnet ist — wir erfahren niemals, wer Sie sind.
 </div>
 
 ---

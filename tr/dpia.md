@@ -30,6 +30,7 @@ lang: tr
 | Uygulama içi satın alma | App Store / Play Store'dan IAP makbuzu | Mad. 6(1)(b) — Sözleşme ifası | Sözleşme ifası |
 | Yaş doğrulama | Kullanıcı beyanıyla yaş onayı (17+) | Mad. 8 GDPR / KVKK Mad. 6 | Yasal yükümlülük |
 | Kilitlenme raporlama | Anonimleştirilmiş hata raporları (katılım, KKV gizlenmiş) | Mad. 6(1)(a) — Rıza | Açık rıza |
+| Geri bildirim ve sorun raporları | Serbest metin (sunucu tarafında KKV gizlenmiş) + takma adlı kullanıcı kimliği; rapor türü ve uygulama tanılaması | Mad. 6(1)(a) — Rıza | Açık rıza |
 
 ### Veri envanteri
 
@@ -42,6 +43,7 @@ lang: tr
 | E-posta adresi | Yalnızca iletim — **saklanmıyor** |
 | IP adresleri | Yalnızca iletim — **günlüğe kaydedilmiyor** |
 | Kilitlenme raporları (katılım) | SafeScribe'ın kendi kilitlenme raporlama uç noktası — üçüncü taraflarla paylaşılmaz |
+| Geri bildirim ve sorun raporları (katılım) | Yalnızca KKV gizlenmiş serbest metin + takma adlı kullanıcı kimliği — en fazla 24 ay saklanır, ardından otomatik silinir |
 
 <p>Tam veri envanteri ayrıntıları için bkz. <a href="privacy#data-we-collect">Gizlilik Politikası § Topladığımız Veriler</a>.</p>
 

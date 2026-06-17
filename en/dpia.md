@@ -30,6 +30,7 @@ lang: en
 | In-app purchase | IAP receipt from App Store / Play Store | Art. 6(1)(b) — Contract performance | Contract performance |
 | Age confirmation | Self-declared age confirmation (17+) | Art. 8 GDPR / KVKK Art. 6 | Legal obligation |
 | Crash reporting | Anonymised error reports (opt-in, PII-redacted) | Art. 6(1)(a) — Consent | Explicit consent |
+| Feedback & problem reports | Free text (PII-stripped server-side) + pseudonymous user hash; report type and app diagnostics | Art. 6(1)(a) — Consent | Explicit consent |
 
 ### Data inventory
 
@@ -42,6 +43,7 @@ lang: en
 | Email address | Transit only — **not stored** |
 | IP addresses | Transit only — **not logged** |
 | Crash reports (opt-in) | SafeScribe's crash reporting endpoint — not shared with third parties |
+| Feedback & problem reports (opt-in) | PII-stripped free text + pseudonymous user hash only — retained up to 24 months, then auto-purged |
 
 <p>For complete data inventory details, see <a href="privacy#data-we-collect">Privacy Policy § Data We Collect</a>.</p>
 

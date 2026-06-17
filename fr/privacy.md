@@ -82,9 +82,10 @@ lang: fr
 | Données | Finalité |
 |---------|----------|
 | Rapports de plantage | Stabilité de l'application via le point de terminaison de rapport de plantage propre à SafeScribe — toutes les données personnelles supprimées avant transmission |
+| Retours et signalements de problèmes | Amélioration du produit — une évaluation, un rapport de bug, une réclamation ou une suggestion que vous choisissez d'envoyer. Le texte libre est expurgé des DCP côté serveur avant stockage ; conservé uniquement avec votre hachage utilisateur pseudonyme (sans nom, e-mail ni adresse IP). Conservé jusqu'à 24 mois, puis purgé automatiquement. |
 
 <div class="callout callout-green">
-  <strong>Le serveur ne stocke jamais votre nom, votre adresse e-mail, votre adresse IP, le contenu audio ou le texte de transcription.</strong> Les seuls enregistrements persistants liés à votre compte sont un hachage utilisateur non réversible, un identifiant d'appareil pseudonyme, un solde de crédits et des statistiques d'utilisation (chiffres uniquement — aucun contenu, aucune identité).
+  <strong>Le serveur ne stocke jamais votre nom, votre adresse e-mail, votre adresse IP, le contenu audio ou le texte de transcription.</strong> Les seuls enregistrements persistants liés à votre compte sont un hachage utilisateur non réversible, un identifiant d'appareil pseudonyme, un solde de crédits, des statistiques d'utilisation (chiffres uniquement — aucun contenu, aucune identité) et tout retour que vous choisissez d'envoyer (expurgé des DCP). Si nous répondons à un signalement, la réponse ne vous parvient que sous la forme d'un message unique dans l'application, rattaché à votre hachage utilisateur — nous ne savons jamais qui vous êtes.
 </div>
 
 ---

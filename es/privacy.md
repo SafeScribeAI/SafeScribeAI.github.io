@@ -82,9 +82,10 @@ lang: es
 | Datos | Finalidad |
 |-------|-----------|
 | Informes de fallos | Estabilidad de la app mediante el punto de conexión propio de SafeScribe para informes de fallos — todos los datos personales eliminados antes de la transmisión |
+| Comentarios e informes de problemas | Mejora del producto — una valoración, informe de error, queja o sugerencia que usted decide enviar. El texto libre se depura de datos personales (DCP) en el servidor antes de almacenarse; se conserva únicamente con su hash de usuario pseudónimo (sin nombre, correo electrónico ni IP). Retenido hasta 24 meses, luego purgado automáticamente. |
 
 <div class="callout callout-green">
-  <strong>El servidor nunca almacena su nombre, dirección de correo electrónico, dirección IP, contenido de audio ni texto de transcripción.</strong> Los únicos registros persistentes vinculados a su cuenta son un hash de usuario no reversible, un identificador de dispositivo pseudónimo, un saldo de crédito y estadísticas de uso (solo números — sin contenido, sin identidad).
+  <strong>El servidor nunca almacena su nombre, dirección de correo electrónico, dirección IP, contenido de audio ni texto de transcripción.</strong> Los únicos registros persistentes vinculados a su cuenta son un hash de usuario no reversible, un identificador de dispositivo pseudónimo, un saldo de crédito, estadísticas de uso (solo números — sin contenido, sin identidad) y cualquier comentario que usted decida enviar (con DCP eliminadas). Si respondemos a un informe, la respuesta le llega únicamente como un mensaje en la app de una sola vez, asociado a su hash de usuario — nunca llegamos a saber quién es usted.
 </div>
 
 ---

@@ -30,6 +30,7 @@ lang: de
 | In-App-Kauf | IAP-Beleg von App Store / Play Store | Art. 6(1)(b) — Vertragserfüllung | Vertragserfüllung |
 | Altersbestätigung | Selbstdeklarierte Altersbestätigung (17+) | Art. 8 DSGVO / KVKK Art. 6 | Rechtliche Verpflichtung |
 | Absturzberichte | Anonymisierte Fehlerberichte (Opt-in, PII-bereinigt) | Art. 6(1)(a) — Einwilligung | Ausdrückliche Einwilligung |
+| Feedback & Problemberichte | Freitext (serverseitig PII-bereinigt) + pseudonymer Benutzer-Hash; Berichtstyp und App-Diagnosedaten | Art. 6(1)(a) — Einwilligung | Ausdrückliche Einwilligung |
 
 ### Datenbestand
 
@@ -42,6 +43,7 @@ lang: de
 | E-Mail-Adresse | Nur Transit — **nicht gespeichert** |
 | IP-Adressen | Nur Transit — **nicht protokolliert** |
 | Absturzberichte (Opt-in) | SafeScribes eigener Absturzbericht-Endpunkt — keine Weitergabe an Dritte |
+| Feedback & Problemberichte (Opt-in) | Nur von personenbezogenen Daten bereinigter Freitext + pseudonymer Benutzer-Hash — bis zu 24 Monate aufbewahrt, danach automatisch gelöscht |
 
 <p>Vollständige Details zum Datenbestand finden Sie in der <a href="privacy#data-we-collect">Datenschutzerklärung § Daten, die wir erheben</a>.</p>
 

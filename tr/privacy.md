@@ -82,9 +82,10 @@ lang: tr
 | Veri | Amaç |
 |------|------|
 | Kilitlenme raporları | SafeScribe'ın kendi kilitlenme raporlama uç noktası aracılığıyla uygulama kararlılığı — iletimden önce tüm PII temizlenir |
+| Geri bildirim ve sorun raporları | Ürün geliştirme — göndermeyi seçtiğiniz bir puan, hata raporu, şikayet veya öneri. Serbest metin, saklanmadan önce sunucu tarafında PII'den arındırılır; yalnızca takma adlı kullanıcı karmanızla birlikte tutulur (ad, e-posta veya IP olmadan). En fazla 24 ay saklanır, ardından otomatik silinir. |
 
 <div class="callout callout-green">
-  <strong>Sunucu asla adınızı, e-posta adresinizi, IP adresinizi, ses içeriğinizi veya transkript metninizi saklamaz.</strong> Hesabınıza bağlı kalıcı kayıtlar yalnızca geri döndürülemez bir kullanıcı karması, takma adlı bir cihaz tanımlayıcısı, bir kredi bakiyesi ve kullanım istatistiklerinden (yalnızca sayılar — içerik yok, kimlik yok) oluşur.
+  <strong>Sunucu asla adınızı, e-posta adresinizi, IP adresinizi, ses içeriğinizi veya transkript metninizi saklamaz.</strong> Hesabınıza bağlı kalıcı kayıtlar yalnızca geri döndürülemez bir kullanıcı karması, takma adlı bir cihaz tanımlayıcısı, bir kredi bakiyesi, kullanım istatistikleri (yalnızca sayılar — içerik yok, kimlik yok) ve göndermeyi seçtiğiniz geri bildirimlerden (PII'den arındırılmış) oluşur. Bir rapora yanıt verirsek, yanıt size yalnızca kullanıcı karmanıza eşlenen tek seferlik bir uygulama içi mesaj olarak ulaşır — kim olduğunuzu asla öğrenmeyiz.
 </div>
 
 ---

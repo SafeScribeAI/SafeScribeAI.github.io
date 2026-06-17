@@ -30,6 +30,7 @@ lang: fr
 | Achat intégré | Reçu IAP de l'App Store / Play Store | Art. 6(1)(b) — Exécution du contrat | Exécution du contrat |
 | Confirmation d'âge | Confirmation d'âge déclarée (17+) | Art. 8 RGPD / Art. 6 KVKK | Obligation légale |
 | Rapports de plantage | Rapports d'erreurs anonymisés (opt-in, DCP supprimées) | Art. 6(1)(a) — Consentement | Consentement explicite |
+| Retours et signalements de problèmes | Texte libre (DCP supprimées côté serveur) + identifiant utilisateur pseudonyme ; type de signalement et diagnostics de l'application | Art. 6(1)(a) — Consentement | Consentement explicite |
 
 ### Inventaire des données
 
@@ -42,6 +43,7 @@ lang: fr
 | Adresse e-mail | Transit uniquement — **non stockée** |
 | Adresses IP | Transit uniquement — **non journalisées** |
 | Rapports de plantage (opt-in) | Point de terminaison de rapport de plantage de SafeScribe — non partagé avec des tiers |
+| Retours et signalements de problèmes (opt-in) | Texte libre expurgé des DCP + identifiant utilisateur pseudonyme uniquement — conservé jusqu'à 24 mois, puis purgé automatiquement |
 
 <p>Pour l'inventaire complet des données, voir <a href="privacy#data-we-collect">Politique de Confidentialité § Données que nous collectons</a>.</p>
 

@@ -30,6 +30,7 @@ lang: pt
 | Compra no app | Recibo IAP da App Store / Play Store | Art. 6(1)(b) — Execução de contrato | Execução de contrato |
 | Confirmação de idade | Confirmação de idade declarada (17+) | Art. 8 RGPD / Art. 6 KVKK | Obrigação legal |
 | Relatórios de falhas | Relatórios de erro anonimizados (opt-in, DCP removidas) | Art. 6(1)(a) — Consentimento | Consentimento explícito |
+| Feedback e relatórios de problemas | Texto livre (DCP removidas no servidor) + hash de usuário pseudônimo; tipo de relatório e diagnósticos do app | Art. 6(1)(a) — Consentimento | Consentimento explícito |
 
 ### Inventário de dados
 
@@ -42,6 +43,7 @@ lang: pt
 | Endereço de e-mail | Apenas trânsito — **não armazenado** |
 | Endereços IP | Apenas trânsito — **não registrados** |
 | Relatórios de falhas (opt-in) | Endpoint próprio de relatórios de falhas do SafeScribe — não compartilhado com terceiros |
+| Feedback e relatórios de problemas (opt-in) | Apenas texto livre com as DCP removidas + hash de usuário pseudônimo — retido por até 24 meses e, em seguida, expurgado automaticamente |
 
 <p>Para o inventário completo de dados, veja a <a href="privacy#data-we-collect">Política de Privacidade § Dados que coletamos</a>.</p>
 

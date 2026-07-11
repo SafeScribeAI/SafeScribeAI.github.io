@@ -7,23 +7,33 @@ Served via GitHub Pages at `https://safescribe.dev/`.
 ## Structure
 
 ```
-index.md                     Root redirect (language selector)
-_config.yml                  Jekyll config (title, description, url)
+index.md                     Root language selector
+404.html                     Custom 404 page
+robots.txt                   Crawler policy + sitemap pointer
+safescribe.svg               Favicon (single SVG)
+_config.yml                  Jekyll config (title, description, url, plugins)
 _data/
   i18n.yml                   Nav/footer label translations for all 10 languages
+  facts.yml                  Canonical numeric/pricing facts (pricing cards render from it)
 _layouts/
-  default.html               Layout: language-aware nav, footer, lang switcher
+  default.html               Layout: language-aware nav, footer, lang switcher, SEO/CSP
 assets/css/
   style.css                  Custom styles (dark/light mode, all components)
+assets/js/
+  main.js                    Nav toggle, lang dropdown, pricing save badges
 <lang>/                          10 languages: en tr de fr es pt ar zh ja ko
   index.md                   Home (How It Works, pricing, FAQ)
   privacy.md                 Privacy Policy
   security.md                Security Architecture
   dpia.md                    Data Protection Impact Assessment
   terms.md                   Terms of Use
+  resources.md               Resources hub (links to /en/resources/* deep pages)
+  whats-new.md               Release notes
+  support.md                 Support / contact
+en/resources/                English-only deep pages (how-we-compare, security-tradeoffs, our-stack)
 ```
 
-**Language coverage:** All 10 languages ship the full set of 5 pages.
+**Language coverage:** All 10 languages ship the full set of 8 pages; the three `en/resources/` deep pages are English-only.
 
 ## Adding a new language page
 
@@ -47,9 +57,9 @@ assets/css/
 ## Local preview
 
 ```bash
-gem install jekyll
-jekyll serve
+bundle install
+bundle exec jekyll serve
 # Open http://localhost:4000
 ```
 
-> **Note:** No `Gemfile` is included. If you need one for GitHub Actions or CI, create it with `gem 'jekyll'` and run `bundle exec jekyll serve` instead.
+The `Gemfile` pins the `github-pages` gem so local preview matches the exact Jekyll + plugin versions GitHub Pages builds with.

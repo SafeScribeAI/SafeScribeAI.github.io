@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.getElementById('nav-mobile-toggle');
   if (toggle) {
     toggle.addEventListener('click', function () {
-      toggle.closest('.site-header').classList.toggle('nav-open');
+      var open = toggle.closest('.site-header').classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
 

@@ -1,4 +1,5 @@
 en:
+  skip_to_content: "Skip to content"
   lang_name: "English"
   nav_home: "How It Works"
   nav_pricing: "Pricing"
@@ -20,6 +21,7 @@ en:
   link_support: "Support"
 
 tr:
+  skip_to_content: "İçeriğe atla"
   lang_name: "Türkçe"
   nav_home: "Nasıl Çalışır"
   nav_pricing: "Fiyatlar"
@@ -41,6 +43,7 @@ tr:
   link_support: "Destek"
 
 de:
+  skip_to_content: "Zum Inhalt springen"
   lang_name: "Deutsch"
   nav_home: "So funktioniert es"
   nav_pricing: "Preise"
@@ -62,6 +65,7 @@ de:
   link_support: "Support"
 
 fr:
+  skip_to_content: "Aller au contenu"
   lang_name: "Français"
   nav_home: "Comment ça marche"
   nav_pricing: "Tarifs"
@@ -83,6 +87,7 @@ fr:
   link_support: "Assistance"
 
 es:
+  skip_to_content: "Saltar al contenido"
   lang_name: "Español"
   nav_home: "Cómo funciona"
   nav_pricing: "Precios"
@@ -104,6 +109,7 @@ es:
   link_support: "Soporte"
 
 pt:
+  skip_to_content: "Pular para o conteúdo"
   lang_name: "Português"
   nav_home: "Como funciona"
   nav_pricing: "Preços"
@@ -125,6 +131,7 @@ pt:
   link_support: "Suporte"
 
 ar:
+  skip_to_content: "تخطي إلى المحتوى"
   lang_name: "العربية"
   nav_home: "كيف يعمل"
   nav_pricing: "الأسعار"
@@ -146,6 +153,7 @@ ar:
   link_support: "الدعم"
 
 zh:
+  skip_to_content: "跳到主要内容"
   lang_name: "中文"
   nav_home: "工作原理"
   nav_pricing: "定价"
@@ -167,6 +175,7 @@ zh:
   link_support: "支持"
 
 ja:
+  skip_to_content: "メインコンテンツにスキップ"
   lang_name: "日本語"
   nav_home: "使い方"
   nav_pricing: "料金"
@@ -188,6 +197,7 @@ ja:
   link_support: "サポート"
 
 ko:
+  skip_to_content: "본문 바로가기"
   lang_name: "한국어"
   nav_home: "사용 방법"
   nav_pricing: "요금제"

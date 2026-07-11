@@ -3,6 +3,17 @@
 {% assign i18n = site.data.i18n[lang] %}
 {% assign page_slug = page.path | split: '/' | last | remove: '.md' | remove: '.html' %}
 {% if page_slug == 'index' or page_slug == '' %}{% assign page_slug = 'index' %}{% endif %}
+{% assign path_parts = page.path | split: '/' %}
+{% assign skip_hreflang = false %}
+{% comment %} EN-only nested pages (en/resources/*) have no translations: the /{lang}/{slug} pattern would 404, so send the switcher to each locale's resources hub and emit no hreflang. Same skip for the 404 page (switcher goes home instead). {% endcomment %}
+{% if path_parts.size > 2 %}
+  {% assign page_slug = 'resources' %}
+  {% assign skip_hreflang = true %}
+{% endif %}
+{% if page_slug == '404' %}
+  {% assign page_slug = 'index' %}
+  {% assign skip_hreflang = true %}
+{% endif %}
 {% assign all_langs = 'en,tr,de,fr,es,pt,ar,zh,ja,ko' | split: ',' %}
 {% case lang %}
   {% when 'en' %}{% assign og_locale = 'en_US' %}
@@ -51,6 +62,7 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
   <!-- Hreflang (SEO: 10 languages) -->
+  {% unless skip_hreflang %}
   {% for switch_lang in all_langs %}
   {% if page_slug == 'index' %}
     {% assign switch_path = '/' | append: switch_lang | append: '/' %}
@@ -60,9 +72,10 @@
   <link rel="alternate" hreflang="{{ switch_lang }}" href="{{ switch_path | absolute_url }}">
   {% endfor %}
   <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
+  {% endunless %}
 
   <!-- JSON-LD: SoftwareApplication (AEO) -->
-  {% if page_slug == 'index' %}
+  {% if page_slug == 'index' and page.url != '/404.html' %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -78,7 +91,7 @@
       "priceCurrency": "USD",
       "availability": "https://schema.org/PreOrder",
       "category": "free download with optional in-app purchase",
-      "description": "Free download with optional pay-as-you-go credits starting at $0.99/hour"
+      "description": "Free download with optional pay-as-you-go credits starting at ${{ site.data.facts.packages[0].price_usd }}/hour"
     },
     "featureList": [
       "RAM-only audio processing",
@@ -96,6 +109,8 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+
+  <a class="skip-link" href="#main-content">{{ i18n.skip_to_content }}</a>
 
   <header class="site-header">
     <div class="site-header-inner">
@@ -126,11 +141,11 @@
           {% endfor %}
         </div>
       </details>
-      <button id="nav-mobile-toggle" class="nav-mobile-toggle" aria-label="Toggle menu">
+      <button id="nav-mobile-toggle" class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile-links">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav class="nav-mobile-links">
+    <nav id="nav-mobile-links" class="nav-mobile-links">
       <a href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ i18n.nav_home }}</a>
       <a href="{{ '/' | append: lang | append: '/#pricing' | relative_url }}">{{ i18n.nav_pricing }}</a>
       <a href="{{ '/' | append: lang | append: '/resources' | relative_url }}">{{ i18n.nav_resources }}</a>
@@ -155,7 +170,7 @@
     </nav>
   </header>
 
-  <main class="site-main">
+  <main id="main-content" class="site-main">
     <div class="content-wrapper">
       {{ content }}
     </div>

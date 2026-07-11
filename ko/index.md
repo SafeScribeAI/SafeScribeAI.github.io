@@ -232,29 +232,29 @@ lang: ko
 구독 없음. 숨겨진 수수료 없음. 크레딧을 구매하고 원할 때 사용하세요. 구독 서비스와 달리, 사용하지 않는 시간에 대해 비용을 지불할 필요가 없습니다. 모든 신규 계정은 2시간 무료 전사부터 시작합니다 — 신용카드 불필요.
 
 <div class="pricing-grid">
-  <div class="pricing-card" data-hours="1">
-    <div class="pricing-amount">$0.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[0].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[0].price_usd }}</div>
     <div class="pricing-minutes">1시간</div>
   </div>
-  <div class="pricing-card recommended" data-hours="8">
+  <div class="pricing-card recommended" data-hours="{{ site.data.facts.packages[1].hours }}">
     <div class="pricing-recommended-badge">추천</div>
-    <div class="pricing-amount">$6.99</div>
+    <div class="pricing-amount">${{ site.data.facts.packages[1].price_usd }}</div>
     <div class="pricing-minutes">8시간</div>
   </div>
-  <div class="pricing-card" data-hours="16">
-    <div class="pricing-amount">$12.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[2].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[2].price_usd }}</div>
     <div class="pricing-minutes">16시간</div>
   </div>
-  <div class="pricing-card" data-hours="32">
-    <div class="pricing-amount">$24.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[3].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[3].price_usd }}</div>
     <div class="pricing-minutes">32시간</div>
   </div>
-  <div class="pricing-card" data-hours="64">
-    <div class="pricing-amount">$44.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[4].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[4].price_usd }}</div>
     <div class="pricing-minutes">64시간</div>
   </div>
-  <div class="pricing-card" data-hours="128">
-    <div class="pricing-amount">$79.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[5].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[5].price_usd }}</div>
     <div class="pricing-minutes">128시간</div>
   </div>
 </div>

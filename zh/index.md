@@ -232,29 +232,29 @@ lang: zh
 无订阅。无隐藏费用。购买积分，随时使用。与订阅服务不同，您永远不会为未使用的时间付费。每个新账户均可获得2小时免费转录额度——无需信用卡。
 
 <div class="pricing-grid">
-  <div class="pricing-card" data-hours="1">
-    <div class="pricing-amount">$0.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[0].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[0].price_usd }}</div>
     <div class="pricing-minutes">1小时</div>
   </div>
-  <div class="pricing-card recommended" data-hours="8">
+  <div class="pricing-card recommended" data-hours="{{ site.data.facts.packages[1].hours }}">
     <div class="pricing-recommended-badge">推荐</div>
-    <div class="pricing-amount">$6.99</div>
+    <div class="pricing-amount">${{ site.data.facts.packages[1].price_usd }}</div>
     <div class="pricing-minutes">8小时</div>
   </div>
-  <div class="pricing-card" data-hours="16">
-    <div class="pricing-amount">$12.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[2].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[2].price_usd }}</div>
     <div class="pricing-minutes">16小时</div>
   </div>
-  <div class="pricing-card" data-hours="32">
-    <div class="pricing-amount">$24.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[3].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[3].price_usd }}</div>
     <div class="pricing-minutes">32小时</div>
   </div>
-  <div class="pricing-card" data-hours="64">
-    <div class="pricing-amount">$44.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[4].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[4].price_usd }}</div>
     <div class="pricing-minutes">64小时</div>
   </div>
-  <div class="pricing-card" data-hours="128">
-    <div class="pricing-amount">$79.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[5].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[5].price_usd }}</div>
     <div class="pricing-minutes">128小时</div>
   </div>
 </div>

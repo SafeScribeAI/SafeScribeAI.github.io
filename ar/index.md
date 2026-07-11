@@ -232,29 +232,29 @@ lang: ar
 لا اشتراكات. لا رسوم خفية. اشترِ رصيداً واستخدمه متى شئت. على عكس خدمات الاشتراك، لا تدفع أبداً مقابل وقت لا تستخدمه. كل حساب جديد يبدأ بساعتين مجانيتين من النسخ — بدون بطاقة.
 
 <div class="pricing-grid">
-  <div class="pricing-card" data-hours="1">
-    <div class="pricing-amount">$0.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[0].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[0].price_usd }}</div>
     <div class="pricing-minutes">ساعة واحدة</div>
   </div>
-  <div class="pricing-card recommended" data-hours="8">
+  <div class="pricing-card recommended" data-hours="{{ site.data.facts.packages[1].hours }}">
     <div class="pricing-recommended-badge">موصى به</div>
-    <div class="pricing-amount">$6.99</div>
+    <div class="pricing-amount">${{ site.data.facts.packages[1].price_usd }}</div>
     <div class="pricing-minutes">8 ساعات</div>
   </div>
-  <div class="pricing-card" data-hours="16">
-    <div class="pricing-amount">$12.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[2].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[2].price_usd }}</div>
     <div class="pricing-minutes">16 ساعة</div>
   </div>
-  <div class="pricing-card" data-hours="32">
-    <div class="pricing-amount">$24.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[3].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[3].price_usd }}</div>
     <div class="pricing-minutes">32 ساعة</div>
   </div>
-  <div class="pricing-card" data-hours="64">
-    <div class="pricing-amount">$44.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[4].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[4].price_usd }}</div>
     <div class="pricing-minutes">64 ساعة</div>
   </div>
-  <div class="pricing-card" data-hours="128">
-    <div class="pricing-amount">$79.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[5].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[5].price_usd }}</div>
     <div class="pricing-minutes">128 ساعة</div>
   </div>
 </div>

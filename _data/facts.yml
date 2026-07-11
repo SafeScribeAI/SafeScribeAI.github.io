@@ -1,13 +1,14 @@
 # Canonical numeric/pricing facts for SafeScribe — the SINGLE SOURCE for the marketing site.
 #
-# WHY: these numbers were previously hand-copied across 10 locale index.md files (+ README +
-# API spec), so a change to one (e.g. upload limit, price) silently went stale in the others.
-# Centralize here; render in each <lang>/index.md via Liquid {{ site.data.facts.* }} for the
-# NUMBERS (locale prose stays per-locale).
+# WHY: these numbers were hand-copied across 10 locale index.md files, so a change to one
+# (e.g. upload limit, price) silently went stale in the others.
 #
-# DRIFT GUARD: scripts/check_facts.py (repo root) asserts every value below equals its code
-# owner AND appears in each locale index.md. To change a fact: edit it HERE + the code owner,
-# then run `python3 scripts/check_facts.py` until green.
+# WIRED (rendered via Liquid — update HERE only): `packages` — every locale's pricing cards
+# read price + data-hours from {{ site.data.facts.packages[i].* }}.
+# NOT WIRED (still hand-copied — update all 10 locale index.md files when changing): prose
+# numbers (language_count, format counts, upload_max_mb, max_duration_hours, free_hours)
+# and the translated hour labels on pricing cards; some locales spell numbers out (e.g.
+# Arabic), so prose cannot be templated.
 #
 # Code owners (single source of truth per fact):
 #   price_per_minute_usd  -> backend/.env  PRICE_PER_MINUTE_USD

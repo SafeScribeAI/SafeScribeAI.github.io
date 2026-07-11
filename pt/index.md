@@ -232,29 +232,29 @@ Cada arquivo de áudio passa por um pipeline otimizado — no seu dispositivo e 
 Sem assinaturas. Sem taxas ocultas. Compre créditos e use quando quiser. Ao contrário dos serviços de assinatura, você nunca paga pelo tempo que não usa. Toda conta nova começa com 2 horas grátis de transcrição — sem cartão.
 
 <div class="pricing-grid">
-  <div class="pricing-card" data-hours="1">
-    <div class="pricing-amount">$0.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[0].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[0].price_usd }}</div>
     <div class="pricing-minutes">1 hora</div>
   </div>
-  <div class="pricing-card recommended" data-hours="8">
+  <div class="pricing-card recommended" data-hours="{{ site.data.facts.packages[1].hours }}">
     <div class="pricing-recommended-badge">Recomendado</div>
-    <div class="pricing-amount">$6.99</div>
+    <div class="pricing-amount">${{ site.data.facts.packages[1].price_usd }}</div>
     <div class="pricing-minutes">8 horas</div>
   </div>
-  <div class="pricing-card" data-hours="16">
-    <div class="pricing-amount">$12.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[2].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[2].price_usd }}</div>
     <div class="pricing-minutes">16 horas</div>
   </div>
-  <div class="pricing-card" data-hours="32">
-    <div class="pricing-amount">$24.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[3].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[3].price_usd }}</div>
     <div class="pricing-minutes">32 horas</div>
   </div>
-  <div class="pricing-card" data-hours="64">
-    <div class="pricing-amount">$44.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[4].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[4].price_usd }}</div>
     <div class="pricing-minutes">64 horas</div>
   </div>
-  <div class="pricing-card" data-hours="128">
-    <div class="pricing-amount">$79.99</div>
+  <div class="pricing-card" data-hours="{{ site.data.facts.packages[5].hours }}">
+    <div class="pricing-amount">${{ site.data.facts.packages[5].price_usd }}</div>
     <div class="pricing-minutes">128 horas</div>
   </div>
 </div>

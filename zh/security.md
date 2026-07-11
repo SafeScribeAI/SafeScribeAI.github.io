@@ -66,6 +66,7 @@ lang: zh
 
 <span class="section-label">第一层</span>
 ## 传输安全
+{: #layer-1}
 
 | 保护措施 | 防范内容 |
 |---------|---------|
@@ -80,6 +81,7 @@ lang: zh
 
 <span class="section-label">第二层</span>
 ## 服务器仅 RAM 处理
+{: #layer-2}
 
 这是 SafeScribe 隐私设计的核心。服务器通过自托管推理引擎 <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> 运行 OpenAI Whisper 模型权重——不调用任何第三方 API。数据存储配置为完全易失性操作，不向磁盘持久化任何数据。
 
@@ -115,6 +117,7 @@ lang: zh
 
 <span class="section-label">第三层</span>
 ## 假名身份
+{: #layer-3}
 
 SafeScribe 使用 Google 登录和 Sign in with Apple。您的个人数据从不存储：
 
@@ -140,6 +143,7 @@ SafeScribe 使用 Google 登录和 Sign in with Apple。您的个人数据从不
 
 <span class="section-label">第四层</span>
 ## 本地加密
+{: #layer-4}
 
 存储在设备上的转录文本受以下保护：
 
@@ -155,6 +159,7 @@ SafeScribe 使用 Google 登录和 Sign in with Apple。您的个人数据从不
 
 <span class="section-label">第五层</span>
 ## 诊断数据中的个人信息清除
+{: #layer-5}
 
 应用遇到错误时，可选择性发送崩溃报告。报告离开设备前，以下内容会自动清除：
 
@@ -172,6 +177,7 @@ SafeScribe 使用 Google 登录和 Sign in with Apple。您的个人数据从不
 
 <span class="section-label">第六层</span>
 ## 级联删除
+{: #layer-6}
 
 每个处理步骤立即删除上一步骤的数据：音频在转录后删除，转录文本在确认后删除。<a href="#your-datas-journey">数据流图</a>展示了包含所有删除节点的完整流程。
 

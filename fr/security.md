@@ -66,6 +66,7 @@ La différence fondamentale : même en cas de saisie physique du serveur, aucune
 
 <span class="section-label">Couche 1</span>
 ## Sécurité du Transport
+{: #layer-1}
 
 | Protection | Ce qui est empêché |
 |------------|-------------------|
@@ -80,6 +81,7 @@ La différence fondamentale : même en cas de saisie physique du serveur, aucune
 
 <span class="section-label">Couche 2</span>
 ## Traitement Serveur en RAM uniquement
+{: #layer-2}
 
 C'est le cœur de la conception Privacy by Design de SafeScribe. Le serveur exécute les poids du modèle Whisper d'OpenAI via le moteur d'inférence auto-hébergé <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> — aucun appel à une API tierce. Le stockage des données est configuré en mode purement volatile, sans aucune persistance sur disque.
 
@@ -115,6 +117,7 @@ C'est le cœur de la conception Privacy by Design de SafeScribe. Le serveur exé
 
 <span class="section-label">Couche 3</span>
 ## Identité Pseudonyme
+{: #layer-3}
 
 SafeScribe utilise Google Sign-In et Sign in with Apple. Vos données personnelles ne sont jamais stockées :
 
@@ -140,6 +143,7 @@ Le hachage unidirectionnel de votre identifiant :
 
 <span class="section-label">Couche 4</span>
 ## Chiffrement Local
+{: #layer-4}
 
 Les transcriptions stockées sur votre appareil sont protégées par :
 
@@ -155,6 +159,7 @@ Même avec un accès direct au système de fichiers, les données de transcripti
 
 <span class="section-label">Couche 5</span>
 ## Suppression des DCP dans les Diagnostics
+{: #layer-5}
 
 Si l'application rencontre une erreur, un rapport de plantage peut optionnellement être envoyé. Avant de quitter votre appareil, les éléments suivants sont automatiquement supprimés :
 
@@ -172,6 +177,7 @@ Vous pouvez désactiver entièrement les rapports de plantage dans les paramètr
 
 <span class="section-label">Couche 6</span>
 ## Suppression en Cascade
+{: #layer-6}
 
 Chaque étape de traitement supprime immédiatement les données de l'étape précédente : l'audio est supprimé après la transcription, la transcription est supprimée après confirmation. Le <a href="#your-datas-journey">schéma de flux des données</a> présente l'ensemble du processus avec tous les points de suppression.
 

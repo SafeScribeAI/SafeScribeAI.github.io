@@ -19,6 +19,7 @@ lang: en
 
 <span class="section-label">What We Never Do</span>
 ## Data We Don't Collect or Store
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> Store audio on disk — ever</li>
@@ -124,6 +125,7 @@ Using the in-app deletion constitutes your formal exercise of the right to erasu
 
 <span class="section-label">Audio Processing</span>
 ## Zero Disk Policy
+{: #zero-disk}
 
 <div class="flow-diagram">
 Your audio:  Upload --> RAM --> AI transcription --> Deliver --> DELETE
@@ -144,6 +146,7 @@ Our disk:    Balance records only — no audio, no transcript, no email
 
 <span class="section-label">Authentication</span>
 ## Sign-In via Google or Apple
+{: #sign-in}
 
 We use OpenID Connect (OIDC) via Google Sign-In and Sign in with Apple.
 
@@ -159,6 +162,7 @@ We do not access your contacts, calendar, or any other account data.
 
 <span class="section-label">Payments</span>
 ## Billing via App Stores
+{: #billing}
 
 Payments are processed entirely by Apple App Store or Google Play Store. SafeScribe **never receives, stores, or processes** credit card numbers or payment details. We receive only a purchase receipt for balance verification.
 
@@ -183,6 +187,7 @@ Before any report is transmitted, the following are automatically removed:
 
 <span class="section-label">Third Parties</span>
 ## Third-Party Services
+{: #third-parties}
 
 We use the following services. No audio, transcript content, or personal information beyond what is noted is shared with any third party.
 
@@ -213,6 +218,7 @@ Providing data for transcription, authentication, and billing is **required** to
 
 <span class="section-label">Your Rights</span>
 ## What You Can Do
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Access</strong><span class="item-desc">view all your transcripts in the app at any time</span></span></li>

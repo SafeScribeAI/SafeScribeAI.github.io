@@ -19,7 +19,7 @@ lang: ko
 
 <span class="section-label">절대 하지 않는 것</span>
 ## 수집하거나 저장하지 않는 데이터
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> 오디오를 디스크에 저장하는 것 — 절대로</li>
@@ -125,6 +125,7 @@ lang: ko
 
 <span class="section-label">오디오 처리</span>
 ## 제로 디스크 정책
+{: #zero-disk}
 
 <div class="flow-diagram">
 오디오:  업로드 --> RAM --> AI 전사 --> 전달 --> 삭제
@@ -145,6 +146,7 @@ lang: ko
 
 <span class="section-label">인증</span>
 ## Google 또는 Apple로 로그인
+{: #sign-in}
 
 Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용합니다.
 
@@ -160,6 +162,7 @@ Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용�
 
 <span class="section-label">결제</span>
 ## 앱 스토어를 통한 청구
+{: #billing}
 
 결제는 Apple App Store 또는 Google Play Store에서 전적으로 처리합니다. SafeScribe는 신용카드 번호나 결제 정보를 **수신, 저장 또는 처리하지 않습니다**. 잔액 확인을 위한 구매 영수증만 수신합니다.
 
@@ -184,6 +187,7 @@ Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용�
 
 <span class="section-label">제3자</span>
 ## 제3자 서비스
+{: #third-parties}
 
 다음 서비스를 사용합니다. 명시된 내용 외의 오디오, 전사 내용 또는 개인 정보는 제3자와 공유되지 않습니다.
 
@@ -214,6 +218,7 @@ Google Sign-In 및 Sign in with Apple을 통해 OpenID Connect (OIDC)를 사용�
 
 <span class="section-label">귀하의 권리</span>
 ## 할 수 있는 것
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>접근</strong><span class="item-desc">언제든지 앱에서 모든 전사 결과 확인</span></span></li>

@@ -68,6 +68,7 @@ The difference: even if a server were physically seized, there would be no audio
 
 <span class="section-label">Layer 1</span>
 ## Transport Security
+{: #layer-1}
 
 | Protection | What It Prevents |
 |------------|-----------------|
@@ -82,6 +83,7 @@ The difference: even if a server were physically seized, there would be no audio
 
 <span class="section-label">Layer 2</span>
 ## RAM-Only Server Processing
+{: #layer-2}
 
 This is the core of SafeScribe's privacy design. The server runs OpenAI's Whisper model weights via the self-hosted <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> inference engine — no third-party API calls. The data store is configured for memory-only operation with no disk persistence whatsoever. Every piece of data has an automatic expiry as a failsafe.
 
@@ -117,6 +119,7 @@ This is the core of SafeScribe's privacy design. The server runs OpenAI's Whispe
 
 <span class="section-label">Layer 3</span>
 ## Pseudonymous Identity
+{: #layer-3}
 
 SafeScribe uses Google Sign-In and Apple Sign-In for authentication. Your personal details are never stored:
 
@@ -142,6 +145,7 @@ The one-way hash of your account identifier:
 
 <span class="section-label">Layer 4</span>
 ## Local Encryption
+{: #layer-4}
 
 Transcripts stored on your device are protected by:
 
@@ -157,6 +161,7 @@ Even if someone accesses your device's file system, transcript data appears as e
 
 <span class="section-label">Layer 5</span>
 ## PII Redaction in Diagnostics
+{: #layer-5}
 
 When the app encounters an error, an optional crash report can be sent. Before any report leaves your device, the following are automatically removed:
 
@@ -174,6 +179,7 @@ You can opt out of crash reporting entirely in the app's Privacy Settings.
 
 <span class="section-label">Layer 6</span>
 ## Cascade Deletion
+{: #layer-6}
 
 SafeScribe implements immediate cascade deletion — each processing step triggers deletion of the previous step's data:
 

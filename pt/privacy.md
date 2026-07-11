@@ -19,7 +19,7 @@ lang: pt
 
 <span class="section-label">O que nunca fazemos</span>
 ## Dados que não coletamos nem armazenamos
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> Armazenar áudio em disco — jamais</li>
@@ -125,6 +125,7 @@ O uso da exclusão no app constitui o exercício formal do seu direito de apagam
 
 <span class="section-label">Processamento de áudio</span>
 ## Política de disco zero
+{: #zero-disk}
 
 <div class="flow-diagram">
 Seu áudio:  Upload --> RAM --> Transcrição IA --> Entrega --> EXCLUSÃO
@@ -145,6 +146,7 @@ Nosso disco:  Apenas registros de saldo — sem áudio, sem transcrição, sem e
 
 <span class="section-label">Autenticação</span>
 ## Login com Google ou Apple
+{: #sign-in}
 
 Usamos OpenID Connect (OIDC) via Google Sign-In e Sign in with Apple.
 
@@ -160,6 +162,7 @@ Não acessamos seus contatos, calendário ou outros dados da conta.
 
 <span class="section-label">Pagamentos</span>
 ## Cobrança via App Stores
+{: #billing}
 
 Os pagamentos são processados inteiramente pela Apple App Store ou Google Play Store. O SafeScribe **nunca recebe, armazena ou processa** números de cartão de crédito ou detalhes de pagamento. Recebemos apenas um recibo de compra para verificação de saldo.
 
@@ -184,6 +187,7 @@ Antes de qualquer relatório ser transmitido, os seguintes dados são removidos 
 
 <span class="section-label">Terceiros</span>
 ## Serviços de terceiros
+{: #third-parties}
 
 Usamos os seguintes serviços. Nenhum áudio, conteúdo de transcrição ou informação pessoal além do indicado é compartilhado com terceiros.
 
@@ -214,6 +218,7 @@ Fornecer dados para transcrição, autenticação e cobrança é **obrigatório*
 
 <span class="section-label">Seus direitos</span>
 ## O que você pode fazer
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Acessar</strong><span class="item-desc">visualizar todas as suas transcrições no app a qualquer momento</span></span></li>

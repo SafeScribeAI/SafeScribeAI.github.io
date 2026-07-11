@@ -66,6 +66,7 @@ Der entscheidende Unterschied: Selbst bei einer physischen Beschlagnahme des Ser
 
 <span class="section-label">Ebene 1</span>
 ## Transportsicherheit
+{: #layer-1}
 
 | Schutzmaßnahme | Was verhindert wird |
 |----------------|---------------------|
@@ -80,6 +81,7 @@ Der entscheidende Unterschied: Selbst bei einer physischen Beschlagnahme des Ser
 
 <span class="section-label">Ebene 2</span>
 ## Nur-RAM-Serververarbeitung
+{: #layer-2}
 
 Dies ist das Herzstück des SafeScribe-Datenschutzdesigns. Der Server führt OpenAIs Whisper-Modellgewichte über die selbst gehostete <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a>-Inferenzengine aus — keine Drittanbieter-API-Aufrufe. Der Datenspeicher ist für rein flüchtigen Betrieb ohne Festplattenpersistenz konfiguriert.
 
@@ -115,6 +117,7 @@ Dies ist das Herzstück des SafeScribe-Datenschutzdesigns. Der Server führt Ope
 
 <span class="section-label">Ebene 3</span>
 ## Pseudonyme Identität
+{: #layer-3}
 
 SafeScribe nutzt Google Sign-In und Sign in with Apple. Ihre persönlichen Daten werden nie gespeichert:
 
@@ -140,6 +143,7 @@ Der Einweg-Hash Ihrer Konto-ID:
 
 <span class="section-label">Ebene 4</span>
 ## Lokale Verschlüsselung
+{: #layer-4}
 
 Auf Ihrem Gerät gespeicherte Transkripte sind geschützt durch:
 
@@ -155,6 +159,7 @@ Selbst bei direktem Zugriff auf das Dateisystem erscheinen Transkriptdaten als u
 
 <span class="section-label">Ebene 5</span>
 ## PII-Entfernung in Diagnosedaten
+{: #layer-5}
 
 Wenn die App auf einen Fehler stößt, kann optional ein Absturzbericht gesendet werden. Vor dem Verlassen Ihres Geräts werden folgende Daten automatisch entfernt:
 
@@ -172,6 +177,7 @@ In den App-Datenschutzeinstellungen können Sie Absturzberichte vollständig dea
 
 <span class="section-label">Ebene 6</span>
 ## Kaskadenlöschung
+{: #layer-6}
 
 Jeder Verarbeitungsschritt löscht die Daten des vorherigen Schritts sofort: Audio wird nach der Transkription gelöscht, Transkript wird nach der Bestätigung gelöscht. Das <a href="#your-datas-journey">Datenflussdiagramm</a> zeigt den gesamten Ablauf mit allen Löschpunkten.
 

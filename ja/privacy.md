@@ -19,7 +19,7 @@ lang: ja
 
 <span class="section-label">絶対にしないこと</span>
 ## 収集・保存しないデータ
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> 音声をディスクに保存する — 絶対に</li>
@@ -125,6 +125,7 @@ lang: ja
 
 <span class="section-label">音声処理</span>
 ## ゼロディスクポリシー
+{: #zero-disk}
 
 <div class="flow-diagram">
 音声：  アップロード --> RAM --> AI文字起こし --> 配信 --> 削除
@@ -145,6 +146,7 @@ lang: ja
 
 <span class="section-label">認証</span>
 ## GoogleまたはAppleでサインイン
+{: #sign-in}
 
 Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用しています。
 
@@ -160,6 +162,7 @@ Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用して
 
 <span class="section-label">支払い</span>
 ## アプリストア経由の課金
+{: #billing}
 
 支払いはApple App StoreまたはGoogle Play Storeが完全に処理します。SafeScribeはクレジットカード番号や支払い詳細を**受け取り、保存、または処理することは一切ありません**。残高確認のために購入レシートのみを受け取ります。
 
@@ -184,6 +187,7 @@ Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用して
 
 <span class="section-label">第三者サービス</span>
 ## 第三者サービス
+{: #third-parties}
 
 当社は以下のサービスを使用しています。記載された内容を超えた音声、文字起こしコンテンツ、または個人情報は、いかなる第三者とも共有されません。
 
@@ -214,6 +218,7 @@ Google Sign-InとSign in with AppleによるOpenID Connect (OIDC)を使用して
 
 <span class="section-label">お客様の権利</span>
 ## お客様にできること
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>アクセス</strong><span class="item-desc">いつでもアプリ内ですべての文字起こしを確認</span></span></li>

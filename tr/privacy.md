@@ -19,7 +19,7 @@ lang: tr
 
 <span class="section-label">Yapmadıklarımız</span>
 ## Toplamadığımız veya Saklamadığımız Veriler
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> Sesi diske kaydetmek — hiçbir zaman</li>
@@ -125,6 +125,7 @@ Uygulama içi silme işlemi, GDPR Art. 17 ve KVKK Mad. 11(e) kapsamındaki silme
 
 <span class="section-label">Ses İşleme</span>
 ## Sıfır Disk Politikası
+{: #zero-disk}
 
 <div class="flow-diagram">
 Sesiniz:  Yükleme --> RAM --> Yapay Zeka Transkripsiyonu --> Teslim --> SİL
@@ -146,6 +147,7 @@ Diskimiz: Yalnızca bakiye kayıtları — ses, transkript veya e-posta yok
 
 <span class="section-label">Kimlik Doğrulama</span>
 ## Google veya Apple ile Giriş
+{: #sign-in}
 
 OpenID Connect (OIDC) aracılığıyla Google Sign-In ve Sign in with Apple kullanıyoruz.
 
@@ -161,6 +163,7 @@ Kişi listenize, takviminize veya diğer hesap verilerinize erişmiyoruz.
 
 <span class="section-label">Ödemeler</span>
 ## Uygulama Mağazaları Üzerinden Faturalandırma
+{: #billing}
 
 Ödemeler tamamen Apple App Store veya Google Play Store tarafından işlenir. SafeScribe kredi kartı numarası veya ödeme bilgisi hiçbir zaman **almaz, saklamaz veya işlemez**. Bakiye doğrulaması için yalnızca bir satın alma makbuzu alırız.
 
@@ -185,6 +188,7 @@ Herhangi bir rapor iletilmeden önce şunlar otomatik olarak kaldırılır:
 
 <span class="section-label">Üçüncü Taraflar</span>
 ## Üçüncü Taraf Hizmetler
+{: #third-parties}
 
 Aşağıdaki hizmetleri kullanıyoruz. Belirtilen bilgilerin ötesinde ses, transkript içeriği veya kişisel bilgi herhangi bir üçüncü tarafla paylaşılmaz.
 
@@ -215,6 +219,7 @@ Transkripsiyon, kimlik doğrulama ve faturalandırma için veri sağlamak SafeSc
 
 <span class="section-label">Haklarınız</span>
 ## Yapabilecekleriniz
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Erişim</strong><span class="item-desc">tüm transkriptlerinizi uygulama içinde istediğiniz zaman görüntüleyin</span></span></li>

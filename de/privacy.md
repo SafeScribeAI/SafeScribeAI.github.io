@@ -19,7 +19,7 @@ lang: de
 
 <span class="section-label">Was wir nie tun</span>
 ## Daten, die wir nicht erheben oder speichern
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> Audio auf der Festplatte speichern — niemals</li>
@@ -125,6 +125,7 @@ Die In-App-Löschung gilt als formelle Ausübung Ihres Löschrechts gemäß GDPR
 
 <span class="section-label">Audioverarbeitung</span>
 ## Null-Festplatten-Richtlinie
+{: #zero-disk}
 
 <div class="flow-diagram">
 Ihr Audio:  Upload --> RAM --> KI-Transkription --> Zustellung --> LÖSCHEN
@@ -145,6 +146,7 @@ Unsere Festplatte:  Nur Guthabenaufzeichnungen — kein Audio, kein Transkript, 
 
 <span class="section-label">Authentifizierung</span>
 ## Anmeldung über Google oder Apple
+{: #sign-in}
 
 Wir verwenden OpenID Connect (OIDC) über Google Sign-In und Sign in with Apple.
 
@@ -160,6 +162,7 @@ Wir greifen nicht auf Ihre Kontakte, Kalender oder andere Kontodaten zu.
 
 <span class="section-label">Zahlungen</span>
 ## Abrechnung über App Stores
+{: #billing}
 
 Zahlungen werden vollständig von Apple App Store oder Google Play Store verarbeitet. SafeScribe **empfängt, speichert oder verarbeitet** niemals Kreditkartennummern oder Zahlungsdetails. Wir erhalten nur einen Kaufbeleg zur Guthabenverifizierung.
 
@@ -184,6 +187,7 @@ Bevor ein Bericht übertragen wird, werden folgende Daten automatisch entfernt:
 
 <span class="section-label">Drittanbieter</span>
 ## Drittanbieterdienste
+{: #third-parties}
 
 Wir verwenden folgende Dienste. Über das Angegebene hinaus werden keine Audio-, Transkriptinhalte oder personenbezogenen Informationen mit Dritten geteilt.
 
@@ -214,6 +218,7 @@ Die Bereitstellung von Daten für Transkription, Authentifizierung und Abrechnun
 
 <span class="section-label">Ihre Rechte</span>
 ## Was Sie tun können
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Zugriff</strong><span class="item-desc">alle Ihre Transkripte jederzeit in der App anzeigen</span></span></li>

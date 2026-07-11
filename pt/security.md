@@ -66,6 +66,7 @@ A diferença fundamental: mesmo em caso de apreensão física do servidor, não 
 
 <span class="section-label">Camada 1</span>
 ## Segurança no Transporte
+{: #layer-1}
 
 | Proteção | O que previne |
 |----------|--------------|
@@ -80,6 +81,7 @@ A diferença fundamental: mesmo em caso de apreensão física do servidor, não 
 
 <span class="section-label">Camada 2</span>
 ## Processamento no Servidor Apenas em RAM
+{: #layer-2}
 
 Este é o núcleo do design de privacidade do SafeScribe. O servidor executa os pesos do modelo Whisper da OpenAI através do motor de inferência auto-hospedado <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> — sem chamadas a APIs de terceiros. O armazenamento de dados está configurado para operação completamente volátil, sem persistência em disco.
 
@@ -115,6 +117,7 @@ Este é o núcleo do design de privacidade do SafeScribe. O servidor executa os 
 
 <span class="section-label">Camada 3</span>
 ## Identidade Pseudônima
+{: #layer-3}
 
 O SafeScribe usa Google Sign-In e Sign in with Apple. Seus dados pessoais nunca são armazenados:
 
@@ -140,6 +143,7 @@ O hash unidirecional do seu identificador:
 
 <span class="section-label">Camada 4</span>
 ## Criptografia Local
+{: #layer-4}
 
 As transcrições armazenadas no seu dispositivo são protegidas por:
 
@@ -155,6 +159,7 @@ Mesmo com acesso direto ao sistema de arquivos, os dados de transcrição aparec
 
 <span class="section-label">Camada 5</span>
 ## Remoção de DCP em Diagnósticos
+{: #layer-5}
 
 Se o app encontrar um erro, um relatório de falha pode ser enviado opcionalmente. Antes de sair do seu dispositivo, os itens a seguir são removidos automaticamente:
 
@@ -172,6 +177,7 @@ Você pode desativar completamente os relatórios de falhas nas configurações 
 
 <span class="section-label">Camada 6</span>
 ## Exclusão em Cascata
+{: #layer-6}
 
 Cada etapa do processamento exclui imediatamente os dados da etapa anterior: o áudio é excluído após a transcrição, a transcrição é excluída após a confirmação. O <a href="#your-datas-journey">diagrama de fluxo de dados</a> mostra o processo completo com todos os pontos de exclusão.
 

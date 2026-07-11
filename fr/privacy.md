@@ -19,7 +19,7 @@ lang: fr
 
 <span class="section-label">Ce que nous ne faisons jamais</span>
 ## Données que nous ne collectons pas ou ne stockons pas
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> Stocker l'audio sur disque — jamais</li>
@@ -125,6 +125,7 @@ La suppression via l'application constitue l'exercice formel de votre droit à l
 
 <span class="section-label">Traitement audio</span>
 ## Politique zéro disque
+{: #zero-disk}
 
 <div class="flow-diagram">
 Votre audio :  Upload --> RAM --> Transcription IA --> Livraison --> SUPPRESSION
@@ -146,6 +147,7 @@ Notre disque :  Uniquement les enregistrements de solde — pas d'audio, pas de 
 
 <span class="section-label">Authentification</span>
 ## Connexion via Google ou Apple
+{: #sign-in}
 
 Nous utilisons OpenID Connect (OIDC) via Google Sign-In et Sign in with Apple.
 
@@ -161,6 +163,7 @@ Nous n'accédons pas à vos contacts, calendriers ou autres données de compte.
 
 <span class="section-label">Paiements</span>
 ## Facturation via les App Stores
+{: #billing}
 
 Les paiements sont traités entièrement par Apple App Store ou Google Play Store. SafeScribe **ne reçoit, ne stocke ni ne traite** jamais les numéros de carte bancaire ou les détails de paiement. Nous recevons uniquement un reçu d'achat pour la vérification du solde.
 
@@ -185,6 +188,7 @@ Avant la transmission de tout rapport, les éléments suivants sont automatiquem
 
 <span class="section-label">Tiers</span>
 ## Services tiers
+{: #third-parties}
 
 Nous utilisons les services suivants. Aucune information audio, contenu de transcription ou donnée personnelle au-delà de ce qui est indiqué n'est partagée avec des tiers.
 
@@ -215,6 +219,7 @@ La fourniture de données pour la transcription, l'authentification et la factur
 
 <span class="section-label">Vos droits</span>
 ## Ce que vous pouvez faire
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Accéder</strong><span class="item-desc">consulter toutes vos transcriptions dans l'application à tout moment</span></span></li>

@@ -66,6 +66,7 @@ La diferencia clave: incluso si el servidor fuera incautado físicamente, no hab
 
 <span class="section-label">Capa 1</span>
 ## Seguridad en el Transporte
+{: #layer-1}
 
 | Protección | Qué previene |
 |------------|--------------|
@@ -80,6 +81,7 @@ La diferencia clave: incluso si el servidor fuera incautado físicamente, no hab
 
 <span class="section-label">Capa 2</span>
 ## Procesamiento en Servidor Solo en RAM
+{: #layer-2}
 
 Este es el núcleo del diseño de privacidad de SafeScribe. El servidor ejecuta los pesos del modelo Whisper de OpenAI a través del motor de inferencia auto-alojado <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> — sin llamadas a APIs de terceros. El almacenamiento de datos está configurado para operación completamente volátil, sin persistencia en disco.
 
@@ -115,6 +117,7 @@ Este es el núcleo del diseño de privacidad de SafeScribe. El servidor ejecuta 
 
 <span class="section-label">Capa 3</span>
 ## Identidad Seudónima
+{: #layer-3}
 
 SafeScribe usa Google Sign-In y Sign in with Apple. Tus datos personales nunca se almacenan:
 
@@ -140,6 +143,7 @@ El hash unidireccional de tu identificador:
 
 <span class="section-label">Capa 4</span>
 ## Cifrado Local
+{: #layer-4}
 
 Las transcripciones almacenadas en tu dispositivo están protegidas por:
 
@@ -155,6 +159,7 @@ Incluso con acceso directo al sistema de archivos, los datos de transcripción a
 
 <span class="section-label">Capa 5</span>
 ## Eliminación de DCP en Diagnósticos
+{: #layer-5}
 
 Si la app encuentra un error, puede enviarse opcionalmente un informe de fallos. Antes de salir de tu dispositivo, se eliminan automáticamente:
 
@@ -172,6 +177,7 @@ Puedes desactivar completamente los informes de fallos en la configuración de p
 
 <span class="section-label">Capa 6</span>
 ## Eliminación en Cascada
+{: #layer-6}
 
 Cada paso del procesamiento elimina de inmediato los datos del paso anterior: el audio se elimina tras la transcripción, la transcripción se elimina tras la confirmación. El <a href="#your-datas-journey">diagrama de flujo de datos</a> muestra el proceso completo con todos los puntos de eliminación.
 

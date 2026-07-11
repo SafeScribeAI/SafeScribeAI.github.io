@@ -19,7 +19,7 @@ lang: zh
 
 <span class="section-label">我们绝不做的事</span>
 ## 我们不收集或存储的数据
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> 将音频存储在磁盘上——永远不</li>
@@ -125,6 +125,7 @@ lang: zh
 
 <span class="section-label">音频处理</span>
 ## 零磁盘策略
+{: #zero-disk}
 
 <div class="flow-diagram">
 您的音频：上传 --> RAM --> AI转录 --> 交付 --> 删除
@@ -145,6 +146,7 @@ lang: zh
 
 <span class="section-label">身份验证</span>
 ## 通过Google或Apple登录
+{: #sign-in}
 
 我们通过Google Sign-In和Sign in with Apple使用OpenID Connect (OIDC)。
 
@@ -160,6 +162,7 @@ lang: zh
 
 <span class="section-label">付款</span>
 ## 通过应用商店计费
+{: #billing}
 
 付款完全由Apple App Store或Google Play Store处理。SafeScribe**从不接收、存储或处理**信用卡号或付款详细信息。我们仅接收购买收据用于余额验证。
 
@@ -184,6 +187,7 @@ lang: zh
 
 <span class="section-label">第三方</span>
 ## 第三方服务
+{: #third-parties}
 
 我们使用以下服务。除注明内容外，不向任何第三方共享音频、转录内容或个人信息。
 
@@ -214,6 +218,7 @@ lang: zh
 
 <span class="section-label">您的权利</span>
 ## 您可以做什么
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>访问</strong><span class="item-desc">——随时在应用中查看所有转录文本</span></span></li>

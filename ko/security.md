@@ -66,6 +66,7 @@ lang: ko
 
 <span class="section-label">레이어 1</span>
 ## 전송 보안
+{: #layer-1}
 
 | 보호 수단 | 방지 대상 |
 |---------|---------|
@@ -80,6 +81,7 @@ lang: ko
 
 <span class="section-label">레이어 2</span>
 ## 서버 RAM 전용 처리
+{: #layer-2}
 
 이것이 SafeScribe 개인정보 보호 설계의 핵심입니다. 서버는 자체 호스팅 추론 엔진 <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a>를 통해 OpenAI Whisper 모델 가중치를 실행합니다 — 제3자 API 호출 없음. 데이터 저장소는 디스크 영속성 없이 완전 휘발성 동작으로 구성되어 있습니다.
 
@@ -115,6 +117,7 @@ lang: ko
 
 <span class="section-label">레이어 3</span>
 ## 가명 신원
+{: #layer-3}
 
 SafeScribe는 Google 로그인과 Sign in with Apple을 사용합니다. 개인 데이터는 절대 저장되지 않습니다:
 
@@ -140,6 +143,7 @@ SafeScribe는 Google 로그인과 Sign in with Apple을 사용합니다. 개인 
 
 <span class="section-label">레이어 4</span>
 ## 로컬 암호화
+{: #layer-4}
 
 기기에 저장된 전사본은 다음으로 보호됩니다:
 
@@ -155,6 +159,7 @@ SafeScribe는 Google 로그인과 Sign in with Apple을 사용합니다. 개인 
 
 <span class="section-label">레이어 5</span>
 ## 진단 데이터에서 개인정보 제거
+{: #layer-5}
 
 앱에 오류가 발생하면 선택적으로 충돌 보고서를 전송할 수 있습니다. 기기를 떠나기 전 다음 항목이 자동으로 제거됩니다:
 
@@ -172,6 +177,7 @@ SafeScribe는 Google 로그인과 Sign in with Apple을 사용합니다. 개인 
 
 <span class="section-label">레이어 6</span>
 ## 연쇄 삭제
+{: #layer-6}
 
 각 처리 단계가 이전 단계의 데이터를 즉시 삭제합니다: 오디오는 전사 후 삭제되고, 전사본은 확인 후 삭제됩니다. <a href="#your-datas-journey">데이터 흐름 다이어그램</a>에서 모든 삭제 지점이 포함된 전체 흐름을 확인할 수 있습니다.
 

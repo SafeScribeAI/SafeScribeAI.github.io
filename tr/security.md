@@ -68,6 +68,7 @@ Fark: Bir sunucu fiziksel olarak ele geçirilse bile, kurtarılacak ses veya tra
 
 <span class="section-label">Katman 1</span>
 ## Aktarım Güvenliği
+{: #layer-1}
 
 | Koruma | Önlediği Şey |
 |--------|-------------|
@@ -82,6 +83,7 @@ Fark: Bir sunucu fiziksel olarak ele geçirilse bile, kurtarılacak ses veya tra
 
 <span class="section-label">Katman 2</span>
 ## Yalnızca RAM'de Sunucu İşlemesi
+{: #layer-2}
 
 Bu, SafeScribe'ın gizlilik tasarımının çekirdeğidir. Sunucu, kendi barındırılan <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> çıkarım motoru aracılığıyla OpenAI'ın Whisper model ağırlıklarını çalıştırır — üçüncü taraf API çağrısı yoktur. Veri deposu, hiçbir disk kalıcılığı olmaksızın yalnızca bellek işlemleri için yapılandırılmıştır. Her veri parçasının güvenlik kilidi olarak otomatik süresi vardır.
 
@@ -117,6 +119,7 @@ Bu, SafeScribe'ın gizlilik tasarımının çekirdeğidir. Sunucu, kendi barınd
 
 <span class="section-label">Katman 3</span>
 ## Takma Adlı Kimlik
+{: #layer-3}
 
 SafeScribe, kimlik doğrulama için Google ile Giriş ve Apple ile Giriş kullanır. Kişisel bilgileriniz asla saklanmaz:
 
@@ -142,6 +145,7 @@ Hesap tanımlayıcınızın tek yönlü karması:
 
 <span class="section-label">Katman 4</span>
 ## Yerel Şifreleme
+{: #layer-4}
 
 Cihazınızda saklanan transkriptler şu şekilde korunur:
 
@@ -157,6 +161,7 @@ Birisi cihazınızın dosya sistemine erişse bile, transkript verileri şifreli
 
 <span class="section-label">Katman 5</span>
 ## Tanılamada KKV Gizleme
+{: #layer-5}
 
 Uygulama bir hatayla karşılaştığında, isteğe bağlı bir kilitlenme raporu gönderilebilir. Herhangi bir rapor cihazınızdan ayrılmadan önce şunlar otomatik olarak kaldırılır:
 
@@ -174,6 +179,7 @@ Kilitlenme raporlamayı uygulamanın Gizlilik Ayarları'ndan tamamen devre dış
 
 <span class="section-label">Katman 6</span>
 ## Kaskad Silme
+{: #layer-6}
 
 SafeScribe anında kaskad silme uygular — her işleme adımı önceki adımın verilerinin silinmesini tetikler:
 

@@ -19,7 +19,7 @@ lang: ar
 
 <span class="section-label">ما لا نفعله أبداً</span>
 ## البيانات التي لا نجمعها أو نخزنها
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> تخزين الصوت على القرص — أبداً</li>
@@ -125,6 +125,7 @@ lang: ar
 
 <span class="section-label">معالجة الصوت</span>
 ## سياسة عدم الكتابة على القرص
+{: #zero-disk}
 
 <div class="flow-diagram">
 صوتك:  رفع --> RAM --> نسخ بالذكاء الاصطناعي --> تسليم --> حذف
@@ -146,6 +147,7 @@ lang: ar
 
 <span class="section-label">المصادقة</span>
 ## تسجيل الدخول عبر Google أو Apple
+{: #sign-in}
 
 نستخدم OpenID Connect (OIDC) عبر Google Sign-In وSign in with Apple.
 
@@ -161,6 +163,7 @@ lang: ar
 
 <span class="section-label">المدفوعات</span>
 ## الفواتير عبر متاجر التطبيقات
+{: #billing}
 
 تُعالَج المدفوعات بالكامل من قِبل Apple App Store أو Google Play Store. SafeScribe **لا يستقبل أو يخزن أو يعالج** أرقام بطاقات الائتمان أو تفاصيل الدفع. نتلقى فقط إيصال شراء للتحقق من الرصيد.
 
@@ -185,6 +188,7 @@ lang: ar
 
 <span class="section-label">الأطراف الثالثة</span>
 ## خدمات الأطراف الثالثة
+{: #third-parties}
 
 نستخدم الخدمات التالية. لا تُشارَك أي صوت أو محتوى نسخ أو معلومات شخصية تتجاوز ما هو مذكور مع أي طرف ثالث.
 
@@ -215,6 +219,7 @@ lang: ar
 
 <span class="section-label">حقوقك</span>
 ## ما يمكنك فعله
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>الوصول</strong><span class="item-desc">عرض جميع نصوصك المُحوَّلة في التطبيق في أي وقت</span></span></li>

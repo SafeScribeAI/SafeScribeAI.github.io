@@ -19,7 +19,7 @@ lang: es
 
 <span class="section-label">Lo que nunca hacemos</span>
 ## Datos que no recopilamos ni almacenamos
-{: #data-we-dont-collect-or-store}
+{: #no-collect}
 
 <ul class="dont-list">
   <li><span class="x-mark">&#x2717;</span> Almacenar audio en disco — jamás</li>
@@ -125,6 +125,7 @@ El uso de la eliminación en la app constituye el ejercicio formal de su derecho
 
 <span class="section-label">Procesamiento de audio</span>
 ## Política de cero disco
+{: #zero-disk}
 
 <div class="flow-diagram">
 Su audio:  Carga --> RAM --> Transcripción IA --> Entrega --> ELIMINACIÓN
@@ -145,6 +146,7 @@ Nuestro disco:  Solo registros de saldo — sin audio, sin transcripción, sin c
 
 <span class="section-label">Autenticación</span>
 ## Inicio de sesión con Google o Apple
+{: #sign-in}
 
 Usamos OpenID Connect (OIDC) a través de Google Sign-In y Sign in with Apple.
 
@@ -160,6 +162,7 @@ No accedemos a sus contactos, calendario ni a ningún otro dato de la cuenta.
 
 <span class="section-label">Pagos</span>
 ## Facturación mediante App Stores
+{: #billing}
 
 Los pagos son procesados íntegramente por Apple App Store o Google Play Store. SafeScribe **nunca recibe, almacena ni procesa** números de tarjeta de crédito ni detalles de pago. Solo recibimos un recibo de compra para verificar el saldo.
 
@@ -184,6 +187,7 @@ Antes de transmitir cualquier informe, se eliminan automáticamente los siguient
 
 <span class="section-label">Terceros</span>
 ## Servicios de terceros
+{: #third-parties}
 
 Utilizamos los siguientes servicios. No se comparte audio, contenido de transcripción ni información personal más allá de lo indicado con ningún tercero.
 
@@ -214,6 +218,7 @@ Proporcionar datos para la transcripción, la autenticación y la facturación e
 
 <span class="section-label">Sus derechos</span>
 ## Lo que puede hacer
+{: #your-rights}
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Acceder</strong><span class="item-desc">ver todas sus transcripciones en la app en cualquier momento</span></span></li>

@@ -66,6 +66,7 @@ lang: ja
 
 <span class="section-label">レイヤー 1</span>
 ## 通信セキュリティ
+{: #layer-1}
 
 | 保護手段 | 防ぐもの |
 |---------|--------|
@@ -80,6 +81,7 @@ lang: ja
 
 <span class="section-label">レイヤー 2</span>
 ## サーバーの RAM 専用処理
+{: #layer-2}
 
 これが SafeScribe のプライバシー設計の核心です。サーバーは自己ホスト型推論エンジン <a href="https://github.com/SYSTRAN/faster-whisper">faster-whisper</a> を通じて OpenAI の Whisper モデルウェイトを実行します — サードパーティ API への呼び出しは一切ありません。データストレージはディスク永続化なしの完全揮発性動作に設定されています。
 
@@ -115,6 +117,7 @@ lang: ja
 
 <span class="section-label">レイヤー 3</span>
 ## 仮名 ID
+{: #layer-3}
 
 SafeScribe は Google ログインと Sign in with Apple を使用します。お客様の個人情報は一切保存されません：
 
@@ -140,6 +143,7 @@ SafeScribe は Google ログインと Sign in with Apple を使用します。�
 
 <span class="section-label">レイヤー 4</span>
 ## ローカル暗号化
+{: #layer-4}
 
 デバイスに保存された文字起こしは以下で保護されます：
 
@@ -155,6 +159,7 @@ SafeScribe は Google ログインと Sign in with Apple を使用します。�
 
 <span class="section-label">レイヤー 5</span>
 ## 診断データからの個人情報除去
+{: #layer-5}
 
 アプリがエラーに遭遇した場合、オプションでクラッシュレポートを送信できます。デバイスを離れる前に、以下が自動的に除去されます：
 
@@ -172,6 +177,7 @@ SafeScribe は Google ログインと Sign in with Apple を使用します。�
 
 <span class="section-label">レイヤー 6</span>
 ## カスケード削除
+{: #layer-6}
 
 各処理ステップが前のステップのデータを即座に削除します：音声は文字起こし後に削除され、文字起こしは確認後に削除されます。<a href="#your-datas-journey">データフロー図</a>にすべての削除ポイントを含む完全なフローが示されています。
 

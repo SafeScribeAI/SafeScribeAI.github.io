@@ -243,18 +243,10 @@ Pas d'abonnement. Pas de frais cachés. Achetez des crédits et utilisez-les qua
   </div>
   <div class="pricing-card" data-hours="{{ site.data.facts.packages[2].hours }}">
     <div class="pricing-amount">${{ site.data.facts.packages[2].price_usd }}</div>
-    <div class="pricing-minutes">16 heures</div>
+    <div class="pricing-minutes">32 heures</div>
   </div>
   <div class="pricing-card" data-hours="{{ site.data.facts.packages[3].hours }}">
     <div class="pricing-amount">${{ site.data.facts.packages[3].price_usd }}</div>
-    <div class="pricing-minutes">32 heures</div>
-  </div>
-  <div class="pricing-card" data-hours="{{ site.data.facts.packages[4].hours }}">
-    <div class="pricing-amount">${{ site.data.facts.packages[4].price_usd }}</div>
-    <div class="pricing-minutes">64 heures</div>
-  </div>
-  <div class="pricing-card" data-hours="{{ site.data.facts.packages[5].hours }}">
-    <div class="pricing-amount">${{ site.data.facts.packages[5].price_usd }}</div>
     <div class="pricing-minutes">128 heures</div>
   </div>
 </div>

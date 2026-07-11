@@ -243,18 +243,10 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
   </div>
   <div class="pricing-card" data-hours="{{ site.data.facts.packages[2].hours }}">
     <div class="pricing-amount">${{ site.data.facts.packages[2].price_usd }}</div>
-    <div class="pricing-minutes">16 saat</div>
+    <div class="pricing-minutes">32 saat</div>
   </div>
   <div class="pricing-card" data-hours="{{ site.data.facts.packages[3].hours }}">
     <div class="pricing-amount">${{ site.data.facts.packages[3].price_usd }}</div>
-    <div class="pricing-minutes">32 saat</div>
-  </div>
-  <div class="pricing-card" data-hours="{{ site.data.facts.packages[4].hours }}">
-    <div class="pricing-amount">${{ site.data.facts.packages[4].price_usd }}</div>
-    <div class="pricing-minutes">64 saat</div>
-  </div>
-  <div class="pricing-card" data-hours="{{ site.data.facts.packages[5].hours }}">
-    <div class="pricing-amount">${{ site.data.facts.packages[5].price_usd }}</div>
     <div class="pricing-minutes">128 saat</div>
   </div>
 </div>

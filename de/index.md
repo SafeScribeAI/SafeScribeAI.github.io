@@ -243,18 +243,10 @@ Keine Abonnements. Keine versteckten Gebühren. Kaufen Sie Guthaben und nutzen S
   </div>
   <div class="pricing-card" data-hours="{{ site.data.facts.packages[2].hours }}">
     <div class="pricing-amount">${{ site.data.facts.packages[2].price_usd }}</div>
-    <div class="pricing-minutes">16 Stunden</div>
+    <div class="pricing-minutes">32 Stunden</div>
   </div>
   <div class="pricing-card" data-hours="{{ site.data.facts.packages[3].hours }}">
     <div class="pricing-amount">${{ site.data.facts.packages[3].price_usd }}</div>
-    <div class="pricing-minutes">32 Stunden</div>
-  </div>
-  <div class="pricing-card" data-hours="{{ site.data.facts.packages[4].hours }}">
-    <div class="pricing-amount">${{ site.data.facts.packages[4].price_usd }}</div>
-    <div class="pricing-minutes">64 Stunden</div>
-  </div>
-  <div class="pricing-card" data-hours="{{ site.data.facts.packages[5].hours }}">
-    <div class="pricing-amount">${{ site.data.facts.packages[5].price_usd }}</div>
     <div class="pricing-minutes">128 Stunden</div>
   </div>
 </div>

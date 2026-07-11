@@ -31,10 +31,9 @@ max_duration_hours: 6
 transcript_ttl_hours: 24
 
 # IAP credit packages (owner: backend/shared/iap_catalog.py) — hours / price_usd
+# 4-tier ladder (2026-07): discounts spread to be perceptible per step (~12/27/45%).
 packages:
   - { id: safescribe_1h,   hours: 1,   price_usd: "0.99" }
   - { id: safescribe_8h,   hours: 8,   price_usd: "6.99" }
-  - { id: safescribe_16h,  hours: 16,  price_usd: "12.99" }
-  - { id: safescribe_32h,  hours: 32,  price_usd: "24.99" }
-  - { id: safescribe_64h,  hours: 64,  price_usd: "44.99" }
-  - { id: safescribe_128h, hours: 128, price_usd: "79.99" }
+  - { id: safescribe_32h,  hours: 32,  price_usd: "22.99" }
+  - { id: safescribe_128h, hours: 128, price_usd: "69.99" }

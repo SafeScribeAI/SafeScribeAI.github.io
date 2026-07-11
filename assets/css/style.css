@@ -526,8 +526,8 @@ hr {
 
 .pricing-grid {
   display: grid;
-  /* 6 IAP packages: 3x2 — repeat(5) left an orphan sixth card on its own row */
-  grid-template-columns: repeat(3, 1fr);
+  /* 4 IAP packages on one row; 2x2 on mobile via the 640px override below */
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin: 1.5rem 0;
 }

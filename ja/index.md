@@ -243,18 +243,10 @@ lang: ja
   </div>
   <div class="pricing-card" data-hours="{{ site.data.facts.packages[2].hours }}">
     <div class="pricing-amount">${{ site.data.facts.packages[2].price_usd }}</div>
-    <div class="pricing-minutes">16時間</div>
+    <div class="pricing-minutes">32時間</div>
   </div>
   <div class="pricing-card" data-hours="{{ site.data.facts.packages[3].hours }}">
     <div class="pricing-amount">${{ site.data.facts.packages[3].price_usd }}</div>
-    <div class="pricing-minutes">32時間</div>
-  </div>
-  <div class="pricing-card" data-hours="{{ site.data.facts.packages[4].hours }}">
-    <div class="pricing-amount">${{ site.data.facts.packages[4].price_usd }}</div>
-    <div class="pricing-minutes">64時間</div>
-  </div>
-  <div class="pricing-card" data-hours="{{ site.data.facts.packages[5].hours }}">
-    <div class="pricing-amount">${{ site.data.facts.packages[5].price_usd }}</div>
     <div class="pricing-minutes">128時間</div>
   </div>
 </div>

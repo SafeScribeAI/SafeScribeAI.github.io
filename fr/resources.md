@@ -12,7 +12,7 @@ lang: fr
   <p class="hero-lang-note">Les pages détaillées sont actuellement disponibles en anglais.</p>
 </div>
 
-<div class="content-section content-narrow-900">
+<div class="content-narrow-900">
 
 <div class="steps">
   <a class="step u-plain-link" href="../en/resources/how-we-compare">

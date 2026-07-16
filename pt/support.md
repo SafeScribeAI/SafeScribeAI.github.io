@@ -10,7 +10,7 @@ lang: pt
   <p class="hero-tagline hero-tagline-sm">Estamos aqui para ajudar.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
   <p>A maioria das dúvidas é respondida nas <a href="./#faq">perguntas frequentes</a> — formatos, preços, privacidade e como a transcrição funciona.</p>
 
   <h2 class="u-mt-2">Fale conosco</h2>

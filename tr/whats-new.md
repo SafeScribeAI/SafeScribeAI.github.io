@@ -10,7 +10,7 @@ lang: tr
   <p class="hero-tagline hero-tagline-sm">SafeScribe sürüm notları.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
 
 <p class="u-muted-italic">SafeScribe ilk halka açık sürümüne hazırlanıyor. Uygulama App Store ve Google Play'de yayınlandıktan sonra her sürüm burada sade bir dille özetlenecek — teknik jargon yok, yalnızca sizin için değişen şeyler.</p>
 

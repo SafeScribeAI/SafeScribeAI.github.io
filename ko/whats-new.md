@@ -10,7 +10,7 @@ lang: ko
   <p class="hero-tagline hero-tagline-sm">SafeScribe 릴리스 노트.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
 
 <p class="u-muted-italic">SafeScribe는 첫 공개 출시를 준비 중입니다. App Store와 Google Play에 앱이 출시되면, 각 버전의 내용을 쉬운 말로 이 페이지에 정리하겠습니다 — 내부 용어 없이, 사용자에게 달라지는 점만 담습니다.</p>
 

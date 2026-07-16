@@ -10,7 +10,7 @@ lang: en
   <p class="hero-tagline hero-tagline-sm">Release notes for SafeScribe.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
 
 <p class="u-muted-italic">SafeScribe is preparing for its first public release. Once the app is live on the App Store and Google Play, every release will be summarized here in plain language — no internal jargon, just what changed for you.</p>
 

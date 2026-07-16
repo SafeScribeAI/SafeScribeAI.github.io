@@ -10,7 +10,7 @@ lang: es
   <p class="hero-tagline hero-tagline-sm">Estamos aquí para ayudarte.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
   <p>La mayoría de las preguntas se responden en las <a href="./#faq">preguntas frecuentes</a> — formatos, precios, privacidad y cómo funciona la transcripción.</p>
 
   <h2 class="u-mt-2">Contáctanos</h2>

@@ -12,7 +12,7 @@ lang: ja
   <p class="hero-lang-note">詳細ページは現在英語で公開しています。</p>
 </div>
 
-<div class="content-section content-narrow-900">
+<div class="content-narrow-900">
 
 <div class="steps">
   <a class="step u-plain-link" href="../en/resources/how-we-compare">

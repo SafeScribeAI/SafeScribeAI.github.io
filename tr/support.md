@@ -10,7 +10,7 @@ lang: tr
   <p class="hero-tagline hero-tagline-sm">Yardım için buradayız.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
   <p>Soruların çoğunun yanıtı <a href="./#faq">SSS</a> bölümünde — formatlar, fiyatlandırma, gizlilik ve yazıya dönüştürmenin nasıl çalıştığı.</p>
 
   <h2 class="u-mt-2">Bize ulaşın</h2>

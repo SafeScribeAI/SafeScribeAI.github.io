@@ -10,14 +10,13 @@ lang: en
   <p class="hero-tagline hero-tagline-sm">What we kept, what we skipped, and why.</p>
 </div>
 
-<div class="content-section content-narrow-920">
+<div class="content-narrow-920">
 
 <p>Mature security work isn't about adding every control you can think of. It's about understanding which controls actually defend against your real threat model — and being honest about the ones that look impressive on a checklist but don't move the needle. This page documents both sides of that ledger.</p>
 
 <span class="section-label">Threat Model</span>
 <h2>Who We Defend Against</h2>
 
-<div class="do-list-wrapper">
 <ul class="do-list">
   <li>
     <span class="check-mark">&#x2713;</span>
@@ -48,7 +47,6 @@ lang: en
     </span>
   </li>
 </ul>
-</div>
 
 <span class="section-label u-mt-25">Considered, kept</span>
 <h2>Controls That Earn Their Complexity</h2>

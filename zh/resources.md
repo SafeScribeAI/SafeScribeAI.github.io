@@ -12,7 +12,7 @@ lang: zh
   <p class="hero-lang-note">详细页面目前以英文提供。</p>
 </div>
 
-<div class="content-section content-narrow-900">
+<div class="content-narrow-900">
 
 <div class="steps">
   <a class="step u-plain-link" href="../en/resources/how-we-compare">

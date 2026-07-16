@@ -10,7 +10,7 @@ lang: pt
   <p class="hero-tagline hero-tagline-sm">Notas de versão do SafeScribe.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
 
 <p class="u-muted-italic">O SafeScribe está se preparando para o primeiro lançamento público. Quando o aplicativo estiver disponível na App Store e no Google Play, cada versão será resumida aqui em linguagem simples — sem jargão interno, apenas o que muda para você.</p>
 

@@ -10,7 +10,7 @@ lang: ar
   <p class="hero-tagline hero-tagline-sm">ملاحظات إصدار SafeScribe.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
 
 <p class="u-muted-italic">يستعد SafeScribe لإطلاقه العام الأول. بمجرد توفر التطبيق على App Store وGoogle Play، سيتم تلخيص كل إصدار هنا بلغة بسيطة — بدون مصطلحات داخلية، فقط ما يتغير بالنسبة لك.</p>
 

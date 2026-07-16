@@ -10,7 +10,7 @@ lang: de
   <p class="hero-tagline hero-tagline-sm">Versionshinweise zu SafeScribe.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
 
 <p class="u-muted-italic">SafeScribe bereitet die erste öffentliche Veröffentlichung vor. Sobald die App im App Store und bei Google Play verfügbar ist, fassen wir hier jede Version in verständlicher Sprache zusammen — kein interner Jargon, nur das, was sich für Sie ändert.</p>
 

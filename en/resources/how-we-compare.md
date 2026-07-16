@@ -10,7 +10,7 @@ lang: en
   <p class="hero-tagline hero-tagline-sm">A side-by-side look at the privacy posture, pricing, and architecture of mainstream transcription tools.</p>
 </div>
 
-<div class="content-section content-narrow-920">
+<div class="content-narrow-920">
 
 <p>Every competitor in this market makes some version of the same promise: <em>"we respect your privacy."</em> The differences live in the architecture. The table below is the version we use internally — not curated marketing claims, but what each provider actually does with your audio.</p>
 
@@ -118,7 +118,6 @@ lang: en
 <span class="section-label u-mt-25">What stands out</span>
 <h2>Five Things The Table Doesn't Tell You</h2>
 
-<div class="do-list-wrapper">
 <ul class="do-list">
   <li>
     <span class="check-mark">&#x2713;</span>
@@ -156,7 +155,6 @@ lang: en
     </span>
   </li>
 </ul>
-</div>
 
 <div class="callout callout-green u-mt-2">
   <strong>Verify it yourself.</strong> After receiving a transcript, query <code>GET /v1/status/{work_id}</code> — the server returns <code>404 Not Found</code>. That's the receipt. There is no other copy.

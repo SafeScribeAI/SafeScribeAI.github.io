@@ -12,7 +12,7 @@ lang: ko
   <p class="hero-lang-note">상세 페이지는 현재 영어로 제공됩니다.</p>
 </div>
 
-<div class="content-section content-narrow-900">
+<div class="content-narrow-900">
 
 <div class="steps">
   <a class="step u-plain-link" href="../en/resources/how-we-compare">

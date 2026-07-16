@@ -10,7 +10,7 @@ lang: de
   <p class="hero-tagline hero-tagline-sm">Wir helfen Ihnen gerne.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
   <p>Die meisten Fragen beantwortet unser <a href="./#faq">FAQ</a> — Formate, Preise, Datenschutz und wie die Transkription funktioniert.</p>
 
   <h2 class="u-mt-2">Kontakt</h2>

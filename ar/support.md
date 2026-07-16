@@ -10,7 +10,7 @@ lang: ar
   <p class="hero-tagline hero-tagline-sm">نحن هنا لمساعدتك.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
   <p>معظم الأسئلة مُجابة في <a href="./#faq">الأسئلة الشائعة</a> — الصيغ والأسعار والخصوصية وكيفية عمل التفريغ النصي.</p>
 
   <h2 class="u-mt-2">تواصل معنا</h2>

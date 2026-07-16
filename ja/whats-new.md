@@ -10,7 +10,7 @@ lang: ja
   <p class="hero-tagline hero-tagline-sm">SafeScribeのリリースノート。</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
 
 <p class="u-muted-italic">SafeScribeは初の公開リリースに向けて準備中です。アプリがApp StoreとGoogle Playで公開されると、各バージョンの内容をわかりやすい言葉でこのページにまとめていきます — 内部用語は使わず、利用者にとって何が変わったかだけをお伝えします。</p>
 

@@ -12,7 +12,7 @@ lang: tr
   <p class="hero-lang-note">Detay sayfaları şu an İngilizce yayında.</p>
 </div>
 
-<div class="content-section content-narrow-900">
+<div class="content-narrow-900">
 
 <div class="steps">
   <a class="step u-plain-link" href="../en/resources/how-we-compare">

@@ -11,7 +11,7 @@ lang: en
   <p class="hero-subnote">Privacy claims are easier to make than to verify. These pages walk through the choices we made, the alternatives we evaluated, and how to confirm them yourself.</p>
 </div>
 
-<div class="content-section content-narrow-900">
+<div class="content-narrow-900">
 
 <div class="steps">
   <a class="step u-plain-link" href="resources/how-we-compare">

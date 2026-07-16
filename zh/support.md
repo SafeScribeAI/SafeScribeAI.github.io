@@ -10,7 +10,7 @@ lang: zh
   <p class="hero-tagline hero-tagline-sm">我们随时为您提供帮助。</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
   <p>大多数问题都能在<a href="./#faq">常见问题</a>中找到答案 — 格式、定价、隐私以及转写的工作方式。</p>
 
   <h2 class="u-mt-2">联系我们</h2>

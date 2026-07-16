@@ -10,7 +10,7 @@ lang: ko
   <p class="hero-tagline hero-tagline-sm">언제든 도와드리겠습니다.</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
   <p>대부분의 질문은 <a href="./#faq">FAQ</a>에서 답을 찾을 수 있습니다 — 형식, 요금, 개인정보 보호, 전사 작동 방식.</p>
 
   <h2 class="u-mt-2">문의하기</h2>

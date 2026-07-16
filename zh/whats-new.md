@@ -10,7 +10,7 @@ lang: zh
   <p class="hero-tagline hero-tagline-sm">SafeScribe 版本说明。</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
 
 <p class="u-muted-italic">SafeScribe 正在准备首次公开发布。一旦应用在 App Store 和 Google Play 上线，每个版本都会在这里以简明语言进行总结——没有内部术语，只有对您有意义的变更。</p>
 

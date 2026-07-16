@@ -10,7 +10,7 @@ lang: ja
   <p class="hero-tagline hero-tagline-sm">私たちがサポートします。</p>
 </div>
 
-<div class="content-section content-narrow-760">
+<div class="content-narrow-760">
   <p>ほとんどの質問は<a href="./#faq">FAQ</a>で回答しています — 対応形式、料金、プライバシー、文字起こしの仕組みなど。</p>
 
   <h2 class="u-mt-2">お問い合わせ</h2>

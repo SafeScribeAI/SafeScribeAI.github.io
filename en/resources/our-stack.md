@@ -10,7 +10,7 @@ lang: en
   <p class="hero-tagline hero-tagline-sm">The open components SafeScribe runs on, and why each one was chosen.</p>
 </div>
 
-<div class="content-section content-narrow-920">
+<div class="content-narrow-920">
 
 <p>SafeScribe is closed-source, but the technology underneath is largely open. Where we use third-party components, we use them because they're auditable, peer-reviewed, and battle-tested — not because they were the easiest box to check. This page lists what we run and why.</p>
 

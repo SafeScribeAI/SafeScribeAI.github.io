@@ -263,12 +263,86 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "What happens to my audio after transcription?", "acceptedAnswer": {"@type": "Answer", "text": "It's gone permanently. Your audio is processed entirely in server RAM and deleted the instant your transcript is delivered. No disk copy, no backup, no recovery."}},
-    {"@type": "Question", "name": "Do you use my recordings to train AI?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your audio is used only for generating your transcript. Never stored, analyzed, or used for model training. We run our own AI infrastructure."}},
-    {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "The open-source Whisper model supports 99 languages with automatic detection. You can also manually select the language for improved accuracy."}},
-    {"@type": "Question", "name": "What file formats can I use?", "acceptedAnswer": {"@type": "Answer", "text": "40 formats — 22 audio (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR and more) and 18 video (MP4, MOV, MKV, AVI, WEBM, 3GP and more) with audio extracted on-device. Files up to 96 MB and 6 hours."}},
-    {"@type": "Question", "name": "How is my data encrypted?", "acceptedAnswer": {"@type": "Answer", "text": "TLS 1.3 encryption in transit. AES-256 encrypted containers on your device with keys in iOS Keychain or Android Keystore."}},
-    {"@type": "Question", "name": "Do you log my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "No. IP addresses are never stored. The logging system drops IPs before any output. We use a one-way SHA-256 hash for internal operations."}}
+    {
+      "@type": "Question",
+      "name": "What happens to my audio after transcription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's gone — permanently. Your audio is processed entirely in server RAM (volatile memory) and deleted the instant your transcript is delivered. There is no disk copy, no backup, and no way to recover it. Even a physical seizure of the server would yield zero audio data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you use my recordings to train AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely not. Your audio is used for one purpose only: generating your transcript. It is never stored, analyzed, or used for model training or improvement. We run our own AI infrastructure — your data doesn't go to any third-party AI service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you see my payment or card details?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. All payments are processed entirely by Apple App Store or Google Play. We receive only a purchase receipt for balance verification — we never see, receive, or store your card number or any payment details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which languages are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The open-source Whisper speech recognition model supports 99 languages with automatic language detection. You can also manually select the language before transcription for improved accuracy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats can I use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "40 formats are supported — 22 audio formats (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR, and more) plus 18 video formats (MP4, MOV, MKV, AVI, WEBM, 3GP, and more — audio is extracted on your device before upload). Files up to 96 MB and up to 6 hours long."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is my data encrypted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In transit: TLS 1.3 encryption ensures your data is protected between your device and SafeScribe servers. On your device: transcripts are stored in AES-256 encrypted containers with keys protected by your phone's secure hardware (iOS Keychain / Android Keystore)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I delete all my data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can delete individual transcripts or your entire account from within the app. Account deletion permanently removes your sign-in identity, all local data, and remaining credit balance. Since the server retains no personal data after processing, there's nothing to delete server-side."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you log my IP address?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. IP addresses are never stored or logged. Our architecture enforces this at the code level — the logging system is explicitly configured to drop IPs before they reach any log output. We use a pseudonymous identifier (a one-way SHA-256 hash of your sign-in identity) for all internal operations. This hash cannot be reversed to reveal your identity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify your privacy claims?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We publish our full Security Architecture and Data Protection Impact Assessment for technical transparency. You can also use a network analysis tool (e.g. Wireshark) to confirm all traffic is TLS-encrypted — no email, name, or personal identifiers appear in any request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does on-device preprocessing improve accuracy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Before upload, SafeScribe applies an on-device audio filter chain: 80 Hz high-pass filtering removes rumble and background hum, LUFS loudness normalization (-16 LUFS) optimizes audio levels for Whisper, and peak limiting prevents clipping. Combined with Voice Activity Detection on the server, this ensures you get clean, accurate text even from challenging recordings."
+      }
+    }
   ]
 }
 </script>

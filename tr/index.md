@@ -263,12 +263,86 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Transkripsiyon sonrası sesime ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur."}},
-    {"@type": "Question", "name": "Kayıtlarımı yapay zeka eğitiminde kullanıyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Kesinlikle hayır. Sesiniz yalnızca transkriptinizi oluşturmak için kullanılır. Asla saklanmaz veya model eğitiminde kullanılmaz. Kendi yapay zeka altyapımızı işletiyoruz."}},
-    {"@type": "Question", "name": "Hangi diller destekleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "Açık kaynaklı Whisper modeli otomatik dil algılama ile 99 dili destekler. Daha iyi doğruluk için dili manuel olarak da seçebilirsiniz."}},
-    {"@type": "Question", "name": "Hangi dosya formatlarını kullanabilirim?", "acceptedAnswer": {"@type": "Answer", "text": "40 format desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses cihazınızda çıkarılır). 96 MB'a kadar dosya boyutu ve 6 saate kadar süre."}},
-    {"@type": "Question", "name": "Verilerim nasıl şifreleniyor?", "acceptedAnswer": {"@type": "Answer", "text": "İletimde TLS 1.3 şifreleme. Cihazınızda iOS Keychain veya Android Keystore ile korunan AES-256 şifreli kaplar."}},
-    {"@type": "Question", "name": "IP adresimi kaydediyor musunuz?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. IP adresleri hiçbir zaman saklanmaz. Günlük sistemi IP'leri herhangi bir çıktıya ulaşmadan düşürür. Dahili işlemler için tek yönlü SHA-256 karması kullanılır."}}
+    {
+      "@type": "Question",
+      "name": "Transkripsiyon sonrası sesime ne olur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kalıcı olarak silinir. Sesiniz tamamen sunucu RAM'inde (uçucu bellek) işlenir ve transkriptiniz teslim edilir edilmez silinir. Disk kopyası, yedek veya kurtarma yolu yoktur. Sunucu fiziksel olarak ele geçirilse bile sıfır ses verisi bulunur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kayıtlarımı yapay zeka eğitiminde kullanıyor musunuz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kesinlikle hayır. Sesiniz yalnızca tek bir amaç için kullanılır: transkriptinizi oluşturmak. Asla saklanmaz, analiz edilmez veya model eğitiminde ya da iyileştirmesinde kullanılmaz. Kendi yapay zeka altyapımızı işletiyoruz — verileriniz hiçbir üçüncü taraf yapay zeka hizmetine gitmez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ödeme veya kart bilgilerimi görüyor musunuz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Tüm ödemeler tamamen Apple App Store veya Google Play tarafından işlenir. Bakiye doğrulaması için yalnızca bir satın alma makbuzu alırız — kart numaranızı veya ödeme bilgilerinizi hiçbir zaman görmeyiz, almayız veya saklamayız."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hangi diller destekleniyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Açık kaynaklı Whisper konuşma tanıma modeli, otomatik dil algılama ile 99 dili destekler. Daha iyi doğruluk için transkripsiyon öncesi dili manuel olarak da seçebilirsiniz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hangi dosya formatlarını kullanabilirim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "40 format desteklenir — 22 ses formatı (MP3, WAV, FLAC, M4A, OGG, Opus, AAC, AIFF, AMR ve daha fazlası) ve 18 video formatı (MP4, MOV, MKV, AVI, WEBM, 3GP ve daha fazlası — ses, yüklemeden önce cihazınızda çıkarılır). 96 MB'a kadar dosya boyutu ve 6 saate kadar süre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Verilerim nasıl şifreleniyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "İletimde: TLS 1.3 şifreleme, verilerinizin SafeScribe sunucularına ulaşana kadar korunmasını sağlar. Cihazınızda: transkriptler, anahtarları telefonunuzun güvenli donanımı (iOS Keychain / Android Keystore) tarafından korunan AES-256 şifreli kaplarda saklanır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tüm verilerimi silebilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Bireysel transkriptleri veya tüm hesabınızı uygulama içerisinden silebilirsiniz. Hesap silme, oturum açma kimliğinizi, tüm yerel verileri ve kalan kredi bakiyenizi kalıcı olarak kaldırır. Sunucu işleme sonrası kişisel veri tutmadığından, sunucu tarafında silinecek bir şey yoktur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "IP adresimi kaydediyor musunuz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. IP adresleri hiçbir zaman saklanmaz veya kaydedilmez. Mimarimiz bunu kod düzeyinde uygular — günlük sistemi, IP'leri herhangi bir günlük çıktısına ulaşmadan önce açıkça düşürecek şekilde yapılandırılmıştır. Tüm dahili işlemler için tek yönlü bir SHA-256 karması (oturum açma kimliğinizin) kullanırız. Bu karma geri döndürülerek kimliğinizi ortaya çıkaramaz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gizlilik iddialarınızı nasıl doğrulayabilirim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Teknik şeffaflık için tam Güvenlik Mimarisi ve Veri Koruma Etki Değerlendirmesi belgelerimizi yayımlıyoruz. Tüm trafiğin TLS şifreli olduğunu doğrulamak için ağ analiz aracı (ör. Wireshark) de kullanabilirsiniz — hiçbir istekte e-posta, ad veya kişisel tanımlayıcı görünmez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cihazda ön işleme doğruluğu nasıl artırıyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yüklemeden önce SafeScribe, cihazda bir ses filtre zinciri uygular: 80 Hz yüksek geçişli filtreleme gürültü ve uğultuyu temizler, LUFS ses normalizasyonu (-16 LUFS) ses seviyelerini Whisper için optimize eder ve tepe sınırlama kırpılmayı önler. Sunucudaki Ses Aktivite Algılama ile birleştiğinde, zorlu kayıtlardan bile temiz ve doğru metin elde etmenizi sağlar."
+      }
+    }
   ]
 }
 </script>

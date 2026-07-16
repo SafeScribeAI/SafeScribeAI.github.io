@@ -114,10 +114,10 @@ lang: zh
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>剩余免费分钟数</strong><span class="item-desc">永久删除</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>每次任务统计</strong><span class="item-desc">立即匿名化——归入共享的 DELETED_USER 标记，2 年后自动清除</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>假名设备标识符</strong><span class="item-desc">简化为加盐单向哈希，最长保留 2 年——防止重复滥用欢迎赠送额度，不可逆且无法关联到您</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>每日备份</strong><span class="item-desc">24 小时内被覆盖——任何地方都不会留下可识别的副本</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>每日备份</strong><span class="item-desc">每日覆盖的副本在下一次备份周期后（24 小时内）不再包含您的身份数据；删除时另行生成的时间点恢复（point-in-time）快照会出于灾难恢复目的保留，不会立即清除</span></span></li>
 </ul>
 
-删除的那一刻，所有指向您身份的关联即被销毁。仅有两类范围极窄的数据会在<em>不含任何身份关联</em>的情况下临时保留：财务记录（购买与使用金额）匿名化为 DELETED_USER 标记，依据消费者纠纷时效（土耳其债法第 146 条）保留 2 年；加盐单向设备哈希最长保留 2 年，用于防止重复领取免费额度（GDPR 第 6(1)(f) 条合法利益）。两者在期限届满后自动清除。唯一的每日备份会在删除后 24 小时内被覆盖。
+删除的那一刻，所有指向您身份的关联即被销毁。仅有两类范围极窄的数据会在<em>不含任何身份关联</em>的情况下临时保留：财务记录（购买与使用金额）匿名化为 DELETED_USER 标记，依据瑕疵服务时效（土耳其消费者保护法第 15-16 条）保留 2 年；加盐单向设备哈希最长保留 2 年，用于防止重复领取免费额度（GDPR 第 6(1)(f) 条合法利益）。两者在期限届满后自动从在线系统中清除。每日覆盖的备份会在 24 小时内不再反映已删除的账户；但删除前生成的时间点恢复快照会出于灾难恢复目的保留，不会立即清除。
 
 应用内删除操作构成您根据GDPR第17条及KVKK第11条(e)款正式行使删除权的行为。如果您无法访问账户，请联系**privacy@safescribe.dev**通过电子邮件提交删除请求。
 

@@ -114,10 +114,10 @@ lang: ko
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>남은 무료 시간</strong><span class="item-desc">영구 삭제</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>작업별 통계</strong><span class="item-desc">즉시 익명화 — 공용 DELETED_USER 표식으로 변경되며 2년 후 자동 삭제</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>가명 기기 식별자</strong><span class="item-desc">솔트 처리된 단방향 해시로 축소되어 최대 2년 보관 — 환영 크레딧 반복 악용을 차단하며, 역산하거나 본인과 연결할 수 없습니다</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>일일 백업</strong><span class="item-desc">24시간 이내 덮어쓰기 — 어디에도 식별 가능한 사본이 남지 않습니다</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>일일 백업</strong><span class="item-desc">매일 덮어쓰이는 사본은 다음 백업 주기 이후(24시간 이내)에는 본인을 식별할 수 있는 데이터를 포함하지 않습니다. 삭제 시점에 생성되는 별도의 특정 시점 복구(point-in-time) 스냅샷은 재해 복구 목적으로 보관되며 즉시 삭제되지 않습니다</span></span></li>
 </ul>
 
-삭제 시점에 본인 신원과의 모든 연결이 파기됩니다. <em>신원과 전혀 연결되지 않은</em> 두 가지 제한된 범주만 한시적으로 보관됩니다: 금융 기록(구매·사용 금액)은 DELETED_USER 표식으로 익명화되어 소비자 분쟁 소멸시효(터키 채권법 제146조)에 따라 2년간 보관되고, 솔트 처리된 단방향 기기 해시는 무료 크레딧 반복 지급을 막기 위해 최대 2년간 보관됩니다(GDPR 제6조 1항 (f), 정당한 이익). 둘 다 기간이 만료되면 자동으로 삭제됩니다. 유일한 일일 백업은 삭제 후 24시간 이내에 덮어쓰기됩니다.
+삭제 시점에 본인 신원과의 모든 연결이 파기됩니다. <em>신원과 전혀 연결되지 않은</em> 두 가지 제한된 범주만 한시적으로 보관됩니다: 금융 기록(구매·사용 금액)은 DELETED_USER 표식으로 익명화되어 하자 있는 서비스에 대한 소멸시효(터키 소비자보호법 제15-16조)에 따라 2년간 보관되고, 솔트 처리된 단방향 기기 해시는 무료 크레딧 반복 지급을 막기 위해 최대 2년간 보관됩니다(GDPR 제6조 1항 (f), 정당한 이익). 둘 다 기간이 만료되면 운영 시스템에서 자동으로 삭제됩니다. 매일 덮어쓰이는 백업에는 24시간 이내에 삭제된 계정이 더 이상 반영되지 않습니다. 다만 삭제 전에 생성된 특정 시점 복구 스냅샷은 재해 복구 목적으로 보관되며 즉시 삭제되지 않습니다.
 
 앱 내 삭제 작업은 GDPR 제17조 및 KVKK 제11조(e)에 따른 삭제권의 공식적인 행사입니다. 계정에 접근할 수 없는 경우 **privacy@safescribe.dev**로 연락하여 이메일로 삭제 요청을 제출하세요.
 

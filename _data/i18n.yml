@@ -1,5 +1,7 @@
 en:
   skip_to_content: "Skip to content"
+  toggle_menu: "Toggle menu"
+  footer_tagline: "Privacy-first audio transcription"
   lang_name: "English"
   nav_home: "How It Works"
   nav_pricing: "Pricing"
@@ -22,6 +24,8 @@ en:
 
 tr:
   skip_to_content: "İçeriğe atla"
+  toggle_menu: "Menüyü aç/kapat"
+  footer_tagline: "Gizlilik odaklı ses yazıya dönüştürme"
   lang_name: "Türkçe"
   nav_home: "Nasıl Çalışır"
   nav_pricing: "Fiyatlar"
@@ -44,6 +48,8 @@ tr:
 
 de:
   skip_to_content: "Zum Inhalt springen"
+  toggle_menu: "Menü umschalten"
+  footer_tagline: "Datenschutzorientierte Audio-Transkription"
   lang_name: "Deutsch"
   nav_home: "So funktioniert es"
   nav_pricing: "Preise"
@@ -66,6 +72,8 @@ de:
 
 fr:
   skip_to_content: "Aller au contenu"
+  toggle_menu: "Afficher/masquer le menu"
+  footer_tagline: "Transcription audio axée sur la confidentialité"
   lang_name: "Français"
   nav_home: "Comment ça marche"
   nav_pricing: "Tarifs"
@@ -88,6 +96,8 @@ fr:
 
 es:
   skip_to_content: "Saltar al contenido"
+  toggle_menu: "Alternar menú"
+  footer_tagline: "Transcripción de audio centrada en la privacidad"
   lang_name: "Español"
   nav_home: "Cómo funciona"
   nav_pricing: "Precios"
@@ -110,6 +120,8 @@ es:
 
 pt:
   skip_to_content: "Pular para o conteúdo"
+  toggle_menu: "Alternar menu"
+  footer_tagline: "Transcrição de áudio focada em privacidade"
   lang_name: "Português"
   nav_home: "Como funciona"
   nav_pricing: "Preços"
@@ -132,6 +144,8 @@ pt:
 
 ar:
   skip_to_content: "تخطي إلى المحتوى"
+  toggle_menu: "تبديل القائمة"
+  footer_tagline: "تفريغ صوتي يضع الخصوصية أولاً"
   lang_name: "العربية"
   nav_home: "كيف يعمل"
   nav_pricing: "الأسعار"
@@ -154,6 +168,8 @@ ar:
 
 zh:
   skip_to_content: "跳到主要内容"
+  toggle_menu: "切换菜单"
+  footer_tagline: "隐私优先的语音转录"
   lang_name: "中文"
   nav_home: "工作原理"
   nav_pricing: "定价"
@@ -176,6 +192,8 @@ zh:
 
 ja:
   skip_to_content: "メインコンテンツにスキップ"
+  toggle_menu: "メニューを切り替え"
+  footer_tagline: "プライバシー重視の音声文字起こし"
   lang_name: "日本語"
   nav_home: "使い方"
   nav_pricing: "料金"
@@ -198,6 +216,8 @@ ja:
 
 ko:
   skip_to_content: "본문 바로가기"
+  toggle_menu: "메뉴 전환"
+  footer_tagline: "프라이버시 우선 음성 전사"
   lang_name: "한국어"
   nav_home: "사용 방법"
   nav_pricing: "요금제"

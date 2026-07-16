@@ -61,7 +61,7 @@
   <!-- Canonical -->
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-  <!-- Hreflang (SEO: 10 languages) -->
+  <!-- Hreflang (SEO: 10 languages, BCP 47 tags — zh/pt need region/script subtags, others are valid as bare ISO 639-1) -->
   {% unless skip_hreflang %}
   {% for switch_lang in all_langs %}
   {% if page_slug == 'index' %}
@@ -69,13 +69,25 @@
   {% else %}
     {% assign switch_path = '/' | append: switch_lang | append: '/' | append: page_slug %}
   {% endif %}
-  <link rel="alternate" hreflang="{{ switch_lang }}" href="{{ switch_path | absolute_url }}">
+  {% case switch_lang %}
+    {% when 'zh' %}{% assign hreflang_code = 'zh-Hans' %}
+    {% when 'pt' %}{% assign hreflang_code = 'pt-BR' %}
+    {% else %}{% assign hreflang_code = switch_lang %}
+  {% endcase %}
+  <link rel="alternate" hreflang="{{ hreflang_code }}" href="{{ switch_path | absolute_url }}">
   {% endfor %}
   <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
   {% endunless %}
 
   <!-- JSON-LD: SoftwareApplication (AEO) -->
   {% if page_slug == 'index' and page.url != '/404.html' %}
+  {% assign packages = site.data.facts.packages %}
+  {% assign low_price = packages[0].price_usd %}
+  {% assign high_price = packages[0].price_usd %}
+  {% for pkg in packages %}
+    {% if pkg.price_usd < low_price %}{% assign low_price = pkg.price_usd %}{% endif %}
+    {% if pkg.price_usd > high_price %}{% assign high_price = pkg.price_usd %}{% endif %}
+  {% endfor %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -86,12 +98,14 @@
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "iOS, Android",
     "offers": {
-      "@type": "Offer",
-      "price": "0",
+      "@type": "AggregateOffer",
       "priceCurrency": "USD",
-      "availability": "https://schema.org/PreOrder",
-      "category": "free download with optional in-app purchase",
-      "description": "Free download with optional pay-as-you-go credits starting at ${{ site.data.facts.packages[0].price_usd }}/hour"
+      "lowPrice": "{{ low_price }}",
+      "highPrice": "{{ high_price }}",
+      "offerCount": "{{ packages.size }}",
+      "availability": "https://schema.org/InStock",
+      "category": "free app download with pay-as-you-go credit packages",
+      "description": "Free app download; transcription credit packages from ${{ low_price }} to ${{ high_price }}"
     },
     "featureList": [
       "RAM-only audio processing",
@@ -141,7 +155,7 @@
           {% endfor %}
         </div>
       </details>
-      <button id="nav-mobile-toggle" class="nav-mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile-links">
+      <button id="nav-mobile-toggle" class="nav-mobile-toggle" aria-label="{{ i18n.toggle_menu }}" aria-expanded="false" aria-controls="nav-mobile-links">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -181,7 +195,7 @@
       <div class="footer-brand">
         <span class="nav-logo-icon">&#x1f6e1;&#xfe0f;</span>
         <strong>SafeScribe</strong>
-        <span class="footer-tagline">Privacy-first audio transcription</span>
+        <span class="footer-tagline">{{ i18n.footer_tagline }}</span>
       </div>
       <div class="footer-cols">
         <div class="footer-col">

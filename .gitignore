@@ -2,6 +2,10 @@
 .DS_Store
 Thumbs.db
 
+# Bundler lockfile pins a platform; GitHub Pages' github-pages gem build
+# environment (Linux) conflicts with local platforms (macOS/Windows) if committed.
+Gemfile.lock
+
 # Blueprint audit artifacts
 .audit/
 

@@ -67,3 +67,5 @@ bundle exec jekyll serve
 ```
 
 The `Gemfile` pins the `github-pages` gem so local preview matches the exact Jekyll + plugin versions GitHub Pages builds with.
+
+**Ruby version:** `github-pages` pins Jekyll 3.9.0 → `liquid` 4.0.3, which calls `String#tainted?` — removed in Ruby 3.2. On Ruby >= 3.2, `bundle exec jekyll build`/`serve` fails with `undefined method 'tainted?'`. `.ruby-version` (3.1.7) documents the working version; `scripts/pre-push` and `scripts/release.sh` auto-prefer a keg-only `brew install ruby@3.1` if present (`/opt/homebrew/opt/ruby@3.1/bin`) — install it once and both scripts pick it up automatically. Without it, run `bundle exec jekyll ...` manually via that Ruby, or expect the pre-push gate to warn and the build to fail.

@@ -26,6 +26,12 @@ warn(){ printf "${YELLOW}⚠${NC} %s\n" "$1"; }
 HEAVY_STAMP=".release-heavy-stamp"
 HEAVY_MAX_AGE_DAYS=7
 
+# github-pages pins Jekyll 3.9.0 -> liquid 4.0.3, which calls String#tainted?
+# (removed in Ruby 3.2). Prefer a keg-only Homebrew Ruby 3.1 if present.
+if [[ -x /opt/homebrew/opt/ruby@3.1/bin/ruby ]]; then
+  PATH="/opt/homebrew/opt/ruby@3.1/bin:$PATH"
+fi
+
 bash scripts/install-hooks.sh >/dev/null
 
 if [[ -n "$(git status --porcelain)" ]]; then

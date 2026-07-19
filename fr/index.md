@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Transcription IA respectueuse de la vie privée
-description: La plupart des applications de transcription conservent vos enregistrements pendant des jours. Pas SafeScribe : votre audio est traité uniquement dans la mémoire (RAM) de notre serveur, jamais écrit sur le disque, et supprimé dès que votre texte est prêt.
+description: "La plupart des applications de transcription conservent vos enregistrements pendant des jours. Pas SafeScribe : votre audio est traité uniquement dans la mémoire (RAM) de notre serveur, jamais écrit sur le disque, et supprimé dès que votre texte est prêt."
 lang: fr
 ---
 

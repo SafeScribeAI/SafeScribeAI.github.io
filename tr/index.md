@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Gizlilik Öncelikli Yapay Zeka Transkripsiyon
-description: Çoğu transkripsiyon uygulaması kayıtlarınızı günlerce saklar. SafeScribe saklamaz: sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, diske hiç yazılmaz ve metniniz hazır olur olmaz silinir.
+description: "Çoğu transkripsiyon uygulaması kayıtlarınızı günlerce saklar. SafeScribe saklamaz: sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, diske hiç yazılmaz ve metniniz hazır olur olmaz silinir."
 lang: tr
 ---
 

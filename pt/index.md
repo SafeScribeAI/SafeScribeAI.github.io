@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Transcrição de IA com privacidade em primeiro lugar
-description: A maioria dos apps de transcrição guarda suas gravações por dias. O SafeScribe não: seu áudio é processado apenas na memória (RAM) do nosso servidor, nunca gravado em disco e excluído assim que seu texto fica pronto.
+description: "A maioria dos apps de transcrição guarda suas gravações por dias. O SafeScribe não: seu áudio é processado apenas na memória (RAM) do nosso servidor, nunca gravado em disco e excluído assim que seu texto fica pronto."
 lang: pt
 ---
 

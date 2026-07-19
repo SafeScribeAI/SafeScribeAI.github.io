@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Privacy-First AI Transcription
-description: Most transcription apps keep your recordings for days. SafeScribe doesn't: your audio is processed only in our server's memory (RAM), never written to disk, and deleted the moment your text is ready.
+description: "Most transcription apps keep your recordings for days. SafeScribe doesn't: your audio is processed only in our server's memory (RAM), never written to disk, and deleted the moment your text is ready."
 lang: en
 ---
 

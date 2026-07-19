@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — KI-Transkription mit Datenschutz an erster Stelle
-description: Die meisten Transkriptions-Apps speichern Ihre Aufnahmen tagelang. SafeScribe nicht: Ihr Audio wird nur im Arbeitsspeicher (RAM) unseres Servers verarbeitet, nie auf die Festplatte geschrieben und gelöscht, sobald Ihr Text fertig ist.
+description: "Die meisten Transkriptions-Apps speichern Ihre Aufnahmen tagelang. SafeScribe nicht: Ihr Audio wird nur im Arbeitsspeicher (RAM) unseres Servers verarbeitet, nie auf die Festplatte geschrieben und gelöscht, sobald Ihr Text fertig ist."
 lang: de
 ---
 

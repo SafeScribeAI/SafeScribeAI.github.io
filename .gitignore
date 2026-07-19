@@ -1,6 +1,8 @@
 .claude/
 .DS_Store
 Thumbs.db
+_site/
+.release-heavy-stamp
 
 # Bundler lockfile pins a platform; GitHub Pages' github-pages gem build
 # environment (Linux) conflicts with local platforms (macOS/Windows) if committed.

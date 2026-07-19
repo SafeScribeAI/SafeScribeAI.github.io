@@ -6,3 +6,8 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 
 # Plugins declared in _config.yml (jekyll-sitemap, jekyll-feed) ship with github-pages.
+
+# Weekly heavy-layer link/HTML check (scripts/release.sh) — not run on every push.
+group :development do
+  gem "html-proofer"
+end

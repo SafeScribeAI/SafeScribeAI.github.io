@@ -54,6 +54,10 @@ en/resources/                English-only deep pages (how-we-compare, security-t
 2. Add a new entry to `_data/i18n.yml` with all required fields (copy the `en` block as a template).
 3. Add `<lang>` to the `all_langs` string in `_layouts/default.html`.
 
+## Release
+
+`./safescribe.sh release-site` (from the `SafeScribeAI/` root) or `bash scripts/release.sh` (from this repo) is the canonical path: run once after `bash scripts/install-hooks.sh` (this repo shipped with no installed hooks before). It runs the weekly heavy layer (`jekyll build` + `../scripts/check_facts.py` + `html-proofer` against `_site/`) before pushing, pushes to `main` (which both fires the pre-push gate and triggers GitHub's own Pages build — the two collapse into one action here), then polls GitHub's Pages build API (via the `gh` CLI — the endpoint needs auth even for public repos) until the pushed commit shows `status: built`.
+
 ## Local preview
 
 ```bash

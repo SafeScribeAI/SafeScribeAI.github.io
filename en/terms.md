@@ -10,7 +10,7 @@ lang: en
 # Terms of Service
 
 <div class="summary-box">
-  <strong>Key points:</strong> You must be 17 or older to use SafeScribe. Your transcripts belong to you. Audio is never stored on our servers after processing. Payments go through Apple or Google — we never see your payment details.
+  <strong>Key points:</strong> You must be 18 or older to use SafeScribe. Your transcripts belong to you. Audio is never stored on our servers after processing. Payments go through Apple or Google — we never see your payment details.
 </div>
 
 <p class="page-meta">Last updated: March 2026</p>
@@ -40,7 +40,7 @@ SafeScribe is a privacy-first AI-powered audio transcription service. You record
 <span class="section-label">Section 3</span>
 ## Eligibility
 
-You must be at least **17 years old** to use SafeScribe. By using the App, you confirm that you meet this age requirement.
+You must be at least **18 years old** to use SafeScribe. By using the App, you confirm that you meet this age requirement.
 
 ---
 

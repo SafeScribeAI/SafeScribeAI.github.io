@@ -97,9 +97,9 @@ This is the core of SafeScribe's privacy design. The server runs OpenAI's Whispe
 
 | Data | Deleted When |
 |------|-------------|
-| Audio bytes | Transcription completes |
-| Transcript text | You acknowledge receipt |
-| Job metadata | You acknowledge receipt |
+| Audio bytes | Transcription completes — 1-hour TTL ceiling |
+| Transcript text | You acknowledge receipt — 24-hour TTL ceiling |
+| Job metadata | You acknowledge receipt — 24-hour TTL ceiling |
 
 **What the server stores permanently (on disk):**
 
@@ -219,7 +219,7 @@ Verify integrity               Wait for ACK
 Store encrypted    Send ACK --->  Transcript DELETED
 locally (AES-256)              Job metadata DELETED
     |                              |
-Done                           ZERO data remains
+Done                           ZERO job data remains
 </div>
 
 ---

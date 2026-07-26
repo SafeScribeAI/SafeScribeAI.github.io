@@ -97,9 +97,9 @@ Bu, SafeScribe'ın gizlilik tasarımının çekirdeğidir. Sunucu, kendi barınd
 
 | Veri | Silinme Zamanı |
 |------|----------------|
-| Ses baytları | Transkripsiyon tamamlandığında |
-| Transkript metni | Alımı onayladığınızda |
-| İş meta verileri | Alımı onayladığınızda |
+| Ses baytları | Transkripsiyon tamamlandığında — 1 saatlik TTL tavanı |
+| Transkript metni | Alımı onayladığınızda — 24 saatlik TTL tavanı |
+| İş meta verileri | Alımı onayladığınızda — 24 saatlik TTL tavanı |
 
 **Sunucunun kalıcı olarak sakladığı (diskte):**
 
@@ -219,7 +219,7 @@ Bütünlüğü doğrula              Alındı bildir bekle
 Şifreli depola   ACK gönder -->   Transkript SİLİNDİ
 (AES-256)                      İş meta verisi SİLİNDİ
     |                              |
-Tamamlandı                     SIFIR veri kalır
+Tamamlandı                     SIFIR iş verisi kalır
 </div>
 
 ---

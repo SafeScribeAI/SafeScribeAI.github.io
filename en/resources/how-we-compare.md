@@ -33,7 +33,7 @@ lang: en
       <td><strong>SafeScribe</strong></td>
       <td>Consumer mobile, privacy-first</td>
       <td>$0.0104 – $0.0165</td>
-      <td>RAM-only, zero retention, no training, OIDC-pseudonymous</td>
+      <td>RAM-only, no content retained after delivery, no training, OIDC-pseudonymous</td>
       <td>Hybrid (device preprocess + RAM-only cloud inference)</td>
       <td>PAYG (no subscription)</td>
     </tr>
@@ -123,7 +123,7 @@ lang: en
     <span class="check-mark">&#x2713;</span>
     <span class="item-body">
       <strong>"De-identified" is a marketing word, not an architecture.</strong>
-      <span class="item-desc">The industry has been repeatedly tested on whether "de-identified" audio still ends up in training datasets. Our position: don't say "de-identified" — say "zero retention" and let users verify it (ACK the transcript, then query the work ID — server returns 404).</span>
+      <span class="item-desc">The industry has been repeatedly tested on whether "de-identified" audio still ends up in training datasets. Our position: don't say "de-identified" — state exactly what survives delivery, and let users verify it (ACK the transcript, then query the work ID — the server returns 404). What survives is the billing row: duration, cost, a one-way user hash. No audio, no text.</span>
     </span>
   </li>
   <li>

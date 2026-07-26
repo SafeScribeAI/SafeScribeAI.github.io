@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Gizlilik Öncelikli Yapay Zeka Transkripsiyon
-description: "Çoğu transkripsiyon uygulaması kayıtlarınızı günlerce saklar. SafeScribe saklamaz: sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, diske hiç yazılmaz ve metniniz hazır olur olmaz silinir."
+description: "Çoğu transkripsiyon uygulaması kayıtlarınızı günlerce saklar. SafeScribe saklamaz: sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, disklerimize hiç yazılmaz ve metniniz hazır olur olmaz silinir."
 lang: tr
 ---
 
@@ -9,7 +9,7 @@ lang: tr
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Çoğu transkripsiyon uygulaması kayıtlarınızı günlerce saklar.<br>SafeScribe hiç saklamaz.</p>
-  <p class="hero-body-text">Sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, diske hiç yazılmaz ve metninizi aldığınız anda silinir.</p>
+  <p class="hero-body-text">Sesiniz yalnızca sunucumuzun belleğinde (RAM) işlenir, disklerimize hiç yazılmaz ve metninizi aldığınız anda silinir.</p>
   <p class="hero-footnote">Gizlilik bizde bir politika değil, sistemin temeli. Bir mahkeme kararı gelse bile elimizde paylaşılacak ses, metin, ad, e-posta veya IP yoktur — yalnızca kimliğinizle değil, tek yönlü bir özetle ilişkili bakiye ve kullanım kaydı bulunur.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Fiyatları Görün</a>
@@ -122,7 +122,7 @@ lang: tr
     <div class="step-number">2</div>
     <div class="step-icon">&#x1f9e0;</div>
     <h3>Yapay Zeka RAM'de Yazıya Dönüştürüyor</h3>
-    <p>Sesiniz sunucularımızda en gelişmiş konuşma tanıma yapay zekası tarafından işlenir — tamamen RAM'de. Hiçbir veri diske yazılmaz.</p>
+    <p>Sesiniz sunucularımızda en gelişmiş konuşma tanıma yapay zekası tarafından işlenir — tamamen RAM'de. Disklerimize hiçbir veri yazılmaz.</p>
   </div>
   <div class="step">
     <div class="step-number">3</div>
@@ -143,9 +143,9 @@ Aşağıdaki her madde yalnızca bir politika değil, kodla zorunlu kılınmış
 <span class="section-label">Temel Mimari</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yalnızca RAM'de işleme</strong><span class="item-desc">Sesiniz yalnızca transkripsiyon sırasında uçucu bellekte bulunur — diske hiçbir zaman yazılmaz. <a href="security#layer-2">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yalnızca RAM'de işleme</strong><span class="item-desc">Sesiniz yalnızca transkripsiyon sırasında uçucu bellekte bulunur — disklerimize hiçbir zaman yazılmaz. <a href="security#layer-2">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kademeli silme + güvenli yedek</strong><span class="item-desc">Her adım bir önceki adımın verisini siler. Kodumuz başarısız olursa veriler TTL ile kendiliğinden yok olur. <a href="security#layer-6">devamını oku →</a></span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırdığımız yapay zeka</strong><span class="item-desc">Sesiniz OpenAI'ye, Google'a veya herhangi bir üçüncü tarafa ulaşmaz. Kendi altyapımızı işletiyoruz. <a href="security#layer-2">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırdığımız yapay zeka</strong><span class="item-desc">Sesiniz OpenAI'ye, Google'a veya herhangi bir üçüncü taraf yapay zeka servisine ulaşmaz. Kendi çıkarım altyapımızı işletiyoruz. <a href="security#layer-2">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Bütünlük doğrulaması</strong><span class="item-desc">Her transkript, değiştirilmeden ulaştığını kanıtlayan bir SHA-256 sağlama toplamı taşır. <a href="security#layer-1">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tekrar indirme yok</strong><span class="item-desc">Transkriptinizi aldıktan sonra sunucularımızda hiçbir şey kalmaz. "Tekrar indir" diye bir seçenek yoktur. <a href="security#layer-6">devamını oku →</a></span></span></li>
 </ul>
@@ -154,7 +154,7 @@ Aşağıdaki her madde yalnızca bir politika değil, kodla zorunlu kılınmış
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>E-posta veya isim — hiç saklanmaz</strong><span class="item-desc">Yalnızca hesap kimliğinizin tek yönlü özeti tutulur. Geri döndürülerek kim olduğunuz ortaya çıkarılamaz. <a href="privacy#sign-in">devamını oku →</a></span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IP adresiniz — hiç kaydedilmez</strong><span class="item-desc">Kısa süreliğine hız sınırlama için (özet olarak) kullanılır, ardından silinir. Hiçbir kayıtta yer almaz. <a href="privacy#zero-disk">devamını oku →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>IP adresiniz — hiç kaydedilmez</strong><span class="item-desc">Kısa süreliğine hız sınırlama için (özet olarak) kullanılır, ardından silinir. Bizim hiçbir kaydımızda yer almaz; ağ sağlayıcımız Cloudflare aktarım sırasında görür. <a href="privacy#zero-disk">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kayıtlarınız — eğitim için asla kullanılmaz</strong><span class="item-desc">Sesiniz transkripsiyon biter bitmez silinir. Kopya yok, arşiv yok, eğitim verisi yok. <a href="privacy#zero-disk">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Profilleme veya otomatik karar yok</strong><span class="item-desc">Sizi hiçbir zaman puanlamaz, sıralamaz veya hakkınızda otomatik karar vermeyiz. <a href="privacy#your-rights">devamını oku →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Davranış takibi yok</strong><span class="item-desc">Sıfır analitik SDK kullanıyoruz. Mixpanel yok, Firebase Analytics yok, hiçbir takip aracı yok. <a href="privacy#third-parties">devamını oku →</a></span></span></li>
@@ -324,7 +324,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
       "name": "IP adresimi kaydediyor musunuz?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hayır. IP adresleri hiçbir zaman saklanmaz veya kaydedilmez. Mimarimiz bunu kod düzeyinde uygular — günlük sistemi, IP'leri herhangi bir günlük çıktısına ulaşmadan önce açıkça düşürecek şekilde yapılandırılmıştır. Tüm dahili işlemler için tek yönlü bir SHA-256 karması (oturum açma kimliğinizin) kullanırız. Bu karma geri döndürülerek kimliğinizi ortaya çıkaramaz."
+        "text": "Hayır. IP adresleri bizim tarafımızda hiçbir zaman saklanmaz veya kaydedilmez. Mimarimiz bunu kod düzeyinde uygular — günlük sistemi, IP'leri herhangi bir günlük çıktısına ulaşmadan önce açıkça düşürecek şekilde yapılandırılmıştır. Tüm dahili işlemler için tek yönlü bir SHA-256 karması (oturum açma kimliğinizin) kullanırız. Bu karma geri döndürülerek kimliğinizi ortaya çıkaramaz. İsteğiniz bize Cloudflare üzerinden ulaşır; Cloudflare, her ağ sağlayıcısı gibi bağlantıyı aktarım sırasında görür."
       }
     },
     {
@@ -387,7 +387,7 @@ Abonelik yok. Gizli ücret yok. Kredi satın alın, istediğiniz zaman kullanın
 
 <details class="faq-item">
   <summary>IP adresimi kaydediyor musunuz?</summary>
-  <div class="faq-answer">Hayır. IP adresleri hiçbir zaman saklanmaz veya kaydedilmez. Mimarimiz bunu kod düzeyinde uygular — günlük sistemi, IP'leri herhangi bir günlük çıktısına ulaşmadan önce açıkça düşürecek şekilde yapılandırılmıştır. Tüm dahili işlemler için tek yönlü bir SHA-256 karması (oturum açma kimliğinizin) kullanırız. Bu karma geri döndürülerek kimliğinizi ortaya çıkaramaz.</div>
+  <div class="faq-answer">Hayır. IP adresleri bizim tarafımızda hiçbir zaman saklanmaz veya kaydedilmez. Mimarimiz bunu kod düzeyinde uygular — günlük sistemi, IP'leri herhangi bir günlük çıktısına ulaşmadan önce açıkça düşürecek şekilde yapılandırılmıştır. Tüm dahili işlemler için tek yönlü bir SHA-256 karması (oturum açma kimliğinizin) kullanırız. Bu karma geri döndürülerek kimliğinizi ortaya çıkaramaz. İsteğiniz bize Cloudflare üzerinden ulaşır; Cloudflare, her ağ sağlayıcısı gibi bağlantıyı aktarım sırasında görür.</div>
 </details>
 
 <details class="faq-item">

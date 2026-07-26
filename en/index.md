@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Privacy-First AI Transcription
-description: "Most transcription apps keep your recordings for days. SafeScribe doesn't: your audio is processed only in our server's memory (RAM), never written to disk, and deleted the moment your text is ready."
+description: "Most transcription apps keep your recordings for days. SafeScribe doesn't: your audio is processed only in our server's memory (RAM), never written to our disks, and deleted the moment your text is ready."
 lang: en
 ---
 
@@ -9,7 +9,7 @@ lang: en
   <div class="hero-icon">&#x1f512;</div>
   <h1>SafeScribe</h1>
   <p class="hero-tagline">Most transcription apps keep your recordings for days.<br>SafeScribe keeps none.</p>
-  <p class="hero-body-text">Your audio is processed only in our server's memory (RAM), never written to disk, and deleted the moment you receive your text.</p>
+  <p class="hero-body-text">Your audio is processed only in our server's memory (RAM), never written to our disks, and deleted the moment you receive your text.</p>
   <p class="hero-footnote">Privacy isn't a policy here — it's how the system is built. Even under a court order, we'd have no audio, transcript, name, email, or IP to hand over — only a balance and usage record tied to a one-way hash, never to your identity.</p>
   <div class="cta-group">
     <a class="cta-btn cta-btn-primary" href="#pricing">&#x1f3a4; Get Started — See Pricing</a>
@@ -122,7 +122,7 @@ lang: en
     <div class="step-number">2</div>
     <div class="step-icon">&#x1f9e0;</div>
     <h3>AI Transcribes in Memory</h3>
-    <p>Your audio is processed by a state-of-the-art speech recognition AI on our servers — entirely in RAM. Nothing is ever written to disk.</p>
+    <p>Your audio is processed by a state-of-the-art speech recognition AI on our servers — entirely in RAM. Nothing is ever written to our disks.</p>
   </div>
   <div class="step">
     <div class="step-number">3</div>
@@ -143,9 +143,9 @@ Every claim below is enforced in code — not just policy. Each links to the tec
 <span class="section-label">Core Architecture</span>
 
 <ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM-only processing</strong><span class="item-desc">Your audio exists in volatile memory only during transcription — never written to disk. <a href="security#layer-2">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM-only processing</strong><span class="item-desc">Your audio exists in volatile memory only during transcription — never written to our disks. <a href="security#layer-2">learn more →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Cascade deletion + failsafe</strong><span class="item-desc">Each step deletes the previous step's data. If our code fails, data self-destructs via TTL. <a href="security#layer-6">learn more →</a></span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Self-hosted AI</strong><span class="item-desc">Your audio never reaches OpenAI, Google, or any third-party service. We run our own infrastructure. <a href="security#layer-2">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Self-hosted AI</strong><span class="item-desc">Your audio never reaches OpenAI, Google, or any third-party AI service. We run our own inference infrastructure. <a href="security#layer-2">learn more →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Integrity verification</strong><span class="item-desc">Every transcript carries a SHA-256 checksum so you know it arrived unaltered. <a href="security#layer-1">learn more →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No re-download</strong><span class="item-desc">Once you receive your transcript, nothing remains on our servers. There is no "download again." <a href="security#layer-6">learn more →</a></span></span></li>
 </ul>
@@ -154,7 +154,7 @@ Every claim below is enforced in code — not just policy. Each links to the tec
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Your email or name — never stored</strong><span class="item-desc">Only a one-way hash of your account ID is kept. It cannot be reversed to reveal who you are. <a href="privacy#sign-in">learn more →</a></span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Your IP address — never logged</strong><span class="item-desc">Used briefly for rate limiting (as a hash), then discarded. Never appears in any log. <a href="privacy#zero-disk">learn more →</a></span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Your IP address — never logged</strong><span class="item-desc">Used briefly for rate limiting (as a hash), then discarded. Never appears in any log of ours; our network provider Cloudflare sees it in transit. <a href="privacy#zero-disk">learn more →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Your recordings — never used for training</strong><span class="item-desc">Your audio is deleted immediately after transcription. No copy, no archive, no training dataset. <a href="privacy#zero-disk">learn more →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No profiling or automated decisions</strong><span class="item-desc">We never score, rank, or make automated decisions about you. <a href="privacy#your-rights">learn more →</a></span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No behaviour tracking</strong><span class="item-desc">We use zero analytics SDKs. No Mixpanel, no Firebase Analytics, no trackers of any kind. <a href="privacy#third-parties">learn more →</a></span></span></li>
@@ -324,7 +324,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
       "name": "Do you log my IP address?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. IP addresses are never stored or logged. Our architecture enforces this at the code level — the logging system is explicitly configured to drop IPs before they reach any log output. We use a pseudonymous identifier (a one-way SHA-256 hash of your sign-in identity) for all internal operations. This hash cannot be reversed to reveal your identity."
+        "text": "No. IP addresses are never stored or logged by us. Our architecture enforces this at the code level — the logging system is explicitly configured to drop IPs before they reach any log output. We use a pseudonymous identifier (a one-way SHA-256 hash of your sign-in identity) for all internal operations. This hash cannot be reversed to reveal your identity. Your request does reach us through Cloudflare, which sees the connection in transit as any network provider would."
       }
     },
     {
@@ -387,7 +387,7 @@ No subscriptions. No hidden fees. Buy credits and use them whenever you want. Un
 
 <details class="faq-item">
   <summary>Do you log my IP address?</summary>
-  <div class="faq-answer">No. IP addresses are never stored or logged. Our architecture enforces this at the code level — the logging system is explicitly configured to drop IPs before they reach any log output. We use a pseudonymous identifier (a one-way SHA-256 hash of your sign-in identity) for all internal operations. This hash cannot be reversed to reveal your identity.</div>
+  <div class="faq-answer">No. IP addresses are never stored or logged by us. Our architecture enforces this at the code level — the logging system is explicitly configured to drop IPs before they reach any log output. We use a pseudonymous identifier (a one-way SHA-256 hash of your sign-in identity) for all internal operations. This hash cannot be reversed to reveal your identity. Your request does reach us through Cloudflare, which sees the connection in transit as any network provider would.</div>
 </details>
 
 <details class="faq-item">

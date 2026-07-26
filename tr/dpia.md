@@ -28,7 +28,7 @@ lang: tr
 | Hesap ve faturalandırma | Takma adlı kullanıcı kimliği, bakiye, kullanım meta verisi | Mad. 6(1)(b) — Sözleşme ifası | Açık rıza |
 | Kimlik doğrulama | OIDC hesap kimliği (karma, orijinal atılan) | Mad. 6(1)(b) — Sözleşme ifası | Sözleşme ifası |
 | Uygulama içi satın alma | App Store / Play Store'dan IAP makbuzu | Mad. 6(1)(b) — Sözleşme ifası | Sözleşme ifası |
-| Yaş doğrulama | Kullanıcı beyanıyla yaş onayı (17+) | Mad. 8 GDPR / KVKK Mad. 6 | Yasal yükümlülük |
+| Yaş doğrulama | Kullanıcı beyanıyla yaş onayı (18+) | Mad. 8 GDPR / KVKK Mad. 6 | Yasal yükümlülük |
 | Kilitlenme raporlama | Anonimleştirilmiş hata raporları (katılım, KKV gizlenmiş) | Mad. 6(1)(a) — Rıza | Açık rıza |
 | Geri bildirim ve sorun raporları | Serbest metin (sunucu tarafında KKV gizlenmiş) + takma adlı kullanıcı kimliği; rapor türü ve uygulama tanılaması | Mad. 6(1)(a) — Rıza | Açık rıza |
 
@@ -100,7 +100,7 @@ Tüm GDPR ve KVKK veri sahibi hakları (erişim, düzeltme, silme, kısıtlama, 
 | Sunucu taraflı ihlal — ses veya transkript ifşası | Orta | Kalıcı ses depolaması yok; kimlik doğrulamalı API; kullanıcı başına iş izolasyonu; TTL güvenlik kilidi | **Düşük** |
 | Yerel şifreli depolamaya yetkisiz erişim | Düşük | AES-256 şifreli kaplar; anahtar iOS Keychain / Android Keystore'da | **Düşük** |
 | Kilitlenme raporları üzerinden KKV sızıntısı | Düşük | E-posta, telefon, IP ve token'ların örüntü tabanlı gizlenmesi, SafeScribe'ın kendi kilitlenme raporlama uç noktasına gönderilmeden önce | **Düşük** |
-| Sınır ötesi veri aktarımı | Orta | İlk açılışta KVKK açık rızası; ilk açılışta GDPR Mad. 49(1)(a) açık bilgilendirilmiş rıza | **Düşük** |
+| Sınır ötesi veri aktarımı | Orta | Kullanıcıdan veri sorumlusuna yapılan yüklemeler GDPR Bölüm V anlamında aktarım değildir (AB'de aktarıcı yok — EDPB Kılavuz 05/2021 v2.0, Örnek 1); GDPR bizi Mad. 3(2) üzerinden bağlar, dayanak Mad. 6 rızasıdır. Cloudflare uç noktası üzerinden giden sonraki adım aktarımdır ve Cloudflare'in DPA/SCC'leri kapsamındadır. Türkiye'deki kullanıcılar için sınır ötesi aktarımı KVKK Mad. 9 karşılar. | **Düşük** |
 | Yapay zekanın hassas içeriği yanlış yazıya dökmesi | Düşük | Transkripsiyon yalnızca bilgilendirme amaçlıdır; kullanıcı tüm çıktıyı inceler; otomatik karar yoktur | **Düşük** |
 
 <div class="callout callout-green">
@@ -128,7 +128,7 @@ Kullanıcılara ilk kullanımdan önce dört bağımsız karttan oluşan ayrınt
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
     <h4>Yaş Doğrulama <em class="u-label-light">(zorunlu)</em></h4>
-    <p>Kullanıcının 17 yaşında veya daha büyük olduğunu doğrular. Zorunlu kartlar devam etmek için kabul edilmelidir.</p>
+    <p>Kullanıcının 18 yaşında veya daha büyük olduğunu doğrular. Zorunlu kartlar devam etmek için kabul edilmelidir.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>

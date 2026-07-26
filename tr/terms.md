@@ -10,7 +10,7 @@ lang: tr
 # Kullanım Koşulları
 
 <div class="summary-box">
-  <strong>Önemli noktalar:</strong> SafeScribe'ı kullanmak için en az 17 yaşında olmanız gerekir. Transkriptler size aittir. Ses dosyaları işlendikten sonra sunucularımızda hiçbir zaman saklanmaz. Ödemeler Apple veya Google üzerinden gerçekleşir — ödeme bilgilerinizi asla görmeyiz.
+  <strong>Önemli noktalar:</strong> SafeScribe'ı kullanmak için en az 18 yaşında olmanız gerekir. Transkriptler size aittir. Ses dosyaları işlendikten sonra sunucularımızda hiçbir zaman saklanmaz. Ödemeler Apple veya Google üzerinden gerçekleşir — ödeme bilgilerinizi asla görmeyiz.
 </div>
 
 <p class="page-meta">Son güncelleme: Mart 2026</p>
@@ -40,7 +40,7 @@ SafeScribe, gizlilik öncelikli yapay zeka destekli bir ses transkripsiyon hizme
 <span class="section-label">Bölüm 3</span>
 ## Uygunluk
 
-SafeScribe'ı kullanmak için en az **17 yaşında** olmanız gerekmektedir. Uygulamayı kullanarak bu yaş koşulunu karşıladığınızı onaylamış olursunuz.
+SafeScribe'ı kullanmak için en az **18 yaşında** olmanız gerekmektedir. Uygulamayı kullanarak bu yaş koşulunu karşıladığınızı onaylamış olursunuz.
 
 ---
 

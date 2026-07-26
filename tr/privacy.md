@@ -10,7 +10,7 @@ lang: tr
 # Gizlilik Politikası
 
 <div class="summary-box">
-  <strong>Sade anlatım:</strong> Sesinizi sunucu belleğinde işleyip transkripti oluşturduktan sonra hemen siliyoruz. Sesi diske kaydetmiyoruz, yapay zeka eğitiminde kullanmıyoruz ve kimseyle paylaşmıyoruz. Transkriptleriniz cihazınızda şifrelenmiş olarak saklanır ve tamamen sizin kontrolünüzdedir. Yalnızca takma adlı faturalandırma kayıtları tutuyoruz.
+  <strong>Sade anlatım:</strong> Sesinizi sunucumuzun belleğinde işleyip transkripti oluşturduktan sonra hemen siliyoruz. Sesinizi disklerimize hiçbir zaman yazmıyoruz, yapay zeka eğitiminde kullanmıyoruz ve kimseyle paylaşmıyoruz. Transkriptleriniz cihazınızda şifrelenmiş olarak saklanır ve tamamen sizin kontrolünüzdedir. Yalnızca takma adlı faturalandırma kayıtları tutuyoruz.
 </div>
 
 <p class="page-meta">Son güncelleme: March 2026</p>
@@ -22,9 +22,9 @@ lang: tr
 {: #no-collect}
 
 <ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Sesi diske kaydetmek — hiçbir zaman</li>
+  <li><span class="x-mark">&#x2717;</span> Sesinizi disklerimize yazmak — hiçbir zaman</li>
   <li><span class="x-mark">&#x2717;</span> E-posta adresinizi veya adınızı saklamak</li>
-  <li><span class="x-mark">&#x2717;</span> IP adreslerini kayıt altına almak veya saklamak</li>
+  <li><span class="x-mark">&#x2717;</span> IP adreslerini kayıt altına almak veya saklamak <em>(ağ sağlayıcımız Cloudflare bunları aktarım sırasında görür — bkz. <a href="#third-parties">Üçüncü Taraf Hizmetler</a>)</em></li>
   <li><span class="x-mark">&#x2717;</span> Kayıtları yapay zeka modeli eğitiminde kullanmak</li>
   <li><span class="x-mark">&#x2717;</span> Verileri reklamverenler ya da veri aracılarıyla paylaşmak</li>
   <li><span class="x-mark">&#x2717;</span> Uygulama veya oturumlar arasında davranışı izlemek</li>
@@ -65,8 +65,8 @@ lang: tr
 
 | Veri | Ne Zaman Silinir |
 |------|-----------------|
-| Ses dosyası | Transkripsiyon tamamlanır tamamlanmaz |
-| Transkript metni | Teslim aldığınızı onayladıktan sonra |
+| Ses dosyası | Transkripsiyon tamamlanır tamamlanmaz — bir aksilik olursa 1 saatlik TTL güvenlik kilidi |
+| Transkript metni | Teslim aldığınızı onayladığınızda — cihazınız hiç onaylamazsa 24 saatlik TTL güvenlik kilidi |
 
 ### Cihazınızda (şifrelenmiş)
 
@@ -136,7 +136,7 @@ Diskimiz: Yalnızca bakiye kayıtları — ses, transkript veya e-posta yok
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yalnızca RAM</strong><span class="item-desc">ses yalnızca uçucu bellekte işlenir</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Diske hiç yazılmaz</strong><span class="item-desc">geçici olarak bile</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Disklerimize hiç yazılmaz</strong><span class="item-desc">geçici olarak bile. (Uygulama, kayıt sırasında <em>sizin</em> cihazınıza geçici bir sıkıştırılmış kopya yazar; yükleme başarılı olunca silinir.)</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yapay zeka eğitimi yok</strong><span class="item-desc">sesiniz modelleri iyileştirmek için asla kullanılmaz</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırılan yapay zeka</strong><span class="item-desc">hiçbir üçüncü taraf yapay zeka servisi sesinizi almaz</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTL güvenlik kilidi</strong><span class="item-desc">silme kodu başarısız olsa bile veri kendiliğinden yok olur</span></span></li>
@@ -194,6 +194,8 @@ Aşağıdaki hizmetleri kullanıyoruz. Belirtilen bilgilerin ötesinde ses, tran
 
 | Hizmet | Amaç | Paylaşılan veri | Gizlilik Politikası |
 |--------|------|-----------------|---------------------|
+| Cloudflare (Tunnel) | Sunucularımızı halka açık internetten uzak tutar ve hizmet dışı bırakma saldırılarını soğurur | Aktarım hâlindeki isteğiniz — IP adresiniz dahil; kalkan, bağlantıyı Cloudflare'in en yakın uç noktasında şifresini çözüp yeniden şifreleyerek çalıştığı için ses de oradan geçerken görünür. Cloudflare sesi transkribe etmez, analiz etmez, saklamaz. | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
+| Cloudflare (R2) | Faturalandırma defterinin site dışı yedeği | Takma adlı kullanıcı hash'i, bakiye ve kullanım rakamları — ses veya transkript yok | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
 | Google Sign-In | Kimlik doğrulama | Yalnızca OIDC token | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Apple Sign-In | Kimlik doğrulama | Yalnızca OIDC token | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | Uygulama içi satın alma | Yalnızca satın alma makbuzu | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
@@ -239,13 +241,13 @@ Uygulama içinde tamamlayamadığınız herhangi bir talep için **privacy@safes
 <span class="section-label">Hukuki Bilgiler</span>
 ## Ek Bilgiler
 
-**Veri sorumlusu.** SafeScribe, Türkiye'de yerleşik bağımsız bir geliştirici tarafından işletilmektedir. İletişim: privacy@safescribe.dev. Veri Koruma Görevlisi (DPO) atanmamıştır — işleme büyük ölçekte yürütülmemekte ve özel kategori veri sistematik olarak tutulmamaktadır (ses yalnızca RAM'de geçici olarak işlenmekte, diske kaydedilmemektedir).
+**Veri sorumlusu.** SafeScribe, Türkiye'de yerleşik bağımsız bir geliştirici tarafından işletilmektedir. İletişim: privacy@safescribe.dev. Veri Koruma Görevlisi (DPO) atanmamıştır — işleme büyük ölçekte yürütülmemekte ve özel kategori veri sistematik olarak tutulmamaktadır (ses yalnızca sunucumuzun RAM'inde geçici olarak işlenmekte, disklerimize kaydedilmemektedir).
 
 **Yedekler.** Hizmet sürekliliği için hesap kayıtlarının (takma adlı kimlik, bakiye, kullanım istatistikleri) tek günlük yedeği tutulmaktadır. Her yedek bir öncekinin üstüne yazılır. Hesap silme işlemiyle silinen veriler canlı sistemlerden hemen, yedekten ise 24 saat içinde kaldırılır.
 
-**Uluslararası aktarımlar.** SafeScribe'ı AB/AEA'dan kullanıyorsanız, ses ve hesap verileriniz Türkiye'deki sunucularda işlenmektedir. Türkiye'nin halihazırda <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">AB yeterlilik kararı</a> bulunmamaktadır; aktarımlar, ilk açılışta verilen açık rızanıza dayanmaktadır (GDPR Art. 49(1)(a)). Türkiye'deki (KVKK) kullanıcılar için yurt dışı aktarım, KVKK Mad. 9 kapsamında ilk açılıştaki açık rızayla yetkilendirilmiştir.
+**Uluslararası aktarımlar.** SafeScribe'ı AB/AEA'dan kullanıyorsanız, ses ve hesap verileriniz Türkiye'deki sunucularda işlenmektedir; Türkiye'nin <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">AB yeterlilik kararı</a> bulunmamaktadır. Yüklemeniz doğrudan kendi cihazınızdan bize gelir; bu nedenle AB'de bir veri aktarıcısı yoktur ve GDPR Bölüm V (Mad. 44–49) bu yola uygulanmaz — bkz. EDPB <a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052021-interplay-between-application-article_en">Kılavuz 05/2021</a> v2.0, Örnek 1. Hizmeti AB'deki kişilere sunduğumuz için GDPR bizi doğrudan Mad. 3(2) üzerinden bağlar; işlemenin hukuki dayanağı ise Mad. 6 kapsamındaki rızanızdır. Bir sonraki adım ise *gerçekten* aktarımdır: bağlantınız bize Cloudflare üzerinden ulaşır ve en yakın uç nokta Türkiye dışında olabilir — bkz. [Üçüncü Taraf Hizmetler](#third-parties). Türkiye'deki kullanıcılar için yurt dışı aktarım KVKK Mad. 9 kapsamında yetkilendirilmiştir.
 
-**Çocuklar.** SafeScribe, App Store ve Google Play'de 17+ olarak derecelendirilmiştir ve 17 yaşın altındaki kullanıcılara yönelik değildir. 17 yaşın altındaki kişilerden bilerek veri toplamıyoruz. Türkiye dahil tam hukuki ehliyetin 18 yaşında kazanıldığı ülkelerde, 17 yaşındaki kullanıcıların uygulamayı kullanmadan önce ebeveyn veya vasi onayı alması gerekmektedir.
+**Çocuklar.** SafeScribe yetişkinler içindir. Uygulama, kullanılmadan önce 18 yaşında veya daha büyük olduğunuzu onaylamanızı ister; [Kullanım Koşulları](terms) da aynı şartı koyar. 18 yaşın altındaki kişilerden bilerek veri toplamıyoruz. Mağazadaki içerik derecelendirmesi (4+) sakıncalı içerik bulunmadığını anlatır, hedef kitleyi değil — Google Play'de beyan edilen hedef kitle 18+'dır.
 
 **Politika değişiklikleri.** Uygulamalarımız değiştiğinde bu sayfayı güncelleyeceğiz. Yukarıdaki "Son güncelleme" tarihi en son revizyonu yansıtır.
 

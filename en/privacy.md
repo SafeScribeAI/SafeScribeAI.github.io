@@ -10,7 +10,7 @@ lang: en
 # Privacy Policy
 
 <div class="summary-box">
-  <strong>Plain-language summary:</strong> We process your audio in server memory to create a transcript, then delete it immediately. We don't store audio on disk, don't use it for AI training, and don't share it with anyone. Your transcripts are encrypted on your device and under your control. We keep only pseudonymous billing records.
+  <strong>Plain-language summary:</strong> We process your audio in our server's memory to create a transcript, then delete it immediately. We never write your audio to our disks, never use it for AI training, and never share it with anyone. Your transcripts are encrypted on your device and under your control. We keep only pseudonymous billing records.
 </div>
 
 <p class="page-meta">Last updated: March 2026</p>
@@ -22,9 +22,9 @@ lang: en
 {: #no-collect}
 
 <ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Store audio on disk — ever</li>
+  <li><span class="x-mark">&#x2717;</span> Write your audio to our disks — ever</li>
   <li><span class="x-mark">&#x2717;</span> Store your email address or name</li>
-  <li><span class="x-mark">&#x2717;</span> Log or store IP addresses</li>
+  <li><span class="x-mark">&#x2717;</span> Log or store IP addresses <em>(our network provider Cloudflare sees them in transit — see <a href="#third-parties">Third-Party Services</a>)</em></li>
   <li><span class="x-mark">&#x2717;</span> Use recordings to train AI models</li>
   <li><span class="x-mark">&#x2717;</span> Share data with advertisers or brokers</li>
   <li><span class="x-mark">&#x2717;</span> Track behaviour across apps or sessions</li>
@@ -65,8 +65,8 @@ lang: en
 
 | Data | When Deleted |
 |------|-------------|
-| Audio file | Immediately after transcription completes |
-| Transcript text | After you confirm receipt (acknowledgment) |
+| Audio file | Immediately after transcription completes — 1-hour TTL failsafe if anything goes wrong |
+| Transcript text | When you confirm receipt (acknowledgment) — 24-hour TTL failsafe if your device never acknowledges |
 
 ### On your device (encrypted)
 
@@ -136,7 +136,7 @@ Our disk:    Balance records only — no audio, no transcript, no email
 
 <ul class="do-list">
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM-only</strong><span class="item-desc">audio processed in volatile memory only</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Never written to disk</strong><span class="item-desc">not even temporarily</span></span></li>
+  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Never written to our disks</strong><span class="item-desc">not even temporarily. (The app does write a temporary compressed copy to <em>your</em> device while recording; it is removed once the upload succeeds.)</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No AI training</strong><span class="item-desc">your audio is never used to improve models</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Self-hosted AI</strong><span class="item-desc">no third-party AI service receives your audio</span></span></li>
   <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTL failsafe</strong><span class="item-desc">data self-destructs even if deletion code fails</span></span></li>
@@ -193,6 +193,8 @@ We use the following services. No audio, transcript content, or personal informa
 
 | Service | Purpose | Data shared | Privacy Policy |
 |---------|---------|------------|---------------|
+| Cloudflare (Tunnel) | Keeps our servers off the public internet and absorbs denial-of-service attacks | Your request in transit — including your IP address and, because the shield works by decrypting and re-encrypting the connection at Cloudflare's nearest edge, the audio while it passes through. Cloudflare does not transcribe, analyse, or store it. | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
+| Cloudflare (R2) | Off-site backup of the billing ledger | Pseudonymous user hash, balance and usage figures — no audio, no transcripts | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
 | Google Sign-In | Authentication | OIDC token only | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Apple Sign-In | Authentication | OIDC token only | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
 | Apple App Store | In-app purchases | Purchase receipt only | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
@@ -238,13 +240,13 @@ For any request you can't complete in-app, contact **privacy@safescribe.dev**.
 <span class="section-label">Legal</span>
 ## Additional Information
 
-**Data controller.** SafeScribe is operated by an independent developer based in Turkey. Contact: privacy@safescribe.dev. No Data Protection Officer (DPO) has been appointed — processing is not carried out at large scale and no special-category data is systematically retained (audio is processed ephemerally in RAM only, never persisted to disk).
+**Data controller.** SafeScribe is operated by an independent developer based in Turkey. Contact: privacy@safescribe.dev. No Data Protection Officer (DPO) has been appointed — processing is not carried out at large scale and no special-category data is systematically retained (audio is processed ephemerally in our server's RAM only, never persisted to our disks).
 
 **Backups.** A single daily backup of account records (pseudonymous ID, balance, usage statistics) is maintained for service continuity. Each backup overwrites the previous one. Data deleted by account deletion is removed from live systems immediately and from the backup within 24 hours.
 
-**International transfers.** If you use SafeScribe from the EU/EEA, your audio and account data are processed on servers in Turkey. Turkey does not currently hold an <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU adequacy decision</a>; transfers are covered by your explicit informed consent at first launch (GDPR Art. 49(1)(a)). For Turkey (KVKK — Turkey's Personal Data Protection Law) users, cross-border transfer is authorised by explicit consent at first launch under KVKK Art. 9.
+**International transfers.** If you use SafeScribe from the EU/EEA, your audio and account data are processed on servers in Turkey, which does not hold an <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU adequacy decision</a>. Your upload goes straight from your own device to us, so there is no EU-based exporter and GDPR Chapter V (Arts. 44–49) does not apply to it — see EDPB <a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052021-interplay-between-application-article_en">Guidelines 05/2021</a> v2.0, Example 1. We are bound by the GDPR directly through Art. 3(2) because we offer the service to people in the EU, and the lawful basis for the processing itself is your consent under Art. 6. One onward step *is* a transfer: your connection reaches us through Cloudflare, whose nearest edge may sit outside Turkey — see [Third-Party Services](#third-parties). For users in Turkey, cross-border transfer is authorised under KVKK Art. 9.
 
-**Children.** SafeScribe is rated 17+ on the App Store and Google Play and is not intended for users under 17. We do not knowingly collect data from anyone under 17. In jurisdictions where 18 is the age of full legal capacity (including Turkey), users aged 17 require parental or guardian consent before using the app.
+**Children.** SafeScribe is for adults. The app asks you to confirm you are 18 or older before you can use it, and the [Terms of Service](terms) set the same requirement. We do not knowingly collect data from anyone under 18. The store content rating (4+) describes the absence of objectionable material, not the intended audience — the audience declared on Google Play is 18+.
 
 **Policy changes.** We will update this page when our practices change. The "Last updated" date above reflects the most recent revision.
 

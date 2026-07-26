@@ -28,7 +28,7 @@ lang: en
 | Account & billing | Pseudonymous user ID, balance, usage metadata | Art. 6(1)(b) — Contract performance | Explicit consent |
 | Authentication | OIDC account ID (hashed, original discarded) | Art. 6(1)(b) — Contract performance | Contract performance |
 | In-app purchase | IAP receipt from App Store / Play Store | Art. 6(1)(b) — Contract performance | Contract performance |
-| Age confirmation | Self-declared age confirmation (17+) | Art. 8 GDPR / KVKK Art. 6 | Legal obligation |
+| Age confirmation | Self-declared age confirmation (18+) | Art. 8 GDPR / KVKK Art. 6 | Legal obligation |
 | Crash reporting | Anonymised error reports (opt-in, PII-redacted) | Art. 6(1)(a) — Consent | Explicit consent |
 | Feedback & problem reports | Free text (PII-stripped server-side) + pseudonymous user hash; report type and app diagnostics | Art. 6(1)(a) — Consent | Explicit consent |
 
@@ -100,7 +100,7 @@ All GDPR and KVKK data subject rights (access, rectification, erasure, restricti
 | Server-side breach exposing audio or transcripts | Medium | No persistent audio storage; authenticated API; per-user job isolation; TTL failsafe | **Low** |
 | Unauthorised access to local encrypted storage | Low | AES-256 encrypted containers; key in iOS Keychain / Android Keystore | **Low** |
 | PII leakage through crash reports | Low | Pattern-based scrubbing of emails, phones, IPs, and tokens before sending to SafeScribe's own crash reporting endpoint | **Low** |
-| Cross-border data transfer | Medium | Turkey (KVKK — Turkey's Personal Data Protection Law) explicit consent at first launch; GDPR Art. 49(1)(a) explicit informed consent at first launch | **Low** |
+| Cross-border data transfer | Medium | User-to-controller uploads are not a GDPR Chapter V transfer (no EU exporter — EDPB Guidelines 05/2021 v2.0, Example 1); the GDPR binds us via Art. 3(2), with Art. 6 consent as the basis. The onward route through Cloudflare's edge is a transfer and is covered by Cloudflare's DPA/SCCs. KVKK Art. 9 covers cross-border transfer for users in Turkey. | **Low** |
 | AI producing inaccurate transcript of sensitive content | Low | Transcription is informational only; user reviews all output; no automated decisions | **Low** |
 
 <div class="callout callout-green">
@@ -128,7 +128,7 @@ Users are presented with a granular consent screen before first use, consisting 
   <div class="infra-item">
     <div class="infra-icon">&#x1f9d2;</div>
     <h4>Age Confirmation <em class="u-label-light">(required)</em></h4>
-    <p>Confirms the user is 17 or older. Required cards must be accepted to proceed.</p>
+    <p>Confirms the user is 18 or older. Required cards must be accepted to proceed.</p>
   </div>
   <div class="infra-item">
     <div class="infra-icon">&#x1f41b;</div>

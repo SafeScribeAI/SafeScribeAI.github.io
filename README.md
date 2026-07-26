@@ -13,7 +13,7 @@ robots.txt                   Crawler policy + sitemap pointer
 safescribe.svg               Favicon (single SVG)
 _config.yml                  Jekyll config (title, description, url, plugins)
 _data/
-  i18n.yml                   Nav/footer label translations for all 10 languages
+  i18n.yml                   Nav/footer label translations for both languages
   facts.yml                  Canonical numeric/pricing facts (pricing cards render from it)
 _layouts/
   default.html               Layout: language-aware nav, footer, lang switcher, SEO/CSP
@@ -21,7 +21,7 @@ assets/css/
   style.css                  Custom styles (dark/light mode, all components)
 assets/js/
   main.js                    Nav toggle, lang dropdown, pricing save badges
-<lang>/                          10 languages: en tr de fr es pt ar zh ja ko
+<lang>/                          2 languages: en tr
   index.md                   Home (How It Works, pricing, FAQ)
   privacy.md                 Privacy Policy
   security.md                Security Architecture
@@ -33,7 +33,7 @@ assets/js/
 en/resources/                English-only deep pages (how-we-compare, security-tradeoffs, our-stack)
 ```
 
-**Language coverage:** All 10 languages ship the full set of 8 pages; the three `en/resources/` deep pages are English-only.
+**Language coverage:** Both languages ship the full set of 8 pages; the three `en/resources/` deep pages are English-only.
 
 ## Adding a new language page
 
@@ -42,11 +42,11 @@ en/resources/                English-only deep pages (how-we-compare, security-t
    ---
    layout: default
    title: "Page Title"
-   lang: de
+   lang: tr
    ---
    ```
 2. If it's a new page type that only exists in `en`/`tr`, no extra work needed — the nav and footer automatically fall back to `/en/page-name`.
-3. If it will exist in all 10 languages, add translations to `_data/i18n.yml` (`nav_*`, `link_*` fields).
+3. If it will exist in both languages, add translations to `_data/i18n.yml` (`nav_*`, `link_*` fields).
 
 ## Adding a new language
 

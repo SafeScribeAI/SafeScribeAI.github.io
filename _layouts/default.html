@@ -14,22 +14,12 @@
   {% assign page_slug = 'index' %}
   {% assign skip_hreflang = true %}
 {% endif %}
-{% assign all_langs = 'en,tr,de,fr,es,pt,ar,zh,ja,ko' | split: ',' %}
+{% assign all_langs = 'en,tr' | split: ',' %}
 {% case lang %}
-  {% when 'en' %}{% assign og_locale = 'en_US' %}
   {% when 'tr' %}{% assign og_locale = 'tr_TR' %}
-  {% when 'de' %}{% assign og_locale = 'de_DE' %}
-  {% when 'fr' %}{% assign og_locale = 'fr_FR' %}
-  {% when 'es' %}{% assign og_locale = 'es_ES' %}
-  {% when 'pt' %}{% assign og_locale = 'pt_BR' %}
-  {% when 'ar' %}{% assign og_locale = 'ar_AR' %}
-  {% when 'zh' %}{% assign og_locale = 'zh_CN' %}
-  {% when 'ja' %}{% assign og_locale = 'ja_JP' %}
-  {% when 'ko' %}{% assign og_locale = 'ko_KR' %}
   {% else %}{% assign og_locale = 'en_US' %}
 {% endcase %}
-{% if lang == 'ar' %}{% assign text_dir = 'rtl' %}{% else %}{% assign text_dir = 'ltr' %}{% endif %}
-<html lang="{{ lang }}" dir="{{ text_dir }}">
+<html lang="{{ lang }}" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +51,7 @@
   <!-- Canonical -->
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-  <!-- Hreflang (SEO: 10 languages, BCP 47 tags — zh/pt need region/script subtags, others are valid as bare ISO 639-1) -->
+  <!-- Hreflang (SEO: en + tr, BCP 47 tags — both valid as bare ISO 639-1) -->
   {% unless skip_hreflang %}
   {% for switch_lang in all_langs %}
   {% if page_slug == 'index' %}
@@ -69,12 +59,7 @@
   {% else %}
     {% assign switch_path = '/' | append: switch_lang | append: '/' | append: page_slug %}
   {% endif %}
-  {% case switch_lang %}
-    {% when 'zh' %}{% assign hreflang_code = 'zh-Hans' %}
-    {% when 'pt' %}{% assign hreflang_code = 'pt-BR' %}
-    {% else %}{% assign hreflang_code = switch_lang %}
-  {% endcase %}
-  <link rel="alternate" hreflang="{{ hreflang_code }}" href="{{ switch_path | absolute_url }}">
+  <link rel="alternate" hreflang="{{ switch_lang }}" href="{{ switch_path | absolute_url }}">
   {% endfor %}
   <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
   {% endunless %}
@@ -93,7 +78,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "SafeScribe",
-    "description": "Privacy-first AI-powered audio transcription. RAM-only processing, immediate deletion, zero disk storage.",
+    "description": "Privacy-first AI audio transcription. Your audio is processed in our server's memory only, never written to our disks, and deleted the moment your text is ready.",
     "url": "{{ site.url }}",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "iOS, Android",
@@ -108,8 +93,8 @@
       "description": "Free app download; transcription credit packages from ${{ low_price }} to ${{ high_price }}"
     },
     "featureList": [
-      "RAM-only audio processing",
-      "Immediate data deletion after transcription",
+      "RAM-only server-side audio processing — never written to our disks",
+      "Audio deleted the moment the transcript is delivered",
       "TLS 1.3 encryption in transit, AES-256 encrypted local storage",
       "On-device audio optimization",
       "99 language support via Whisper",

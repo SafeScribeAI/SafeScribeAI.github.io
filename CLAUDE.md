@@ -8,7 +8,7 @@ Marketing landing site for [SafeScribe](https://safescribe.dev) — privacy-firs
 - **Owner:** sungurerdim (private / commercial)
 - **License:** Proprietary
 - **Stack:** Jekyll (GitHub Pages)
-- **Languages:** 10 (en, tr, de, fr, es, pt, ar, zh, ja, ko)
+- **Languages:** 2 (en, tr) — narrowed from 10 on 2026-07-26; see Notes
 
 ## Project Structure
 
@@ -51,21 +51,21 @@ bundle exec jekyll serve  # Local preview at http://localhost:4000
 
 ## Notes
 
-- 10-language i18n is **hand-crafted** (no machine translation)
+- i18n is **hand-crafted** (no machine translation). Scope narrowed to EN + TR on 2026-07-26 to match the app's own en/tr-only l10n: the eight other locales were AI-translated legal texts nobody could verify. Transcription itself still covers 99 Whisper languages — UI language and transcript language are independent.
 - Privacy policy versioned per language
 - Custom domain `safescribe.dev` via CNAME (TLS auto by GitHub Pages)
 - No GitHub Actions — Pages built-in deploy is sufficient
 
 ## Blueprint Profile
 
-Type: Frontend (static marketing/trust-brand) | Stack: Jekyll/GitHub Pages/10-locale i18n | Target: Production
+Type: Frontend (static marketing/trust-brand) | Stack: Jekyll/GitHub Pages/2-locale i18n | Target: Production
 Priorities: Documentation, Spec-alignment, UX/Design, Performance
 Constraints: GitHub Pages built-in deploy (no custom build pipeline); no machine translation (hand-crafted i18n); Pages plugin whitelist
 Data: None (no forms/cookies/analytics) | Regulations: N/A on site; DPIA published as artifact
 Audience: Public visitors/prospects/regulatory reviewers | Deploy: GitHub Pages + CNAME safescribe.dev (Cloudflare DNS)
 
 Entry: index.md (root redirect → /en/ default)
-Modules: _layouts/default.html=template(nav,footer,head,CSP,SEO); _data/i18n.yml=i18n SSOT; _data/facts.yml=numeric facts SSOT(unwired — locales hand-copy); {en,tr,de,fr,es,pt,ar,zh,ja,ko}/=per-locale pages(index,privacy,security,dpia,terms,resources,whats-new,support); en/resources/=EN deep pages; 404.html; robots.txt; safescribe.svg=favicon; assets/css(26KB); assets/js(3KB)
+Modules: _layouts/default.html=template(nav,footer,head,CSP,SEO); _data/i18n.yml=i18n SSOT; _data/facts.yml=numeric facts SSOT(unwired — locales hand-copy); {en,tr}/=per-locale pages(index,privacy,security,dpia,terms,resources,whats-new,support); en/resources/=EN deep pages; 404.html; robots.txt; safescribe.svg=favicon; assets/css(26KB); assets/js(3KB)
 Data Flow: visitor→landing→CTA(#pricing/security)→store badges
 External: faster-whisper, silero-vad, Whisper — informational links only
 Toolchain: Jekyll (GitHub Pages) | CI: none (Pages built-in deploy) | Container: none

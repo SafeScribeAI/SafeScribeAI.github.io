@@ -1,11 +1,11 @@
 # Canonical numeric/pricing facts for SafeScribe — the SINGLE SOURCE for the marketing site.
 #
-# WHY: these numbers were hand-copied across 10 locale index.md files, so a change to one
+# WHY: these numbers were hand-copied across every locale index.md file, so a change to one
 # (e.g. upload limit, price) silently went stale in the others.
 #
 # WIRED (rendered via Liquid — update HERE only): `packages` — every locale's pricing cards
 # read price + data-hours from {{ site.data.facts.packages[i].* }}.
-# NOT WIRED (still hand-copied — update all 10 locale index.md files when changing): prose
+# NOT WIRED (still hand-copied — update both locale index.md files when changing): prose
 # numbers (language_count, format counts, upload_max_mb, max_duration_hours, free_hours)
 # and the translated hour labels on pricing cards; some locales spell numbers out (e.g.
 # Arabic), so prose cannot be templated.

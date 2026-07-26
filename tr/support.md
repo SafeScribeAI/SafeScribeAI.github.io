@@ -20,7 +20,7 @@ lang: tr
     <li><a href="mailto:privacy@safescribe.dev">privacy@safescribe.dev</a> — gizlilik talepleri (veri dışa aktarma / silme)</li>
     <li><a href="mailto:security@safescribe.dev">security@safescribe.dev</a> — güvenlik açığı bildirimleri</li>
   </ul>
-  <p class="u-muted-italic">2 iş günü içinde yanıt vermeyi hedefliyoruz.</p>
+  <p class="u-muted-italic">2 iş günü içinde yanıt vermeyi hedefliyoruz. Destek İngilizce ve Türkçe verilmektedir.</p>
 
   <h2 class="u-mt-2">Hesap ve veriler</h2>
   <p>Hesabınızı ve tüm verilerinizi doğrudan uygulama içinden silebilirsiniz (<em>Ayarlar → Gizlilik → Hesabı Sil</em>) — e-posta gerekmez. Bakiye iadeleri de uygulama içinden yapılır.</p>

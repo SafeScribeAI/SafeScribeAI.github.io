@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SafeScribe — Privacy-First AI Transcription
-description: Convert speech to text with state-of-the-art AI. Your audio never touches disk — processed in memory, deleted immediately.
+description: Convert speech to text with state-of-the-art AI. Your audio is processed in our server's memory, never written to our disks, and deleted immediately.
 ---
 
 <div class="hero">
@@ -21,39 +21,9 @@ description: Convert speech to text with state-of-the-art AI. Your audio never t
     <div class="step-icon">&#x1f1f9;&#x1f1f7;</div>
     <h3>Türkçe</h3>
   </a>
-  <a class="step u-plain-link" href="de/">
-    <div class="step-icon">&#x1f1e9;&#x1f1ea;</div>
-    <h3>Deutsch</h3>
-  </a>
-  <a class="step u-plain-link" href="fr/">
-    <div class="step-icon">&#x1f1eb;&#x1f1f7;</div>
-    <h3>Français</h3>
-  </a>
-  <a class="step u-plain-link" href="es/">
-    <div class="step-icon">&#x1f1ea;&#x1f1f8;</div>
-    <h3>Español</h3>
-  </a>
-  <a class="step u-plain-link" href="pt/">
-    <div class="step-icon">&#x1f1e7;&#x1f1f7;</div>
-    <h3>Português</h3>
-  </a>
-  <a class="step u-plain-link" href="ar/">
-    <div class="step-icon">&#x1f1f8;&#x1f1e6;</div>
-    <h3>&#x0627;&#x0644;&#x0639;&#x0631;&#x0628;&#x064a;&#x0629;</h3>
-  </a>
-  <a class="step u-plain-link" href="zh/">
-    <div class="step-icon">&#x1f1e8;&#x1f1f3;</div>
-    <h3>&#x4e2d;&#x6587;</h3>
-  </a>
-  <a class="step u-plain-link" href="ja/">
-    <div class="step-icon">&#x1f1ef;&#x1f1f5;</div>
-    <h3>&#x65e5;&#x672c;&#x8a9e;</h3>
-  </a>
-  <a class="step u-plain-link" href="ko/">
-    <div class="step-icon">&#x1f1f0;&#x1f1f7;</div>
-    <h3>&#xd55c;&#xad6d;&#xc5b4;</h3>
-  </a>
 </div>
+
+<p class="u-center u-muted-italic">SafeScribe transcribes 99 languages. The app, this site and support are in English and Turkish.</p>
 
 <div class="trust-footer">
   <div class="footer-links">

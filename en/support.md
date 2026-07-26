@@ -20,7 +20,7 @@ lang: en
     <li><a href="mailto:privacy@safescribe.dev">privacy@safescribe.dev</a> — privacy requests (data export / deletion)</li>
     <li><a href="mailto:security@safescribe.dev">security@safescribe.dev</a> — security vulnerability reports</li>
   </ul>
-  <p class="u-muted-italic">We aim to reply within 2 business days.</p>
+  <p class="u-muted-italic">We aim to reply within 2 business days. Support is provided in English and Turkish.</p>
 
   <h2 class="u-mt-2">Account &amp; data</h2>
   <p>You can delete your account and all associated data directly in the app (<em>Settings → Privacy → Delete Account</em>) — no email needed. Balance refunds are also self-service in the app.</p>

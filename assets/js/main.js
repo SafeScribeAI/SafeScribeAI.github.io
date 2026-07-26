@@ -18,15 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Pricing save badge
   var saveFmt = {
     en: function (p) { return 'Save ' + p + '%'; },
-    tr: function (p) { return '%' + p + ' tasarruf'; },
-    de: function (p) { return p + '% sparen'; },
-    fr: function (p) { return p + "% d\u2019\u00e9conomie"; },
-    es: function (p) { return 'Ahorra ' + p + '%'; },
-    pt: function (p) { return p + '% desconto'; },
-    ar: function (p) { return '\u0648\u0641\u0631 ' + p + '%'; },
-    zh: function (p) { return '\u7701 ' + p + '%'; },
-    ja: function (p) { return p + '%\u304a\u5f97'; },
-    ko: function (p) { return p + '% \uc808\uc57d'; }
+    tr: function (p) { return '%' + p + ' tasarruf'; }
   };
   var cards = document.querySelectorAll('.pricing-card');
   if (cards.length >= 2) {
@@ -41,8 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
       return el ? parseFloat(el.textContent.replace(/[^0-9.]/g, '')) : NaN;
     }
     // Hours come from each card's explicit data-hours attribute, not the
-    // translated label — some locales spell the number out (e.g. Arabic
-    // "one hour"), so parsing display text would miss it.
+    // translated label — the label is prose and differs per locale, so
+    // parsing display text would be brittle.
     function hoursOf(card) {
       return parseFloat(card.getAttribute('data-hours'));
     }

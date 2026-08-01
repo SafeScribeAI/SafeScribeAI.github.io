@@ -22,7 +22,7 @@ We do not operate a server that receives your content. We do not collect analyti
 
 ## Where your data lives
 
-Recordings, transcripts and settings are stored on your device only, in the app's private storage. Transcripts are encrypted at rest.
+Recordings, transcripts and settings are stored on your device only, in the app's private storage. They are protected by the operating system's own encryption (iOS Data Protection) and are excluded from iTunes, Finder and iCloud backups — so they do not travel off the device even in a backup.
 
 Deleting the app removes them. You can also delete individual transcripts, or everything at once from **Settings → Delete All Data**. Because we never receive a copy, deletion on your device is final — there is nothing left for us to erase.
 

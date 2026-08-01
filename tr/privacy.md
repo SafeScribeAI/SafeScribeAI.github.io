@@ -22,7 +22,7 @@ Hiçbir şey.
 
 ## Verileriniz nerede duruyor
 
-Kayıtlar, metinler ve ayarlar yalnızca cihazınızda, uygulamanın özel alanında saklanır. Metinler şifrelenmiş olarak durur.
+Kayıtlar, metinler ve ayarlar yalnızca cihazınızda, uygulamanın özel alanında saklanır. İşletim sisteminin kendi şifrelemesiyle (iOS Data Protection) korunur ve iTunes, Finder ile iCloud yedeklerinin dışında tutulur — yani bir yedekle bile cihazdan çıkmazlar.
 
 Uygulamayı silmek bunları da siler. Dilerseniz tek tek metinleri ya da **Ayarlar → Tüm Verileri Sil** ile hepsini birden silebilirsiniz. Bizde hiçbir kopyası olmadığı için cihazınızdaki silme işlemi nihaidir — bizim silecek bir şeyimiz kalmaz.
 

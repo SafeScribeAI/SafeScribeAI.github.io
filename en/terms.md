@@ -1,194 +1,64 @@
 ---
 layout: default
-title: SafeScribe — Terms of Service
-description: Terms and conditions for using SafeScribe.
+title: SafeScribe — Terms of Use
+description: Terms of use for SafeScribe, including purchase conditions.
 lang: en
+page_key: terms
 ---
 
-<div class="page-content" markdown="1">
+# Terms of Use
 
-# Terms of Service
+<p class="page-meta">Last updated: 1 August 2026</p>
 
-<div class="summary-box">
-  <strong>Key points:</strong> You must be 18 or older to use SafeScribe. Your transcripts belong to you. Audio is never stored on our servers after processing. Payments go through Apple or Google — we never see your payment details.
+By using SafeScribe you agree to these terms. If you do not agree, please do not use the app.
+
+## Who the app is for
+
+SafeScribe is intended for adults aged 18 or over.
+
+## What SafeScribe does
+
+SafeScribe converts speech in your recordings into text, entirely on your device. It is a tool, not a professional transcription service. Automatic speech recognition makes mistakes — accuracy varies with audio quality, accent, background noise and subject matter.
+
+**Check the output before relying on it.** Do not use SafeScribe as the sole record for medical, legal, financial or other consequential decisions without reviewing the transcript against the audio yourself.
+
+## Free version and SafeScribe Pro
+
+The free version transcribes up to 10 minutes per file. Every feature is available in the free version; only the per-file length limit differs.
+
+SafeScribe Pro is a **one-time purchase** that removes the per-file limit. It is not a subscription and does not renew.
+
+<div class="callout">
+  <p><strong>Before you buy, two things you should know:</strong></p>
+  <p>Your purchase is tied to your store account. It does not transfer between the App Store and Google Play.</p>
 </div>
 
-<p class="page-meta">Last updated: March 2026</p>
+If you reinstall the app or set up a new device using the same store account, use **Restore purchases** to unlock Pro again at no additional cost.
 
----
+Refunds are handled by the store you purchased from, under that store's policy. We cannot issue refunds on Apple's behalf.
 
-<span class="section-label">Section 1</span>
-## Agreement
+## The model download
 
-By downloading, installing, or using SafeScribe ("the App"), you agree to these Terms of Service. If you do not agree, do not use the App.
+SafeScribe needs a one-time download of its speech recognition model (about 874 MB) before it can transcribe. This download requires an internet connection and may incur charges on a mobile data plan.
 
----
+## Your content
 
-<span class="section-label">Section 2</span>
-## Service Description
+Your recordings and transcripts are yours. They stay on your device; we never receive them and claim no rights over them. You are responsible for having the right to record and transcribe the audio you use, including obtaining consent where the law requires it.
 
-SafeScribe is a privacy-first AI-powered audio transcription service. You record or import audio on your device, which is then processed on our servers to produce a text transcript.
+## Availability and changes
 
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span> Audio is processed <strong>in server memory only</strong> never stored on disk</li>
-  <li><span class="check-mark">&#x2713;</span> Transcripts are delivered to your device and encrypted locally</li>
-  <li><span class="check-mark">&#x2713;</span> You pay for transcription minutes via in-app purchase credits</li>
-</ul>
+We may update the app, and features may change or be removed over time. SafeScribe is not offered in the European Economic Area or the United Kingdom.
 
----
+## Warranty and liability
 
-<span class="section-label">Section 3</span>
-## Eligibility
+SafeScribe is provided "as is", without warranties of any kind to the extent permitted by law.
 
-You must be at least **18 years old** to use SafeScribe. By using the App, you confirm that you meet this age requirement.
+Nothing in these terms excludes or limits liability where the law does not allow it to be excluded or limited — including liability arising from gross negligence or wilful misconduct. The purpose of the notices in these terms is to tell you plainly what the app does and does not do, so that you can decide before you buy.
 
----
+## Governing law
 
-<span class="section-label">Section 4</span>
-## Account
+These terms are governed by the laws of the Republic of Türkiye.
 
-| Topic | Detail |
-|-------|--------|
-| Sign-in | Google Sign-In or Sign in with Apple |
-| Your responsibility | Maintaining access to your authentication account |
-| Sharing | You must not share your account or allow unauthorized access |
-| Identity | We identify you by a pseudonymous hash — we never store your name, email, or personal details |
+## Contact
 
----
-
-<span class="section-label">Section 5</span>
-## Credits and Payments
-
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span> SafeScribe uses a credit-based system — purchase credits via Apple App Store or Google Play Store</li>
-  <li><span class="check-mark">&#x2713;</span> All payments are processed by Apple or Google — we never receive or store your payment information</li>
-  <li><span class="check-mark">&#x2713;</span> New accounts receive a one-time free credit balance</li>
-  <li><span class="check-mark">&#x2713;</span> Credit prices and minute allocations are displayed in the App before purchase</li>
-</ul>
-
-Credits are non-transferable between accounts. Refunds are subject to Apple's and Google's respective refund policies.
-
----
-
-<span class="section-label">Section 6</span>
-## Acceptable Use
-
-You agree not to:
-
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Use the App for any illegal purpose or to transcribe content that violates applicable law</li>
-  <li><span class="x-mark">&#x2717;</span> Attempt to reverse-engineer, decompile, or disassemble the App</li>
-  <li><span class="x-mark">&#x2717;</span> Interfere with or disrupt the service, servers, or networks</li>
-  <li><span class="x-mark">&#x2717;</span> Circumvent security measures, rate limits, or access controls</li>
-  <li><span class="x-mark">&#x2717;</span> Use automated tools to access the service (bots, scrapers)</li>
-  <li><span class="x-mark">&#x2717;</span> Impersonate another person or entity</li>
-  <li><span class="x-mark">&#x2717;</span> Upload content that infringes intellectual property rights of others</li>
-</ul>
-
----
-
-<span class="section-label">Section 7</span>
-## Audio Content
-
-You are solely responsible for the content you record or upload. This means:
-
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span> You must have the legal right to record and transcribe any audio you submit</li>
-  <li><span class="check-mark">&#x2713;</span> You are responsible for complying with recording consent laws in your jurisdiction (one-party or two-party consent)</li>
-  <li><span class="check-mark">&#x2713;</span> We do not monitor, review, or store your audio content</li>
-</ul>
-
----
-
-<span class="section-label">Section 8</span>
-## Intellectual Property
-
-| Topic | Detail |
-|-------|--------|
-| SafeScribe IP | Original content, features, and functionality are owned by SafeScribe and protected by copyright |
-| Your transcripts | Belong to you — we claim no ownership over content you create |
-| Trademarks | "SafeScribe" name, logo, and branding are our trademarks |
-
----
-
-<span class="section-label">Section 9</span>
-## Privacy
-
-Your use of the App is governed by our [Privacy Policy](privacy).
-
-<div class="callout callout-info">
-  <strong>Key privacy points:</strong> Audio is processed in RAM only and immediately deleted · Transcripts are encrypted on your device · We keep only pseudonymous billing records · We do not sell or share your data with third parties for marketing
-</div>
-
----
-
-<span class="section-label">Section 10</span>
-## Service Availability
-
-We strive to maintain high availability but do not guarantee uninterrupted service. We may perform maintenance or updates that temporarily affect availability. We reserve the right to modify, suspend, or discontinue the service with reasonable notice. If we permanently discontinue the service, unused credits will be refunded according to platform policies.
-
----
-
-<span class="section-label">Section 11</span>
-## Disclaimer of Warranties
-
-<div class="callout callout-info">
-  The App is provided <strong>"as is"</strong> and <strong>"as available"</strong> without warranties of any kind. We do not warrant that transcriptions will be 100% accurate, that the service will be uninterrupted or error-free, or that the App will meet your specific requirements. Transcription accuracy depends on audio quality, language, accents, background noise, and other factors beyond our control.
-</div>
-
----
-
-<span class="section-label">Section 12</span>
-## Limitation of Liability
-
-To the maximum extent permitted by law, SafeScribe shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App.
-
-Our total liability for any claim arising from these Terms shall not exceed the amount you paid for credits in the 12 months preceding the claim.
-
----
-
-<span class="section-label">Section 13</span>
-## Indemnification
-
-You agree to indemnify and hold harmless SafeScribe from any claims, damages, or expenses arising from your use of the App, your violation of these Terms, or your violation of any third-party rights including recording consent laws.
-
----
-
-<span class="section-label">Section 14</span>
-## Termination
-
-| Action | Result |
-|--------|--------|
-| You delete your account | All local data erased, server-side data deleted |
-| We suspend your access | Upon violation of these Terms |
-| You stop using the App | No further action required — data already minimal |
-
----
-
-<span class="section-label">Section 15</span>
-## Changes to Terms
-
-We may update these Terms from time to time. We will notify you of material changes through the App or by updating the "Last updated" date. Continued use after changes constitutes acceptance.
-
----
-
-<span class="section-label">Section 16</span>
-## Governing Law
-
-These Terms are governed by the laws of the Republic of Turkey. Any disputes shall be resolved in the courts of Istanbul, Turkey.
-
----
-
-<span class="section-label">Contact</span>
-## Questions
-
-| Topic | Contact |
-|-------|---------|
-| Terms of Service questions | support@safescribe.dev |
-| Privacy requests | privacy@safescribe.dev |
-| Security issues | security@safescribe.dev |
-
----
-
-
-</div>
+[safescribeai@gmail.com](mailto:safescribeai@gmail.com)

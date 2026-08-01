@@ -1,6 +1,6 @@
 title: SafeScribe
-description: Privacy-first AI audio transcription. Your audio is processed in our server's memory only, never written to our disks, and deleted the moment your text is ready.
-url: https://safescribe.dev
+description: Fully on-device transcription. Your audio never leaves your device — there is no server and no account.
+url: https://safescribeai.github.io
 markdown: kramdown
 
 plugins:
@@ -8,7 +8,7 @@ plugins:
 
 # Repo-internal files are not site content. Without this they are copied to the
 # published site verbatim — CLAUDE.md, README.md, LICENSE and the release
-# scripts were all reachable on safescribe.dev, and CLAUDE.md was rendered as a
+# scripts were all reachable on the published site, and CLAUDE.md was rendered as a
 # page and listed in sitemap.xml.
 exclude:
   - CLAUDE.md

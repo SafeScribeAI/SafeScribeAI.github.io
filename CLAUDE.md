@@ -1,77 +1,47 @@
-# SafeScribeAI.github.io
+# SafeScribeAI.github.io — legal + support pages
 
-Marketing landing site for [SafeScribe](https://safescribe.dev) — privacy-first AI audio transcription. Served via GitHub Pages at `https://safescribe.dev/`.
+Served via GitHub Pages at `https://safescribeai.github.io/`. No custom domain.
 
-## Meta
+## What this repo is
 
-- **Status:** active
-- **Owner:** sungurerdim (private / commercial)
-- **License:** Proprietary
-- **Stack:** Jekyll (GitHub Pages)
-- **Languages:** 2 (en, tr) — narrowed from 10 on 2026-07-26; see Notes
+The minimum public web surface a paid iOS app must have: Apple requires a
+reachable Support URL and a Privacy Policy URL, and a reviewer actually opens
+them. Nothing else belongs here.
 
-## Project Structure
+It was a full marketing site until 2026-08-01. The 2026-07-29 pivot (server
+removed, app is fully on-device) made that content actively false, so the
+marketing pages, the DPIA, the security-architecture page and the resources
+section were deleted rather than rewritten.
+
+## Layout
 
 | Path | Purpose |
-|------|---------|
-| `index.md` | Root redirect — language selector |
-| `404.html` | Custom 404 page |
-| `robots.txt` | Crawler policy + sitemap pointer |
-| `safescribe.svg` | Favicon (single SVG) |
-| `Gemfile` | Pins `github-pages` gem for local preview parity |
-| `_config.yml` | Jekyll config (title, description, url, plugins) |
-| `_data/i18n.yml` | Nav/footer label translations |
-| `_data/facts.yml` | Canonical numeric/pricing facts — pricing cards render from it via Liquid; prose numbers still hand-copied per locale |
-| `_layouts/default.html` | Layout — language-aware nav, footer, lang switcher, skip-link, SEO/CSP |
-| `assets/css/style.css` | Custom styles (dark/light mode, components) |
-| `assets/js/main.js` | Nav toggle, lang dropdown, pricing save badges |
-| `<lang>/index.md` | Per-language home — hero, comparison, How It Works, personas, pipeline, pricing, FAQ |
-| `<lang>/privacy.md` | Per-language privacy policy |
-| `<lang>/security.md` | Per-language security architecture |
-| `<lang>/dpia.md` | Per-language DPIA |
-| `<lang>/terms.md` | Per-language terms of service |
-| `<lang>/resources.md` | Per-language Resources hub (links to /en/resources/* deep pages) |
-| `<lang>/whats-new.md` | Per-language release notes (Apple-style aggregate, not per-commit) |
-| `<lang>/support.md` | Per-language support/contact page |
-| `en/resources/*.md` | English-only deep pages: how-we-compare, security-tradeoffs, our-stack |
-| `CNAME` | Custom domain (`safescribe.dev`) |
+| --- | --- |
+| `index.md` | Root landing, links to all six pages |
+| `en/`, `tr/` | `privacy.md`, `terms.md`, `support.md` in each |
+| `_layouts/default.html` | The only layout; nav + footer + language switch |
+| `assets/css/style.css` | ~130 lines, light/dark, no JS |
 
-## Development
+Front matter needs `lang` (`en`/`tr`) and `page_key` (`privacy`/`terms`/
+`support`) — the layout uses both for nav state and the language switch.
 
-```bash
-bundle install            # Local Ruby/Jekyll deps
-bundle exec jekyll serve  # Local preview at http://localhost:4000
-```
+## Hard rules
 
-## Git Workflow
+- **No custom domain, ever.** Store consoles get `safescribeai.github.io` URLs
+  only. A lapsed domain must never be able to break a mandatory store field.
+- **One contact address:** `safescribeai@gmail.com`.
+- **Never reintroduce server, account, balance, or data-controller language.**
+  The app declares "Data Not Collected" to Apple; a page that contradicts that
+  declaration is an app-removal risk, not a copy error.
+- **EEA/UK are out of scope** in v1 — no GDPR representative, no DSA trader
+  disclosure. Do not add GDPR framing back.
+- **Purchase disclosure is verbatim-locked** across three places: the app's
+  `pro_storeAccountNotice` l10n string, `terms.md`, and the store listing.
+  These exist because a disclaimer clause does not protect under Turkish Code
+  of Obligations art. 115 — actual disclosure does. Edit all three together.
+- **i18n is hand-written**, EN + TR only. No machine translation of legal text.
 
-- **Direct push to main** — no branch requirement
-- Push triggers GitHub Pages deploy automatically (built-in, not Actions)
-- **Conventional commits** — `feat:`, `fix:`, `docs:`, `chore:`
+## Tracking
 
-## Notes
-
-- i18n is **hand-crafted** (no machine translation). Scope narrowed to EN + TR on 2026-07-26 to match the app's own en/tr-only l10n: the eight other locales were AI-translated legal texts nobody could verify. Transcription itself still covers 99 Whisper languages — UI language and transcript language are independent.
-- Privacy policy versioned per language
-- Custom domain `safescribe.dev` via CNAME (TLS auto by GitHub Pages)
-- No GitHub Actions — Pages built-in deploy is sufficient
-
-## Blueprint Profile
-
-Type: Frontend (static marketing/trust-brand) | Stack: Jekyll/GitHub Pages/2-locale i18n | Target: Production
-Priorities: Documentation, Spec-alignment, UX/Design, Performance
-Constraints: GitHub Pages built-in deploy (no custom build pipeline); no machine translation (hand-crafted i18n); Pages plugin whitelist
-Data: None (no forms/cookies/analytics) | Regulations: N/A on site; DPIA published as artifact
-Audience: Public visitors/prospects/regulatory reviewers | Deploy: GitHub Pages + CNAME safescribe.dev (Cloudflare DNS)
-
-Entry: index.md (root redirect → /en/ default)
-Modules: _layouts/default.html=template(nav,footer,head,CSP,SEO); _data/i18n.yml=i18n SSOT; _data/facts.yml=numeric facts SSOT(unwired — locales hand-copy); {en,tr}/=per-locale pages(index,privacy,security,dpia,terms,resources,whats-new,support); en/resources/=EN deep pages; 404.html; robots.txt; safescribe.svg=favicon; assets/css(26KB); assets/js(3KB)
-Data Flow: visitor→landing→CTA(#pricing/security)→store badges
-External: faster-whisper, silero-vad, Whisper — informational links only
-Toolchain: Jekyll (GitHub Pages) | CI: none (Pages built-in deploy) | Container: none
-
-Ideal: coupling=low cohesion=high complexity=na coverage=na
-
-Scores: sec=82 quality=85 arch=74 perf=80 resil=78 test=na stack=80 dx=72 docs=64 overall=76 model=claude-fable-5
-
-## End Blueprint Profile
+Work is tracked in this repo's GitHub issues; product sequencing lives in the
+`kumanda` panel.

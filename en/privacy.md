@@ -1,267 +1,68 @@
 ---
 layout: default
 title: SafeScribe — Privacy Policy
-description: What data SafeScribe collects, how we process it, and your rights.
+description: SafeScribe collects no data. Your audio never leaves your device.
 lang: en
+page_key: privacy
 ---
-
-<div class="page-content" markdown="1">
 
 # Privacy Policy
 
-<div class="summary-box">
-  <strong>Plain-language summary:</strong> We process your audio in our server's memory to create a transcript, then delete it immediately. We never write your audio to our disks, never use it for AI training, and never share it with anyone. Your transcripts are encrypted on your device and under your control. We keep only pseudonymous billing records.
+<p class="page-meta">Last updated: 1 August 2026</p>
+
+<div class="callout">
+  <p><strong>In plain language:</strong> SafeScribe runs entirely on your device. Your recordings and transcripts are created, stored and deleted on your phone. They are never uploaded anywhere, because there is no SafeScribe server to upload them to. There is no account, no sign-in and no analytics.</p>
 </div>
 
-<p class="page-meta">Last updated: March 2026</p>
-
----
-
-<span class="section-label">What We Never Do</span>
-## Data We Don't Collect or Store
-{: #no-collect}
+## What we collect
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Write your audio to our disks — ever</li>
-  <li><span class="x-mark">&#x2717;</span> Store your email address or name</li>
-  <li><span class="x-mark">&#x2717;</span> Log or store IP addresses <em>(our network provider Cloudflare sees them in transit — see <a href="#third-parties">Third-Party Services</a>)</em></li>
-  <li><span class="x-mark">&#x2717;</span> Use recordings to train AI models</li>
-  <li><span class="x-mark">&#x2717;</span> Share data with advertisers or brokers</li>
-  <li><span class="x-mark">&#x2717;</span> Track behaviour across apps or sessions</li>
-  <li><span class="x-mark">&#x2717;</span> Collect contacts, location, or biometric data</li>
-  <li><span class="x-mark">&#x2717;</span> Retain data after account deletion</li>
-</ul>
+Nothing.
 
----
+We do not operate a server that receives your content. We do not collect analytics, usage statistics, advertising identifiers or crash reports. We do not ask you to create an account, and we never see your name, email address or phone number unless you choose to write to us for support.
 
-<span class="section-label">What We Do Store</span>
-## Data We Collect
+## Where your data lives
 
-### Server-side (persistent until account deletion)
+Recordings, transcripts and settings are stored on your device only, in the app's private storage. Transcripts are encrypted at rest.
 
-| Data | Purpose |
-|------|---------|
-| Pseudonymous user ID (SHA-256 hash of your account ID) | Account identity — cannot be reversed |
-| Pseudonymous device identifier (SHA-256 hash of device properties) | Abuse prevention — cannot be reversed |
-| Account balance (USD) | Credit management |
-| Free transcription minutes remaining | Welcome bonus tracking |
-| Account creation and last update timestamps | Account management |
+Deleting the app removes them. You can also delete individual transcripts, or everything at once from **Settings → Delete All Data**. Because we never receive a copy, deletion on your device is final — there is nothing left for us to erase.
 
-**Per-job records** (stored for each completed transcription):
+## When the app uses the internet
 
-| Data | Purpose |
-|------|---------|
-| Audio duration (seconds) | Service analytics |
-| File size (bytes) | Service analytics |
-| Word count | Service analytics |
-| Cost charged (USD) | Billing record |
-| Processing timestamps | Service analytics |
+Transcription itself never uses the internet. You can put the phone in airplane mode and it still works. There are exactly two exceptions, and neither involves your audio:
 
-<div class="callout callout-info">
-  <strong>No audio content or transcript text is ever included in per-job records.</strong> These records contain only metadata (numbers and timestamps) — never the words you said.
-</div>
+| Purpose | What happens |
+| --- | --- |
+| Downloading the speech model | The first time you use the app, it downloads the speech recognition model (about 874 MB) from Hugging Face. Like any download, the host can see your IP address. No information about you or your recordings is sent. |
+| Purchasing SafeScribe Pro | Handled entirely by Apple. We never see your payment details. Apple's privacy policy governs that transaction. |
 
-### Server-side (transient — deleted after processing)
+Every build of the app is checked by an automated gate that fails if network code appears anywhere outside these two paths. The claim above is enforced mechanically, not just promised.
 
-| Data | When Deleted |
-|------|-------------|
-| Audio file | Immediately after transcription completes — 1-hour TTL failsafe if anything goes wrong |
-| Transcript text | When you confirm receipt (acknowledgment) — 24-hour TTL failsafe if your device never acknowledges |
+## The error report you can choose to send
 
-### On your device (encrypted)
+There is no automatic crash reporting. If something goes wrong, you can open **Settings → Share error log** and send a diagnostic report yourself, choosing the recipient. That report contains your app version, operating system version and recent error messages. It contains no audio and no transcript text, and file paths and other identifiers are removed before it is written.
 
-| Data | Retention |
-|------|-----------|
-| Transcripts (text, segments, metadata) | Until you delete them |
-| Offline upload queue | Removed after successful upload |
-| App settings and consent records | Until sign-out or account deletion |
-| Encryption key | In iOS Keychain / Android Keystore — deleted with the app |
+## Support correspondence
 
-### Optional (opt-in only)
+If you email us for support, we receive whatever you write, in an ordinary email inbox. We keep it only as long as needed to answer you, and we delete it on request. This is the only situation in which we hold anything about you at all.
 
-| Data | Purpose |
-|------|---------|
-| Crash reports | App stability via SafeScribe's own crash reporting endpoint — all PII stripped before sending |
-| Feedback & problem reports | Product improvement — a rating, bug report, complaint or suggestion you choose to send. Free text is PII-stripped server-side before storage; kept only with your pseudonymous user hash (no name, email, or IP). Retained up to 24 months, then auto-purged. |
+## Turkish data protection law (KVKK)
 
-<div class="callout callout-green">
-  <strong>The server never stores your name, email address, IP address, audio content, or transcript text.</strong> The only persistent records linked to your account are a non-reversible user hash, a pseudonymous device identifier, a credit balance, usage statistics (numbers only — no content, no identity), and any feedback you choose to send (PII-stripped). If we reply to a report, the reply reaches you only as a one-time in-app message matched to your user hash — we never learn who you are.
-</div>
+SafeScribe is developed by an independent developer based in Türkiye.
 
----
+Because your audio and transcripts are processed only on your own device and are never transmitted to us, no processing of your personal data by us takes place, and we do not act as a data controller (*veri sorumlusu*) for that content. The single exception is support correspondence described above, which you initiate and which we delete on request.
 
-<span class="section-label">Complete Deletion</span>
-## Deleting the App vs. Deleting Your Account
+## Children
 
-These are two distinct actions with different outcomes:
+SafeScribe is intended for adults (18+). We do not knowingly direct the app at children.
 
-| Action | What happens | Your balance |
-|--------|-------------|-------------|
-| **Delete the app** | Local transcripts and encryption key removed from your device | Preserved on the server — reinstalling and signing in with the same account fully restores it |
-| **Delete your account** | Every server-side record permanently erased — cannot be undone | Gone |
+## Where SafeScribe is offered
 
-<div class="callout callout-info">
-  <strong>Reinstall anytime.</strong> If you delete the app without deleting your account, reinstalling and signing in with the same Google or Apple account restores your full balance and access — no action required.
-</div>
+SafeScribe is not offered in the European Economic Area or the United Kingdom.
 
-### Account Deletion — Nothing Left That Identifies You
+## Changes
 
-Deleting your account from Privacy Settings permanently removes every server-side record linked to your identity:
+If this policy changes, the date at the top changes with it.
 
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonymous user ID</strong><span class="item-desc">permanently deleted</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Credit balance</strong><span class="item-desc">permanently deleted</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Free minutes remaining</strong><span class="item-desc">permanently deleted</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Per-job statistics</strong><span class="item-desc">anonymized immediately — re-labelled to a shared DELETED_USER tombstone, auto-purged after 2 years</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Pseudonymous device identifier</strong><span class="item-desc">reduced to a salted one-way hash kept up to 2 years — blocks repeat welcome-credit abuse, cannot be reversed or tied to you</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Daily backup</strong><span class="item-desc">the daily-overwritten copy no longer contains your identifying data after the next backup cycle (within 24 hours); a separate point-in-time recovery snapshot taken at the moment of deletion is retained for disaster-recovery purposes and is not immediately purged</span></span></li>
-</ul>
+## Contact
 
-Every link to your identity is destroyed at the moment of deletion. Two narrow categories persist for a limited time <em>without any identity link</em>: financial records (purchase and usage amounts) are anonymized to the DELETED_USER tombstone and kept for 2 years under the ayıplı hizmet (defective service) statute of limitations (Turkish Consumer Protection Law, Art. 15-16), and a salted one-way device hash is kept up to 2 years to prevent repeated free-credit grants (GDPR Art. 6(1)(f) legitimate interest). Both are automatically purged from the live system when the window expires. The daily-overwritten backup no longer reflects deleted accounts within 24 hours; however, point-in-time recovery snapshots taken before a deletion are retained for disaster-recovery purposes and are not immediately purged.
-
-Using the in-app deletion constitutes your formal exercise of the right to erasure under GDPR Art. 17 and KVKK Art. 11(e). If you cannot access your account, contact **privacy@safescribe.dev** to submit a deletion request by email.
-
----
-
-<span class="section-label">Audio Processing</span>
-## Zero Disk Policy
-{: #zero-disk}
-
-<div class="flow-diagram">
-Your audio:  Upload --> RAM --> AI transcription --> Deliver --> DELETE
-                                                              (immediate)
-
-Our disk:    Balance records only — no audio, no transcript, no email
-</div>
-
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>RAM-only</strong><span class="item-desc">audio processed in volatile memory only</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Never written to our disks</strong><span class="item-desc">not even temporarily. (The app does write a temporary compressed copy to <em>your</em> device while recording; it is removed once the upload succeeds.)</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No AI training</strong><span class="item-desc">your audio is never used to improve models</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Self-hosted AI</strong><span class="item-desc">no third-party AI service receives your audio</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTL failsafe</strong><span class="item-desc">data self-destructs even if deletion code fails</span></span></li>
-</ul>
-
----
-
-<span class="section-label">Authentication</span>
-## Sign-In via Google or Apple
-{: #sign-in}
-
-We use OpenID Connect (OIDC) via Google Sign-In and Sign in with Apple.
-
-| What the provider sends us | What we do with it |
-|---------------------------|-------------------|
-| Account ID | Hashed (SHA-256 + salt) — original discarded |
-| Email address | Used for authentication only — **not stored** |
-| Display name | **Not stored** |
-
-We do not access your contacts, calendar, or any other account data.
-
----
-
-<span class="section-label">Payments</span>
-## Billing via App Stores
-{: #billing}
-
-Payments are processed entirely by Apple App Store or Google Play Store. SafeScribe **never receives, stores, or processes** credit card numbers or payment details. We receive only a purchase receipt for balance verification.
-
-<div class="callout callout-info">
-  <strong>Payment records held by Apple or Google</strong> are outside SafeScribe's control and are not covered by SafeScribe's account deletion process. To manage those records, contact <a href="https://support.apple.com">Apple Support</a> or <a href="https://support.google.com/googleplay">Google Play Support</a> directly.
-</div>
-
----
-
-<span class="section-label">Error Tracking</span>
-## Crash Reports (Optional)
-
-We send optional crash reports to SafeScribe's own crash reporting endpoint. This is **off by default** and can be toggled from Privacy Settings at any time.
-
-Before any report is transmitted, the following are automatically removed:
-
-**Redacted:** email addresses · phone numbers · IP addresses · file paths · authentication tokens
-
-**Retained:** error type and stack trace · device model · OS version · app version
-
----
-
-<span class="section-label">Third Parties</span>
-## Third-Party Services
-{: #third-parties}
-
-We use the following services. No audio, transcript content, or personal information beyond what is noted is shared with any third party.
-
-| Service | Purpose | Data shared | Privacy Policy |
-|---------|---------|------------|---------------|
-| Cloudflare (Tunnel) | Keeps our servers off the public internet and absorbs denial-of-service attacks | Your request in transit — including your IP address and, because the shield works by decrypting and re-encrypting the connection at Cloudflare's nearest edge, the audio while it passes through. Cloudflare does not transcribe, analyse, or store it. | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
-| Cloudflare (R2) | Off-site backup of the billing ledger | Pseudonymous user hash, balance and usage figures — no audio, no transcripts | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
-| Google Sign-In | Authentication | OIDC token only | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Apple Sign-In | Authentication | OIDC token only | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
-| Apple App Store | In-app purchases | Purchase receipt only | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
-| Google Play Store | In-app purchases | Purchase receipt only | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| SafeScribe crash endpoint | Crash reporting (opt-in) | Anonymised error report — PII stripped | SafeScribe-operated, no third party |
-
----
-
-<span class="section-label">Legal Basis</span>
-## Legal Basis for Processing
-
-| Processing activity | GDPR Basis | KVKK Basis (Turkey) | Required? |
-|--------------------|-----------|-----------|---------|
-| Audio transcription | Art. 6(1)(b) — Contract | Explicit consent | Required to use the service |
-| Account & billing | Art. 6(1)(b) — Contract | Contract performance | Required to use the service |
-| Authentication (OIDC) | Art. 6(1)(b) — Contract | Contract performance | Required to use the service |
-| In-app purchases | Art. 6(1)(b) — Contract | Contract performance | Required to make purchases |
-| Crash reporting | Art. 6(1)(a) — Consent | Explicit consent | Optional |
-
-Providing data for transcription, authentication, and billing is **required** to use SafeScribe. Crash reporting is **optional** — the service operates fully without it.
-
----
-
-<span class="section-label">Your Rights</span>
-## What You Can Do
-{: #your-rights}
-
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Access</strong><span class="item-desc">view all your transcripts in the app at any time</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Delete</strong><span class="item-desc">remove individual transcripts or delete your entire account from Privacy Settings; account deletion leaves zero rows in any database</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Export</strong><span class="item-desc">share or export transcripts, or request a full data export from Privacy Settings</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Opt out of diagnostics</strong><span class="item-desc">turn off crash reporting in Privacy Settings</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Withdraw consent</strong><span class="item-desc">sign out and delete your account at any time</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>CCPA opt-out</strong><span class="item-desc">toggle "Do Not Sell or Share" in Privacy Settings</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>No automated decisions</strong><span class="item-desc">we never make automated decisions about you, including profiling with legal or similarly significant effects (GDPR Art. 22)</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Lodge a complaint</strong><span class="item-desc">EU/EEA residents may contact their national supervisory authority (<a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>); Turkey residents may contact KVKK (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>)</span></span></li>
-</ul>
-
-For any request you can't complete in-app, contact **privacy@safescribe.dev**.
-
----
-
-<span class="section-label">Legal</span>
-## Additional Information
-
-**Data controller.** SafeScribe is operated by an independent developer based in Turkey. Contact: privacy@safescribe.dev. No Data Protection Officer (DPO) has been appointed — processing is not carried out at large scale and no special-category data is systematically retained (audio is processed ephemerally in our server's RAM only, never persisted to our disks).
-
-**Backups.** A single daily backup of account records (pseudonymous ID, balance, usage statistics) is maintained for service continuity. Each backup overwrites the previous one. Data deleted by account deletion is removed from live systems immediately and from the backup within 24 hours.
-
-**International transfers.** If you use SafeScribe from the EU/EEA, your audio and account data are processed on servers in Turkey, which does not hold an <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">EU adequacy decision</a>. Your upload goes straight from your own device to us, so there is no EU-based exporter and GDPR Chapter V (Arts. 44–49) does not apply to it — see EDPB <a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052021-interplay-between-application-article_en">Guidelines 05/2021</a> v2.0, Example 1. We are bound by the GDPR directly through Art. 3(2) because we offer the service to people in the EU, and the lawful basis for the processing itself is your consent under Art. 6. One onward step *is* a transfer: your connection reaches us through Cloudflare, whose nearest edge may sit outside Turkey — see [Third-Party Services](#third-parties). For users in Turkey, cross-border transfer is authorised under KVKK Art. 9.
-
-**Children.** SafeScribe is for adults. The app asks you to confirm you are 18 or older before you can use it, and the [Terms of Service](terms) set the same requirement. We do not knowingly collect data from anyone under 18. The store content rating (4+) describes the absence of objectionable material, not the intended audience — the audience declared on Google Play is 18+.
-
-**Policy changes.** We will update this page when our practices change. The "Last updated" date above reflects the most recent revision.
-
----
-
-<span class="section-label">Contact</span>
-## Get in Touch
-
-| Topic | Contact |
-|-------|---------|
-| Privacy requests, data deletion, rights | privacy@safescribe.dev |
-| Security vulnerabilities | security@safescribe.dev |
-| General support | support@safescribe.dev |
-
----
-
-
-</div>
+Privacy questions, or a request to delete support correspondence: [safescribeai@gmail.com](mailto:safescribeai@gmail.com)

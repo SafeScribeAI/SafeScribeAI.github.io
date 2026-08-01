@@ -1,215 +1,47 @@
 <!DOCTYPE html>
-{% assign lang = page.lang | default: 'en' %}
-{% assign i18n = site.data.i18n[lang] %}
-{% assign page_slug = page.path | split: '/' | last | remove: '.md' | remove: '.html' %}
-{% if page_slug == 'index' or page_slug == '' %}{% assign page_slug = 'index' %}{% endif %}
-{% assign path_parts = page.path | split: '/' %}
-{% assign skip_hreflang = false %}
-{% comment %} EN-only nested pages (en/resources/*) have no translations: the /{lang}/{slug} pattern would 404, so send the switcher to each locale's resources hub and emit no hreflang. Same skip for the 404 page (switcher goes home instead). {% endcomment %}
-{% if path_parts.size > 2 %}
-  {% assign page_slug = 'resources' %}
-  {% assign skip_hreflang = true %}
-{% endif %}
-{% if page_slug == '404' %}
-  {% assign page_slug = 'index' %}
-  {% assign skip_hreflang = true %}
-{% endif %}
-{% assign all_langs = 'en,tr' | split: ',' %}
-{% case lang %}
-  {% when 'tr' %}{% assign og_locale = 'tr_TR' %}
-  {% else %}{% assign og_locale = 'en_US' %}
-{% endcase %}
-<html lang="{{ lang }}" dir="ltr">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
-
-  <!-- Favicon — single SVG at site root (modern browsers auto-scale to any tab/bookmark size) -->
-  <link rel="icon" type="image/svg+xml" href="{{ '/safescribe.svg' | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ '/safescribe.svg' | relative_url }}">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:site_name" content="SafeScribe">
-  <meta property="og:locale" content="{{ og_locale }}">
-  <meta property="og:image" content="{{ '/assets/og-image.png' | absolute_url }}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="SafeScribe — Privacy-first AI transcription">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
-  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-  <meta name="twitter:image" content="{{ '/assets/og-image.png' | absolute_url }}">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-
-  <!-- Hreflang (SEO: en + tr, BCP 47 tags — both valid as bare ISO 639-1) -->
-  {% unless skip_hreflang %}
-  {% for switch_lang in all_langs %}
-  {% if page_slug == 'index' %}
-    {% assign switch_path = '/' | append: switch_lang | append: '/' %}
-  {% else %}
-    {% assign switch_path = '/' | append: switch_lang | append: '/' | append: page_slug %}
-  {% endif %}
-  <link rel="alternate" hreflang="{{ switch_lang }}" href="{{ switch_path | absolute_url }}">
-  {% endfor %}
-  <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
-  {% endunless %}
-
-  <!-- JSON-LD: SoftwareApplication (AEO) -->
-  {% if page_slug == 'index' and page.url != '/404.html' %}
-  {% assign packages = site.data.facts.packages %}
-  {% assign low_price = packages[0].price_usd %}
-  {% assign high_price = packages[0].price_usd %}
-  {% for pkg in packages %}
-    {% if pkg.price_usd < low_price %}{% assign low_price = pkg.price_usd %}{% endif %}
-    {% if pkg.price_usd > high_price %}{% assign high_price = pkg.price_usd %}{% endif %}
-  {% endfor %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "SafeScribe",
-    "description": "Privacy-first AI audio transcription. Your audio is processed in our server's memory only, never written to our disks, and deleted the moment your text is ready.",
-    "url": "{{ site.url }}",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "iOS, Android",
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "lowPrice": "{{ low_price }}",
-      "highPrice": "{{ high_price }}",
-      "offerCount": "{{ packages.size }}",
-      "availability": "https://schema.org/InStock",
-      "category": "free app download with pay-as-you-go credit packages",
-      "description": "Free app download; transcription credit packages from ${{ low_price }} to ${{ high_price }}"
-    },
-    "featureList": [
-      "RAM-only server-side audio processing — never written to our disks",
-      "Audio deleted the moment the transcript is delivered",
-      "TLS 1.3 encryption in transit, AES-256 encrypted local storage",
-      "On-device audio optimization",
-      "99 language support via Whisper",
-      "No user profiles or personal data stored server-side"
-    ]
-  }
-  </script>
-  {% endif %}
-
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';">
+  <link rel="icon" href="{{ '/safescribe.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <a class="skip" href="#main">{% if page.lang == 'tr' %}İçeriğe geç{% else %}Skip to content{% endif %}</a>
 
-  <a class="skip-link" href="#main-content">{{ i18n.skip_to_content }}</a>
-
-  <header class="site-header">
-    <div class="site-header-inner">
-      <a class="nav-logo" href="{{ '/' | relative_url }}">
-        <span class="nav-logo-icon">&#x1f6e1;&#xfe0f;</span>
-        <span class="nav-logo-text">SafeScribe</span>
-      </a>
-      <nav class="nav-links">
-        <a href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ i18n.nav_home }}</a>
-        <a href="{{ '/' | append: lang | append: '/#pricing' | relative_url }}">{{ i18n.nav_pricing }}</a>
-        <a href="{{ '/' | append: lang | append: '/resources' | relative_url }}">{{ i18n.nav_resources }}</a>
-        <a href="{{ '/' | append: lang | append: '/privacy' | relative_url }}">{{ i18n.nav_privacy }}</a>
-        <a href="{{ '/' | append: lang | append: '/security' | relative_url }}">{{ i18n.nav_security }}</a>
-        <a href="{{ '/' | append: lang | append: '/terms' | relative_url }}">{{ i18n.nav_terms }}</a>
-        <a href="{{ '/' | append: lang | append: '/support' | relative_url }}">{{ i18n.nav_support }}</a>
-      </nav>
-      <details class="lang-switcher">
-        <summary>&#127760; {{ i18n.lang_name }}</summary>
-        <div class="lang-dropdown">
-          {% for switch_lang in all_langs %}
-          {% assign switch_i18n = site.data.i18n[switch_lang] %}
-          {% if page_slug == 'index' %}
-            {% assign switch_url = '/' | append: switch_lang | append: '/' %}
-          {% else %}
-            {% assign switch_url = '/' | append: switch_lang | append: '/' | append: page_slug %}
-          {% endif %}
-          <a href="{{ switch_url }}"{% if switch_lang == lang %} class="lang-active"{% endif %}>{{ switch_i18n.lang_name }}</a>
-          {% endfor %}
-        </div>
-      </details>
-      <button id="nav-mobile-toggle" class="nav-mobile-toggle" aria-label="{{ i18n.toggle_menu }}" aria-expanded="false" aria-controls="nav-mobile-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <nav id="nav-mobile-links" class="nav-mobile-links">
-      <a href="{{ '/' | append: lang | append: '/' | relative_url }}">{{ i18n.nav_home }}</a>
-      <a href="{{ '/' | append: lang | append: '/#pricing' | relative_url }}">{{ i18n.nav_pricing }}</a>
-      <a href="{{ '/' | append: lang | append: '/resources' | relative_url }}">{{ i18n.nav_resources }}</a>
-      <a href="{{ '/' | append: lang | append: '/privacy' | relative_url }}">{{ i18n.nav_privacy }}</a>
-      <a href="{{ '/' | append: lang | append: '/security' | relative_url }}">{{ i18n.nav_security }}</a>
-      <a href="{{ '/' | append: lang | append: '/terms' | relative_url }}">{{ i18n.nav_terms }}</a>
-      <a href="{{ '/' | append: lang | append: '/support' | relative_url }}">{{ i18n.nav_support }}</a>
-      <div class="mobile-lang-section">
-        <span class="mobile-lang-header">{{ i18n.footer_languages }}</span>
-        <div class="mobile-lang-grid">
-          {% for switch_lang in all_langs %}
-          {% assign switch_i18n = site.data.i18n[switch_lang] %}
-          {% if page_slug == 'index' %}
-            {% assign switch_url = '/' | append: switch_lang | append: '/' %}
-          {% else %}
-            {% assign switch_url = '/' | append: switch_lang | append: '/' | append: page_slug %}
-          {% endif %}
-          <a href="{{ switch_url }}"{% if switch_lang == lang %} class="lang-active"{% endif %}>{{ switch_i18n.lang_name }}</a>
-          {% endfor %}
-        </div>
-      </div>
+  <header class="site-head">
+    <a class="brand" href="{{ '/' | append: page.lang | append: '/privacy' | relative_url }}">
+      <img src="{{ '/safescribe.svg' | relative_url }}" alt="" width="26" height="26">
+      <span>SafeScribe</span>
+    </a>
+    <nav aria-label="{% if page.lang == 'tr' %}Sayfalar{% else %}Pages{% endif %}">
+      <a href="{{ '/' | append: page.lang | append: '/privacy' | relative_url }}"
+         {% if page.page_key == 'privacy' %}aria-current="page"{% endif %}>{% if page.lang == 'tr' %}Gizlilik{% else %}Privacy{% endif %}</a>
+      <a href="{{ '/' | append: page.lang | append: '/terms' | relative_url }}"
+         {% if page.page_key == 'terms' %}aria-current="page"{% endif %}>{% if page.lang == 'tr' %}Koşullar{% else %}Terms{% endif %}</a>
+      <a href="{{ '/' | append: page.lang | append: '/support' | relative_url }}"
+         {% if page.page_key == 'support' %}aria-current="page"{% endif %}>{% if page.lang == 'tr' %}Destek{% else %}Support{% endif %}</a>
     </nav>
   </header>
 
-  <main id="main-content" class="site-main">
-    <div class="content-wrapper">
-      {{ content }}
-    </div>
+  <main id="main">
+    {{ content }}
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <div class="footer-brand">
-        <span class="nav-logo-icon">&#x1f6e1;&#xfe0f;</span>
-        <strong>SafeScribe</strong>
-        <span class="footer-tagline">{{ i18n.footer_tagline }}</span>
-      </div>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <strong>{{ i18n.footer_legal }}</strong>
-          <a href="{{ '/' | append: lang | append: '/privacy' | relative_url }}">{{ i18n.link_privacy }}</a>
-          <a href="{{ '/' | append: lang | append: '/security' | relative_url }}">{{ i18n.link_security }}</a>
-          <a href="{{ '/' | append: lang | append: '/dpia' | relative_url }}">{{ i18n.link_dpia }}</a>
-          <a href="{{ '/' | append: lang | append: '/terms' | relative_url }}">{{ i18n.link_terms }}</a>
-        </div>
-        <div class="footer-col">
-          <strong>{{ i18n.footer_more }}</strong>
-          <a href="{{ '/' | append: lang | append: '/resources' | relative_url }}">{{ i18n.link_resources }}</a>
-          <a href="{{ '/' | append: lang | append: '/whats-new' | relative_url }}">{{ i18n.link_whats_new }}</a>
-        </div>
-        <div class="footer-col">
-          <strong>{{ i18n.footer_contact }}</strong>
-          <a href="{{ '/' | append: lang | append: '/support' | relative_url }}">{{ i18n.link_support }}</a>
-          <a href="mailto:privacy@safescribe.dev">privacy@safescribe.dev</a>
-          <a href="mailto:security@safescribe.dev">security@safescribe.dev</a>
-          <a href="mailto:support@safescribe.dev">support@safescribe.dev</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; {{ site.time | date: "%Y" }} SafeScribe. All rights reserved.</span>
-      </div>
-    </div>
+  <footer class="site-foot">
+    <p>
+      {% if page.lang == 'tr' %}İletişim{% else %}Contact{% endif %}:
+      <a href="mailto:safescribeai@gmail.com">safescribeai@gmail.com</a>
+    </p>
+    <p class="langs">
+      <a href="{{ '/en/' | append: page.page_key | relative_url }}"
+         {% if page.lang == 'en' %}aria-current="true"{% endif %}>English</a>
+      <span aria-hidden="true">·</span>
+      <a href="{{ '/tr/' | append: page.page_key | relative_url }}"
+         {% if page.lang == 'tr' %}aria-current="true"{% endif %}>Türkçe</a>
+    </p>
   </footer>
-
-  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
-
 </body>
 </html>

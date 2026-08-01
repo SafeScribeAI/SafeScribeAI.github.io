@@ -1,268 +1,68 @@
 ---
 layout: default
 title: SafeScribe — Gizlilik Politikası
-description: SafeScribe'ın hangi verileri topladığı, nasıl işlediği ve haklarınız.
+description: SafeScribe hiçbir veri toplamaz. Sesiniz cihazınızdan hiç çıkmaz.
 lang: tr
+page_key: privacy
 ---
-
-<div class="page-content" markdown="1">
 
 # Gizlilik Politikası
 
-<div class="summary-box">
-  <strong>Sade anlatım:</strong> Sesinizi sunucumuzun belleğinde işleyip transkripti oluşturduktan sonra hemen siliyoruz. Sesinizi disklerimize hiçbir zaman yazmıyoruz, yapay zeka eğitiminde kullanmıyoruz ve kimseyle paylaşmıyoruz. Transkriptleriniz cihazınızda şifrelenmiş olarak saklanır ve tamamen sizin kontrolünüzdedir. Yalnızca takma adlı faturalandırma kayıtları tutuyoruz.
+<p class="page-meta">Son güncelleme: 1 Ağustos 2026</p>
+
+<div class="callout">
+  <p><strong>Sade dille:</strong> SafeScribe tamamen cihazınızda çalışır. Kayıtlarınız ve metinleriniz telefonunuzda oluşturulur, telefonunuzda saklanır, telefonunuzda silinir. Hiçbir yere yüklenmezler; çünkü yüklenecek bir SafeScribe sunucusu yoktur. Hesap yok, giriş yok, analitik yok.</p>
 </div>
 
-<p class="page-meta">Son güncelleme: March 2026</p>
-
----
-
-<span class="section-label">Yapmadıklarımız</span>
-## Toplamadığımız veya Saklamadığımız Veriler
-{: #no-collect}
+## Ne topluyoruz
 
-<ul class="dont-list">
-  <li><span class="x-mark">&#x2717;</span> Sesinizi disklerimize yazmak — hiçbir zaman</li>
-  <li><span class="x-mark">&#x2717;</span> E-posta adresinizi veya adınızı saklamak</li>
-  <li><span class="x-mark">&#x2717;</span> IP adreslerini kayıt altına almak veya saklamak <em>(ağ sağlayıcımız Cloudflare bunları aktarım sırasında görür — bkz. <a href="#third-parties">Üçüncü Taraf Hizmetler</a>)</em></li>
-  <li><span class="x-mark">&#x2717;</span> Kayıtları yapay zeka modeli eğitiminde kullanmak</li>
-  <li><span class="x-mark">&#x2717;</span> Verileri reklamverenler ya da veri aracılarıyla paylaşmak</li>
-  <li><span class="x-mark">&#x2717;</span> Uygulama veya oturumlar arasında davranışı izlemek</li>
-  <li><span class="x-mark">&#x2717;</span> Kişi listesi, konum veya biyometrik veri toplamak</li>
-  <li><span class="x-mark">&#x2717;</span> Hesap silindikten sonra veri tutmak</li>
-</ul>
+Hiçbir şey.
 
----
+İçeriğinizi alan bir sunucu işletmiyoruz. Analitik, kullanım istatistiği, reklam kimliği veya çökme raporu toplamıyoruz. Sizden hesap açmanızı istemiyoruz; destek için bize yazmayı kendiniz seçmediğiniz sürece adınızı, e-posta adresinizi veya telefon numaranızı hiç görmüyoruz.
 
-<span class="section-label">Topladıklarımız</span>
-## İşlediğimiz Veriler
+## Verileriniz nerede duruyor
 
-### Sunucu tarafında (hesap silinene kadar kalıcı)
+Kayıtlar, metinler ve ayarlar yalnızca cihazınızda, uygulamanın özel alanında saklanır. Metinler şifrelenmiş olarak durur.
 
-| Veri | Amaç |
-|------|------|
-| Takma adlı kullanıcı kimliği (hesap kimliğinin SHA-256 karması) | Hesap tanımlaması — geri döndürülemez |
-| Takma adlı cihaz tanımlayıcısı (cihaz özelliklerinin SHA-256 karması) | Kötüye kullanım önleme — geri döndürülemez |
-| Hesap bakiyesi (USD) | Kredi yönetimi |
-| Kalan ücretsiz transkripsiyon dakikası | Hoş geldin bonusu takibi |
-| Hesap oluşturma ve son güncelleme zaman damgaları | Hesap yönetimi |
+Uygulamayı silmek bunları da siler. Dilerseniz tek tek metinleri ya da **Ayarlar → Tüm Verileri Sil** ile hepsini birden silebilirsiniz. Bizde hiçbir kopyası olmadığı için cihazınızdaki silme işlemi nihaidir — bizim silecek bir şeyimiz kalmaz.
 
-**İş başına kayıtlar** (her tamamlanan transkripsiyon için saklanır):
+## Uygulama interneti ne zaman kullanır
 
-| Veri | Amaç |
-|------|------|
-| Ses süresi (saniye) | Hizmet analitiği |
-| Dosya boyutu (bayt) | Hizmet analitiği |
-| Kelime sayısı | Hizmet analitiği |
-| Alınan ücret (USD) | Faturalandırma kaydı |
-| İşleme zaman damgaları | Hizmet analitiği |
+Yazıya dönüştürmenin kendisi interneti hiç kullanmaz. Telefonu uçak moduna alıp çalıştırabilirsiniz. Tam olarak iki istisna vardır ve hiçbiri sesinizle ilgili değildir:
 
-<div class="callout callout-info">
-  <strong>İş başına kayıtlarda hiçbir zaman ses içeriği veya transkript metni bulunmaz.</strong> Bu kayıtlar yalnızca meta veri (sayılar ve zaman damgaları) içerir — söylediklerinizi asla içermez.
-</div>
+| Amaç | Ne oluyor |
+| --- | --- |
+| Konuşma modelinin indirilmesi | Uygulamayı ilk kullandığınızda konuşma tanıma modeli (yaklaşık 874 MB) Hugging Face üzerinden indirilir. Her indirmede olduğu gibi, sunucu IP adresinizi görebilir. Sizinle veya kayıtlarınızla ilgili hiçbir bilgi gönderilmez. |
+| SafeScribe Pro satın alımı | Tamamen Apple tarafından yürütülür. Ödeme bilgilerinizi hiç görmeyiz. Bu işlem Apple'ın gizlilik politikasına tabidir. |
 
-### Sunucu tarafında (geçici — işlem sonrası silinen)
+Uygulamanın her yapısı, bu iki yolun dışında herhangi bir yerde ağ kodu belirirse kırılan otomatik bir kapıdan geçer. Yukarıdaki iddia söz değil, mekanik olarak zorlanan bir kuraldır.
 
-| Veri | Ne Zaman Silinir |
-|------|-----------------|
-| Ses dosyası | Transkripsiyon tamamlanır tamamlanmaz — bir aksilik olursa 1 saatlik TTL güvenlik kilidi |
-| Transkript metni | Teslim aldığınızı onayladığınızda — cihazınız hiç onaylamazsa 24 saatlik TTL güvenlik kilidi |
+## Göndermeyi seçebileceğiniz hata raporu
 
-### Cihazınızda (şifrelenmiş)
+Otomatik çökme raporlaması yoktur. Bir sorun yaşarsanız **Ayarlar → Hata günlüğünü paylaş** ile tanı raporunu kendiniz gönderebilir, alıcıyı kendiniz seçersiniz. Bu rapor uygulama sürümünüzü, işletim sistemi sürümünüzü ve son hata mesajlarını içerir. Ses ve transkript metni içermez; dosya yolları ve benzeri tanımlayıcılar rapor oluşturulmadan önce çıkarılır.
 
-| Veri | Saklama Süresi |
-|------|---------------|
-| Transkriptler (metin, segmentler, meta veri) | Siz silene kadar |
-| Çevrimdışı yükleme kuyruğu | Başarılı yüklemeden sonra kaldırılır |
-| Uygulama ayarları ve onay kayıtları | Çıkış veya hesap silinene kadar |
-| Şifreleme anahtarı | iOS Keychain / Android Keystore'da — uygulama silindiğinde silinir |
+## Destek yazışmaları
 
-### İsteğe bağlı (yalnızca kabul ile)
+Destek için bize e-posta yazarsanız, yazdıklarınız sıradan bir e-posta kutusuna ulaşır. Yalnızca size yanıt verebilmek için gereken süre boyunca saklarız ve talebiniz üzerine sileriz. Hakkınızda herhangi bir şey elimizde bulunduran tek durum budur.
 
-| Veri | Amaç |
-|------|------|
-| Kilitlenme raporları | SafeScribe'ın kendi kilitlenme raporlama uç noktası aracılığıyla uygulama kararlılığı — iletimden önce tüm PII temizlenir |
-| Geri bildirim ve sorun raporları | Ürün geliştirme — göndermeyi seçtiğiniz bir puan, hata raporu, şikayet veya öneri. Serbest metin, saklanmadan önce sunucu tarafında PII'den arındırılır; yalnızca takma adlı kullanıcı karmanızla birlikte tutulur (ad, e-posta veya IP olmadan). En fazla 24 ay saklanır, ardından otomatik silinir. |
+## KVKK
 
-<div class="callout callout-green">
-  <strong>Sunucu asla adınızı, e-posta adresinizi, IP adresinizi, ses içeriğinizi veya transkript metninizi saklamaz.</strong> Hesabınıza bağlı kalıcı kayıtlar yalnızca geri döndürülemez bir kullanıcı karması, takma adlı bir cihaz tanımlayıcısı, bir kredi bakiyesi, kullanım istatistikleri (yalnızca sayılar — içerik yok, kimlik yok) ve göndermeyi seçtiğiniz geri bildirimlerden (PII'den arındırılmış) oluşur. Bir rapora yanıt verirsek, yanıt size yalnızca kullanıcı karmanıza eşlenen tek seferlik bir uygulama içi mesaj olarak ulaşır — kim olduğunuzu asla öğrenmeyiz.
-</div>
+SafeScribe, Türkiye'de yerleşik bağımsız bir geliştirici tarafından geliştirilmektedir.
 
----
+Sesiniz ve metinleriniz yalnızca kendi cihazınızda işlendiği ve bize hiç iletilmediği için, tarafımızca bir kişisel veri işleme faaliyeti gerçekleşmemekte ve bu içerik bakımından **veri sorumlusu sıfatımız doğmamaktadır**. Tek istisna, yukarıda anlatılan ve tamamen sizin başlattığınız, talebiniz üzerine silinen destek yazışmalarıdır.
 
-<span class="section-label">Tam Silme</span>
-## Uygulamayı Silmek ile Hesabı Silmek
+## Çocuklar
 
-Bunlar farklı sonuçları olan iki ayrı işlemdir:
+SafeScribe yetişkinlere (18+) yöneliktir. Uygulamayı bilerek çocuklara yöneltmiyoruz.
 
-| İşlem | Ne olur | Bakiyeniz |
-|-------|---------|-----------|
-| **Uygulamayı sil** | Yerel transkriptler ve şifreleme anahtarı cihazınızdan kaldırılır | Sunucuda korunur — uygulamayı yeniden yükleyip aynı hesapla giriş yaparak tam olarak geri kazanılır |
-| **Hesabı sil** | Her sunucu taraflı kayıt kalıcı olarak silinir — geri alınamaz | Gider |
+## SafeScribe nerede sunuluyor
 
-<div class="callout callout-info">
-  <strong>İstediğiniz zaman yeniden yükleyin.</strong> Hesabınızı silmeden uygulamayı silerseniz, uygulamayı yeniden yükleyip aynı Google veya Apple hesabıyla giriş yaparak tam bakiyenize ve erişiminize kavuşursunuz — herhangi bir işlem gerekmez.
-</div>
+SafeScribe, Avrupa Ekonomik Alanı ve Birleşik Krallık'ta sunulmamaktadır.
 
-### Hesap Silme — Kimliğinizi Gösteren Hiçbir Şey Kalmaz
+## Değişiklikler
 
-Gizlilik Ayarları'ndan hesabınızı silmek, kimliğinizle bağlantılı her sunucu taraflı kaydı kalıcı olarak kaldırır:
+Bu politika değişirse en üstteki tarih de değişir.
 
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Takma adlı kullanıcı kimliği</strong><span class="item-desc">kalıcı olarak silinir</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kredi bakiyesi</strong><span class="item-desc">kalıcı olarak silinir</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kalan ücretsiz dakikalar</strong><span class="item-desc">kalıcı olarak silinir</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>İş başına istatistikler</strong><span class="item-desc">anında anonimleştirilir — ortak DELETED_USER işaretine bağlanır, 2 yıl sonra otomatik temizlenir</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Takma adlı cihaz tanımlayıcısı</strong><span class="item-desc">tuzlanmış tek yönlü bir karmaya indirgenir ve en fazla 2 yıl tutulur — tekrarlı hoş geldin kredisi istismarını engeller, geri çevrilemez ve sizinle ilişkilendirilemez</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Günlük yedek</strong><span class="item-desc">günlük üstüne yazılan kopya, bir sonraki yedekleme döngüsünün ardından (24 saat içinde) kimliğinizi içeren veri barındırmaz; silme anında alınan ayrı bir point-in-time kurtarma anlık görüntüsü ise felaket kurtarma amacıyla saklanır ve hemen silinmez</span></span></li>
-</ul>
+## İletişim
 
-Silme anında kimliğinize giden her bağ yok edilir. İki dar kategori, <em>hiçbir kimlik bağı olmadan</em> sınırlı süre saklanır: finansal kayıtlar (satın alma ve kullanım tutarları) DELETED_USER işaretiyle anonimleştirilip ayıplı hizmet zamanaşımı (Tüketicinin Korunması Hakkında Kanun m.15-16) gereği 2 yıl tutulur; tuzlanmış tek yönlü cihaz karması ise tekrarlı ücretsiz kredi istismarını önlemek için en fazla 2 yıl tutulur (GDPR m.6(1)(f) meşru menfaat). Her ikisi de süre dolunca canlı sistemden otomatik temizlenir. Günlük üstüne yazılan yedek, 24 saat içinde silinmiş hesapları artık yansıtmaz; ancak silmeden önce alınmış point-in-time kurtarma anlık görüntüleri felaket kurtarma amacıyla saklanır ve hemen silinmez.
-
-Uygulama içi silme işlemi, GDPR Art. 17 ve KVKK Mad. 11(e) kapsamındaki silme hakkınızın resmi kullanımı niteliğindedir. Hesabınıza erişemiyorsanız, e-posta yoluyla silme talebinde bulunmak için **privacy@safescribe.dev** adresiyle iletişime geçin.
-
----
-
-<span class="section-label">Ses İşleme</span>
-## Sıfır Disk Politikası
-{: #zero-disk}
-
-<div class="flow-diagram">
-Sesiniz:  Yükleme --> RAM --> Yapay Zeka Transkripsiyonu --> Teslim --> SİL
-                                                                     (anında)
-
-Diskimiz: Yalnızca bakiye kayıtları — ses, transkript veya e-posta yok
-</div>
-
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yalnızca RAM</strong><span class="item-desc">ses yalnızca uçucu bellekte işlenir</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Disklerimize hiç yazılmaz</strong><span class="item-desc">geçici olarak bile. (Uygulama, kayıt sırasında <em>sizin</em> cihazınıza geçici bir sıkıştırılmış kopya yazar; yükleme başarılı olunca silinir.)</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Yapay zeka eğitimi yok</strong><span class="item-desc">sesiniz modelleri iyileştirmek için asla kullanılmaz</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Kendi barındırılan yapay zeka</strong><span class="item-desc">hiçbir üçüncü taraf yapay zeka servisi sesinizi almaz</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>TTL güvenlik kilidi</strong><span class="item-desc">silme kodu başarısız olsa bile veri kendiliğinden yok olur</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Bellek kilidi</strong><span class="item-desc">işletim sistemi düzeyinde kilit, sesin diske taşınmasını önler</span></span></li>
-</ul>
-
----
-
-<span class="section-label">Kimlik Doğrulama</span>
-## Google veya Apple ile Giriş
-{: #sign-in}
-
-OpenID Connect (OIDC) aracılığıyla Google Sign-In ve Sign in with Apple kullanıyoruz.
-
-| Sağlayıcının bize gönderdiği | Ne yaptığımız |
-|-----------------------------|--------------|
-| Hesap kimliği | Karma (SHA-256 + tuz) — orijinal hemen silinir |
-| E-posta adresi | Yalnızca kimlik doğrulama için kullanılır — **saklanmaz** |
-| Görünen ad | **Saklanmaz** |
-
-Kişi listenize, takviminize veya diğer hesap verilerinize erişmiyoruz.
-
----
-
-<span class="section-label">Ödemeler</span>
-## Uygulama Mağazaları Üzerinden Faturalandırma
-{: #billing}
-
-Ödemeler tamamen Apple App Store veya Google Play Store tarafından işlenir. SafeScribe kredi kartı numarası veya ödeme bilgisi hiçbir zaman **almaz, saklamaz veya işlemez**. Bakiye doğrulaması için yalnızca bir satın alma makbuzu alırız.
-
-<div class="callout callout-info">
-  <strong>Apple veya Google'ın tuttuğu ödeme kayıtları</strong> SafeScribe'ın kontrolü dışındadır ve SafeScribe'ın hesap silme sürecine dahil değildir. Bu kayıtları yönetmek için doğrudan <a href="https://support.apple.com">Apple Destek</a> veya <a href="https://support.google.com/googleplay">Google Play Destek</a> ile iletişime geçin.
-</div>
-
----
-
-<span class="section-label">Hata Takibi</span>
-## Kilitlenme Raporları (İsteğe Bağlı)
-
-İsteğe bağlı kilitlenme raporlarını SafeScribe'ın kendi kilitlenme raporlama uç noktasına gönderiyoruz. Varsayılan olarak **kapalıdır** ve istediğiniz zaman Gizlilik Ayarları'ndan değiştirilebilir.
-
-Herhangi bir rapor iletilmeden önce şunlar otomatik olarak kaldırılır:
-
-**Silinen:** e-posta adresleri · telefon numaraları · IP adresleri · dosya yolları · kimlik doğrulama token'ları
-
-**Saklanan:** hata türü ve yığın izleme · cihaz modeli · işletim sistemi sürümü · uygulama sürümü
-
----
-
-<span class="section-label">Üçüncü Taraflar</span>
-## Üçüncü Taraf Hizmetler
-{: #third-parties}
-
-Aşağıdaki hizmetleri kullanıyoruz. Belirtilen bilgilerin ötesinde ses, transkript içeriği veya kişisel bilgi herhangi bir üçüncü tarafla paylaşılmaz.
-
-| Hizmet | Amaç | Paylaşılan veri | Gizlilik Politikası |
-|--------|------|-----------------|---------------------|
-| Cloudflare (Tunnel) | Sunucularımızı halka açık internetten uzak tutar ve hizmet dışı bırakma saldırılarını soğurur | Aktarım hâlindeki isteğiniz — IP adresiniz dahil; kalkan, bağlantıyı Cloudflare'in en yakın uç noktasında şifresini çözüp yeniden şifreleyerek çalıştığı için ses de oradan geçerken görünür. Cloudflare sesi transkribe etmez, analiz etmez, saklamaz. | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
-| Cloudflare (R2) | Faturalandırma defterinin site dışı yedeği | Takma adlı kullanıcı hash'i, bakiye ve kullanım rakamları — ses veya transkript yok | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
-| Google Sign-In | Kimlik doğrulama | Yalnızca OIDC token | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Apple Sign-In | Kimlik doğrulama | Yalnızca OIDC token | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
-| Apple App Store | Uygulama içi satın alma | Yalnızca satın alma makbuzu | [apple.com/legal/privacy](https://www.apple.com/legal/privacy/) |
-| Google Play Store | Uygulama içi satın alma | Yalnızca satın alma makbuzu | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| SafeScribe kilitlenme uç noktası | Kilitlenme raporlama (isteğe bağlı) | Anonim hata raporu — PII temizlenmiş | SafeScribe tarafından işletilir, üçüncü taraf yoktur |
-
----
-
-<span class="section-label">Hukuki Dayanak</span>
-## İşlemenin Hukuki Dayanağı
-
-| İşleme faaliyeti | GDPR Dayanağı | KVKK Dayanağı | Zorunlu mu? |
-|-----------------|--------------|--------------|-------------|
-| Ses transkripsiyonu | Art. 6(1)(b) — Sözleşme | Açık rıza | Hizmetin kullanımı için zorunlu |
-| Hesap ve faturalandırma | Art. 6(1)(b) — Sözleşme | Sözleşme ifası | Hizmetin kullanımı için zorunlu |
-| Kimlik doğrulama (OIDC) | Art. 6(1)(b) — Sözleşme | Sözleşme ifası | Hizmetin kullanımı için zorunlu |
-| Uygulama içi satın alma | Art. 6(1)(b) — Sözleşme | Sözleşme ifası | Satın alma için zorunlu |
-| Kilitlenme raporlama | Art. 6(1)(a) — Rıza | Açık rıza | İsteğe bağlı |
-
-Transkripsiyon, kimlik doğrulama ve faturalandırma için veri sağlamak SafeScribe'ı kullanmak için **zorunludur**. Kilitlenme raporlama **isteğe bağlıdır** — hizmet onsuz tam olarak çalışır.
-
----
-
-<span class="section-label">Haklarınız</span>
-## Yapabilecekleriniz
-{: #your-rights}
-
-<ul class="do-list">
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Erişim</strong><span class="item-desc">tüm transkriptlerinizi uygulama içinde istediğiniz zaman görüntüleyin</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Silme</strong><span class="item-desc">Gizlilik Ayarları'ndan tek tek transkripti veya tüm hesabı silin; hesap silme işlemi herhangi bir veritabanında sıfır kayıt bırakır</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Dışa Aktarma</strong><span class="item-desc">transkriptleri paylaşın veya Gizlilik Ayarları'ndan tam veri dışa aktarma isteyin</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Tanılamadan çekilme</strong><span class="item-desc">Gizlilik Ayarları'ndan kilitlenme raporlamayı kapatın</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Rızayı geri alma</strong><span class="item-desc">istediğiniz zaman çıkış yapıp hesabınızı silin</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>CCPA seçim hakkı</strong><span class="item-desc">Gizlilik Ayarları'ndan "Verilerimi Satma veya Paylaşma" seçeneğini kapatın</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Otomatik karar yok</strong><span class="item-desc">hakkınızda hukuki veya benzer önemli etkiler doğuran profilleme dahil hiçbir otomatik karar vermiyoruz (GDPR Art. 22)</span></span></li>
-  <li><span class="check-mark">&#x2713;</span><span class="item-body"><strong>Şikayet başvurusu</strong><span class="item-desc">AB/AEA'daki kullanıcılar ulusal denetim otoritelerine (<a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>); Türkiye'deki kullanıcılar KVKK'ya (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>) başvurabilir</span></span></li>
-</ul>
-
-Uygulama içinde tamamlayamadığınız herhangi bir talep için **privacy@safescribe.dev** adresine yazın.
-
----
-
-<span class="section-label">Hukuki Bilgiler</span>
-## Ek Bilgiler
-
-**Veri sorumlusu.** SafeScribe, Türkiye'de yerleşik bağımsız bir geliştirici tarafından işletilmektedir. İletişim: privacy@safescribe.dev. Veri Koruma Görevlisi (DPO) atanmamıştır — işleme büyük ölçekte yürütülmemekte ve özel kategori veri sistematik olarak tutulmamaktadır (ses yalnızca sunucumuzun RAM'inde geçici olarak işlenmekte, disklerimize kaydedilmemektedir).
-
-**Yedekler.** Hizmet sürekliliği için hesap kayıtlarının (takma adlı kimlik, bakiye, kullanım istatistikleri) tek günlük yedeği tutulmaktadır. Her yedek bir öncekinin üstüne yazılır. Hesap silme işlemiyle silinen veriler canlı sistemlerden hemen, yedekten ise 24 saat içinde kaldırılır.
-
-**Uluslararası aktarımlar.** SafeScribe'ı AB/AEA'dan kullanıyorsanız, ses ve hesap verileriniz Türkiye'deki sunucularda işlenmektedir; Türkiye'nin <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">AB yeterlilik kararı</a> bulunmamaktadır. Yüklemeniz doğrudan kendi cihazınızdan bize gelir; bu nedenle AB'de bir veri aktarıcısı yoktur ve GDPR Bölüm V (Mad. 44–49) bu yola uygulanmaz — bkz. EDPB <a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052021-interplay-between-application-article_en">Kılavuz 05/2021</a> v2.0, Örnek 1. Hizmeti AB'deki kişilere sunduğumuz için GDPR bizi doğrudan Mad. 3(2) üzerinden bağlar; işlemenin hukuki dayanağı ise Mad. 6 kapsamındaki rızanızdır. Bir sonraki adım ise *gerçekten* aktarımdır: bağlantınız bize Cloudflare üzerinden ulaşır ve en yakın uç nokta Türkiye dışında olabilir — bkz. [Üçüncü Taraf Hizmetler](#third-parties). Türkiye'deki kullanıcılar için yurt dışı aktarım KVKK Mad. 9 kapsamında yetkilendirilmiştir.
-
-**Çocuklar.** SafeScribe yetişkinler içindir. Uygulama, kullanılmadan önce 18 yaşında veya daha büyük olduğunuzu onaylamanızı ister; [Kullanım Koşulları](terms) da aynı şartı koyar. 18 yaşın altındaki kişilerden bilerek veri toplamıyoruz. Mağazadaki içerik derecelendirmesi (4+) sakıncalı içerik bulunmadığını anlatır, hedef kitleyi değil — Google Play'de beyan edilen hedef kitle 18+'dır.
-
-**Politika değişiklikleri.** Uygulamalarımız değiştiğinde bu sayfayı güncelleyeceğiz. Yukarıdaki "Son güncelleme" tarihi en son revizyonu yansıtır.
-
----
-
-<span class="section-label">İletişim</span>
-## Bizimle İletişime Geçin
-
-| Konu | İletişim |
-|------|---------|
-| Gizlilik talepleri, veri silme, haklar | privacy@safescribe.dev |
-| Güvenlik açıkları | security@safescribe.dev |
-| Genel destek | support@safescribe.dev |
-
----
-
-
-</div>
+Gizlilik soruları veya destek yazışmalarınızın silinmesi talebi: [safescribeai@gmail.com](mailto:safescribeai@gmail.com)

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://safescribe.dev/sitemap.xml
+Sitemap: https://safescribeai.github.io/sitemap.xml

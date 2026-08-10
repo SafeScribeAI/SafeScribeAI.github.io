@@ -3,7 +3,6 @@ layout: default
 title: SafeScribe
 description: Fully on-device transcription. Your audio never leaves your device.
 lang: en
-page_key: privacy
 ---
 
 # SafeScribe

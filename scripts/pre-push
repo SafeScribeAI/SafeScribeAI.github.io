@@ -18,7 +18,7 @@ if [[ -x /opt/homebrew/opt/ruby@3.1/bin/ruby ]]; then
 fi
 
 ERRORS=0
-printf "\n${BOLD}── Pre-push: Jekyll build + fact-drift gate ──${NC}\n"
+printf "\n${BOLD}── Pre-push: Jekyll build ──${NC}\n"
 
 if cmd bundle; then
   ruby_major_minor="$(ruby -e 'print RUBY_VERSION[/^\d+\.\d+/]')"
@@ -40,14 +40,12 @@ else
   warn "bundle not found (run: bundle install) — skipping Jekyll build check"
 fi
 
-# Cross-stack fact drift — runs only in the full multi-repo workspace (no-op on a lone clone).
-GUARD="$PWD/../scripts/check_facts.py"
-if [[ -f "$GUARD" ]] && cmd python3; then
-  info "fact drift (facts.yml ↔ code ↔ site)"
-  if python3 "$GUARD" >/dev/null 2>&1; then pass "Facts consistent"; else fail "Fact drift — run: python3 ../scripts/check_facts.py"; ERRORS=$((ERRORS+1)); fi
-else
-  warn "scripts/check_facts.py not found (lone clone, not the full workspace) — skipping fact drift check"
-fi
+# Fact-drift adımı 2026-08-10'da kaldırıldı. Koruduğu şey artık yok: site
+# _data/facts.yml taşımıyor (dakika-fiyatı, kredi paketleri, yükleme sınırı ve
+# sunucu TTL'i pivotla birlikte düştü) ve karşılaştırdığı kaynaklar (backend/.env,
+# mobile/lib/config.dart, iap_catalog.py) donuk arşiv. Adım tabanda KIRMIZI
+# yanıyordu, yani her push --no-verify istiyordu — sessizce atlanan bir kapı,
+# olmayan kapıdan kötüdür. ../scripts/check_facts.py artık çağrılmıyor.
 
 printf "\n${BOLD}── Result ──${NC}\n"
 if [[ $ERRORS -gt 0 ]]; then

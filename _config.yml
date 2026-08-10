@@ -3,6 +3,12 @@ description: Fully on-device transcription. Your audio never leaves your device 
 url: https://safescribeai.github.io
 markdown: kramdown
 
+# Uzantısız adresler: en/privacy.md -> /en/privacy/ (varsayılan /en/privacy.html).
+# Gezinti bağlantıları ve App Store'a verilen URL'ler zaten uzantısız; varsayılan
+# kuralda sayfa kendi canonical'ını .html'li ilan ediyordu, yani aynı sayfanın
+# iki adı dolaşımdaydı. 404.html kendi permalink'ini taşıdığı için etkilenmez.
+permalink: pretty
+
 plugins:
   - jekyll-sitemap
 
